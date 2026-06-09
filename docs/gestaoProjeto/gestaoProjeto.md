@@ -1,3 +1,12 @@
+# Gestão de Projetos de Acessibilidade
+
+> **[NOVO - TG10/Grupo07]** Esta seção foi atualizada para incluir a **ABNT NBR 17225:2025** como referência normativa obrigatória e reforçar o contexto legal brasileiro. Itens marcados com `[NOVO NBR/WCAG 2.2]` não estavam na versão V1 (VerificaAAA, 2024). Referência: TG10 – Estudo Aprofundado WCAG 2.2 (Grupo 7, 2026).
+
+> **[NOVO NBR/WCAG 2.2]** Contexto legal obrigatório: No Brasil, a **ABNT NBR 17225:2025** adotou integralmente o WCAG 2.2 como base técnica. A conformidade com níveis **A e AA** é exigida por:
+> - Lei nº 13.146/2015 – Lei Brasileira de Inclusão (LBI)
+> - Decreto nº 5.296/2004 – obrigatoriedade de acessibilidade em serviços digitais públicos
+> - ABNT NBR 17225:2025 – norma técnica vigente
+
 # Primeiro Passo
 
 "Para que a acessibilidade digital possa impactar positivamente a vida de milhões de pessoas, ela deve ser pensada logo no início, na concepção do projeto, fase de iniciação na Gestão de Projetos de Acessibilidade" <a id="TEC1" href="#RP1">[1]</a>.
@@ -46,13 +55,20 @@ Em seu planejamento, há...
 
 - [ ] Atividades bem delineadas, cronogramas e atribuições de responsabilidade relacionadas à acessibilidade?
 - [ ] Recursos alocados (pessoas, softwares, cursos, tarefas)?
-- [ ] Tarefas com critérios de sucesso que atendam pelo menos os níveis A e AA, segundo a documentação de acessibilidade (WCAG)?
+- [ ] Tarefas com critérios de sucesso que atendam pelo menos os níveis A e AA, segundo a documentação de acessibilidade (WCAG 2.2)?
+- [ ] **[NOVO NBR/WCAG 2.2]** Referência à **ABNT NBR 17225:2025** como norma técnica brasileira vigente nos critérios de aceitação?
+- [ ] **[NOVO NBR/WCAG 2.2]** Combinação de testes automatizados (axe, Lighthouse) **e** testes manuais (teclado, leitor de tela), sabendo que ferramentas automatizadas cobrem apenas ~30-40% dos critérios?
+- [ ] **[NOVO NBR/WCAG 2.2]** Abordagem **Shift-left**: acessibilidade incluída desde o planejamento e design, não como correção retroativa?
 
 ## Referências Bibliográficas
 
 > <a id="RP1" href="#TEC1">1.</a> DINIZ, V.; FERRAZ, R.; NASCIMENTO, C. M.; CREDIDIO, R. Guia de Boas Práticas para Acessibilidade Digital. Programa de Cooperação entre Reino Unido e Brasil em Acesso Digital, 2023. Disponível em: [https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf](https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf). Acesso em: 9 Mai. 2024.
 
 ## Bibliografia
+
+> **[NOVO]** ABNT. NBR 17225:2025 – Acessibilidade em ambientes virtuais – Requisitos e Recomendações. Associação Brasileira de Normas Técnicas, 2025.
+
+> **[NOVO]** W3C. Web Content Accessibility Guidelines (WCAG) 2.2. World Wide Web Consortium, outubro 2023. Disponível em: [https://www.w3.org/TR/WCAG22/](https://www.w3.org/TR/WCAG22/). Acesso em: jun. 2026.
 
 > </a> A Convenção sobre Direitos das Pessoas com Deficiência comentada / Coordenação de Ana Paula Crosara de Resende e Flavia Maria de Paiva Vital . _ Brasília : Secretaria Especial dos Direitos Humanos, 2008. Disponível em: [https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/convencao-direitos-pessoas-deficiencia-comentada.pdf](https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/convencao-direitos-pessoas-deficiencia-comentada.pdf). Acesso em: 9 Mai. 2024
 

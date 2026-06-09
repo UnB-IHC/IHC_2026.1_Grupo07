@@ -1,5 +1,7 @@
 # Design
 
+> **[NOVO - TG10/Grupo07]** Esta seção foi atualizada para incluir os critérios novos do **WCAG 2.2** e referências à **ABNT NBR 17225:2025**. Itens marcados com `[NOVO WCAG 2.2]` não estavam na versão V1 (VerificaAAA, 2024). Referência: TG10 – Estudo Aprofundado WCAG 2.2 (Grupo 7, 2026).
+
 "Existe uma lenda de que a acessibilidade torna um sítio web muito simples ou feio. Não é verdade: um sítio web bem estruturado pode ser bonito e criativo. É possível, inclusive, criar apresentações visuais diferentes para a mesma estrutura HTML de um sítio web com o uso de CSS e atender a diferentes necessidades". Dessa forma, nessa seção encontra-se checklist que garantam a acessibilidade no design.
 
 ## Aparência
@@ -29,8 +31,12 @@
 - [ ] <b> Verificar o contraste</b> das bordas dos elementos de entrada (entrada de texto, botões de opção, caixas de seleção, etc.). <a id="#RP4" href="#RP4">[4]</a>
 - [ ] <b> Verificar o texto</b> que se sobrepõe a imagens ou vídeos. <a id="TEC9" href="#RP9">[9]</a>
 - [ ] <b> Verificar ```::selection``` cores</b> personalizadas. <a id="TEC9" href="#RP9">[9]</a>
+- [ ] **[NOVO WCAG 2.2]** O **indicador de foco** (outline/ring ao navegar com Tab) deve ter razão de contraste de pelo menos **3:1** em relação à cor de fundo adjacente, e a área do indicador deve ter espessura mínima de **2px CSS**. Use `:focus-visible` no CSS. <a id="TEC_D1" href="#RP_D1">[D1]</a>
+- [ ] **[NOVO WCAG 2.2]** Nunca remover o `outline` padrão do navegador sem fornecer indicador de foco substituto equivalente ou superior. <a id="TEC_D1" href="#RP_D1">[D1]</a>
 
 ## Referências Bibliograficas
+
+> <a id="RP_D1" href="#TEC_D1">D1.</a> **[NOVO WCAG 2.2]** WCAG 2.2 Understanding Docs. SC 2.4.13 Focus Appearance (Level AAA). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance.html](https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance.html). Acesso em: jun. 2026. | NBR 17225:2025 (5.1.3)
 
 > <a id="RP1" href="#TEC1">1.</a> WCAG 2.2 Understanding Docs. SC 1.4.1 Use of Color (Level A). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html](https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html). Acesso em: 9 Mai. 2024.
 

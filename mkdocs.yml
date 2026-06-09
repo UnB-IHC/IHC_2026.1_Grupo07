@@ -24,6 +24,15 @@ nav:
   - Ferramentas:
     - Ferramentas de Acessibilidade: 'tools/ferramentas.md'
 
+  - Mapeamento de Experiências:
+    - Service Blueprint: 'mapeamentoExperiencias/blueprints.md'
+
+  - Heurísticas:
+    - Heurísticas de Usabilidade: 'heuristicas/heuristicas.md'
+
+  - Registro de Mudanças (V2):
+    - Changelog: 'changelog.md'
+
 theme:
   name: readthedocs
   locale: pt_BR
