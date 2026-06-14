@@ -32,6 +32,7 @@ Avaliação completa de acessibilidade e usabilidade do portal **Sabin Diagnóst
     <td align="center"><a href="https://github.com/guxvr"><img style="border-radius: 50%;" src="https://github.com/guxvr.png" width="100px;" alt=""/><br /><sub><b>Gustavo Xavier</b></sub></a><br />
     <td align="center"><a href="https://github.com/pedrogrocha13"><img style="border-radius: 50%;" src="https://github.com/pedrogrocha13.png" width="100px;" alt=""/><br /><sub><b>Pedro Rocha</b></sub></a><br />
     <td align="center"><a href="https://github.com/TiagoSBittencourt"><img style="border-radius: 50%;" src="https://github.com/TiagoSBittencourt.png" width="100px;" alt=""/><br /><sub><b>Tiago Bittencourt</b></sub></a><br />
+    <td align="center"><a href="https://github.com/pedruck"><img style="border-radius: 50%;" src="https://github.com/pedruck.png" width="100px;" alt=""/><br /><sub><b>Pedruck</b></sub></a><br />
   </tr>
 </table>
 
