@@ -61,13 +61,13 @@ O mapa a seguir representa a jornada da **Ana Beatriz** (nossa persona com defic
 
 | Fase | Ação | Pensamento | Emoção | Pontos de Dor | Oportunidades |
 |---|---|---|---|---|---|
-| **1. Descoberta** | Pesquisa no Google pelo serviço desejado | "Espero que o site do governo seja acessível dessa vez." | 😐 Neutro | Resultados de busca com snippets pouco descritivos | Links com títulos claros e descritivos |
-| **2. Acesso ao site** | Navega até a página inicial pelo NVDA | "Vou pressionar H para ver os headings…" | 😕 Frustração | Headings ausentes ou fora de ordem lógica | Estrutura semântica consistente com H1 > H2 > H3 |
-| **3. Localização do serviço** | Tenta encontrar o link para emissão de certidão | "Cadê o menu? Estou ouvindo muita coisa repetida." | 😠 Frustração | Navegação repetitiva; skip links ausentes | Skip link "Ir para o conteúdo principal" no topo |
-| **4. Preenchimento do formulário** | Preenche campo a campo via NVDA | "Esse campo tem legenda? O NVDA não está lendo nada." | 😰 Ansiedade | Labels desassociadas dos inputs; campos sem descrição | Labels associados via `for`/`id`; mensagens de erro descritivas |
-| **5. Autenticação** | Encontra um CAPTCHA de imagem | "Não tem alternativa de áudio? Vou ter que pedir ajuda." | 😤 Raiva / Impotência | CAPTCHA visual sem alternativa acessível | Remover CAPTCHA ou oferecer alternativa (e-mail, SMS) |
-| **6. Envio e Confirmação** | Não sabe se o formulário foi enviado | "Será que funcionou? Não ouvi nenhuma confirmação." | 😟 Incerteza | Feedback de sucesso apenas visual; sem anúncio ao leitor de tela | Região `aria-live` anunciando o resultado da operação |
-| **7. Download** | Tenta baixar a certidão | "Que nome é esse no arquivo? 'doc1234.pdf' não me diz nada." | 😐 Resignação | PDF com nome genérico; conteúdo não acessível | PDF com nome descritivo e conteúdo em texto, com tags de acessibilidade |
+| **1. Descoberta** | Pesquisa no Google pelo serviço desejado | "Espero que o site do governo seja acessível dessa vez." | Neutro | Resultados de busca com snippets pouco descritivos | Links com títulos claros e descritivos |
+| **2. Acesso ao site** | Navega até a página inicial pelo NVDA | "Vou pressionar H para ver os headings…" | Frustração | Headings ausentes ou fora de ordem lógica | Estrutura semântica consistente com H1 > H2 > H3 |
+| **3. Localização do serviço** | Tenta encontrar o link para emissão de certidão | "Cadê o menu? Estou ouvindo muita coisa repetida." | Frustração | Navegação repetitiva; skip links ausentes | Skip link "Ir para o conteúdo principal" no topo |
+| **4. Preenchimento do formulário** | Preenche campo a campo via NVDA | "Esse campo tem legenda? O NVDA não está lendo nada." | Ansiedade | Labels desassociadas dos inputs; campos sem descrição | Labels associados via `for`/`id`; mensagens de erro descritivas |
+| **5. Autenticação** | Encontra um CAPTCHA de imagem | "Não tem alternativa de áudio? Vou ter que pedir ajuda." | Raiva / Impotência | CAPTCHA visual sem alternativa acessível | Remover CAPTCHA ou oferecer alternativa (e-mail, SMS) |
+| **6. Envio e Confirmação** | Não sabe se o formulário foi enviado | "Será que funcionou? Não ouvi nenhuma confirmação." | Incerteza | Feedback de sucesso apenas visual; sem anúncio ao leitor de tela | Região `aria-live` anunciando o resultado da operação |
+| **7. Download** | Tenta baixar a certidão | "Que nome é esse no arquivo? 'doc1234.pdf' não me diz nada." | Resignação | PDF com nome genérico; conteúdo não acessível | PDF com nome descritivo e conteúdo em texto, com tags de acessibilidade |
 
 ---
 

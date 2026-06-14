@@ -80,7 +80,7 @@ Projetar com empatia envolve compreender as diferentes formas de interação com
 
 ## Checklist de Boas Práticas de UX para Acessibilidade
 
-### 🎨 Visual e Perceptibilidade
+### Visual e Perceptibilidade
 
 - [ ] Contraste de cor entre texto e fundo é de no mínimo **4,5:1** (nível AA, WCAG 1.4.3)?
 - [ ] Informações críticas não dependem **apenas de cor** para serem transmitidas (WCAG 1.4.1)?
@@ -89,7 +89,7 @@ Projetar com empatia envolve compreender as diferentes formas de interação com
 - [ ] Animações e movimentos podem ser pausados ou desativados pelo usuário (WCAG 2.3.3)?
 - [ ] O layout é responsivo e funciona em diferentes tamanhos de tela e orientações (WCAG 1.4.10)?
 
-### ⌨️ Operabilidade e Interação
+### Operabilidade e Interação
 
 - [ ] Toda funcionalidade é acessível via **teclado** (sem necessidade de mouse) (WCAG 2.1.1)?
 - [ ] O **foco do teclado** percorre os elementos em ordem lógica (WCAG 2.4.3)?
@@ -98,7 +98,7 @@ Projetar com empatia envolve compreender as diferentes formas de interação com
 - [ ] Não há armadilhas de foco: o usuário consegue entrar e sair de qualquer componente (WCAG 2.1.2)?
 - [ ] Modais e overlays prendem o foco corretamente e retornam ao elemento de origem ao fechar?
 
-### 🧠 Compreensibilidade e Linguagem
+### Compreensibilidade e Linguagem
 
 - [ ] A linguagem utilizada é clara, direta e adequada ao público-alvo (WCAG 3.1)?
 - [ ] Mensagens de erro são **descritivas e orientam a correção** (WCAG 3.3.1 e 3.3.3)?
@@ -107,7 +107,7 @@ Projetar com empatia envolve compreender as diferentes formas de interação com
 - [ ] Ajuda contextual está disponível e em **posição consistente** em todas as páginas (WCAG 3.2.6)?
 - [ ] O idioma principal da página está declarado no código HTML (`lang="pt-BR"`) (WCAG 3.1.1)?
 
-### 🤝 Processo e Design Inclusivo
+### Processo e Design Inclusivo
 
 - [ ] Personas com diferentes necessidades de acessibilidade foram criadas e usadas no projeto?
 - [ ] Testes de usabilidade foram conduzidos com usuários com deficiência?

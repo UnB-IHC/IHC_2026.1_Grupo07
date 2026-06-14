@@ -33,7 +33,7 @@ As personas a seguir representam usuários com diferentes necessidades de acessi
 
 <div class="persona-card" markdown>
 
-**👤 Ana Beatriz Ferreira, 34 anos**
+**Ana Beatriz Ferreira, 34 anos**
 *Professora universitária de letras, Brasília-DF*
 
 ---
@@ -75,7 +75,7 @@ Ana nasceu com baixa visão progressiva e perdeu a maior parte da visão aos 25 
 
 <div class="persona-card" markdown>
 
-**👤 Rafael Augusto Souza, 41 anos**
+**Rafael Augusto Souza, 41 anos**
 *Analista de sistemas, São Paulo-SP*
 
 ---
@@ -117,7 +117,7 @@ Rafael tem esclerose múltipla diagnosticada há 8 anos, que progressivamente li
 
 <div class="persona-card" markdown>
 
-**👤 Carla Mendes Oliveira, 22 anos**
+**Carla Mendes Oliveira, 22 anos**
 *Estudante de administração, Goiânia-GO*
 
 ---
