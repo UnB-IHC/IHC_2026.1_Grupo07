@@ -1,0 +1,107 @@
+site_name: IHC 2026.1 Grupo 07
+site_description: Guia de Acessibilidade Digital e Avaliação de Acessibilidade do Portal Sabin
+site_author: Equipe IHC 2026.1 Grupo 07
+site_url: https://unb-ihc.github.io/IHC_2026.1_Grupo07/
+
+docs_dir: docs
+
+theme:
+  name: material
+  language: pt-BR
+  palette:
+    - scheme: default
+      primary: red
+      accent: red
+      toggle:
+        icon: material/brightness-7
+        name: Modo escuro
+    - scheme: slate
+      primary: red
+      accent: red
+      toggle:
+        icon: material/brightness-4
+        name: Modo claro
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - toc.integrate
+
+plugins:
+  - search:
+      lang: pt
+  - mermaid2
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - tables
+  - footnotes
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - def_list
+
+nav:
+  - Início: index.md
+  - Guia de Acessibilidade (Pocket V2):
+    - Início: pocket-v2/index.md
+    - Desenvolvimento Web: pocket-v2/devWeb/non_text_content.md
+    - Design: pocket-v2/design/design.md
+    - Geração de Conteúdo: pocket-v2/geracaoConteudo/conteudo.md
+    - Gestão de Projetos: pocket-v2/gestaoProjeto/gestaoProjeto.md
+    - Ferramentas: pocket-v2/tools/ferramentas.md
+    - Checklist de Acessibilidade: pocket-v2/checklistAcessibilidade/checklist_acessibilidade_digital.md
+    - Mapeamento de Experiências: pocket-v2/mapeamentoExperiencias/blueprints.md
+    - Heurísticas: pocket-v2/heuristicas/heuristicas.md
+    - UX Design: pocket-v2/uxDesign/uxDesign.md
+    - Personas: pocket-v2/personas/personas.md
+    - User Journey e User Flows: pocket-v2/userJourney/userJourney.md
+    - Registro de Mudanças: pocket-v2/changelog.md
+  - Avaliação IHC — Sabin:
+    - Início: ihc-sabin/index.md
+    - Planejamento:
+      - Visão Geral: ihc-sabin/planejamento/index.md
+      - Equipe: ihc-sabin/planejamento/equipe.md
+      - Cronograma: ihc-sabin/planejamento/cronograma.md
+    - Avaliação de Acessibilidade:
+      - Visão Geral: ihc-sabin/avaliacao-acessibilidade/index.md
+      - Ferramentas e Plugins: ihc-sabin/avaliacao-acessibilidade/ferramentas.md
+      - Checklist WCAG 2.1: ihc-sabin/avaliacao-acessibilidade/checklist-wcag.md
+      - Relato dos Resultados: ihc-sabin/avaliacao-acessibilidade/resultados.md
+    - Avaliação Heurística:
+      - Método e Resultados: ihc-sabin/avaliacao-heuristica/index.md
+    - Teste de Usabilidade:
+      - Planejamento: ihc-sabin/teste-usabilidade/planejamento.md
+      - Roteiro de Tarefas: ihc-sabin/teste-usabilidade/roteiro.md
+      - Relato dos Resultados: ihc-sabin/teste-usabilidade/relato.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/UnB-IHC/IHC_2026.1_Grupo07
+
+extra_css:
+  - pocket-v2/stylesheets/extra.css
