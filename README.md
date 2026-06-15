@@ -1,7 +1,7 @@
 # Sabin Compliance Checkr (SCC)
 
 <div align="center">
-<img src="docs/imagens/SCC.png" alt="Logo Sabin Compliance Checkr" style="width: 200px">
+<img src="docs/imagens/SCC.png" alt="Logo Sabin Compliance Checker" style="width: 200px">
 </div>
 
 ## Introdução
