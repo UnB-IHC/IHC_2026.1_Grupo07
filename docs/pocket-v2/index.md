@@ -1,26 +1,8 @@
-# IHC 2026.1 Grupo 07
+# Guia de Acessibilidade (Pocket V2)
 
-Bem-vindo ao repositório unificado do **Grupo 07 — IHC 2026.1**!
+## Descrição
 
-Este site reúne os dois produtos entregues pela equipe:
-
-## Guia de Acessibilidade (Pocket V2)
-
-Checklist prático de acessibilidade digital para projetos de desenvolvimento de software, cobrindo desenvolvimento web, design, geração de conteúdo, gestão de projetos e mais.
-
-Inclui as seções de UX Design, Personas e User Journey desenvolvidas como parte do **TG-01 — Melhoria do Guia de Acessibilidade**.
-
-[Acessar o Guia →](pocket-v2/index.md)
-
----
-
-## Avaliação IHC — Sabin
-
-Avaliação completa de acessibilidade e usabilidade do portal **Sabin Diagnóstico e Saúde**, incluindo avaliação heurística, checklist WCAG 2.1 e testes de usabilidade.
-
-[Acessar a Avaliação →](ihc-sabin/index.md)
-
----
+Este guia prático de acessibilidade foi desenvolvido como parte do curso de Interação Humano-Computador, ministrado pela docente Rejane Maria da Costa Figueiredo, na Universidade de Brasília (UnB). Seu objetivo principal é fornecer um checklist de acessibilidade digital para equipes de desenvolvimento de software, abrangendo áreas como desenvolvimento web, design, geração de conteúdo e gestão de projetos.
 
 ## Equipe
 
@@ -36,7 +18,6 @@ Avaliação completa de acessibilidade e usabilidade do portal **Sabin Diagnóst
   </tr>
 </table>
 
----
+## Licença
 
-**Universidade de Brasília (UnB) — Interação Humano-Computador 2026.1**  
-*Docente: Rejane Maria da Costa Figueiredo*
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE.md](../../LICENSE.md) para detalhes.
