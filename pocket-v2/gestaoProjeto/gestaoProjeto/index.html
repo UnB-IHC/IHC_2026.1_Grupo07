@@ -1488,6 +1488,42 @@
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>[NOVO NBR/WCAG 2.2]</strong> Combinação de testes automatizados (axe, Lighthouse) <strong>e</strong> testes manuais (teclado, leitor de tela), sabendo que ferramentas automatizadas cobrem apenas ~30-40% dos critérios?</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>[NOVO NBR/WCAG 2.2]</strong> Abordagem <strong>Shift-left</strong>: acessibilidade incluída desde o planejamento e design, não como correção retroativa?</li>
 </ul>
+<h1 id="documentacao-inclusiva">Documentação Inclusiva</h1>
+<p>A acessibilidade começa pelos artefatos que a equipe produz. Garanta que a documentação do projeto também siga os critérios do WCAG 2.2 e da ABNT NBR 17225:2025.</p>
+<p>Em sua documentação, há...</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Texto alternativo</strong> em diagramas, <em>wireframes</em>, fluxos e capturas de tela usados em documentos e apresentações? (WCAG 1.1.1, NBR 5.1)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Hierarquia de títulos</strong> correta (H1 → H2 → H3) em documentos, <em>wikis</em> e páginas do guia, sem pular níveis? (WCAG 1.3.1)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Contraste mínimo</strong> de 4.5:1 em textos de <em>slides</em>, planilhas e relatórios? (WCAG 1.4.3)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Informação <strong>não transmitida apenas por cor</strong> (ex.: status de tarefas no quadro Kanban indicado também por rótulo ou ícone)? (WCAG 1.4.1)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Linguagem simples e objetiva</strong>, evitando jargão desnecessário e explicando siglas na primeira ocorrência?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Tabelas com cabeçalhos</strong> identificados e estrutura semântica, em vez de tabelas usadas apenas para layout? (WCAG 1.3.1)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Links descritivos</strong> (evitar "clique aqui"), indicando o destino pelo próprio texto do link? (WCAG 2.4.4)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Documentos exportados (PDF, DOCX) verificados com checagem de acessibilidade antes da distribuição?</li>
+</ul>
+<h1 id="criterios-de-aceite-acessiveis">Critérios de Aceite Acessíveis</h1>
+<p>Acessibilidade só é entregue de forma consistente quando vira <strong>critério de aceite</strong> mensurável nas histórias de usuário, e não uma intenção genérica. Ao escrever histórias, garanta que...</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Cada história com interface tem <strong>critérios de aceite de acessibilidade explícitos</strong>, vinculados a critérios WCAG 2.2 específicos (ex.: "todos os campos do formulário possuem <code>label</code> associado — WCAG 1.3.1, 3.3.2")?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Os critérios são <strong>verificáveis</strong> (testáveis por ferramenta automatizada, teclado ou leitor de tela), não subjetivos?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> O <strong>nível-alvo de conformidade</strong> (A e AA, conforme NBR 17225:2025) está declarado no critério?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Histórias de componentes interativos incluem critérios para <strong>navegação por teclado</strong>, <strong>foco visível</strong> (2.4.7, 2.4.11) e <strong>tamanho de alvo ≥ 24×24px</strong> (2.5.8)?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Histórias de conteúdo dinâmico incluem critérios para <strong>regiões <code>aria-live</code></strong> e anúncio de mudanças a leitores de tela?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Há critérios para <strong>mensagens de erro acessíveis</strong> (associadas ao campo, descritivas, não apenas por cor — 3.3.1, 3.3.3)?</li>
+</ul>
+<h1 id="definition-of-done-dod-com-acessibilidade">Definition of Done (DoD) com Acessibilidade</h1>
+<p>Uma tarefa ou história só está <strong>"pronta" (Done)</strong> quando a acessibilidade foi verificada. Inclua os itens abaixo na <em>Definition of Done</em> da equipe.</p>
+<p>Antes de marcar como concluído, a equipe verificou que...</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Teste automatizado</strong> executado (axe DevTools, Lighthouse ou equivalente) sem violações de nível A/AA pendentes?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Teste manual por teclado</strong> realizado: toda a funcionalidade é operável sem mouse, com ordem de foco lógica e foco sempre visível? (2.1.1, 2.4.3, 2.4.7)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Teste com leitor de tela</strong> (NVDA ou VoiceOver) em pelo menos um fluxo crítico da entrega?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Contraste de cores</strong> validado nos componentes novos/alterados? (1.4.3, 1.4.11)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Critérios de aceite de acessibilidade</strong> da história todos satisfeitos e marcados?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Lembrando que ferramentas automatizadas cobrem apenas <strong>~30-40%</strong> dos critérios — o teste manual <strong>não</strong> pode ser pulado?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Documentação inclusiva</strong> atualizada (texto alternativo em novas imagens, <em>changelog</em> registrado)?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Conformidade declarada conforme <strong>ABNT NBR 17225:2025</strong> (níveis A e AA)?</li>
+</ul>
 <h2 id="referencias-bibliograficas">Referências Bibliográficas</h2>
 <blockquote>
 <p><a id="RP1" href="#TEC1">1.</a> DINIZ, V.; FERRAZ, R.; NASCIMENTO, C. M.; CREDIDIO, R. Guia de Boas Práticas para Acessibilidade Digital. Programa de Cooperação entre Reino Unido e Brasil em Acesso Digital, 2023. Disponível em: <a href="https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf">https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf</a>. Acesso em: 9 Mai. 2024.</p>
