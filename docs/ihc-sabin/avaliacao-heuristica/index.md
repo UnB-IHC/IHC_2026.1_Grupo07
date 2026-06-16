@@ -256,24 +256,24 @@ Severidade 1 (Cosmético):    4 problemas  → HE-04, HE-08, HE-15, HE-17, HE-21
 
 | Prioridade | ID | Ação |
 |---|---|---|
-| 🔴 1 | HE-05 | Corrigir o link `/agendamento/` — fluxo central quebrado (404) |
-| 🔴 2 | HE-18 | Reformular página 404 com rotas de recuperação |
-| 🔴 3 | HE-11 | Adicionar `<h1>` semântico na homepage |
-| 🟡 4 | HE-03 | Especificar formato de credencial no portal de resultados |
-| 🟡 5 | HE-13 | Implementar breadcrumb em todas as páginas internas |
+| ![Prioridade Imediata](https://img.shields.io/badge/prioridade-Imediata-red) 1 | HE-05 | Corrigir o link `/agendamento/` — fluxo central quebrado (404) |
+| ![Prioridade Imediata](https://img.shields.io/badge/prioridade-Imediata-red) 2 | HE-18 | Reformular página 404 com rotas de recuperação |
+| ![Prioridade Imediata](https://img.shields.io/badge/prioridade-Imediata-red) 3 | HE-11 | Adicionar `<h1>` semântico na homepage |
+| ![Prioridade Alta](https://img.shields.io/badge/prioridade-Alta-orange) 4 | HE-03 | Especificar formato de credencial no portal de resultados |
+| ![Prioridade Alta](https://img.shields.io/badge/prioridade-Alta-orange) 5 | HE-13 | Implementar breadcrumb em todas as páginas internas |
 
 ---
 
 ## Aspectos Positivos
 
-- ✅ `lang="pt-BR"` declarado corretamente no `<html>`
-- ✅ Landmark `<main>` presente e único
-- ✅ Botões de menu com `aria-expanded` correto
-- ✅ Botões interativos com `aria-label` descritivos
-- ✅ VLibras disponível para usuários surdos
-- ✅ Viewport meta configurado corretamente para mobile
-- ✅ Formulário de newsletter com `autocomplete` adequado por campo
-- ✅ Horas de atendimento claramente publicadas
+- ![Conforme](https://img.shields.io/badge/status-Conforme-brightgreen) `lang="pt-BR"` declarado corretamente no `<html>`
+- ![Conforme](https://img.shields.io/badge/status-Conforme-brightgreen) Landmark `<main>` presente e único
+- ![Conforme](https://img.shields.io/badge/status-Conforme-brightgreen) Botões de menu com `aria-expanded` correto
+- ![Conforme](https://img.shields.io/badge/status-Conforme-brightgreen) Botões interativos com `aria-label` descritivos
+- ![Conforme](https://img.shields.io/badge/status-Conforme-brightgreen) VLibras disponível para usuários surdos
+- ![Conforme](https://img.shields.io/badge/status-Conforme-brightgreen) Viewport meta configurado corretamente para mobile
+- ![Conforme](https://img.shields.io/badge/status-Conforme-brightgreen) Formulário de newsletter com `autocomplete` adequado por campo
+- ![Conforme](https://img.shields.io/badge/status-Conforme-brightgreen) Horas de atendimento claramente publicadas
 
 ---
 

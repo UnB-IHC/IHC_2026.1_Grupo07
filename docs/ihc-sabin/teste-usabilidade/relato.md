@@ -26,13 +26,13 @@
 
 | Tarefa | P1 | P2 | P3 | P4 | P5 | Taxa de Conclusão |
 |---|---|---|---|---|---|---|
-| T1 – Preparo hemograma | ✅ | ✅ | ⚠️ | ✅ | ❌ | **80%** |
-| T2 – Iniciar agendamento | ⚠️ | ❌ | ❌ | ⚠️ | ❌ | **0% (completo); 40% (parcial)** |
-| T3 – Localizar unidade e horário | ✅ | ✅ | ⚠️ | ✅ | ⚠️ | **60% (pleno); 100% (incluindo parcial)** |
-| T4 – Acessar resultado de exame | ✅ | ✅ | ⚠️ | ✅ | ❌ | **80%** |
-| T5 – Verificar convênio Unimed | ✅ | ⚠️ | ❌ | ✅ | ❌ | **60%** |
+| T1 – Preparo hemograma | ![Concluiu](https://img.shields.io/badge/resultado-Concluiu-brightgreen) | ![Concluiu](https://img.shields.io/badge/resultado-Concluiu-brightgreen) | ![Parcial](https://img.shields.io/badge/resultado-Parcial-yellow) | ![Concluiu](https://img.shields.io/badge/resultado-Concluiu-brightgreen) | ![Não Concluiu](https://img.shields.io/badge/resultado-N%C3%A3o%20Concluiu-red) | **80%** |
+| T2 – Iniciar agendamento | ![Parcial](https://img.shields.io/badge/resultado-Parcial-yellow) | ![Não Concluiu](https://img.shields.io/badge/resultado-N%C3%A3o%20Concluiu-red) | ![Não Concluiu](https://img.shields.io/badge/resultado-N%C3%A3o%20Concluiu-red) | ![Parcial](https://img.shields.io/badge/resultado-Parcial-yellow) | ![Não Concluiu](https://img.shields.io/badge/resultado-N%C3%A3o%20Concluiu-red) | **0% (completo); 40% (parcial)** |
+| T3 – Localizar unidade e horário | ![Concluiu](https://img.shields.io/badge/resultado-Concluiu-brightgreen) | ![Concluiu](https://img.shields.io/badge/resultado-Concluiu-brightgreen) | ![Parcial](https://img.shields.io/badge/resultado-Parcial-yellow) | ![Concluiu](https://img.shields.io/badge/resultado-Concluiu-brightgreen) | ![Parcial](https://img.shields.io/badge/resultado-Parcial-yellow) | **60% (pleno); 100% (incluindo parcial)** |
+| T4 – Acessar resultado de exame | ![Concluiu](https://img.shields.io/badge/resultado-Concluiu-brightgreen) | ![Concluiu](https://img.shields.io/badge/resultado-Concluiu-brightgreen) | ![Parcial](https://img.shields.io/badge/resultado-Parcial-yellow) | ![Concluiu](https://img.shields.io/badge/resultado-Concluiu-brightgreen) | ![Não Concluiu](https://img.shields.io/badge/resultado-N%C3%A3o%20Concluiu-red) | **80%** |
+| T5 – Verificar convênio Unimed | ![Concluiu](https://img.shields.io/badge/resultado-Concluiu-brightgreen) | ![Parcial](https://img.shields.io/badge/resultado-Parcial-yellow) | ![Não Concluiu](https://img.shields.io/badge/resultado-N%C3%A3o%20Concluiu-red) | ![Concluiu](https://img.shields.io/badge/resultado-Concluiu-brightgreen) | ![Não Concluiu](https://img.shields.io/badge/resultado-N%C3%A3o%20Concluiu-red) | **60%** |
 
-**Legenda:** ✅ Concluiu sem ajuda | ⚠️ Concluiu com dificuldade/parcialmente | ❌ Não concluiu
+**Legenda:** ![Concluiu](https://img.shields.io/badge/resultado-Concluiu-brightgreen) Concluiu sem ajuda &nbsp;|&nbsp; ![Parcial](https://img.shields.io/badge/resultado-Parcial-yellow) Concluiu com dificuldade/parcialmente &nbsp;|&nbsp; ![Não Concluiu](https://img.shields.io/badge/resultado-N%C3%A3o%20Concluiu-red) Não concluiu
 
 ---
 
@@ -187,12 +187,12 @@ T5      ●       ●●      ●●●●    ○       ●●●●
 
 | Prioridade | Ação |
 |---|---|
-| 🔴 Imediata | Corrigir o link `/agendamento/` — redirecionar para o fluxo ativo de agendamento digital |
-| 🔴 Imediata | Substituir "Informe seu usuário" por "Informe seu CPF" com máscara e exemplo no portal de laudos |
-| 🟡 Alta | Implementar skeleton screen + timeout com mensagem de fallback na página de unidades |
-| 🟡 Alta | Adicionar badge de preparo (ex: "Jejum 8h") na listagem de exames sem exigir clique extra |
-| 🟢 Média | Revisar arquitetura de informação do menu: "Convênios" com ícone de plano de saúde para facilitar associação |
-| 🟢 Média | Reduzir densidade visual da homepage — priorizar os 3 CTAs principais (Agendar, Resultados, Unidades) |
+| ![Prioridade Imediata](https://img.shields.io/badge/prioridade-Imediata-red) | Corrigir o link `/agendamento/` — redirecionar para o fluxo ativo de agendamento digital |
+| ![Prioridade Imediata](https://img.shields.io/badge/prioridade-Imediata-red) | Substituir "Informe seu usuário" por "Informe seu CPF" com máscara e exemplo no portal de laudos |
+| ![Prioridade Alta](https://img.shields.io/badge/prioridade-Alta-orange) | Implementar skeleton screen + timeout com mensagem de fallback na página de unidades |
+| ![Prioridade Alta](https://img.shields.io/badge/prioridade-Alta-orange) | Adicionar badge de preparo (ex: "Jejum 8h") na listagem de exames sem exigir clique extra |
+| ![Prioridade Média](https://img.shields.io/badge/prioridade-M%C3%A9dia-yellowgreen) | Revisar arquitetura de informação do menu: "Convênios" com ícone de plano de saúde para facilitar associação |
+| ![Prioridade Média](https://img.shields.io/badge/prioridade-M%C3%A9dia-yellowgreen) | Reduzir densidade visual da homepage — priorizar os 3 CTAs principais (Agendar, Resultados, Unidades) |
 
 ---
 

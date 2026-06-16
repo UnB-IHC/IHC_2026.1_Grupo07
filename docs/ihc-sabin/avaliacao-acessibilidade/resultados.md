@@ -16,7 +16,7 @@
 | **AA** | 20 | 12 | 3 | 5 | **60%** |
 | **Geral (A + AA)** | 50 | 34 | 7 | 9 | **68%** |
 
-> ⚠️ Para conformidade completa com WCAG 2.1 AA (exigida pela NBR 17225:2025 e e-MAG), é necessário atingir 100% nos critérios de Nível A e AA.
+> **Atenção:** Para conformidade completa com WCAG 2.1 AA (exigida pela NBR 17225:2025 e e-MAG), é necessário atingir 100% nos critérios de Nível A e AA.
 
 ---
 
@@ -40,16 +40,16 @@
 
 | Critério WCAG | Status | Evidência |
 |---|---|---|
-| 3.1.1 Idioma da Página | ✅ Conforme | `<html lang="pt-BR">` declarado corretamente |
-| 1.3.5 Identificar o Propósito de Entrada | ✅ Conforme | Newsletter usa `autocomplete="name"` e `autocomplete="email"` |
-| 2.4.3 Ordem do Foco | ✅ Parcial | `tabindex` usado sem valores positivos arbitrários; ordem lógica no menu |
-| 4.1.1 Análise (Parsing) | ✅ Conforme | HTML com estrutura válida; uso correto de `<main>`, `<nav>`, `<footer>` |
-| 1.1.1 Alt em imagens informativas (parcial) | ✅ Conforme | Imagens do logo ("Sabin"), selos informativos têm `alt` descritivo |
-| 2.1.1 Teclado | ✅ Parcial | Buttons usam `<button>` nativo; menus com `aria-expanded` acessíveis por teclado |
-| 2.4.4 Finalidade do Link | ✅ Conforme | Links com texto descritivo ("Ver detalhes", "Como chegar"); `aria-label` em ícones |
-| 1.4.1 Uso de Cor | ✅ Conforme | Informações não dependem apenas de cor (ex: campos obrigatórios marcados com `*` e cor) |
-| 2.4.6 Títulos e Rótulos | ✅ Parcial | Seções com `<h2>` descritivos e `id` para âncoras |
-| 4.1.3 Mensagens de Status | ✅ Parcial | Botões de submenu com `aria-expanded` transmitem estado correto |
+| 3.1.1 Idioma da Página | ![Conforme](https://img.shields.io/badge/status-Conforme-brightgreen) | `<html lang="pt-BR">` declarado corretamente |
+| 1.3.5 Identificar o Propósito de Entrada | ![Conforme](https://img.shields.io/badge/status-Conforme-brightgreen) | Newsletter usa `autocomplete="name"` e `autocomplete="email"` |
+| 2.4.3 Ordem do Foco | ![Parcial](https://img.shields.io/badge/status-Parcial-yellow) | `tabindex` usado sem valores positivos arbitrários; ordem lógica no menu |
+| 4.1.1 Análise (Parsing) | ![Conforme](https://img.shields.io/badge/status-Conforme-brightgreen) | HTML com estrutura válida; uso correto de `<main>`, `<nav>`, `<footer>` |
+| 1.1.1 Alt em imagens informativas (parcial) | ![Conforme](https://img.shields.io/badge/status-Conforme-brightgreen) | Imagens do logo ("Sabin"), selos informativos têm `alt` descritivo |
+| 2.1.1 Teclado | ![Parcial](https://img.shields.io/badge/status-Parcial-yellow) | Buttons usam `<button>` nativo; menus com `aria-expanded` acessíveis por teclado |
+| 2.4.4 Finalidade do Link | ![Conforme](https://img.shields.io/badge/status-Conforme-brightgreen) | Links com texto descritivo ("Ver detalhes", "Como chegar"); `aria-label` em ícones |
+| 1.4.1 Uso de Cor | ![Conforme](https://img.shields.io/badge/status-Conforme-brightgreen) | Informações não dependem apenas de cor (ex: campos obrigatórios marcados com `*` e cor) |
+| 2.4.6 Títulos e Rótulos | ![Parcial](https://img.shields.io/badge/status-Parcial-yellow) | Seções com `<h2>` descritivos e `id` para âncoras |
+| 4.1.3 Mensagens de Status | ![Parcial](https://img.shields.io/badge/status-Parcial-yellow) | Botões de submenu com `aria-expanded` transmitem estado correto |
 
 ---
 
@@ -57,12 +57,12 @@
 
 | Referência | Requisito | Status | Observação |
 |---|---|---|---|
-| NBR 17225:2025 — Item 5.2 | Navegação por teclado em todos os elementos interativos | ⚠️ Parcial | Menus ok; carrosséis e cards com foco invisível |
-| NBR 17225:2025 — Item 5.4 | Contraste mínimo 4,5:1 para texto normal | ❌ Não conforme | Textos em `#999` com contraste ~2.85:1 |
-| e-MAG 3.1 — Recomendação 1.1 | "Fornecer alternativa em texto para imagens" | ❌ Não conforme | 92 imagens com `alt=""` incluindo imagens informativas |
-| e-MAG 3.1 — Recomendação 2.1 | "Fornecer âncoras para ir ao conteúdo relevante" (skip links) | ❌ Não conforme | Skip link ausente em todas as páginas |
-| e-MAG 3.1 — Recomendação 4.4 | "Identificar o idioma principal da página" | ✅ Conforme | `lang="pt-BR"` presente |
-| e-MAG 3.1 — Recomendação 6.2 | "Não utilizar tabelas para fins de diagramação" | ✅ Conforme | Layout feito com CSS flexbox/grid |
+| NBR 17225:2025 — Item 5.2 | Navegação por teclado em todos os elementos interativos | ![Parcial](https://img.shields.io/badge/status-Parcial-yellow) | Menus ok; carrosséis e cards com foco invisível |
+| NBR 17225:2025 — Item 5.4 | Contraste mínimo 4,5:1 para texto normal | ![Não Conforme](https://img.shields.io/badge/status-N%C3%A3o%20Conforme-red) | Textos em `#999` com contraste ~2.85:1 |
+| e-MAG 3.1 — Recomendação 1.1 | "Fornecer alternativa em texto para imagens" | ![Não Conforme](https://img.shields.io/badge/status-N%C3%A3o%20Conforme-red) | 92 imagens com `alt=""` incluindo imagens informativas |
+| e-MAG 3.1 — Recomendação 2.1 | "Fornecer âncoras para ir ao conteúdo relevante" (skip links) | ![Não Conforme](https://img.shields.io/badge/status-N%C3%A3o%20Conforme-red) | Skip link ausente em todas as páginas |
+| e-MAG 3.1 — Recomendação 4.4 | "Identificar o idioma principal da página" | ![Conforme](https://img.shields.io/badge/status-Conforme-brightgreen) | `lang="pt-BR"` presente |
+| e-MAG 3.1 — Recomendação 6.2 | "Não utilizar tabelas para fins de diagramação" | ![Conforme](https://img.shields.io/badge/status-Conforme-brightgreen) | Layout feito com CSS flexbox/grid |
 
 ---
 
@@ -82,12 +82,12 @@
 
 | Prioridade | ID | Ação |
 |---|---|---|
-| 🔴 Imediata | AC-01 | Auditar as 92 imagens com `alt=""`: determinar quais são decorativas (manter `alt=""`) e adicionar texto alternativo descritivo nas demais |
-| 🔴 Imediata | AC-02 | Adicionar `<h1>` na homepage e verificar hierarquia de headings em todas as páginas |
-| 🔴 Imediata | AC-03 | Implementar skip link: `<a href="#main-content" class="skip-link">Pular para o conteúdo</a>` como primeiro elemento do `<body>` |
-| 🟡 Alta | AC-06 | Substituir `color: #999` por `color: #767676` (mínimo para 4.5:1 sobre branco) em todos os textos de apoio |
-| 🟡 Alta | AC-08 | Implementar `:focus-visible` com outline de 3px e cor de alto contraste em todos os elementos interativos |
-| 🟡 Alta | AC-09 | Adicionar `<label>` explícito a todos os campos do portal de laudos |
+| ![Prioridade Imediata](https://img.shields.io/badge/prioridade-Imediata-red) | AC-01 | Auditar as 92 imagens com `alt=""`: determinar quais são decorativas (manter `alt=""`) e adicionar texto alternativo descritivo nas demais |
+| ![Prioridade Imediata](https://img.shields.io/badge/prioridade-Imediata-red) | AC-02 | Adicionar `<h1>` na homepage e verificar hierarquia de headings em todas as páginas |
+| ![Prioridade Imediata](https://img.shields.io/badge/prioridade-Imediata-red) | AC-03 | Implementar skip link: `<a href="#main-content" class="skip-link">Pular para o conteúdo</a>` como primeiro elemento do `<body>` |
+| ![Prioridade Alta](https://img.shields.io/badge/prioridade-Alta-orange) | AC-06 | Substituir `color: #999` por `color: #767676` (mínimo para 4.5:1 sobre branco) em todos os textos de apoio |
+| ![Prioridade Alta](https://img.shields.io/badge/prioridade-Alta-orange) | AC-08 | Implementar `:focus-visible` com outline de 3px e cor de alto contraste em todos os elementos interativos |
+| ![Prioridade Alta](https://img.shields.io/badge/prioridade-Alta-orange) | AC-09 | Adicionar `<label>` explícito a todos os campos do portal de laudos |
 
 ---
 
