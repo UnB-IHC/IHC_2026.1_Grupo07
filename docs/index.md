@@ -30,8 +30,6 @@ Este site reúne dois produtos complementares. A forma de uso depende do seu obj
 - **Quero ver acessibilidade avaliada na prática:** consulte a **Avaliação IHC — Sabin**, um estudo de caso completo (avaliação heurística, checklist WCAG 2.1 e testes de usabilidade) que demonstra como os critérios do guia se aplicam a um produto real.
 - **Quero entender o que mudou da V1 para a V2:** veja o [Registro de Mudanças](pocket-v2/changelog.md), que documenta os critérios novos do WCAG 2.2 e da ABNT NBR 17225:2025 incorporados nesta versão.
 
-> **Convenção de leitura:** itens marcados com `[NOVO WCAG 2.2]` ou `[NOVO NBR/WCAG 2.2]` indicam conteúdo adicionado pelo Grupo 07 que não existia na versão V1 (VerificaAAA, 2024). Os *checklists* usam caixas de seleção (`- [ ]`) para acompanhar a aplicação de cada critério no seu próprio projeto.
-
 ---
 
 ## Equipe

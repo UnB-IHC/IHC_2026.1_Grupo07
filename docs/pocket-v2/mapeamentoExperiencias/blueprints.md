@@ -124,8 +124,6 @@ Kalbach apresenta seis tipos de diagramas. Escolha o mais adequado ao contexto:
 
 ## Service Blueprint com Lente de Acessibilidade
 
-> **[NOVO – Grupo 07]** Como este guia é voltado à acessibilidade digital, o blueprint deve ser construído também sob a perspectiva de pessoas com deficiência. Um serviço só é inclusivo quando a jornada de usuários de tecnologia assistiva é mapeada explicitamente, e não assumida como idêntica à dos demais.
-
 Ao mapear o serviço, considere os perfis de usuário descritos na seção de [Gestão de Projetos](../gestaoProjeto/gestaoProjeto.md) (deficiência visual, física, auditiva, na fala, neurodiversidade, múltiplas deficiências e limitações decorrentes do envelhecimento).
 
 - [ ] **Persona com deficiência no cabeçalho:** ao menos um blueprint representa a jornada de um usuário de tecnologia assistiva (leitor de tela, navegação só por teclado, ampliação de tela). <a id="BLU1" href="#RBLU1">[1]</a>

@@ -62,8 +62,6 @@ Em seu planejamento, há...
 
 # Documentação Inclusiva
 
-> **[NOVO NBR/WCAG 2.2]** Esta seção não existia na V1 (VerificaAAA, 2024). A própria documentação do projeto deve ser acessível: artefatos de gestão (backlog, atas, planos, relatórios) são consumidos por toda a equipe, incluindo pessoas com deficiência.
-
 A acessibilidade começa pelos artefatos que a equipe produz. Garanta que a documentação do projeto também siga os critérios do WCAG 2.2 e da ABNT NBR 17225:2025.
 
 Em sua documentação, há...
@@ -79,8 +77,6 @@ Em sua documentação, há...
 
 # Critérios de Aceite Acessíveis
 
-> **[NOVO NBR/WCAG 2.2]** Esta seção não existia na V1. Transforma a acessibilidade de "requisito não funcional implícito" em critério de aceite explícito e verificável de cada história.
-
 Acessibilidade só é entregue de forma consistente quando vira **critério de aceite** mensurável nas histórias de usuário, e não uma intenção genérica. Ao escrever histórias, garanta que...
 
 - [ ] Cada história com interface tem **critérios de aceite de acessibilidade explícitos**, vinculados a critérios WCAG 2.2 específicos (ex.: "todos os campos do formulário possuem `label` associado — WCAG 1.3.1, 3.3.2")?
@@ -91,8 +87,6 @@ Acessibilidade só é entregue de forma consistente quando vira **critério de a
 - [ ] Há critérios para **mensagens de erro acessíveis** (associadas ao campo, descritivas, não apenas por cor — 3.3.1, 3.3.3)?
 
 # Definition of Done (DoD) com Acessibilidade
-
-> **[NOVO NBR/WCAG 2.2]** Esta seção não existia na V1. Incorpora a acessibilidade à *Definition of Done* da equipe, evitando que itens sejam considerados "prontos" sem verificação de acessibilidade.
 
 Uma tarefa ou história só está **"pronta" (Done)** quando a acessibilidade foi verificada. Inclua os itens abaixo na *Definition of Done* da equipe.
 
