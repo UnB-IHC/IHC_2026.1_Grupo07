@@ -122,6 +122,17 @@ Kalbach apresenta seis tipos de diagramas. Escolha o mais adequado ao contexto:
 
 ---
 
+## Service Blueprint com Lente de Acessibilidade
+
+Ao mapear o serviço, considere os perfis de usuário descritos na seção de [Gestão de Projetos](../gestaoProjeto/gestaoProjeto.md) (deficiência visual, física, auditiva, na fala, neurodiversidade, múltiplas deficiências e limitações decorrentes do envelhecimento).
+
+- [ ] **Persona com deficiência no cabeçalho:** ao menos um blueprint representa a jornada de um usuário de tecnologia assistiva (leitor de tela, navegação só por teclado, ampliação de tela). <a id="BLU1" href="#RBLU1">[1]</a>
+- [ ] **Evidências físicas acessíveis:** cada artefato tangível/digital da raia de evidências é avaliado quanto à acessibilidade (e-mail com texto alternativo, app compatível com leitor de tela, documento em formato acessível). (WCAG 2.2 – NBR 17225:2025)
+- [ ] **Ações do cliente por tecnologia assistiva:** as ações são descritas considerando como o usuário as executa com teclado, leitor de tela ou comando de voz — não apenas com mouse e visão.
+- [ ] **Atores de suporte de acessibilidade:** a raia de processos de suporte inclui dependências como APIs de acessibilidade do sistema operacional, legendagem, intérprete de Libras ou atendimento prioritário, quando aplicável.
+- [ ] ***Fail points* de acessibilidade:** os pontos de falha mapeados incluem barreiras de acessibilidade (CAPTCHA inacessível, foco perdido, ausência de legenda, contraste insuficiente) e não apenas falhas operacionais. <a id="BLU2" href="#RBLU2">[2]</a>
+- [ ] **Momentos da verdade inclusivos:** verifica-se se os *Moments of Truth* permanecem positivos para usuários com deficiência, ou se introduzem fricção exclusiva a esse público.
+
 ## Checklist de Qualidade do Blueprint
 
 - [ ] O diagrama tem **título, data, versão e autoria** registrados.

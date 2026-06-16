@@ -60,6 +60,47 @@ Em seu planejamento, há...
 - [ ] **[NOVO NBR/WCAG 2.2]** Combinação de testes automatizados (axe, Lighthouse) **e** testes manuais (teclado, leitor de tela), sabendo que ferramentas automatizadas cobrem apenas ~30-40% dos critérios?
 - [ ] **[NOVO NBR/WCAG 2.2]** Abordagem **Shift-left**: acessibilidade incluída desde o planejamento e design, não como correção retroativa?
 
+# Documentação Inclusiva
+
+A acessibilidade começa pelos artefatos que a equipe produz. Garanta que a documentação do projeto também siga os critérios do WCAG 2.2 e da ABNT NBR 17225:2025.
+
+Em sua documentação, há...
+
+- [ ] **Texto alternativo** em diagramas, *wireframes*, fluxos e capturas de tela usados em documentos e apresentações? (WCAG 1.1.1, NBR 5.1)
+- [ ] **Hierarquia de títulos** correta (H1 → H2 → H3) em documentos, *wikis* e páginas do guia, sem pular níveis? (WCAG 1.3.1)
+- [ ] **Contraste mínimo** de 4.5:1 em textos de *slides*, planilhas e relatórios? (WCAG 1.4.3)
+- [ ] Informação **não transmitida apenas por cor** (ex.: status de tarefas no quadro Kanban indicado também por rótulo ou ícone)? (WCAG 1.4.1)
+- [ ] **Linguagem simples e objetiva**, evitando jargão desnecessário e explicando siglas na primeira ocorrência?
+- [ ] **Tabelas com cabeçalhos** identificados e estrutura semântica, em vez de tabelas usadas apenas para layout? (WCAG 1.3.1)
+- [ ] **Links descritivos** (evitar "clique aqui"), indicando o destino pelo próprio texto do link? (WCAG 2.4.4)
+- [ ] Documentos exportados (PDF, DOCX) verificados com checagem de acessibilidade antes da distribuição?
+
+# Critérios de Aceite Acessíveis
+
+Acessibilidade só é entregue de forma consistente quando vira **critério de aceite** mensurável nas histórias de usuário, e não uma intenção genérica. Ao escrever histórias, garanta que...
+
+- [ ] Cada história com interface tem **critérios de aceite de acessibilidade explícitos**, vinculados a critérios WCAG 2.2 específicos (ex.: "todos os campos do formulário possuem `label` associado — WCAG 1.3.1, 3.3.2")?
+- [ ] Os critérios são **verificáveis** (testáveis por ferramenta automatizada, teclado ou leitor de tela), não subjetivos?
+- [ ] O **nível-alvo de conformidade** (A e AA, conforme NBR 17225:2025) está declarado no critério?
+- [ ] Histórias de componentes interativos incluem critérios para **navegação por teclado**, **foco visível** (2.4.7, 2.4.11) e **tamanho de alvo ≥ 24×24px** (2.5.8)?
+- [ ] Histórias de conteúdo dinâmico incluem critérios para **regiões `aria-live`** e anúncio de mudanças a leitores de tela?
+- [ ] Há critérios para **mensagens de erro acessíveis** (associadas ao campo, descritivas, não apenas por cor — 3.3.1, 3.3.3)?
+
+# Definition of Done (DoD) com Acessibilidade
+
+Uma tarefa ou história só está **"pronta" (Done)** quando a acessibilidade foi verificada. Inclua os itens abaixo na *Definition of Done* da equipe.
+
+Antes de marcar como concluído, a equipe verificou que...
+
+- [ ] **Teste automatizado** executado (axe DevTools, Lighthouse ou equivalente) sem violações de nível A/AA pendentes?
+- [ ] **Teste manual por teclado** realizado: toda a funcionalidade é operável sem mouse, com ordem de foco lógica e foco sempre visível? (2.1.1, 2.4.3, 2.4.7)
+- [ ] **Teste com leitor de tela** (NVDA ou VoiceOver) em pelo menos um fluxo crítico da entrega?
+- [ ] **Contraste de cores** validado nos componentes novos/alterados? (1.4.3, 1.4.11)
+- [ ] **Critérios de aceite de acessibilidade** da história todos satisfeitos e marcados?
+- [ ] Lembrando que ferramentas automatizadas cobrem apenas **~30-40%** dos critérios — o teste manual **não** pode ser pulado?
+- [ ] **Documentação inclusiva** atualizada (texto alternativo em novas imagens, *changelog* registrado)?
+- [ ] Conformidade declarada conforme **ABNT NBR 17225:2025** (níveis A e AA)?
+
 ## Referências Bibliográficas
 
 > <a id="RP1" href="#TEC1">1.</a> DINIZ, V.; FERRAZ, R.; NASCIMENTO, C. M.; CREDIDIO, R. Guia de Boas Práticas para Acessibilidade Digital. Programa de Cooperação entre Reino Unido e Brasil em Acesso Digital, 2023. Disponível em: [https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf](https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf). Acesso em: 9 Mai. 2024.

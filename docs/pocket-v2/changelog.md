@@ -20,7 +20,7 @@ Esta versão incorpora ambas as referências, marca os itens novos explicitament
 
 ## Arquivos Modificados
 
-### `docs/tools/ferramentas.md` — Reestruturação completa
+### `docs/pocket-v2/tools/ferramentas.md` — Reestruturação completa
 
 **Antes (V1):** Lista simples de 8 ferramentas com links, sem descrição, sem avaliação, sem passo a passo.
 
@@ -45,7 +45,7 @@ Esta versão incorpora ambas as referências, marca os itens novos explicitament
 
 ---
 
-### `docs/devWeb/non_text_content.md` — Adição de 6 critérios WCAG 2.2 novos
+### `docs/pocket-v2/devWeb/non_text_content.md` — Adição de 6 critérios WCAG 2.2 novos
 
 **Nota de obsolescência:** O critério **4.1.1 Parsing** foi **removido** do WCAG 2.2 por ser obsoleto no contexto moderno de parsing de HTML. Referências a ele na V1 (RP15) foram mantidas com nota de contexto.
 
@@ -64,7 +64,7 @@ Esta versão incorpora ambas as referências, marca os itens novos explicitament
 
 ---
 
-### `docs/design/design.md` — Adição de critério de aparência do foco
+### `docs/pocket-v2/design/design.md` — Adição de critério de aparência do foco
 
 | Item Adicionado | Seção | Critério WCAG 2.2 | Nível | NBR 17225:2025 |
 |---|---|---|---|---|
@@ -74,7 +74,7 @@ Esta versão incorpora ambas as referências, marca os itens novos explicitament
 
 ---
 
-### `docs/gestaoProjeto/gestaoProjeto.md` — Contexto legal e NBR
+### `docs/pocket-v2/gestaoProjeto/gestaoProjeto.md` — Contexto legal, NBR e gestão acessível
 
 | Item Adicionado | Detalhamento |
 |---|---|
@@ -82,7 +82,18 @@ Esta versão incorpora ambas as referências, marca os itens novos explicitament
 | Critério: referência à NBR nos critérios de aceitação | Novo item de checklist de planejamento |
 | Critério: combinação de testes automatizados e manuais | Referência ao limite de 30-40% de cobertura automatizada |
 | Critério: abordagem Shift-left | Acessibilidade desde o início, não como correção retroativa |
+| **Seção nova: Documentação Inclusiva** | Checklist para tornar acessíveis os próprios artefatos de gestão (texto alternativo, hierarquia de títulos, contraste, links descritivos) |
+| **Seção nova: Critérios de Aceite Acessíveis** | Histórias de usuário com critérios de aceite de acessibilidade explícitos, verificáveis e vinculados a critérios WCAG 2.2 |
+| **Seção nova: Definition of Done (DoD) com Acessibilidade** | Itens de DoD exigindo teste automatizado, teste por teclado, teste com leitor de tela e validação de contraste antes de marcar como "pronto" |
 | Referências bibliográficas | WCAG 2.2 e ABNT NBR 17225:2025 adicionadas |
+
+---
+
+### `docs/pocket-v2/mapeamentoExperiencias/blueprints.md` — Lente de acessibilidade
+
+| Item Adicionado | Detalhamento |
+|---|---|
+| Seção: Service Blueprint com lente de acessibilidade | Orientações para mapear a jornada de pessoas com deficiência (evidências físicas acessíveis, *fail points* de acessibilidade, atores de tecnologia assistiva) |
 
 ---
 
