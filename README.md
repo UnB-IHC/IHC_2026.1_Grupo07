@@ -22,6 +22,8 @@ O **Sabin Compliance Checkr (SCC)** é um projeto criado a partir do curso de In
       <td align="center"><a href="https://github.com/TiagoSBittencourt"><img src="https://github.com/TiagoSBittencourt.png" width="80" style="border-radius:50%"/><br/><b>TiagoSBittencourt</b></a></td>
       <td align="center"><a href="https://github.com/pedruck"><img src="https://github.com/pedruck.png" width="80" style="border-radius:50%"/><br/><b>pedruck</b></a></td>
       <td align="center"><a href="https://github.com/Bercacos"><img src="https://github.com/Bercacos.png" width="80" style="border-radius:50%"/><br/><b>Bercacos</b></a></td>
+      <td align="center"><a href="https://github.com/pedrogrocha13"><img src="https://github.com/pedrogrocha13.png" width="80" style="border-radius:50%"/><br/><b>Pedro Rocha</b></a></td>
+      <td align="center"><a href="https://github.com/cadumotta"><img src="https://github.com/cadumotta.png" width="80" style="border-radius:50%"/><br/><b>Carlos Eduardo</b></a></td>
     </tr>
   </table>
 </div>
