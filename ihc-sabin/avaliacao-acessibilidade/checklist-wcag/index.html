@@ -1124,6 +1124,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Checklist WCAG 2.1
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1140,6 +1158,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#criterios-avaliados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Critérios Avaliados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resumo-dos-resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumo dos Resultados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#principais-nao-conformidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Principais Não Conformidades
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusão
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referências
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1448,10 +1540,189 @@
 
 
 
-<h1 id="checklist-wcag">Checklist Wcag</h1>
-<blockquote>
-<p>A ser preenchido pelo grupo.</p>
-</blockquote>
+<h1 id="checklist-wcag">Checklist WCAG</h1>
+<h2 id="criterios-avaliados">Critérios Avaliados</h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Critério</th>
+<th>Status</th>
+<th>Justificativa</th>
+<th>Evidência</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Texto Alternativo para Imagens</td>
+<td>❌ Não Conforme</td>
+<td>Foram identificadas 4 imagens utilizadas como links sem texto alternativo adequado, comprometendo a compreensão do conteúdo por usuários de leitores de tela.</td>
+<td>erros-Wave.png</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Contraste Mínimo de Cores</td>
+<td>❌ Não Conforme</td>
+<td>Foram encontrados 5 elementos com contraste muito baixo entre texto e fundo, dificultando a leitura para usuários com baixa visão.</td>
+<td>contraste-Wave.png, contraste2-Wave.png</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Uso Restrito da Cor</td>
+<td>⚠️ Parcial</td>
+<td>Não foram identificadas falhas automáticas, porém a verificação completa exige testes manuais para garantir que a cor não seja o único meio de transmitir informação.</td>
+<td>Inspeção manual</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Controle de Áudio e Mídia</td>
+<td>✅ Conforme</td>
+<td>Durante a avaliação não foram identificados conteúdos com reprodução automática de áudio que exigissem mecanismos de controle adicionais.</td>
+<td>Inspeção manual</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Design Responsivo e Refluxo</td>
+<td>✅ Conforme</td>
+<td>O site apresentou comportamento responsivo adequado em dispositivos móveis, sem perda perceptível de conteúdo ou funcionalidade.</td>
+<td>Avaliação Lighthouse</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Foco Visível e Não Obscurecido</td>
+<td>⚠️ Parcial</td>
+<td>Não foram observadas falhas críticas, porém a validação completa exige navegação integral utilizando apenas teclado.</td>
+<td>Inspeção manual</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Atalhos de Teclado (Skip Links)</td>
+<td>⚠️ Parcial</td>
+<td>Não foi possível confirmar a presença de mecanismos para salto direto ao conteúdo principal durante a avaliação realizada.</td>
+<td>Inspeção manual</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Tamanho do Alvo de Clique</td>
+<td>❌ Não Conforme</td>
+<td>O Lighthouse identificou elementos interativos com área de toque insuficiente para interação confortável em dispositivos móveis.</td>
+<td>best-LightHouse.png</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Movimentos de Arrastar (Drag-and-Drop)</td>
+<td>✅ Conforme</td>
+<td>Não foram identificadas funcionalidades dependentes exclusivamente de movimentos de arrastar e soltar.</td>
+<td>Inspeção manual</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Temporização Ajustável</td>
+<td>✅ Conforme</td>
+<td>Não foram observadas restrições de tempo ou sessões com expiração durante os testes realizados.</td>
+<td>Inspeção manual</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Títulos de Página e Semântica de Cabeçalhos</td>
+<td>❌ Não Conforme</td>
+<td>Foi identificada ausência de cabeçalho principal (H1) e salto na hierarquia dos títulos, comprometendo a estrutura semântica da página.</td>
+<td>alertas-Wave.png</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Consistência na Interface e Ajuda Consistente</td>
+<td>✅ Conforme</td>
+<td>A estrutura de navegação e os elementos da interface mantêm padrão consistente entre as páginas avaliadas.</td>
+<td>Inspeção manual</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Identificação Programática do Idioma</td>
+<td>⚠️ Parcial</td>
+<td>Não foi realizada inspeção detalhada do código-fonte para confirmação completa da marcação do idioma da página.</td>
+<td>Inspeção manual</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Identificação, Sugestão e Prevenção de Erros</td>
+<td>⚠️ Parcial</td>
+<td>A avaliação não contemplou testes aprofundados em formulários e fluxos completos de interação.</td>
+<td>Inspeção manual</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Prevenção de Entradas Redundantes</td>
+<td>⚠️ Parcial</td>
+<td>Não foi possível validar completamente sem executar processos completos de cadastro e agendamento.</td>
+<td>Inspeção manual</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Autenticação Acessível</td>
+<td>⚠️ Parcial</td>
+<td>Os mecanismos de autenticação não foram avaliados em profundidade durante esta etapa.</td>
+<td>Inspeção manual</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Nome, Função e Valor em Componentes Web</td>
+<td>❌ Não Conforme</td>
+<td>Foram encontradas 5 referências ARIA inválidas e links sem nome acessível discernível para tecnologias assistivas.</td>
+<td>erros-Wave.png, links-Lighthouse.png</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Linguagem Simples</td>
+<td>✅ Conforme</td>
+<td>O conteúdo utiliza linguagem clara, objetiva e compatível com o público-alvo do serviço.</td>
+<td>Inspeção manual</td>
+</tr>
+</tbody>
+</table>
+<h2 id="resumo-dos-resultados">Resumo dos Resultados</h2>
+<table>
+<thead>
+<tr>
+<th>Situação</th>
+<th>Quantidade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✅ Conforme</td>
+<td>6</td>
+</tr>
+<tr>
+<td>⚠️ Parcial</td>
+<td>7</td>
+</tr>
+<tr>
+<td>❌ Não Conforme</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<h2 id="principais-nao-conformidades">Principais Não Conformidades</h2>
+<ul>
+<li>Imagens com links sem texto alternativo.</li>
+<li>Problemas de contraste entre texto e fundo.</li>
+<li>Tamanho insuficiente de alguns elementos clicáveis.</li>
+<li>Estrutura inadequada de cabeçalhos.</li>
+<li>Problemas em atributos ARIA e identificação de componentes.</li>
+</ul>
+<h2 id="conclusao">Conclusão</h2>
+<p>A avaliação realizada indica que o site do Sabin apresenta um nível geral satisfatório de acessibilidade, refletido pela pontuação de 93/100 obtida na ferramenta Lighthouse. Entretanto, foram identificadas não conformidades relevantes relacionadas aos critérios WCAG 1.1.1 (Conteúdo Não Textual), 1.4.3 (Contraste Mínimo), 2.5.8 (Tamanho do Alvo) e 4.1.2 (Nome, Função e Valor).</p>
+<p>Esses problemas podem impactar diretamente usuários que dependem de leitores de tela, navegação por teclado ou possuem limitações visuais e motoras. Recomenda-se a correção das não conformidades identificadas para aumentar a inclusão digital e a aderência às diretrizes WCAG 2.2, NBR 17225:2025 e e-MAG.</p>
+<h2 id="referencias">Referências</h2>
+<ul>
+<li>W3C. Web Content Accessibility Guidelines (WCAG) 2.2.</li>
+<li>ABNT. NBR 17225:2025 – Acessibilidade em Conteúdo e Aplicações Web.</li>
+<li>Brasil. e-MAG – Modelo de Acessibilidade em Governo Eletrônico.</li>
+<li>Google Lighthouse.</li>
+<li>WAVE – Web Accessibility Evaluation Tool.</li>
+</ul>
 
 
 
