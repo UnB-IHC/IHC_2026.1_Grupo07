@@ -8,6 +8,8 @@ docs_dir: docs
 theme:
   name: material
   language: pt-BR
+  logo: imagens/SCC.png
+  favicon: imagens/SCC.png
   palette:
     - scheme: default
       primary: red
@@ -54,6 +56,7 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - attr_list
+  - md_in_html
   - tables
   - footnotes
   - pymdownx.critic
@@ -98,7 +101,7 @@ nav:
     - Teste de Usabilidade:
       - Planejamento: ihc-sabin/teste-usabilidade/planejamento.md
       - Roteiro de Tarefas: ihc-sabin/teste-usabilidade/roteiro.md
-      - Relato dos Resultados: ihc-sabin/teste-usabilidade/relato.md
+      - TCLE: ihc-sabin/teste-usabilidade/tcle.md
 
 extra:
   social:
