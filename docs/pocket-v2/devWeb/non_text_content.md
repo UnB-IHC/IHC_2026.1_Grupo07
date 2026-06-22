@@ -1,9 +1,32 @@
 # Desenvolvimento
 
-> **[NOVO - TG10/Grupo07]** Esta seção foi atualizada para incluir os critérios novos do **WCAG 2.2** (out/2023) e referências à **ABNT NBR 17225:2025**, que incorpora o WCAG 2.2 como base legal no Brasil. Itens marcados com `[NOVO WCAG 2.2]` não estavam presentes na versão V1 (VerificaAAA, 2024). Referência: TG10 – Estudo Aprofundado WCAG 2.2 (Grupo 7, 2026).
+> **[NOVO - TG10/Grupo07]** Esta seção foi atualizada para incluir os critérios novos do **WCAG 2.2** (out/2023) e referências às normas brasileiras de acessibilidade digital: **ABNT NBR 17225:2025** (conteúdo e aplicações web, base WCAG 2.2) e **ABNT NBR 17060:2022** (aplicativos de dispositivos móveis, base WCAG 2.1). Ambas são normas técnicas de referência no Brasil. Itens marcados com `[NOVO WCAG 2.2]` não estavam presentes na versão V1 (VerificaAAA, 2024). Referência: TG10 – Estudo Aprofundado WCAG 2.2 (Grupo 7, 2026).
 
 "Nessa fase, é importante garantir que a equipe de desenvolvimento saiba como implementar acessibilidade, verificá-la e usar as ferramentas disponíveis no mercado para
 testes e padronizações. Também é importante que a equipe saiba como as pessoas com deficiência usam os sítios web e aplicativos". Nesse caso, foram incluídas técnicas relacionadas ao desenvolvimento e também formas de verificar.
+
+## O que mudou em relação à V1 (VerificaAAA / Grupo 02, 2024)
+
+> Esta atualização alinha a seção ao **WCAG 2.2** (out/2023). Resumo das mudanças:
+
+**Critérios novos adicionados (não existiam na V1):**
+- SC 2.4.11 Focus Not Obscured (Minimum) – AA → seção *Teclado* [N1]
+- SC 2.5.7 Dragging Movements – AA → seção *Ferramentas e extras* [N3]
+- SC 2.5.8 Target Size (Minimum) – AA → seção *Ferramentas e extras* [N2]
+- SC 3.2.6 Consistent Help – **A** → seção *Ferramentas e extras* [N6]
+- SC 3.3.7 Redundant Entry – **A** → seção *Ferramentas e extras* [N5]
+- SC 3.3.8 Accessible Authentication (Minimum) – AA → seção *Ferramentas e extras* [N4]
+
+**Correções de revisão (erros herdados da V1):**
+- **SC 4.1.1 Parsing removido**: era citado na V1 e está **obsoleto no WCAG 2.2**; os itens que dependiam dele foram realocados para SC 1.3.1, 1.3.4 e 1.4.10 (ver RP15).
+- Target Size corrigido de 44×44px para **24×24px** como mínimo AA (44×44 é recomendação AAA, SC 2.5.5).
+- **NBR 17060:2022** adicionada como referência (V1 só citava a 17225): norma de apps móveis, base WCAG 2.1, vinculada à seção mobile.
+- Números de cláusula da NBR marcados como `(cláusula a confirmar)` por não terem sido verificados contra a norma oficial.
+- Referências internas corrigidas (tabela apontava para Parsing; orientação e reflow estavam trocadas).
+- URL quebrada da referência [19] corrigida; typos técnicos `<fildset>`→`<fieldset>` e `captione`→`caption`.
+
+**Ainda em nível AAA (fora do escopo AA, não incluídos):** SC 2.4.12 Focus Not Obscured (Enhanced), SC 2.4.13 Focus Appearance, SC 3.3.9 Accessible Authentication (Enhanced).
+
 
 ## Imagens
 - [ ] <b> Adicionar ``` alt ``` </b> para imagens, botões-imagem, gráficos e imagens de mapas com pontos de acesso. <a id="TEC1" href="#RP1">[1]</a>
@@ -24,7 +47,7 @@ testes e padronizações. Também é importante que a equipe saiba como as pesso
 
 ## Formulário
 - [ ] <b> Adicionar ``` label ```</b> para os campos de entradas associadas ao elemento correspondente. <a id="TEC9" href="#RP9">[9]</a>
-- [ ] <b> Adicionar ``` <fildset> ``` e ``` <legend> ```</b> para seção no formulário. <a id="TEC4" href="#RP4">[4]</a>
+- [ ] <b> Adicionar ``` <fieldset> ``` e ``` <legend> ```</b> para seção no formulário. <a id="TEC4" href="#RP4">[4]</a>
 - [ ] <b> Adicionar ``` autocomplete ```</b> para campos de entrada. <a id="TEC10" href="#RP10">[10]</a>
 - [ ] <b> Exibir ``` errors ``` </b> (erros) de entrada acima do formulário, após envio. <a id="TEC11" href="#RP11">[11]</a>
 - [ ] <b> Adicionar ``` aria-describedby ```</b> para os campos de entrada. <a id="TEC11" href="#RP11">[11]</a>
@@ -66,8 +89,8 @@ testes e padronizações. Também é importante que a equipe saiba como as pesso
 
 ## Tabela
 - [ ] <b> Use o ``` table ``` </b> para elementos em formato de tabela.  <a id="TEC4" href="#RP4">[4]</a>
-- [ ] Insira cabeçalhos para explicar os dados, <b>use ``` th ``` com  ``` scope ``` correto</b>.<a id="TEC15" href="#RP15">[15]</a>
-- [ ] <b> Use o ``` captione ``` </b> lemento para fornecer um título para a tabela.<a id="TEC17" href="#RP17">[17]</a>
+- [ ] Insira cabeçalhos para explicar os dados, <b>use ``` th ``` com  ``` scope ``` correto</b>.<a id="TEC4" href="#RP4">[4]</a>
+- [ ] <b> Use o ``` caption ``` </b> elemento para fornecer um título para a tabela.<a id="TEC17" href="#RP17">[17]</a>
 
 ## Modais
 - [ ] Deve ser <b> fácil fechar </b>.<a id="TEC19" href="#RP19">[19]</a>
@@ -77,10 +100,13 @@ testes e padronizações. Também é importante que a equipe saiba como as pesso
 - [ ] <b> Não abrir um modal a partir de outro modal </b>.</b><a id="TEC19" href="#RP19">[19]</a>
 
 ## Dispositivo Móvel e tocável
-- [ ] O site pode ser <b> rotacionado </b> para qualquer orientação.  <a id="TEC15" href="#RP15">[15]</a>
-- [ ] <b> Impedir </b> rolgem horizontal. <a id="TEC16" href="#RP15">[16]</a>
-- [ ] <b> Garantir </b> que botões e links possam ser ativados facilmente. <a id="TEC18" href="#RP18">[18]</a>
-- [ ] <b> Garantir </b> espaço suficiente entre elementos interativos. <a id="TEC7" href="#RP7">[7]</a>
+
+> Os itens desta seção têm correspondência direta na **NBR 17060:2022** (norma específica para aplicativos móveis). Requisitos específicos a confirmar na norma.
+
+- [ ] O site pode ser <b> rotacionado </b> para qualquer orientação.  <a id="TEC14" href="#RP14">[14]</a>
+- [ ] <b> Impedir </b> rolagem horizontal. <a id="TEC16" href="#RP16">[16]</a>
+- [ ] <b> Garantir </b> que botões e links possam ser ativados facilmente (tamanho mínimo de alvo). <a id="TEC_NEW2" href="#RP_NEW2">[N2]</a>
+- [ ] <b> Garantir </b> espaço suficiente entre elementos interativos. <a id="TEC_NEW2" href="#RP_NEW2">[N2]</a>
 
 ## Ferramentas e extras
 - [ ] Permiti <b> pausar, parar ou ocultar conteúdo em movimento </b>.
@@ -123,7 +149,7 @@ testes e padronizações. Também é importante que a equipe saiba como as pesso
 
 > <a id="RP14" href="#TEC14">14.</a> WCAG 2.2 Understanding Docs. SC 1.3.4 Orientation (Level AA). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/orientation.html](https://www.w3.org/WAI/WCAG22/Understanding/orientation.html). Acesso em: 9 Mai. 2024.
 
-> <a id="RP15" href="#TEC15">15.</a> WCAG 2.2 Understanding Docs. SC 4.1.1 Orientation (Level). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/parsing.html](https://www.w3.org/WAI/WCAG22/Understanding/parsing.html). Acesso em: 9 Mai. 2024.
+> <a id="RP15" href="#TEC15">15.</a> **[REVISADO – WCAG 2.2]** SC 4.1.1 Parsing foi declarado **obsoleto e removido** no WCAG 2.2 (out/2023). A referência original da V1 apontava para este critério; os itens que a usavam foram realocados para SC 1.3.1 (RP4), SC 1.3.4 (RP14) e SC 1.4.10 (RP16), conforme aplicável. Fonte: [WCAG 2 FAQ – 4.1.1 Parsing](https://www.w3.org/WAI/standards-guidelines/wcag/faq/#parsing411). Acesso em: jun. 2026.
 
 > <a id="RP16" href="#TEC16">16.</a> WCAG 2.2 Understanding Docs. SC 1.4.10 Reflow (Level AA). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/reflow.html](https://www.w3.org/WAI/WCAG22/Understanding/reflow.html). Acesso em: 9 Mai. 2024.
 
@@ -131,20 +157,26 @@ testes e padronizações. Também é importante que a equipe saiba como as pesso
 
 > <a id="RP18" href="#TEC18">18.</a> WCAG 2.2 Understanding Docs. SC 2.5.5 Target Size (Enhanced) (Level AAA). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/target-size-enhanced.html](https://www.w3.org/WAI/WCAG22/Understanding/target-size-enhanced.html). Acesso em: 9 Mai. 2024.
 
-> <a id="RP19" href="#TEC19">19.</a> GUIA DE BOAS PRÁTICAS PARA ACESSIBILIDADE DIGITAL. Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/target-size-enhanced.html](https://www.w3.org/WAI/WCAG22/Understandin/target-size-enhanced.html). Acesso em: 9 Mai. 2024.
+> <a id="RP19" href="#TEC19">19.</a> DINIZ, V.; FERRAZ, R.; NASCIMENTO, C. M.; CREDIDIO, R. Guia de Boas Práticas para Acessibilidade Digital. Programa de Cooperação entre Reino Unido e Brasil em Acesso Digital, 2023. Disponível em: [https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf](https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf). Acesso em: 9 Mai. 2024.
 
-> <a id="RP_NEW1" href="#TEC_NEW1">N1.</a> **[NOVO WCAG 2.2]** WCAG 2.2 Understanding Docs. SC 2.4.11 Focus Not Obscured (Minimum) (Level AA). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html](https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html). Acesso em: jun. 2026. | NBR 17225:2025 (5.1.1, 5.1.3)
+> <a id="RP_NEW1" href="#TEC_NEW1">N1.</a> **[NOVO WCAG 2.2]** WCAG 2.2 Understanding Docs. SC 2.4.11 Focus Not Obscured (Minimum) (Level AA). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html](https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html). Acesso em: jun. 2026. | NBR 17225:2025 (cláusula a confirmar)
 
-> <a id="RP_NEW2" href="#TEC_NEW2">N2.</a> **[NOVO WCAG 2.2]** WCAG 2.2 Understanding Docs. SC 2.5.8 Target Size (Minimum) (Level AA). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html](https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html). Acesso em: jun. 2026. | NBR 17225:2025 (5.8.7)
+> <a id="RP_NEW2" href="#TEC_NEW2">N2.</a> **[NOVO WCAG 2.2]** WCAG 2.2 Understanding Docs. SC 2.5.8 Target Size (Minimum) (Level AA). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html](https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html). Acesso em: jun. 2026. | NBR 17225:2025 (cláusula a confirmar)
 
-> <a id="RP_NEW3" href="#TEC_NEW3">N3.</a> **[NOVO WCAG 2.2]** WCAG 2.2 Understanding Docs. SC 2.5.7 Dragging Movements (Level AA). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements.html](https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements.html). Acesso em: jun. 2026. | NBR 17225:2025 (5.8.13)
+> <a id="RP_NEW3" href="#TEC_NEW3">N3.</a> **[NOVO WCAG 2.2]** WCAG 2.2 Understanding Docs. SC 2.5.7 Dragging Movements (Level AA). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements.html](https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements.html). Acesso em: jun. 2026. | NBR 17225:2025 (cláusula a confirmar)
 
-> <a id="RP_NEW4" href="#TEC_NEW4">N4.</a> **[NOVO WCAG 2.2]** WCAG 2.2 Understanding Docs. SC 3.3.8 Accessible Authentication (Minimum) (Level AA). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum.html](https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum.html). Acesso em: jun. 2026. | NBR 17225:2025 (5.9.18)
+> <a id="RP_NEW4" href="#TEC_NEW4">N4.</a> **[NOVO WCAG 2.2]** WCAG 2.2 Understanding Docs. SC 3.3.8 Accessible Authentication (Minimum) (Level AA). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum.html](https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum.html). Acesso em: jun. 2026. | NBR 17225:2025 (cláusula a confirmar)
 
-> <a id="RP_NEW5" href="#TEC_NEW5">N5.</a> **[NOVO WCAG 2.2]** WCAG 2.2 Understanding Docs. SC 3.3.7 Redundant Entry (Level A). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry.html](https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry.html). Acesso em: jun. 2026. | NBR 17225:2025 (5.9.15)
+> <a id="RP_NEW5" href="#TEC_NEW5">N5.</a> **[NOVO WCAG 2.2]** WCAG 2.2 Understanding Docs. SC 3.3.7 Redundant Entry (Level A). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry.html](https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry.html). Acesso em: jun. 2026. | NBR 17225:2025 (cláusula a confirmar)
 
-> <a id="RP_NEW6" href="#TEC_NEW6">N6.</a> **[NOVO WCAG 2.2]** WCAG 2.2 Understanding Docs. SC 3.2.6 Consistent Help (Level A). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/consistent-help.html](https://www.w3.org/WAI/WCAG22/Understanding/consistent-help.html). Acesso em: jun. 2026. | NBR 17225:2025 (5.7.15)
+> <a id="RP_NEW6" href="#TEC_NEW6">N6.</a> **[NOVO WCAG 2.2]** WCAG 2.2 Understanding Docs. SC 3.2.6 Consistent Help (Level A). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/consistent-help.html](https://www.w3.org/WAI/WCAG22/Understanding/consistent-help.html). Acesso em: jun. 2026. | NBR 17225:2025 (cláusula a confirmar)
+
+> ⚠️ **Nota de verificação (NBR):** os números de cláusula originalmente atribuídos à NBR 17225:2025 **não foram confirmados** contra a norma oficial e foram substituídos por `(cláusula a confirmar)`. As normas de acessibilidade da ABNT (17225 e 17060) podem ser baixadas gratuitamente no catálogo da ABNT; para finalizar a referência, localizar a cláusula correspondente a cada critério e substituir o marcador. A NBR 17060:2022 é baseada na **WCAG 2.1** e cobre **aplicativos móveis** — não contém os critérios novos da WCAG 2.2 (2.5.7, 3.3.7, 3.3.8), exceto tamanho de área de toque.
 
 ## Bibliografia
+
+> ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. **ABNT NBR 17060:2022** – Acessibilidade em aplicativos de dispositivos móveis – Requisitos. Rio de Janeiro: ABNT, 2022. (54 requisitos baseados na WCAG 2.1, divididos em: percepção e compreensão; controle e interação; mídia; codificação.)
+
+> ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. **ABNT NBR 17225:2025** – Acessibilidade em conteúdo e aplicações web. Rio de Janeiro: ABNT, 2025. (Adota a WCAG 2.2 como base.)
 
 > </a> DINIZ, V.; FERRAZ, R.; NASCIMENTO, C. M.; CREDIDIO, R. Guia de Boas Práticas para Acessibilidade Digital. Programa de Cooperação entre Reino Unido e Brasil em Acesso Digital, 2023. Disponível em: [https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf](https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf). Acesso em: 9 Mai. 2024.
