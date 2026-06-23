@@ -87,7 +87,7 @@ nav:
     - Personas: pocket-v2/personas/personas.md
     - User Journey e User Flows: pocket-v2/userJourney/userJourney.md
     - Registro de Mudanças: pocket-v2/changelog.md
-  - Avaliação IHC — Sabin:
+  - Avaliação do Site — Sabin:
     - Início: ihc-sabin/index.md
     - Planejamento:
       - Visão Geral: ihc-sabin/planejamento/index.md
@@ -100,10 +100,11 @@ nav:
       - Relato dos Resultados: ihc-sabin/avaliacao-acessibilidade/resultados.md
     - Avaliação Heurística:
       - Método e Resultados: ihc-sabin/avaliacao-heuristica/index.md
-    - Teste de Usabilidade:
-      - Planejamento: ihc-sabin/teste-usabilidade/planejamento.md
-      - Roteiro de Tarefas: ihc-sabin/teste-usabilidade/roteiro.md
-      - TCLE: ihc-sabin/teste-usabilidade/tcle.md
+  - Teste de Usabilidade — Sabin:
+    - Persona do Participante: ihc-sabin/teste-usabilidade/persona.md
+    - Planejamento: ihc-sabin/teste-usabilidade/planejamento.md
+    - Roteiro de Tarefas: ihc-sabin/teste-usabilidade/roteiro.md
+    - TCLE: ihc-sabin/teste-usabilidade/tcle.md
 
 extra:
   social:

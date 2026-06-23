@@ -16,7 +16,15 @@ Os achados das três frentes serão consolidados e apresentados em formato de se
 
 ## Como navegar
 
+Esta seção (**Avaliação do Site — Sabin**) reúne a inspeção feita pela própria equipe:
+
 - **[Planejamento](planejamento/index.md)** — cronograma, papéis da equipe e metodologia geral do trabalho.
 - **[Avaliação Heurística](avaliacao-heuristica/index.md)** — problemas encontrados (HE-01 a HE-21), análise por heurística e priorização de correções.
 - **[Avaliação de Acessibilidade](avaliacao-acessibilidade/index.md)** — checklist WCAG aplicado, ferramentas utilizadas e relato de resultados.
-- **[Teste de Usabilidade](teste-usabilidade/planejamento.md)** — planejamento do teste, roteiro de tarefas e TCLE aplicado aos participantes.
+
+A validação empírica com usuários reais está na aba **Teste de Usabilidade — Sabin**:
+
+- **[Persona do Participante](teste-usabilidade/persona.md)** — perfil-alvo e checklist de triagem dos candidatos à entrevista.
+- **[Planejamento](teste-usabilidade/planejamento.md)** — objetivo, tarefas, métricas e cronograma do teste.
+- **[Roteiro de Tarefas](teste-usabilidade/roteiro.md)** — script de condução das sessões.
+- **[TCLE](teste-usabilidade/tcle.md)** — termo de consentimento aplicado aos participantes.
