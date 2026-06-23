@@ -506,6 +506,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#o-que-mudou-em-relacao-a-v1-verificaaaa-grupo-02-2024" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        O que mudou em relação à V1 (VerificaAAA / Grupo 02, 2024)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#imagens" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1797,10 +1808,29 @@
 
 <h1 id="desenvolvimento">Desenvolvimento</h1>
 <blockquote>
-<p><strong>[NOVO - TG10/Grupo07]</strong> Esta seção foi atualizada para incluir os critérios novos do <strong>WCAG 2.2</strong> (out/2023) e referências à <strong>ABNT NBR 17225:2025</strong>, que incorpora o WCAG 2.2 como base legal no Brasil. Itens marcados com <code>[NOVO WCAG 2.2]</code> não estavam presentes na versão V1 (VerificaAAA, 2024). Referência: TG10 – Estudo Aprofundado WCAG 2.2 (Grupo 7, 2026).</p>
+<p><strong>[NOVO - TG10/Grupo07]</strong> Esta seção foi atualizada para incluir os critérios novos do <strong>WCAG 2.2</strong> (out/2023) e referências às normas brasileiras de acessibilidade digital: <strong>ABNT NBR 17225:2025</strong> (conteúdo e aplicações web, base WCAG 2.2) e <strong>ABNT NBR 17060:2022</strong> (aplicativos de dispositivos móveis, base WCAG 2.1). Ambas são normas técnicas de referência no Brasil. Itens marcados com <code>[NOVO WCAG 2.2]</code> não estavam presentes na versão V1 (VerificaAAA, 2024). Referência: TG10 – Estudo Aprofundado WCAG 2.2 (Grupo 7, 2026).</p>
 </blockquote>
 <p>"Nessa fase, é importante garantir que a equipe de desenvolvimento saiba como implementar acessibilidade, verificá-la e usar as ferramentas disponíveis no mercado para
 testes e padronizações. Também é importante que a equipe saiba como as pessoas com deficiência usam os sítios web e aplicativos". Nesse caso, foram incluídas técnicas relacionadas ao desenvolvimento e também formas de verificar.</p>
+<h2 id="o-que-mudou-em-relacao-a-v1-verificaaaa-grupo-02-2024">O que mudou em relação à V1 (VerificaAAA / Grupo 02, 2024)</h2>
+<blockquote>
+<p>Esta atualização alinha a seção ao <strong>WCAG 2.2</strong> (out/2023). Resumo das mudanças:</p>
+</blockquote>
+<p><strong>Critérios novos adicionados (não existiam na V1):</strong>
+- SC 2.4.11 Focus Not Obscured (Minimum) – AA → seção <em>Teclado</em> [N1]
+- SC 2.5.7 Dragging Movements – AA → seção <em>Ferramentas e extras</em> [N3]
+- SC 2.5.8 Target Size (Minimum) – AA → seção <em>Ferramentas e extras</em> [N2]
+- SC 3.2.6 Consistent Help – <strong>A</strong> → seção <em>Ferramentas e extras</em> [N6]
+- SC 3.3.7 Redundant Entry – <strong>A</strong> → seção <em>Ferramentas e extras</em> [N5]
+- SC 3.3.8 Accessible Authentication (Minimum) – AA → seção <em>Ferramentas e extras</em> [N4]</p>
+<p><strong>Correções de revisão (erros herdados da V1):</strong>
+- <strong>SC 4.1.1 Parsing removido</strong>: era citado na V1 e está <strong>obsoleto no WCAG 2.2</strong>; os itens que dependiam dele foram realocados para SC 1.3.1, 1.3.4 e 1.4.10 (ver RP15).
+- Target Size corrigido de 44×44px para <strong>24×24px</strong> como mínimo AA (44×44 é recomendação AAA, SC 2.5.5).
+- <strong>NBR 17060:2022</strong> adicionada como referência (V1 só citava a 17225): norma de apps móveis, base WCAG 2.1, vinculada à seção mobile.
+- Números de cláusula da NBR marcados como <code>(cláusula a confirmar)</code> por não terem sido verificados contra a norma oficial.
+- Referências internas corrigidas (tabela apontava para Parsing; orientação e reflow estavam trocadas).
+- URL quebrada da referência [19] corrigida; typos técnicos <code>&lt;fildset&gt;</code>→<code>&lt;fieldset&gt;</code> e <code>captione</code>→<code>caption</code>.</p>
+<p><strong>Ainda em nível AAA (fora do escopo AA, não incluídos):</strong> SC 2.4.12 Focus Not Obscured (Enhanced), SC 2.4.13 Focus Appearance, SC 3.3.9 Accessible Authentication (Enhanced).</p>
 <h2 id="imagens">Imagens</h2>
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <b> Adicionar <code>alt</code> </b> para imagens, botões-imagem, gráficos e imagens de mapas com pontos de acesso. <a id="TEC1" href="#RP1">[1]</a></li>
@@ -1824,7 +1854,7 @@ testes e padronizações. Também é importante que a equipe saiba como as pesso
 <h2 id="formulario">Formulário</h2>
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <b> Adicionar <code>label</code></b> para os campos de entradas associadas ao elemento correspondente. <a id="TEC9" href="#RP9">[9]</a></li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <b> Adicionar <code>&lt;fildset&gt;</code> e <code>&lt;legend&gt;</code></b> para seção no formulário. <a id="TEC4" href="#RP4">[4]</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <b> Adicionar <code>&lt;fieldset&gt;</code> e <code>&lt;legend&gt;</code></b> para seção no formulário. <a id="TEC4" href="#RP4">[4]</a></li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <b> Adicionar <code>autocomplete</code></b> para campos de entrada. <a id="TEC10" href="#RP10">[10]</a></li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <b> Exibir <code>errors</code> </b> (erros) de entrada acima do formulário, após envio. <a id="TEC11" href="#RP11">[11]</a></li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <b> Adicionar <code>aria-describedby</code></b> para os campos de entrada. <a id="TEC11" href="#RP11">[11]</a></li>
@@ -1872,8 +1902,8 @@ testes e padronizações. Também é importante que a equipe saiba como as pesso
 <h2 id="tabela">Tabela</h2>
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <b> Use o <code>table</code> </b> para elementos em formato de tabela.  <a id="TEC4" href="#RP4">[4]</a></li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Insira cabeçalhos para explicar os dados, <b>use <code>th</code> com  <code>scope</code> correto</b>.<a id="TEC15" href="#RP15">[15]</a></li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <b> Use o <code>captione</code> </b> lemento para fornecer um título para a tabela.<a id="TEC17" href="#RP17">[17]</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Insira cabeçalhos para explicar os dados, <b>use <code>th</code> com  <code>scope</code> correto</b>.<a id="TEC4" href="#RP4">[4]</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <b> Use o <code>caption</code> </b> elemento para fornecer um título para a tabela.<a id="TEC17" href="#RP17">[17]</a></li>
 </ul>
 <h2 id="modais">Modais</h2>
 <ul class="task-list">
@@ -1884,11 +1914,14 @@ testes e padronizações. Também é importante que a equipe saiba como as pesso
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <b> Não abrir um modal a partir de outro modal </b>.</b><a id="TEC19" href="#RP19">[19]</a></li>
 </ul>
 <h2 id="dispositivo-movel-e-tocavel">Dispositivo Móvel e tocável</h2>
+<blockquote>
+<p>Os itens desta seção têm correspondência direta na <strong>NBR 17060:2022</strong> (norma específica para aplicativos móveis). Requisitos específicos a confirmar na norma.</p>
+</blockquote>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> O site pode ser <b> rotacionado </b> para qualquer orientação.  <a id="TEC15" href="#RP15">[15]</a></li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <b> Impedir </b> rolgem horizontal. <a id="TEC16" href="#RP15">[16]</a></li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <b> Garantir </b> que botões e links possam ser ativados facilmente. <a id="TEC18" href="#RP18">[18]</a></li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <b> Garantir </b> espaço suficiente entre elementos interativos. <a id="TEC7" href="#RP7">[7]</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> O site pode ser <b> rotacionado </b> para qualquer orientação.  <a id="TEC14" href="#RP14">[14]</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <b> Impedir </b> rolagem horizontal. <a id="TEC16" href="#RP16">[16]</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <b> Garantir </b> que botões e links possam ser ativados facilmente (tamanho mínimo de alvo). <a id="TEC_NEW2" href="#RP_NEW2">[N2]</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <b> Garantir </b> espaço suficiente entre elementos interativos. <a id="TEC_NEW2" href="#RP_NEW2">[N2]</a></li>
 </ul>
 <h2 id="ferramentas-e-extras">Ferramentas e extras</h2>
 <ul class="task-list">
@@ -1918,20 +1951,23 @@ testes e padronizações. Também é importante que a equipe saiba como as pesso
 <p><a id="RP12" href="#TEC12">12.</a> WCAG 2.2 Understanding Docs. SC 1.4.2 Audio Control (Level A). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-control.html">https://www.w3.org/WAI/WCAG22/Understanding/audio-control.html</a>. Acesso em: 9 Mai. 2024.</p>
 <p><a id="RP13" href="#TEC13">13.</a> WCAG 2.2 Understanding Docs. SC 2.1.1 Keyboard (Level A). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html">https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html</a>. Acesso em: 9 Mai. 2024.</p>
 <p><a id="RP14" href="#TEC14">14.</a> WCAG 2.2 Understanding Docs. SC 1.3.4 Orientation (Level AA). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/orientation.html">https://www.w3.org/WAI/WCAG22/Understanding/orientation.html</a>. Acesso em: 9 Mai. 2024.</p>
-<p><a id="RP15" href="#TEC15">15.</a> WCAG 2.2 Understanding Docs. SC 4.1.1 Orientation (Level). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/parsing.html">https://www.w3.org/WAI/WCAG22/Understanding/parsing.html</a>. Acesso em: 9 Mai. 2024.</p>
+<p><a id="RP15" href="#TEC15">15.</a> <strong>[REVISADO – WCAG 2.2]</strong> SC 4.1.1 Parsing foi declarado <strong>obsoleto e removido</strong> no WCAG 2.2 (out/2023). A referência original da V1 apontava para este critério; os itens que a usavam foram realocados para SC 1.3.1 (RP4), SC 1.3.4 (RP14) e SC 1.4.10 (RP16), conforme aplicável. Fonte: <a href="https://www.w3.org/WAI/standards-guidelines/wcag/faq/#parsing411">WCAG 2 FAQ – 4.1.1 Parsing</a>. Acesso em: jun. 2026.</p>
 <p><a id="RP16" href="#TEC16">16.</a> WCAG 2.2 Understanding Docs. SC 1.4.10 Reflow (Level AA). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/reflow.html">https://www.w3.org/WAI/WCAG22/Understanding/reflow.html</a>. Acesso em: 9 Mai. 2024.</p>
 <p><a id="RP17" href="#TEC17">17.</a> WCAG 2.2 Understanding SC 2.4.6 Headings and Labels (Level AA). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels.html">https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels.html</a>. Acesso em: 9 Mai. 2024.</p>
 <p><a id="RP18" href="#TEC18">18.</a> WCAG 2.2 Understanding Docs. SC 2.5.5 Target Size (Enhanced) (Level AAA). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-enhanced.html">https://www.w3.org/WAI/WCAG22/Understanding/target-size-enhanced.html</a>. Acesso em: 9 Mai. 2024.</p>
-<p><a id="RP19" href="#TEC19">19.</a> GUIA DE BOAS PRÁTICAS PARA ACESSIBILIDADE DIGITAL. Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understandin/target-size-enhanced.html">https://www.w3.org/WAI/WCAG22/Understanding/target-size-enhanced.html</a>. Acesso em: 9 Mai. 2024.</p>
-<p><a id="RP_NEW1" href="#TEC_NEW1">N1.</a> <strong>[NOVO WCAG 2.2]</strong> WCAG 2.2 Understanding Docs. SC 2.4.11 Focus Not Obscured (Minimum) (Level AA). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html">https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html</a>. Acesso em: jun. 2026. | NBR 17225:2025 (5.1.1, 5.1.3)</p>
-<p><a id="RP_NEW2" href="#TEC_NEW2">N2.</a> <strong>[NOVO WCAG 2.2]</strong> WCAG 2.2 Understanding Docs. SC 2.5.8 Target Size (Minimum) (Level AA). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html">https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html</a>. Acesso em: jun. 2026. | NBR 17225:2025 (5.8.7)</p>
-<p><a id="RP_NEW3" href="#TEC_NEW3">N3.</a> <strong>[NOVO WCAG 2.2]</strong> WCAG 2.2 Understanding Docs. SC 2.5.7 Dragging Movements (Level AA). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements.html">https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements.html</a>. Acesso em: jun. 2026. | NBR 17225:2025 (5.8.13)</p>
-<p><a id="RP_NEW4" href="#TEC_NEW4">N4.</a> <strong>[NOVO WCAG 2.2]</strong> WCAG 2.2 Understanding Docs. SC 3.3.8 Accessible Authentication (Minimum) (Level AA). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum.html">https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum.html</a>. Acesso em: jun. 2026. | NBR 17225:2025 (5.9.18)</p>
-<p><a id="RP_NEW5" href="#TEC_NEW5">N5.</a> <strong>[NOVO WCAG 2.2]</strong> WCAG 2.2 Understanding Docs. SC 3.3.7 Redundant Entry (Level A). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry.html">https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry.html</a>. Acesso em: jun. 2026. | NBR 17225:2025 (5.9.15)</p>
-<p><a id="RP_NEW6" href="#TEC_NEW6">N6.</a> <strong>[NOVO WCAG 2.2]</strong> WCAG 2.2 Understanding Docs. SC 3.2.6 Consistent Help (Level A). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/consistent-help.html">https://www.w3.org/WAI/WCAG22/Understanding/consistent-help.html</a>. Acesso em: jun. 2026. | NBR 17225:2025 (5.7.15)</p>
+<p><a id="RP19" href="#TEC19">19.</a> DINIZ, V.; FERRAZ, R.; NASCIMENTO, C. M.; CREDIDIO, R. Guia de Boas Práticas para Acessibilidade Digital. Programa de Cooperação entre Reino Unido e Brasil em Acesso Digital, 2023. Disponível em: <a href="https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf">https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf</a>. Acesso em: 9 Mai. 2024.</p>
+<p><a id="RP_NEW1" href="#TEC_NEW1">N1.</a> <strong>[NOVO WCAG 2.2]</strong> WCAG 2.2 Understanding Docs. SC 2.4.11 Focus Not Obscured (Minimum) (Level AA). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html">https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html</a>. Acesso em: jun. 2026. | NBR 17225:2025 (cláusula a confirmar)</p>
+<p><a id="RP_NEW2" href="#TEC_NEW2">N2.</a> <strong>[NOVO WCAG 2.2]</strong> WCAG 2.2 Understanding Docs. SC 2.5.8 Target Size (Minimum) (Level AA). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html">https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html</a>. Acesso em: jun. 2026. | NBR 17225:2025 (cláusula a confirmar)</p>
+<p><a id="RP_NEW3" href="#TEC_NEW3">N3.</a> <strong>[NOVO WCAG 2.2]</strong> WCAG 2.2 Understanding Docs. SC 2.5.7 Dragging Movements (Level AA). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements.html">https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements.html</a>. Acesso em: jun. 2026. | NBR 17225:2025 (cláusula a confirmar)</p>
+<p><a id="RP_NEW4" href="#TEC_NEW4">N4.</a> <strong>[NOVO WCAG 2.2]</strong> WCAG 2.2 Understanding Docs. SC 3.3.8 Accessible Authentication (Minimum) (Level AA). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum.html">https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum.html</a>. Acesso em: jun. 2026. | NBR 17225:2025 (cláusula a confirmar)</p>
+<p><a id="RP_NEW5" href="#TEC_NEW5">N5.</a> <strong>[NOVO WCAG 2.2]</strong> WCAG 2.2 Understanding Docs. SC 3.3.7 Redundant Entry (Level A). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry.html">https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry.html</a>. Acesso em: jun. 2026. | NBR 17225:2025 (cláusula a confirmar)</p>
+<p><a id="RP_NEW6" href="#TEC_NEW6">N6.</a> <strong>[NOVO WCAG 2.2]</strong> WCAG 2.2 Understanding Docs. SC 3.2.6 Consistent Help (Level A). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/consistent-help.html">https://www.w3.org/WAI/WCAG22/Understanding/consistent-help.html</a>. Acesso em: jun. 2026. | NBR 17225:2025 (cláusula a confirmar)</p>
+<p>⚠️ <strong>Nota de verificação (NBR):</strong> os números de cláusula originalmente atribuídos à NBR 17225:2025 <strong>não foram confirmados</strong> contra a norma oficial e foram substituídos por <code>(cláusula a confirmar)</code>. As normas de acessibilidade da ABNT (17225 e 17060) podem ser baixadas gratuitamente no catálogo da ABNT; para finalizar a referência, localizar a cláusula correspondente a cada critério e substituir o marcador. A NBR 17060:2022 é baseada na <strong>WCAG 2.1</strong> e cobre <strong>aplicativos móveis</strong> — não contém os critérios novos da WCAG 2.2 (2.5.7, 3.3.7, 3.3.8), exceto tamanho de área de toque.</p>
 </blockquote>
 <h2 id="bibliografia">Bibliografia</h2>
 <blockquote>
+<p>ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. <strong>ABNT NBR 17060:2022</strong> – Acessibilidade em aplicativos de dispositivos móveis – Requisitos. Rio de Janeiro: ABNT, 2022. (54 requisitos baseados na WCAG 2.1, divididos em: percepção e compreensão; controle e interação; mídia; codificação.)</p>
+<p>ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. <strong>ABNT NBR 17225:2025</strong> – Acessibilidade em conteúdo e aplicações web. Rio de Janeiro: ABNT, 2025. (Adota a WCAG 2.2 como base.)</p>
 <p></a> DINIZ, V.; FERRAZ, R.; NASCIMENTO, C. M.; CREDIDIO, R. Guia de Boas Práticas para Acessibilidade Digital. Programa de Cooperação entre Reino Unido e Brasil em Acesso Digital, 2023. Disponível em: <a href="https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf">https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf</a>. Acesso em: 9 Mai. 2024.</p>
 </blockquote>
 
