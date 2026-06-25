@@ -2,7 +2,7 @@
 
 > **Versão:** 1.0 | **Data:** Junho/2026
 > **Aplicável por:** Qualquer membro da equipe IHC 2026.1 Grupo 07
-> **Tempo estimado de sessão:** 10–15 minutos (3 participantes, 1 tarefa por sessão)
+> **Tempo estimado de sessão:** 5–10 minutos (2 participantes, 1 tarefa por sessão)
 
 ---
 
