@@ -13,10 +13,10 @@
 | Seção | Itens Avaliáveis | Conformes | Parciais | Não Conformes | Não Verificáveis | % Conformidade¹ |
 |---|---|---|---|---|---|---|
 | A — Percepção Visual e Auditiva | 5 | 1 | 2 | 2 | 0 | **40%** |
-| B — Operabilidade e Navegação | 5 | 2 | 1 | 2 | 2 | **50%** (excl. N/V) |
-| C — Compreensibilidade e Ajuda | 6 | 1 | 2 | 2 | 1 | **44%** (excl. N/V) |
+| B — Operabilidade e Navegação | 5 | 1 | 1 | 2 | 1 | **37,5%** (excl. N/V) |
+| C — Compreensibilidade e Ajuda | 6 | 1 | 1 | 3 | 1 | **30%** (excl. N/V) |
 | D — Robustez e Código Semântico | 2 | 0 | 2 | 0 | 0 | **50%** |
-| **Total** | **18** | **4** | **7** | **6** | **3** | **44%** |
+| **Total** | **18** | **3** | **6** | **7** | **2** | **37,5%** |
 
 > ¹ Conformidade parcial conta como 0,5. Itens Não Verificáveis excluídos do denominador.
 > ⚠️ **Para conformidade plena com WCAG 2.2 AA (exigida pela NBR 17225:2025), é necessário 100% nos critérios de Nível A e AA.** O site está significativamente abaixo desse limiar.

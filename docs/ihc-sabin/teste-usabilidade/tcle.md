@@ -1,11 +1,4 @@
-<!--
-Versão para revisão do TCLE — Tg-03 §3.5 (issue #17).
-Antes de imprimir: exportar para PDF (ex.: `pandoc tcle.md -o tcle.pdf` ou impressão via navegador/VSCode).
-A versão entregue na avaliação deve ter os dados do participante anonimizados (ex.: "Participante P1").
-A via assinada com nome real fica apenas com o grupo, como comprovação.
--->
-
-<div align="center">
+<div align="center" markdown="1">
 
 # TERMO DE CONSENTIMENTO LIVRE E ESCLARECIDO (TCLE)
 
@@ -23,7 +16,7 @@ Esta pesquisa tem como objetivo avaliar a usabilidade do site **Sabin Diagnósti
 
 ## 2. Procedimentos
 
-Caso aceite participar, o(a) Sr.(a) será convidado(a) a realizar, em um único encontro com duração aproximada de **50 a 60 minutos**, algumas tarefas simples de navegação no site do Sabin (por exemplo: localizar instruções de preparo de exame, iniciar um agendamento, encontrar uma unidade próxima).
+Caso aceite participar, o(a) Sr.(a) será convidado(a) a realizar, em um único encontro com duração aproximada de **25 a 30 minutos**, 3 tarefas simples de navegação no site do Sabin, nenhuma delas exigindo login (a saber: localizar instruções de preparo de exame, iniciar um agendamento e encontrar uma unidade próxima).
 
 Durante a execução das tarefas, será utilizada a técnica de **Think Aloud (verbalização simultânea)**: pediremos que o(a) Sr.(a) pense em voz alta, narrando o que está procurando, pensando ou sentindo enquanto usa o site. Não há respostas certas ou erradas — o que está sendo avaliado é o site, não o participante. Ao final, será aplicado um breve questionário de satisfação (SUS) e algumas perguntas abertas sobre a experiência.
 
@@ -62,26 +55,23 @@ Equipe IHC 2026.1 — Grupo 07 — Universidade de Brasília (UnB)
 
 Declaro que li e compreendi as informações acima, tive a oportunidade de esclarecer minhas dúvidas, e **concordo em participar voluntariamente** do estudo intitulado *"Avaliação de Interação Humano-Computador: Definição do Perfil de Usuários e Análise de Funcionalidades do Site Sabin"*, incluindo a gravação de tela e áudio da sessão nos termos descritos neste documento.
 
-<br>
 
 | Participante / Responsável | |
 |---|---|
 | Nome completo | ___________________________________________ |
 | CPF (ou rubrica) | ___________________________________________ |
 | Assinatura | ___________________________________________ |
-| Data | _____ / _____ / _________ |
+| Data | ________ / ________ / _________ |
 
-<br>
 
 | Pesquisador | |
 |---|---|
 | Nome completo | ___________________________________________ |
 | Assinatura | ___________________________________________ |
-| Data | _____ / _____ / _________ |
+| Data | ________ / ________ / _________ |
 
-<br>
 
-<div align="center">
+<div align="center" markdown="1">
 
 *Página 1 de 1 — via impressa para assinatura física*
 

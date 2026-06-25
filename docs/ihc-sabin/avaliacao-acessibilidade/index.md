@@ -17,7 +17,7 @@ A avaliação foi realizada por meio da combinação de inspeção manual e ferr
 As atividades executadas incluíram:
 
 * Navegação manual pelas páginas do site;
-* Aplicação do checklist baseado no Guia VerificaAAA;
+* Aplicação do [Checklist de Acessibilidade Digital do Guia PocketV2](../../pocket-v2/checklistAcessibilidade/checklist_acessibilidade_digital.md) (18 itens, NBR 17225:2025 / WCAG 2.2 / Guia UK-Brasil), desenvolvido pelo próprio Grupo 07 como produto da TG-01;
 * Análise automática utilizando as ferramentas Lighthouse e WAVE;
 * Registro de evidências por meio de capturas de tela;
 * Classificação dos critérios avaliados como Conforme, Parcialmente Conforme ou Não Conforme.

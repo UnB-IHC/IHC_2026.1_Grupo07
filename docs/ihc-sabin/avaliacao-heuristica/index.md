@@ -1,10 +1,12 @@
 # Avaliação Heurística — Site Sabin Diagnóstico e Saúde
 
-> **Método:** Avaliação Heurística de Nielsen (1994, revisado 2020)
+> **Método:** Avaliação Heurística de Nielsen (1994, revisado 2020), conforme descrito no [Guia PocketV2 — Heurísticas de Usabilidade](../../pocket-v2/heuristicas/heuristicas.md)
 > **Site avaliado:** [sabin.com.br](https://www.sabin.com.br)
 > **Data:** Junho/2026
 > **Avaliadores:** Equipe IHC 2026.1 Grupo 07
 > **Escopo:** Homepage, listagem de exames, buscador de unidades, portal de resultados, página de contato
+
+As 10 heurísticas (H1–H10) e a escala de severidade usadas abaixo são as mesmas definidas no [Pocket V2](../../pocket-v2/heuristicas/heuristicas.md) — esta página aplica esse checklist ao site real do Sabin.
 
 ---
 
@@ -247,9 +249,9 @@
 
 ```
 Severidade 4 (Catastrófico): 3 problemas  → HE-05, HE-11, HE-18
-Severidade 3 (Major):        5 problemas  → HE-01, HE-03, HE-10, HE-13, HE-X
+Severidade 3 (Major):        4 problemas  → HE-01, HE-03, HE-10, HE-13
 Severidade 2 (Minor):        9 problemas  → HE-02, HE-06, HE-07, HE-09, HE-12, HE-14, HE-16, HE-19, HE-20
-Severidade 1 (Cosmético):    4 problemas  → HE-04, HE-08, HE-15, HE-17, HE-21
+Severidade 1 (Cosmético):    5 problemas  → HE-04, HE-08, HE-15, HE-17, HE-21
 ```
 
 ## Priorização de Correções (Top 5)
