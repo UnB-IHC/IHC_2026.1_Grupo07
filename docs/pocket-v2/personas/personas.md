@@ -1,4 +1,4 @@
-# Personas
+# :material-account-circle-outline: Personas
 
 ## O que são Personas?
 

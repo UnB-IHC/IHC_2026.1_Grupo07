@@ -6,18 +6,17 @@
 
 ## 1. Persona Primária
 
-**Marcos, 42 anos — "Quero resolver isso rápido, sem complicação"**
+**Ana, 20 anos — "Eu sei usar tecnologia, só quero que o site não me faça perder tempo"**
 
 | Atributo | Descrição |
 |---|---|
-| **Idade** | 42 anos |
-| **Ocupação** | Servidor público, trabalha em escritório |
-| **Escolaridade** | Ensino superior completo |
-| **Relação com o Sabin** | Já fez exames de rotina; agenda exames para os pais idosos |
-| **Dispositivo principal** | Smartphone (Android), eventualmente notebook |
-| **Frequência de uso de internet** | Diária — WhatsApp, e-mail, bancos, compras online |
-| **Letramento digital** | Intermediário — confortável com apps do dia a dia, mas não é "early adopter" nem técnico |
-| **Frase típica** | *"Se eu não acho em 1 minuto, eu desisto e ligo para o telefone."* |
+| **Idade** | 20 anos |
+| **Ocupação** | Estudante de Engenharia de Software |
+| **Escolaridade** | Ensino superior incompleto (cursando) |
+| **Relação com o Sabin** | Já fez exames de rotina e de sangue pessoalmente |
+| **Dispositivo principal** | Smartphone, com uso eventual de notebook |
+| **Frequência de uso de internet** | Diária — uso intenso (estudo, redes sociais, apps de serviço) |
+| **Letramento digital** | Alto — usuária avançada de tecnologia, rápida em identificar padrões de interface |
 
 **Objetivos ao usar o site:**
 
@@ -34,6 +33,8 @@
 
 Esta persona primária resume o participante "típico" buscado para o teste. Ela é uma síntese das personas secundárias já mapeadas no [Planejamento do Teste](planejamento.md#2-perfil-dos-participantes) (P1 a P5), que cobrem variações relevantes — cuidador de idoso, primeira visita, baixa visão, usuário de convênio e baixa literacia digital.
 
+> **Limitação metodológica desta rodada:** os 3 participantes recrutados são estudantes de Engenharia de Software da mesma faculdade — uma amostra homogênea e tecnicamente fluente, que **não** representa a diversidade das personas P1–P5 (idosos, baixa literacia digital, baixa visão). Problemas de usabilidade relacionados a essas variações podem não ser detectados nesta rodada. Tratar os resultados como indicativos do fluxo em si, não da experiência do público real do Sabin como um todo.
+
 ---
 
 ## 2. Checklist de Triagem do Entrevistado
@@ -42,30 +43,31 @@ Use este checklist durante a conversa/formulário de triagem para decidir se o c
 
 ### 2.1 Critérios de inclusão (todos devem ser "Sim")
 
-- [ ] Tem entre 18 e 65 anos.
-- [ ] Possui ensino médio completo ou superior.
-- [ ] Usa internet com frequência (diária ou semanal) em sites e aplicativos.
+- [ ] É estudante de Engenharia de Software (ou curso correlato) na mesma faculdade da equipe avaliadora.
+- [ ] Usa internet com frequência (diária) em sites e aplicativos.
 - [ ] Já realizou ou costuma realizar exames laboratoriais (próprios ou de familiares).
 - [ ] Conhece o nome "Sabin", mas **não** é usuário frequente do site (evita viés de familiaridade excessiva).
-- [ ] Tem disponibilidade para uma sessão de 50–60 minutos, presencial ou remota (Google Meet).
+- [ ] Tem disponibilidade para uma sessão de 10–15 minutos, presencial.
 - [ ] Concorda em ter a sessão gravada (tela + áudio) e em assinar o TCLE.
 
 ### 2.2 Critérios de exclusão (qualquer "Sim" aqui **desqualifica** o candidato)
 
 - [ ] É funcionário, estagiário ou prestador de serviço do Sabin ou de laboratório concorrente.
-- [ ] É profissional de TI, UX/Design ou já participou de mais de 2 testes de usabilidade formais (viés de especialista).
+- [ ] Já trabalhou profissionalmente em UX/Design ou já participou de mais de 2 testes de usabilidade formais (viés de especialista além da fluência técnica esperada da persona).
 - [ ] É familiar direto ou colega de trabalho de algum membro da equipe avaliadora (conflito de interesse).
 - [ ] Já participou de uma sessão anterior deste mesmo teste.
+
+> **Nota:** diferente de rodadas anteriores, ser estudante de tecnologia **não é mais critério de exclusão** — é o próprio perfil-alvo desta rodada (ver limitação metodológica acima). A exclusão por "viés de especialista" se aplica apenas a experiência prática em UX/Design ou em condução de testes de usabilidade, não ao curso do candidato.
 
 ### 2.3 Perguntas de apoio para a triagem
 
 | Pergunta | O que observar na resposta |
 |---|---|
-| "Com que frequência você usa a internet no dia a dia? Para quê?" | Confirma letramento digital mínimo, sem ser especialista |
+| "Qual curso você faz e em qual período está?" | Confirma que é estudante de Engenharia de Software (ou correlato) na faculdade |
 | "Você já fez algum exame de laboratório recentemente, seu ou de algum familiar?" | Confirma relação com o serviço (critério de inclusão) |
-| "Você trabalha ou já trabalhou com tecnologia, design ou UX?" | Filtra viés de especialista (critério de exclusão) |
+| "Você já trabalhou profissionalmente com UX/Design ou já participou de outros testes de usabilidade formais?" | Filtra viés de especialista além da fluência técnica esperada (critério de exclusão) |
 | "Você já conhecia o Sabin antes? Já usou o site deles?" | Mede familiaridade — ideal é "conhece o nome, mas usa pouco o site" |
-| "Você teria disponibilidade de cerca de 1 hora, presencial ou por chamada de vídeo, na semana de [datas]?" | Confirma viabilidade logística |
+| "Você teria disponibilidade de cerca de 10-15 minutos, presencial, na semana de [datas]?" | Confirma viabilidade logística |
 
 ### 2.4 Critério de decisão
 

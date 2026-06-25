@@ -26,16 +26,22 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
+  icon:
+    repo: fontawesome/brands/github
   features:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
     - navigation.top
+    - navigation.indexes
+    - navigation.footer
     - search.highlight
     - search.suggest
     - content.code.copy
-    - toc.integrate
+    - content.tabs.link
+    - content.tooltips
+    - toc.follow
 
 plugins:
   - search:
@@ -104,7 +110,9 @@ nav:
     - Persona do Participante: ihc-sabin/teste-usabilidade/persona.md
     - Planejamento: ihc-sabin/teste-usabilidade/planejamento.md
     - Roteiro de Tarefas: ihc-sabin/teste-usabilidade/roteiro.md
+    - Questionário SUS: ihc-sabin/teste-usabilidade/questionario-sus.md
     - TCLE: ihc-sabin/teste-usabilidade/tcle.md
+    - Resultados: ihc-sabin/teste-usabilidade/resultados.md
 
 extra:
   social:

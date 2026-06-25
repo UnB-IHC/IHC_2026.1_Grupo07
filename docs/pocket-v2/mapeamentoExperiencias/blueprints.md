@@ -1,8 +1,9 @@
-# Mapeamento de Experiências – Service Blueprint
+# :material-map-outline: Mapeamento de Experiências – Service Blueprint
 
-> **Base bibliográfica principal:** KALBACH, Jim. *Mapping Experiences: A Complete Guide to Customer Alignment through Journeys, Blueprints, and Diagrams*. 2ª ed. O'Reilly Media, 2020.
->
-> O *Service Blueprint* é um dos diagramas de alinhamento apresentados por Kalbach. Originado por G. Lynn Shostack (1984) e refinado por Bitner, Ostrom e Morgan (2008), representa simultaneamente a perspectiva do cliente e os processos internos da organização, tornando a lacuna entre intenção e experiência visível para toda a equipe.
+!!! quote "Base bibliográfica principal"
+    KALBACH, Jim. *Mapping Experiences: A Complete Guide to Customer Alignment through Journeys, Blueprints, and Diagrams*. 2ª ed. O'Reilly Media, 2020.
+
+O *Service Blueprint* é um dos diagramas de alinhamento apresentados por Kalbach. Originado por G. Lynn Shostack (1984) e refinado por Bitner, Ostrom e Morgan (2008), representa simultaneamente a perspectiva do cliente e os processos internos da organização, tornando a lacuna entre intenção e experiência visível para toda a equipe.
 
 ---
 

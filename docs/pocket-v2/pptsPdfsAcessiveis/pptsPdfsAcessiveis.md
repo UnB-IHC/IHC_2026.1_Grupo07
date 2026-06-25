@@ -1,6 +1,7 @@
-# PPTs e PDFs Acessíveis
+# :material-file-presentation-box: PPTs e PDFs Acessíveis
 
-> **[NOVO - TG10/Grupo07]** Esta seção apresenta boas práticas para criação de apresentações (PowerPoint, Google Slides e similares) e documentos PDF acessíveis. As recomendações são baseadas na **WCAG 2.2**, na **ABNT NBR 17225:2025** e em guias de acessibilidade digital.
+!!! info "[NOVO - TG10/Grupo07]"
+    Esta seção apresenta boas práticas para criação de apresentações (PowerPoint, Google Slides e similares) e documentos PDF acessíveis. As recomendações são baseadas na **WCAG 2.2**, na **ABNT NBR 17225:2025** e em guias de acessibilidade digital.
 
 Apresentações e documentos digitais devem ser produzidos de forma que possam ser compreendidos por todos os usuários, incluindo aqueles que utilizam leitores de tela, navegação por teclado, ampliadores de tela e outras tecnologias assistivas.
 

@@ -1,6 +1,11 @@
-## Checklist de Acessibilidade Digital (NBR 17225 / WCAG 2.2 / Guia UK-Brasil)
+# :material-format-list-checks: Checklist de Acessibilidade Digital
 
-### A. Percepção Visual e Auditiva
+> NBR 17225 / WCAG 2.2 / Guia UK-Brasil
+
+!!! info "Como usar"
+    Os 18 itens estão organizados em 4 categorias (A–D). Cada item indica a **Classificação** (Requisito = obrigatório para conformidade AA; Recomendação = boas práticas além do mínimo) e o **Pilar de Aplicação** (quem na equipe é responsável). Use a [Tabela Resumo](#tabela-resumo-do-checklist) no final como visão rápida.
+
+## :material-eye-outline: A. Percepção Visual e Auditiva
 
 *   **[ ] 1. Texto Alternativo para Imagens**
     *   **Descrição Técnica:** Todas as imagens que transmitem conteúdo devem possuir atributo `alt` descritivo. Imagens complexas (gráficos/infográficos) exigem descrição detalhada no próprio texto adjacente ou em página indicada. Imagens puramente decorativas devem ter `alt=""` para serem ignoradas por tecnologia assistiva.
@@ -34,7 +39,7 @@
 
 ---
 
-### B. Operabilidade e Navegação
+## :material-gesture-tap-button: B. Operabilidade e Navegação
 
 *   **[ ] 6. Foco Visível e Não Obscurecido `[Lacuna Preenchida WCAG 2.2]`**
     *   **Descrição Técnica:** Todos os elementos focáveis devem ter um indicador de foco visível. Além disso, o elemento que recebe foco deve estar pelo menos parcialmente visível, considerando a sobreposição por elementos de autoria do desenvolvedor.
@@ -68,7 +73,7 @@
 
 ---
 
-### C. Compreensibilidade e Ajuda
+## :material-help-circle-outline: C. Compreensibilidade e Ajuda
 
 *   **[ ] 11. Títulos de Página e Semântica de Cabeçalhos**
     *   **Descrição Técnica:** A página deve possuir um título único que a identifique. Os cabeçalhos internos devem seguir uma estrutura hierárquica, lógica e semântica determinada programaticamente.
@@ -108,7 +113,7 @@
 
 ---
 
-### D. Robustez e Código Semântico
+## :material-shield-check-outline: D. Robustez e Código Semântico
 
 *   **[ ] 17. Nome, Função e Valor em Componentes Web `[Lacuna Preenchida Crítica]`**
     *   **Descrição Técnica:** Todos os componentes customizados devem possuir semântica determinada programaticamente, incluindo sua função (role), estados, propriedades e valores, garantindo que tecnologias assistivas identifiquem suas alterações.

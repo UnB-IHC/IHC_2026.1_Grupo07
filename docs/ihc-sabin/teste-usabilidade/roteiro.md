@@ -2,7 +2,7 @@
 
 > **Versão:** 1.0 | **Data:** Junho/2026
 > **Aplicável por:** Qualquer membro da equipe IHC 2026.1 Grupo 07
-> **Tempo estimado de sessão:** 50–60 minutos
+> **Tempo estimado de sessão:** 10–15 minutos (3 participantes, 1 tarefa por sessão)
 
 ---
 
@@ -56,7 +56,7 @@ Vou ligar a gravação agora. Apenas o computador e o áudio serão gravados —
 
 ---
 
-## Parte 3 – Tarefas Principais (30–40 minutos)
+## Parte 3 – Tarefa Principal (3–5 minutos, 1 tarefa)
 
 > **Instruções para o avaliador:**
 > - Entregue uma tarefa por vez (em papel ou leia em voz alta).
@@ -68,11 +68,14 @@ Vou ligar a gravação agora. Apenas o computador e o áudio serão gravados —
 
 ---
 
-### Tarefa 1 — Preparo para hemograma
+### Tarefa 1 — Agendar hemograma na unidade Ceilândia Centro
 
 > *[Entregue o cartão ou leia:]*
 
-**"Seu médico pediu um hemograma. Antes de ir ao laboratório, você quer saber: precisa estar em jejum? Existe alguma restrição especial? Encontre essas informações no site."**
+**"Agende um exame de hemograma completo na unidade Ceilândia Centro."**
+
+> *Critério de sucesso:* participante chega a uma tela real do fluxo de agendamento com o exame "Hemograma Completo" e a unidade "Ceilândia Centro" corretamente selecionados (não precisa concluir o agendamento, ex.: pagamento ou confirmação final).
+> *Critério de falha notável:* não localizar o exame, não localizar/selecionar a unidade Ceilândia Centro, ou encontrar erro 404.
 
 | Campo | Registro |
 |---|---|
@@ -81,89 +84,8 @@ Vou ligar a gravação agora. Apenas o computador e o áudio serão gravados —
 | Duração (s) | |
 | Concluiu? | ☐ Sim, sem ajuda ☐ Sim, com ajuda ☐ Não concluiu |
 | Caminho percorrido (URLs/cliques) | |
-| Verbalizações marcantes | |
-| Erros / desvios | |
-| Observações do avaliador | |
-
-> *Após conclusão ou timeout:* "Ok, obrigado. Vamos para a próxima tarefa."
-
----
-
-### Tarefa 2 — Iniciar agendamento de exame
-
-> *[Entregue o cartão ou leia. Reinicie a homepage antes de começar.]*
-
-**"Você quer marcar um exame de sangue no Sabin. Use o site para iniciar o processo de agendamento de exame — tente ir o mais longe que conseguir."**
-
-> *Critério de sucesso:* participante chega à tela de agendamento real (qualquer etapa do fluxo).
-> *Critério de falha notável:* encontrar erro 404 ou não localizar caminho para agendar.
-
-| Campo | Registro |
-|---|---|
-| Tempo de início | |
-| Tempo de término | |
-| Duração (s) | |
-| Concluiu? | ☐ Sim, sem ajuda ☐ Sim, com ajuda ☐ Não concluiu |
-| Caminho percorrido | |
-| Verbalizações marcantes | |
-| Erros / desvios | |
-| Observações do avaliador | |
-
----
-
-### Tarefa 3 — Localizar unidade e horário
-
-> *[Entregue o cartão ou leia. Reinicie a homepage.]*
-
-**"Você mora perto do CEP 70040-010, na Asa Norte em Brasília. Encontre no site a unidade Sabin mais próxima a essa região e descubra o horário de funcionamento dela."**
-
-| Campo | Registro |
-|---|---|
-| Tempo de início | |
-| Tempo de término | |
-| Duração (s) | |
-| Concluiu? | ☐ Sim, sem ajuda ☐ Sim, com ajuda ☐ Não concluiu |
-| Caminho percorrido | |
-| Verbalizações marcantes | |
-| Erros / desvios | |
-| Observações do avaliador | |
-
----
-
-### Tarefa 4 — Acessar resultado de exame
-
-> *[Entregue o cartão ou leia. Reinicie a homepage.]*
-
-**"Você fez um exame de sangue há 2 dias no Sabin e quer ver o resultado pelo site. Encontre onde acessar o resultado online e me mostre até onde você consegue chegar."**
-
-> *Nota:* O participante não precisa fazer login real — chegou à tela de login = sucesso.
-
-| Campo | Registro |
-|---|---|
-| Tempo de início | |
-| Tempo de término | |
-| Duração (s) | |
-| Concluiu? | ☐ Sim, sem ajuda ☐ Sim, com ajuda ☐ Não concluiu |
-| Caminho percorrido | |
-| Verbalizações marcantes | |
-| Erros / desvios | |
-| Observações do avaliador | |
-
----
-
-### Tarefa 5 — Verificar cobertura de convênio
-
-> *[Entregue o cartão ou leia. Reinicie a homepage.]*
-
-**"Você tem plano de saúde Unimed Brasília e quer saber se o Sabin aceita esse convênio. Encontre essa informação no site."**
-
-| Campo | Registro |
-|---|---|
-| Tempo de início | |
-| Tempo de término | |
-| Duração (s) | |
-| Concluiu? | ☐ Sim, sem ajuda ☐ Sim, com ajuda ☐ Não concluiu |
-| Caminho percorrido | |
+| Selecionou exame correto (Hemograma Completo)? | ☐ Sim ☐ Não |
+| Selecionou unidade correta (Ceilândia Centro)? | ☐ Sim ☐ Não |
 | Verbalizações marcantes | |
 | Erros / desvios | |
 | Observações do avaliador | |
@@ -190,25 +112,7 @@ Vou ligar a gravação agora. Apenas o computador e o áudio serão gravados —
 
 ## Parte 5 – Questionário SUS (5 minutos)
 
-> *[Entregue o questionário impresso ou envie o link. O participante responde de forma independente.]*
-
-**System Usability Scale (SUS)** — marque de 1 (discordo totalmente) a 5 (concordo totalmente):
-
-| # | Afirmação |
-|---|---|
-| 1 | Eu acho que gostaria de usar este site com frequência. |
-| 2 | Eu achei o site desnecessariamente complexo. |
-| 3 | Eu achei o site fácil de usar. |
-| 4 | Eu acho que precisaria de suporte de uma pessoa técnica para usar este site. |
-| 5 | Eu achei que as várias funções do site estavam bem integradas. |
-| 6 | Eu acho que havia muita inconsistência neste site. |
-| 7 | Eu imagino que a maioria das pessoas aprenderia a usar este site muito rapidamente. |
-| 8 | Eu achei o site muito difícil de usar. |
-| 9 | Eu me senti confiante usando o site. |
-| 10 | Eu precisei aprender muitas coisas antes de conseguir usar este site. |
-
-> **Cálculo do SUS:** (soma dos itens ímpares − 5) + (25 − soma dos itens pares) × 2,5
-> Pontuação: 0–100. Referência: < 50 = inaceitável; 50–68 = mediano; > 68 = bom; > 80 = excelente.
+> *[Entregue ao participante o questionário impresso — ver `questionario-sus.md` para a versão pronta para impressão. O participante responde de forma independente, sem ajuda do avaliador.]*
 
 ---
 
@@ -238,14 +142,12 @@ Muito obrigado! Tenha um ótimo dia!
 
 ## Planilha de Resumo por Participante
 
-| Participante | T1 ✓? | T1 (s) | T2 ✓? | T2 (s) | T3 ✓? | T3 (s) | T4 ✓? | T4 (s) | T5 ✓? | T5 (s) | SUS |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| P1 | | | | | | | | | | | |
-| P2 | | | | | | | | | | | |
-| P3 | | | | | | | | | | | |
-| P4 | | | | | | | | | | | |
-| P5 | | | | | | | | | | | |
-| **Média** | | | | | | | | | | | |
+| Participante | T1 ✓? | T1 (s) | Exame correto? | Unidade correta? | SUS |
+|---|---|---|---|---|---|
+| P1 | | | | | |
+| P2 | | | | | |
+| P3 | | | | | |
+| **Média** | | | | | |
 
 ---
 

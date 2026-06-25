@@ -1,11 +1,11 @@
-# Heurísticas de Usabilidade
+# :material-magnify-scan: Heurísticas de Usabilidade
 
-> **Base bibliográfica principal:**
-> - NIELSEN, Jakob; MOLICH, Rolf. Heuristic Evaluation of User Interfaces. *CHI '90 Proceedings*, 1990.
-> - NIELSEN, Jakob. 10 Usability Heuristics for User Interface Design. Nielsen Norman Group, 1994 (revisado 2020). Disponível em: https://www.nngroup.com/articles/ten-usability-heuristics/
-> - SHNEIDERMAN, Ben et al. *Designing the User Interface*. 6ª ed. Pearson, 2016.
->
-> A avaliação heurística é um método de inspeção de usabilidade em que especialistas examinam uma interface e julgam sua conformidade com princípios de usabilidade reconhecidos ("heurísticas"). É mais rápido e barato que testes com usuários, mas complementar — não substituto.
+!!! quote "Base bibliográfica principal"
+    - NIELSEN, Jakob; MOLICH, Rolf. Heuristic Evaluation of User Interfaces. *CHI '90 Proceedings*, 1990.
+    - NIELSEN, Jakob. 10 Usability Heuristics for User Interface Design. Nielsen Norman Group, 1994 (revisado 2020). Disponível em: https://www.nngroup.com/articles/ten-usability-heuristics/
+    - SHNEIDERMAN, Ben et al. *Designing the User Interface*. 6ª ed. Pearson, 2016.
+
+A avaliação heurística é um método de inspeção de usabilidade em que especialistas examinam uma interface e julgam sua conformidade com princípios de usabilidade reconhecidos ("heurísticas"). É mais rápido e barato que testes com usuários, mas complementar — não substituto.
 
 ---
 

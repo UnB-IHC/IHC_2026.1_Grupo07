@@ -27,4 +27,6 @@ A validação empírica com usuários reais está na aba **Teste de Usabilidade 
 - **[Persona do Participante](teste-usabilidade/persona.md)** — perfil-alvo e checklist de triagem dos candidatos à entrevista.
 - **[Planejamento](teste-usabilidade/planejamento.md)** — objetivo, tarefas, métricas e cronograma do teste.
 - **[Roteiro de Tarefas](teste-usabilidade/roteiro.md)** — script de condução das sessões.
+- **[Questionário SUS](teste-usabilidade/questionario-sus.md)** — versão pronta para impressão, aplicada ao final de cada sessão.
 - **[TCLE](teste-usabilidade/tcle.md)** — termo de consentimento aplicado aos participantes.
+- **[Resultados](teste-usabilidade/resultados.md)** — dados coletados nas 3 sessões, pontuação SUS e síntese de problemas encontrados.

@@ -9,7 +9,7 @@
 
 ## 1. Objetivo do Teste
 
-Avaliar a usabilidade do site Sabin Diagnóstico e Saúde sob a perspectiva de usuários reais, identificando problemas que dificultam a realização das tarefas mais comuns: localizar informações sobre exames, agendar atendimento e acessar resultados de exames. O teste busca:
+Avaliar a usabilidade do site Sabin Diagnóstico e Saúde sob a perspectiva de usuários reais, identificando problemas que dificultam a realização do fluxo de agendamento de exames — desde a busca pelo exame até a seleção da unidade de atendimento. O teste busca:
 
 1. Mensurar a **taxa de conclusão** (task completion rate) das tarefas definidas.
 2. Identificar **pontos de fricção** e erros cometidos espontaneamente pelos participantes.
@@ -45,23 +45,21 @@ Avaliar a usabilidade do site Sabin Diagnóstico e Saúde sob a perspectiva de u
 | P4 | Usuário frequente de plano de saúde | 30–45 | Busca unidades cobertas pelo convênio; acostumado a portais de saúde |
 | P5 | Usuário com baixa literacia digital | 55–70 | Usa internet principalmente para WhatsApp e YouTube; primeiro contato com site de laboratório |
 
-### Quantidade mínima de participantes
+### Quantidade de participantes
 
-**5 participantes** (Nielsen, 1993: 5 avaliadores identificam ~75–85% dos problemas de usabilidade em testes moderados). Recomenda-se recrutar 7 para garantir 5 sessões válidas em caso de desistências.
+**3 participantes**, todos estudantes de Engenharia de Software da faculdade da equipe avaliadora, recrutados conforme os critérios de inclusão/exclusão acima. Por restrição de tempo e disponibilidade da equipe, o teste foi reduzido de 5 para 3 sessões e de múltiplas tarefas para **1 tarefa única por sessão** — concentrando a observação no fluxo de agendamento ponta a ponta, em vez de cobertura ampla de fluxos secundários.
+
+> **Observação metodológica:** com 3 participantes, 1 tarefa e uma amostra homogênea (mesma faculdade, mesmo curso), a rodada é menor e menos diversa que o recomendado por Nielsen (1993) para saturação de problemas (~5 avaliadores variados). Os resultados devem ser tratados como indicativos do fluxo de agendamento em si, não conclusivos sobre a usabilidade geral do site, e relatados como tal no seminário final.
 
 ---
 
 ## 3. Tarefas a Serem Executadas
 
-As tarefas foram criadas com base nos fluxos principais do site e nos problemas identificados na avaliação heurística (ver `avaliacao-heuristica/index.md`).
+Cada um dos 3 participantes realiza **a mesma tarefa única**, para permitir comparação direta dos resultados entre sessões. A tarefa foi escolhida por cobrir, em um único fluxo, busca de exame, seleção de unidade e início do agendamento — pontos associados a problemas identificados na avaliação heurística (ver `avaliacao-heuristica/index.md`).
 
-| # | Tarefa | Critério de sucesso | Heurísticas relacionadas |
-|---|---|---|---|
-| T1 | "Você precisa fazer um hemograma. Encontre no site quais são as instruções de preparo (jejum, restrições)." | Participante localiza a página de preparo do exame hemograma com as instruções corretas | H6, H7 |
-| T2 | "Você quer agendar um exame de sangue presencialmente. Use o site para iniciar o agendamento." | Participante chega à tela de agendamento (ou identifica o fluxo correto) | H3, H5, H9 |
-| T3 | "Encontre a unidade Sabin mais próxima ao CEP 70040-010 (Brasília, Asa Norte) e descubra o horário de funcionamento." | Participante localiza pelo menos 1 unidade com endereço e horário | H1, H6, H7 |
-| T4 | "Você realizou um exame há 2 dias e quer ver o resultado online. Acesse a área de resultados de exames." | Participante chega à tela de login do portal de laudos | H2, H9, H10 |
-| T5 | "Você tem dúvidas sobre o exame TSH. Encontre no site se o Sabin aceita seu convênio (Unimed Brasília)." | Participante localiza a seção de convênios e verifica Unimed | H2, H6 |
+| # | Tarefa | O que o participante deve fazer | Critério de sucesso | Heurísticas relacionadas |
+|---|---|---|---|---|
+| T1 | "Agende um exame de hemograma completo na unidade Ceilândia Centro." | Partindo da homepage do Sabin, sem ajuda do avaliador, o participante deve localizar o exame "Hemograma Completo", iniciar o fluxo de agendamento e selecionar a unidade "Ceilândia Centro", avançando o quanto conseguir no processo (não precisa concluir o agendamento real, ex.: pagamento ou confirmação final). | Participante chega a uma tela real do fluxo de agendamento com o exame "Hemograma Completo" e a unidade "Ceilândia Centro" corretamente selecionados — falha notável é não localizar o exame, não localizar a unidade ou cair em erro 404 | H3, H5, H6, H7, H9 |
 
 ---
 
@@ -99,10 +97,10 @@ Caso o participante não conclua a tarefa em **5 minutos**, o avaliador interrom
 
 ## 6. Roteiro de Recrutamento
 
-1. Divulgação via grupos de WhatsApp, lista de e-mails da universidade e redes sociais.
-2. Formulário Google Forms com perguntas de triagem (faixa etária, escolaridade, experiência com sites de saúde).
-3. Seleção de 7 participantes que atendam ao perfil; confirmação por e-mail/WhatsApp.
-4. Envio de TCLE (Termo de Consentimento Livre e Esclarecido) 48h antes da sessão.
+1. Divulgação direta em turmas e grupos de WhatsApp de Engenharia de Software da faculdade da equipe.
+2. Triagem rápida (conversa ou formulário curto) com as perguntas de apoio da [Persona do Participante](persona.md#23-perguntas-de-apoio-para-a-triagem).
+3. Seleção de 3 participantes que atendam ao perfil; confirmação por e-mail/WhatsApp.
+4. Envio de TCLE (Termo de Consentimento Livre e Esclarecido) antes da sessão.
 
 ---
 
@@ -112,7 +110,7 @@ Caso o participante não conclua a tarefa em **5 minutos**, o avaliador interrom
 |---|---|
 | Recrutamento de participantes | Semana 1 |
 | Piloto (1 sessão com membro do grupo) | Semana 2 — dia 1 |
-| Sessões com participantes (5–7 sessões) | Semana 2–3 |
+| Sessões com participantes (3 sessões, 1 tarefa cada) | Semana 2–3 |
 | Análise dos resultados | Semana 3–4 |
 | Redação do relato | Semana 4 |
 
@@ -123,7 +121,7 @@ Caso o participante não conclua a tarefa em **5 minutos**, o avaliador interrom
 - [ ] TCLE assinado por cada participante
 - [ ] Roteiro impresso de tarefas (entregue uma tarefa por vez)
 - [ ] Planilha de observação (por participante)
-- [ ] Questionário SUS impresso ou digital
+- [ ] Questionário SUS impresso (ver `questionario-sus.md`) — 1 cópia por participante
 - [ ] Cronômetro
 - [ ] Software de gravação configurado e testado
 - [ ] Notebook com Chrome limpo (sem histórico do site Sabin)

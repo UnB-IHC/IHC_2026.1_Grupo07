@@ -1,6 +1,7 @@
-# Geração de conteúdo
+# :material-text-box-edit-outline: Geração de Conteúdo
 
-> **[NOVO - TG10/Grupo07]** Esta seção foi ampliada para incluir recomendações da **WCAG 2.2** e da **ABNT NBR 17225:2025**, com foco em linguagem simples, textos alternativos, legendas, transcrições e acessibilidade multimídia. Os itens marcados com `[NOVO WCAG 2.2]` ou `[NOVO - TG10/Grupo07]` não estavam presentes na versão V1 (VerificaAAA, 2024).
+!!! info "[NOVO - TG10/Grupo07]"
+    Esta seção foi ampliada para incluir recomendações da **WCAG 2.2** e da **ABNT NBR 17225:2025**, com foco em linguagem simples, textos alternativos, legendas, transcrições e acessibilidade multimídia. Os itens marcados com `[NOVO WCAG 2.2]` ou `[NOVO - TG10/Grupo07]` não estavam presentes na versão V1 (VerificaAAA, 2024).
 
 "Para produzir conteúdo digital acessível, a primeira etapa é compreender que tudo o que comunicamos impacta as pessoas; por isso, é fundamental começar pela forma como abordamos nosso público e criar a cultura e o hábito de acessibilidade digital em nossas equipes".
 

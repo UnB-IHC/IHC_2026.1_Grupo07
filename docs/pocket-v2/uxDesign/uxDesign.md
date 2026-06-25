@@ -1,10 +1,11 @@
-# UX Design e Acessibilidade
+# :material-gesture-tap: UX Design e Acessibilidade
 
 ## O que é UX Design?
 
 A Experiência do Usuário (UX, do inglês *User Experience*) é o conjunto de percepções, emoções e respostas que uma pessoa experimenta ao interagir com um produto, sistema ou serviço. O UX Design é a disciplina responsável por projetar essas interações de forma intencional, buscando garantir que elas sejam eficientes, satisfatórias e — fundamentalmente — **acessíveis a todas as pessoas**.
 
-> Segundo a norma **ISO 9241-210:2019**, UX abrange "as percepções e respostas de uma pessoa resultantes do uso e/ou uso antecipado de um produto, sistema ou serviço", incluindo emoções, crenças, preferências, comportamentos e realizações.
+!!! quote "ISO 9241-210:2019"
+    UX abrange "as percepções e respostas de uma pessoa resultantes do uso e/ou uso antecipado de um produto, sistema ou serviço", incluindo emoções, crenças, preferências, comportamentos e realizações.
 
 No contexto da acessibilidade digital, o UX Design vai além da usabilidade convencional. Seu objetivo é garantir que pessoas com deficiência visual, auditiva, motora, cognitiva ou múltipla possam interagir com produtos digitais com a mesma autonomia e satisfação que qualquer outro usuário.
 

@@ -1,10 +1,11 @@
-# Blueprinting de Serviços (Experience Blueprint)
+# :material-floor-plan: Blueprinting de Serviços (Experience Blueprint)
 
-> **Base bibliográfica principal:** FLOWERS, Erika; MILLER, Morgan. *Your Guide to Blueprinting The Practical Way*. 2ª ed. [s.l.: s.n.], 2023.
->
-> **Base bibliográfica complementar:** KALBACH, James. *Mapping Experiences: A Complete Guide to Customer Alignment through Journeys, Blueprints, and Diagrams*. O'Reilly Media, 2016.
->
-> O *Experience Blueprint* é uma forma de visualizar como o negócio entrega uma experiência — olhando através de quem a vive para revelar os bastidores. Mais do que documentação, é um **catalisador de mudanças**: gera insights acionáveis e cria diálogo entre as áreas.
+!!! quote "Base bibliográfica"
+    **Principal:** FLOWERS, Erika; MILLER, Morgan. *Your Guide to Blueprinting The Practical Way*. 2ª ed. [s.l.: s.n.], 2023.
+
+    **Complementar:** KALBACH, James. *Mapping Experiences: A Complete Guide to Customer Alignment through Journeys, Blueprints, and Diagrams*. O'Reilly Media, 2016.
+
+O *Experience Blueprint* é uma forma de visualizar como o negócio entrega uma experiência — olhando através de quem a vive para revelar os bastidores. Mais do que documentação, é um **catalisador de mudanças**: gera insights acionáveis e cria diálogo entre as áreas.
 
 ---
 

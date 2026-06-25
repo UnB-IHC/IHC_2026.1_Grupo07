@@ -1,10 +1,11 @@
-# UX Canvas (Lean UX Canvas)
+# :material-view-grid-outline: UX Canvas (Lean UX Canvas)
 
-> **Base bibliográfica principal:** GOTHELF, Jeff; SEIDEN, Josh. *Lean UX: Designing Great Products with Agile Teams*. 3ª ed. Sebastopol, CA: O'Reilly Media, 2021.
->
-> **Base complementar:** ZAWADZKI, Leszek. *User-Centered Design Canvas (UCDC)*. Desenvolvido e validado em ambiente acadêmico na Universidade de Wrocław.
->
-> O **UX Canvas** — popularizado como *Lean UX Canvas* por Jeff Gothelf — é uma ferramenta de facilitação para equipes multifuncionais. Ele codifica o processo apresentado no livro *Lean UX*: enquadrar o trabalho como um **problema de negócio a resolver** (não uma solução a implementar), decompor esse problema em **suposições**, transformá-las em **hipóteses** e desenhar **experimentos** para testar as mais arriscadas.
+!!! quote "Base bibliográfica"
+    **Principal:** GOTHELF, Jeff; SEIDEN, Josh. *Lean UX: Designing Great Products with Agile Teams*. 3ª ed. Sebastopol, CA: O'Reilly Media, 2021.
+
+    **Complementar:** ZAWADZKI, Leszek. *User-Centered Design Canvas (UCDC)*. Desenvolvido e validado em ambiente acadêmico na Universidade de Wrocław.
+
+O **UX Canvas** — popularizado como *Lean UX Canvas* por Jeff Gothelf — é uma ferramenta de facilitação para equipes multifuncionais. Ele codifica o processo apresentado no livro *Lean UX*: enquadrar o trabalho como um **problema de negócio a resolver** (não uma solução a implementar), decompor esse problema em **suposições**, transformá-las em **hipóteses** e desenhar **experimentos** para testar as mais arriscadas.
 
 ---
 

@@ -1,6 +1,7 @@
-# Design Empático
+# :material-heart-outline: Design Empático
 
-> **[NOVO - TG10/Grupo07]** Esta seção foi adicionada para complementar as diretrizes de acessibilidade do projeto, abordando práticas de **Design Empático** voltadas à compreensão das necessidades, limitações e experiências dos usuários. O conteúdo foi elaborado com base em princípios de Design Centrado no Usuário (DCU), acessibilidade digital e inclusão.
+!!! info "[NOVO - TG10/Grupo07]"
+    Esta seção foi adicionada para complementar as diretrizes de acessibilidade do projeto, abordando práticas de **Design Empático** voltadas à compreensão das necessidades, limitações e experiências dos usuários. O conteúdo foi elaborado com base em princípios de Design Centrado no Usuário (DCU), acessibilidade digital e inclusão.
 
 O Design Empático é uma abordagem que busca compreender profundamente as pessoas que utilizarão um produto ou serviço. No contexto da acessibilidade, significa projetar interfaces e experiências considerando diferentes capacidades físicas, sensoriais, cognitivas e tecnológicas.
 

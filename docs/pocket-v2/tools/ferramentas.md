@@ -1,8 +1,10 @@
-# Ferramentas de Acessibilidade
+# :material-toolbox-outline: Ferramentas de Acessibilidade
 
-> **[NOVO - TG10/Grupo07]** Esta seção foi reestruturada com avaliação comparativa, indicação de adequação por perfil de uso e passo a passo para as ferramentas principais. Referência: TG10 – Estudo Aprofundado WCAG 2.2 (Grupo 7, 2026); ABNT NBR 17225:2025, seção 6.
->
-> **Nota metodológica importante:** Ferramentas automatizadas cobrem apenas **30–40% dos critérios WCAG 2.2**. Os demais exigem avaliação humana – teste manual por teclado, leitor de tela e inspeção visual. Nenhuma ferramenta substitui o outro método. Use ambos. (Fonte: ABNT NBR 17225:2025; W3C WAI Understanding WCAG 2.2)
+!!! info "[NOVO - TG10/Grupo07]"
+    Esta seção foi reestruturada com avaliação comparativa, indicação de adequação por perfil de uso e passo a passo para as ferramentas principais. Referência: TG10 – Estudo Aprofundado WCAG 2.2 (Grupo 7, 2026); ABNT NBR 17225:2025, seção 6.
+
+!!! warning "Nota metodológica importante"
+    Ferramentas automatizadas cobrem apenas **30–40% dos critérios WCAG 2.2**. Os demais exigem avaliação humana – teste manual por teclado, leitor de tela e inspeção visual. Nenhuma ferramenta substitui o outro método. Use ambos. (Fonte: ABNT NBR 17225:2025; W3C WAI Understanding WCAG 2.2)
 
 ---
 

@@ -12,3 +12,48 @@
     background-color: #fff;
     padding: 3px;
 }
+
+/* Grid cards (landing pages, navegação do pocket) */
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid.cards > ol > li {
+    border-radius: 0.5rem;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.md-typeset .grid.cards > ul > li:hover,
+.md-typeset .grid.cards > ol > li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+    border-color: var(--md-accent-fg-color);
+}
+
+/* Cards de equipe (avatares) */
+.team-grid > ul > li,
+.team-grid > ol > li {
+    text-align: center;
+}
+
+.team-grid img {
+    border-radius: 50%;
+    transition: transform 0.15s ease;
+}
+
+.team-grid img:hover {
+    transform: scale(1.06);
+}
+
+/* Badges inline (ex.: status de checklist, prioridade) */
+.md-typeset .badge {
+    display: inline-block;
+    padding: 0.1rem 0.5rem;
+    border-radius: 1rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    margin-right: 0.25rem;
+}
+
+/* Admonitions levemente mais arredondadas e com sombra sutil */
+.md-typeset .admonition {
+    border-radius: 0.4rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}

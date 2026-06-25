@@ -1,11 +1,14 @@
-# Gestão de Projetos de Acessibilidade
+# :material-clipboard-check-outline: Gestão de Projetos de Acessibilidade
 
-> **[NOVO - TG10/Grupo07]** Esta seção foi atualizada para incluir a **ABNT NBR 17225:2025** como referência normativa obrigatória e reforçar o contexto legal brasileiro. Itens marcados com `[NOVO NBR/WCAG 2.2]` não estavam na versão V1 (VerificaAAA, 2024). Referência: TG10 – Estudo Aprofundado WCAG 2.2 (Grupo 7, 2026).
+!!! info "[NOVO - TG10/Grupo07]"
+    Esta seção foi atualizada para incluir a **ABNT NBR 17225:2025** como referência normativa obrigatória e reforçar o contexto legal brasileiro. Itens marcados com `[NOVO NBR/WCAG 2.2]` não estavam na versão V1 (VerificaAAA, 2024). Referência: TG10 – Estudo Aprofundado WCAG 2.2 (Grupo 7, 2026).
 
-> **[NOVO NBR/WCAG 2.2]** Contexto legal obrigatório: No Brasil, a **ABNT NBR 17225:2025** adotou integralmente o WCAG 2.2 como base técnica. A conformidade com níveis **A e AA** é exigida por:
-> - Lei nº 13.146/2015 – Lei Brasileira de Inclusão (LBI)
-> - Decreto nº 5.296/2004 – obrigatoriedade de acessibilidade em serviços digitais públicos
-> - ABNT NBR 17225:2025 – norma técnica vigente
+!!! warning "[NOVO NBR/WCAG 2.2] Contexto legal obrigatório"
+    No Brasil, a **ABNT NBR 17225:2025** adotou integralmente o WCAG 2.2 como base técnica. A conformidade com níveis **A e AA** é exigida por:
+
+    - Lei nº 13.146/2015 – Lei Brasileira de Inclusão (LBI)
+    - Decreto nº 5.296/2004 – obrigatoriedade de acessibilidade em serviços digitais públicos
+    - ABNT NBR 17225:2025 – norma técnica vigente
 
 # Primeiro Passo
 

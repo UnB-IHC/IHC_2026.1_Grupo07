@@ -1,4 +1,4 @@
-# Desenvolvimento
+# :material-code-tags: Desenvolvimento
 
 > **[NOVO - TG10/Grupo07]** Esta seção foi atualizada para incluir os critérios novos do **WCAG 2.2** (out/2023) e referências às normas brasileiras de acessibilidade digital: **ABNT NBR 17225:2025** (conteúdo e aplicações web, base WCAG 2.2) e **ABNT NBR 17060:2022** (aplicativos de dispositivos móveis, base WCAG 2.1). Ambas são normas técnicas de referência no Brasil. Itens marcados com `[NOVO WCAG 2.2]` não estavam presentes na versão V1 (VerificaAAA, 2024). Referência: TG10 – Estudo Aprofundado WCAG 2.2 (Grupo 7, 2026).
 

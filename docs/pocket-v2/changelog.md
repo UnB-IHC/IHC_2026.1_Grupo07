@@ -1,9 +1,14 @@
-# Registro de Mudanças – Pocket V2 (Grupo 07, 2026)
+# :material-history: Registro de Mudanças – Pocket V2 (Grupo 07, 2026)
 
-**Data:** Junho de 2026  
-**Versão anterior:** V1 – VerificaAAA (grupo anterior, 2024)  
-**Versão atual:** V2 – VerificaAAA (Grupo 07 – IHC 2026.1)  
-**Tarefa:** TG-01 – Melhoria do Guia de Acessibilidade (POCKET)  
+<span class="badge" style="background:#c8102e;color:#fff;">V1 → V2</span>
+<span class="badge" style="background:#222;color:#fff;">TG-01</span>
+
+| | |
+|---|---|
+| **Data** | Junho de 2026 |
+| **Versão anterior** | V1 – VerificaAAA (grupo anterior, 2024) |
+| **Versão atual** | V2 – VerificaAAA (Grupo 07 – IHC 2026.1) |
+| **Tarefa** | TG-01 – Melhoria do Guia de Acessibilidade (POCKET) |
 
 ---
 
