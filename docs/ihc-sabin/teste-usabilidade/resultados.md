@@ -12,19 +12,18 @@
 | Participante | Concluiu? | Tempo (s) | Exame correto? | Unidade correta? | Nº de erros/desvios | SUS (0–100) |
 |---|---|---|---|---|---|---|
 | P1 | [x] Sim, sem ajuda [ ] Sim, com ajuda [ ] Não concluiu | 240 | [x] Sim [ ] Não | [x] Sim [ ] Não | Vários cliques em seções incorretas | Aguardando |
-| P2 | ☐ Sim, sem ajuda ☐ Sim, com ajuda ☐ Não concluiu | | ☐ Sim ☐ Não | ☐ Sim ☐ Não | | |
-| P3 | ☐ Sim, sem ajuda ☐ Sim, com ajuda ☐ Não concluiu | | ☐ Sim ☐ Não | ☐ Sim ☐ Não | | |
-| **Média** | — | | — | — | | |
+| P2 | [x] Sim, sem ajuda [ ] Sim, com ajuda [ ] Não concluiu | 195 | [x] Sim [ ] Não | [x] Sim [ ] Não | Confusão com nomenclaturas e "atendimento domiciliar" | Aguardando |
+| **Média** | — | 217.5 | — | — | | |
 
 ### Taxa de conclusão da tarefa
 
-`(Nº de "Sim, sem ajuda" × 1 + Nº de "Sim, com ajuda" × 0,5 + Nº de "Não concluiu" × 0) ÷ 3 = ___%`
+`(Nº de "Sim, sem ajuda" × 1 + Nº de "Sim, com ajuda" × 0,5 + Nº de "Não concluiu" × 0) ÷ 2 = 100%`
 
 ---
 
 ## 2. Detalhamento por Participante
 
-> Repita esta estrutura para cada um dos 3 participantes, com base na planilha de observação preenchida durante a sessão.
+> Repita esta estrutura para cada um dos 2 participantes, com base na planilha de observação preenchida durante a sessão.
 
 ### P1
 
@@ -44,27 +43,13 @@
 
 | Campo | Registro |
 |---|---|
-| Perfil (idade, curso/período, familiaridade com Sabin) | |
-| Caminho percorrido (URLs/cliques, na ordem) | |
-| Verbalizações marcantes (citações literais) | |
-| Erros / desvios observados | |
-| Onde travou ou hesitou | |
-| Observações do avaliador | |
-| Respostas às perguntas pós-tarefa | 1. <br> 2. <br> 3. <br> 4. <br> 5. |
-
----
-
-### P3
-
-| Campo | Registro |
-|---|---|
-| Perfil (idade, curso/período, familiaridade com Sabin) | |
-| Caminho percorrido (URLs/cliques, na ordem) | |
-| Verbalizações marcantes (citações literais) | |
-| Erros / desvios observados | |
-| Onde travou ou hesitou | |
-| Observações do avaliador | |
-| Respostas às perguntas pós-tarefa | 1. <br> 2. <br> 3. <br> 4. <br> 5. |
+| Perfil (idade, curso/período, familiaridade com Sabin) | 19 anos, estudante de Engenharia de Software. Usa celular como dispositivo principal. Alto letramento digital. Já fez exames na unidade Ceilândia Centro. |
+| Caminho percorrido (URLs/cliques, na ordem) | Página inicial -> Menu principal -> Abas informativas diversas -> Volta à página inicial -> Procure seu exame (Hemograma completo) -> Agendar o exame (cai em atendimento móvel) -> Voltar navegador -> Refaz a busca -> Comprar online -> Comprar -> Termos de uso -> Nossas unidades -> Ceilândia -> Ceilândia Centro. |
+| Verbalizações marcantes (citações literais) | "Achei os termos um pouco confusos... a primeira opção é agendar exame, mas ele vai para um local que não faz sentido que é o atendimento domiciliar. A opção certa é comprar exame, que pra mim faria mais sentido você agendar, né?" / "Senti falta de não ter como selecionar um local e uma data" |
+| Erros / desvios observados | Clicou em "agendar o exame" dentro da busca, mas foi direcionado para "atendimento domiciliar/móvel". Não encontrou botão de voltar no site, usando o do navegador e perdendo o preenchimento da busca. |
+| Onde travou ou hesitou | Confundiu a nomenclatura "comprar online" (que é o caminho correto) com "agendar exame" (que levava ao serviço móvel). |
+| Observações do avaliador | O participante também evidenciou um problema grave de taxonomia: "comprar" não é associado mentalmente a "agendar". Além disso, o botão de agendar no exame redireciona para um tipo de serviço restrito, frustrando o fluxo. |
+| Respostas às perguntas pós-tarefa | Aguardando questionário SUS |
 
 ---
 
@@ -76,7 +61,6 @@
 |---|---|---|
 | P1 | | ☐ Inaceitável (<50) ☐ Mediano (50–68) ☐ Bom (>68) ☐ Excelente (>80) |
 | P2 | | ☐ Inaceitável (<50) ☐ Mediano (50–68) ☐ Bom (>68) ☐ Excelente (>80) |
-| P3 | | ☐ Inaceitável (<50) ☐ Mediano (50–68) ☐ Bom (>68) ☐ Excelente (>80) |
 | **Média** | | |
 
 ---
@@ -107,7 +91,7 @@
 
 **Principais achados:**
 
-- _[preencher após análise das 3 sessões]_
+- _[preencher após análise das 2 sessões]_
 
 **Recomendações priorizadas:**
 
@@ -117,7 +101,7 @@
 
 **Limitações da rodada:**
 
-- Amostra pequena (3 participantes) e homogênea (estudantes de Engenharia de Software da mesma faculdade) — ver nota em [Persona do Participante](persona.md#1-persona-primária). Resultados são indicativos do fluxo de agendamento, não conclusivos sobre a usabilidade geral do site para o público real do Sabin (idosos, baixa literacia digital, etc.).
+- Amostra pequena (2 participantes) e homogênea (estudantes de Engenharia de Software da mesma faculdade) — ver nota em [Persona do Participante](persona.md#1-persona-primária). Resultados são indicativos do fluxo de agendamento, não conclusivos sobre a usabilidade geral do site para o público real do Sabin (idosos, baixa literacia digital, etc.).
 - Apenas 1 tarefa testada (agendamento) — fluxos de preparo de exame, acesso a resultados e busca de unidade por outros critérios não foram cobertos nesta rodada.
 
 ---
