@@ -1,7 +1,7 @@
 # Resultados do Teste de Usabilidade — Site Sabin
 
 > **Método:** Think Aloud | **Tarefa:** "Agende um exame de hemograma completo na unidade Ceilândia Centro."
-> **Participantes:** 3 estudantes de Engenharia de Software (ver [Persona do Participante](persona.md))
+> **Participantes:** 2 estudantes de Engenharia de Software (ver [Persona do Participante](persona.md))
 > **Data das sessões:** 24/06/2026
 > **Avaliador(es):** Gustavo Xavier Evangelista, Lucas Andrade Zanetti
 
