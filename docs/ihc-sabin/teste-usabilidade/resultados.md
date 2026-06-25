@@ -2,8 +2,8 @@
 
 > **Método:** Think Aloud | **Tarefa:** "Agende um exame de hemograma completo na unidade Ceilândia Centro."
 > **Participantes:** 3 estudantes de Engenharia de Software (ver [Persona do Participante](persona.md))
-> **Data das sessões:** _[preencher]_
-> **Avaliador(es):** _[preencher]_
+> **Data das sessões:** 24/06/2026
+> **Avaliador(es):** Gustavo Xavier Evangelista, Lucas Andrade Zanetti
 
 ---
 
@@ -11,7 +11,7 @@
 
 | Participante | Concluiu? | Tempo (s) | Exame correto? | Unidade correta? | Nº de erros/desvios | SUS (0–100) |
 |---|---|---|---|---|---|---|
-| P1 | ☐ Sim, sem ajuda ☐ Sim, com ajuda ☐ Não concluiu | | ☐ Sim ☐ Não | ☐ Sim ☐ Não | | |
+| P1 | [x] Sim, sem ajuda [ ] Sim, com ajuda [ ] Não concluiu | 240 | [x] Sim [ ] Não | [x] Sim [ ] Não | Vários cliques em seções incorretas | Aguardando |
 | P2 | ☐ Sim, sem ajuda ☐ Sim, com ajuda ☐ Não concluiu | | ☐ Sim ☐ Não | ☐ Sim ☐ Não | | |
 | P3 | ☐ Sim, sem ajuda ☐ Sim, com ajuda ☐ Não concluiu | | ☐ Sim ☐ Não | ☐ Sim ☐ Não | | |
 | **Média** | — | | — | — | | |
@@ -30,13 +30,13 @@
 
 | Campo | Registro |
 |---|---|
-| Perfil (idade, curso/período, familiaridade com Sabin) | |
-| Caminho percorrido (URLs/cliques, na ordem) | |
-| Verbalizações marcantes (citações literais) | |
-| Erros / desvios observados | |
-| Onde travou ou hesitou | |
-| Observações do avaliador | |
-| Respostas às perguntas pós-tarefa | 1. <br> 2. <br> 3. <br> 4. <br> 5. |
+| Perfil (idade, curso/período, familiaridade com Sabin) | 20 anos, estudante de Engenharia de Software. Usa internet diariamente, alto letramento digital. Já usou os serviços do Sabin, mas nunca realizou agendamentos pelo site. |
+| Caminho percorrido (URLs/cliques, na ordem) | Menu (três barras) -> Exames laboratoriais -> Preparo de exames -> Serviços digitais -> Unidades -> Compra online -> Busca por hemograma completo -> Comprar agora -> Prosseguir com a compra -> Nossas unidades -> Ceilândia -> Ceilândia Centro. |
+| Verbalizações marcantes (citações literais) | "Eu achei bem complicado. Os nomes não eram o que eu estava esperando [...] tive que entrar em várias outras páginas para conseguir achar esse hemograma completo que não estava onde eu estava esperando, que seria lá na parte de exames." / "Eu senti falta também na questão da data" |
+| Erros / desvios observados | Procurou o agendamento em abas informativas ("Exames laboratoriais", "Preparo de exames", "Serviços digitais", "Solicitação de serviço domiciliar") antes de ir para "Compra online". |
+| Onde travou ou hesitou | Hesitou ao não encontrar a opção de agendamento diretamente na aba de "Exames". Sentiu falta de um campo para selecionar a data do exame. |
+| Observações do avaliador | O participante explorou grande parte do menu principal tentando encontrar a opção correta, demonstrando que a taxonomia do menu não está alinhada com as expectativas (esperava achar agendamento em "Exames" e não em "Compra online"). |
+| Respostas às perguntas pós-tarefa | Aguardando questionário SUS |
 
 ---
 
