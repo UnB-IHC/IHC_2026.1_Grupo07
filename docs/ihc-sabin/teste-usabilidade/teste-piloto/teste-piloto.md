@@ -12,7 +12,7 @@ Para simular o teste real com a maior veracidade possível, o entrevistado escol
 ## Resumo da Sessão
 * **Tarefa:** Agendar um exame de hemograma completo na unidade Ceilândia Centro.
 * **Trajetória do Teste:** Apresentação → Assinatura do TCLE → Explicação do objetivo → Execução da tarefa → Feedback qualitativo → Questionário SUS → Finalização.
-* **Tempo de Duração:** _[Preencher tempo, ex: 4 minutos]_
+* **Tempo de Duração:** 6 minutos
 
 ## Principais Observações
 * **Desempenho na Tarefa:** O participante encontrou grandes dificuldades na navegação inicial, explorando abas como "Exames laboratoriais" e "Preparo de exames", que continham apenas informações em vez do agendamento.
