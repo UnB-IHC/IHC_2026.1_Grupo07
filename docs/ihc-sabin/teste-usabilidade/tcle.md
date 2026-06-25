@@ -50,6 +50,12 @@ Em caso de dúvidas sobre a pesquisa, antes, durante ou após sua participação
 **Lucas A. Zanetti** — e-mail: landradezanetti@gmail.com
 Equipe IHC 2026.1 — Grupo 07 — Universidade de Brasília (UnB)
 
+**Gustavo Xavier Evangelista** — e-mail: [guhxe32@gmail.com]
+Equipe IHC 2026.1 — Grupo 07 — Universidade de Brasília (UnB)
+
+**Tiago Santos Bittencourt** — e-mail: [tiago.bittencourt.2005@gmail.com]
+Equipe IHC 2026.1 — Grupo 07 — Universidade de Brasília (UnB)
+
 ---
 
 ## Declaração de Consentimento
