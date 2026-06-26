@@ -1,9 +1,21 @@
 # Gravação - Participante 3
 
-Abaixo está o registro em vídeo do Teste de Usabilidade realizado com o Participante 3. Diferente das sessões de P1 e P2 — que cobriram apenas a Tarefa 1 —, nesta sessão de aproximadamente 10 minutos foram aplicadas as **três tarefas** do roteiro. O vídeo captura a tela do usuário bem como suas verbalizações utilizando a técnica de *Think Aloud*.
+Abaixo estão os registros em vídeo do Teste de Usabilidade realizado com o Participante 3. Diferente das sessões de P1 e P2 — que cobriram apenas a Tarefa 1 —, nesta sessão de aproximadamente 10 minutos foram aplicadas as **três tarefas** do roteiro. O teste utilizou a técnica de *Think Aloud*, com o usuário verbalizando seus pensamentos durante a execução.
+
+Para permitir uma análise completa, o teste foi registrado de duas formas:
+
+### 1. Gravação de Tela
+Captura a interação direta do participante com a interface do sistema, permitindo visualizar o caminho percorrido, cliques e navegação.
 
 **Link para o vídeo:**
-[Assistir à gravação no YouTube](https://www.youtube.com/watch?v=Yy9u99nBeJw)
+[Assistir à gravação da tela no YouTube](https://www.youtube.com/watch?v=Yy9u99nBeJw)
+
+### 2. Gravação do Ambiente
+Mostra o contexto da sessão, enquadrando o participante (entrevistado), o entrevistador e o anotador. Este vídeo é fundamental para analisar a linguagem corporal, as expressões faciais e a dinâmica entre o usuário e os avaliadores.
+
+**Link para o vídeo:**
+[Assistir à gravação do ambiente no YouTube](https://www.youtube.com/watch?v=jUvaEmF4jf4)
+
 
 ## Resumo da Tarefa
 
