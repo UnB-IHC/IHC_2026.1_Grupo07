@@ -6,7 +6,7 @@
 > **Avaliador(es):** Gustavo Xavier Evangelista, Lucas Andrade Zanetti
 
 !!! warning "Status de coleta"
-    Apenas a **Tarefa 1 (agendamento)** foi executada até agora, com **2 dos 3 participantes** (P1 e P2). Faltam: T1 com P3, e as Tarefas 2 e 3 com todos os 3 participantes. Os campos abaixo marcados com "—" estão pendentes de coleta.
+    **P1 e P2:** apenas a Tarefa 1 (agendamento). **P3:** as **3 tarefas** (T1, T2 e T3) — ver [seção 4](#4-resultado-entrevista-3-p3). Ainda faltam T2 e T3 com P1 e P2. A pontuação SUS de P3 é **estimada** (respostas não coletadas). Os agregados abaixo (cards da *Visão Geral*, médias, tabela de problemas e síntese final) **ainda não foram recalculados** para incluir P3 e seguem refletindo n=2 / só T1 — recalcular após decidir se T2/T3 serão repetidas com P1 e P2.
 
 ---
 
@@ -60,8 +60,10 @@ flowchart LR
 |---|---|---|---|---|---|---|---|
 | P1 | ☑ Sim, sem ajuda | 240 | — | — | — | — | 50 |
 | P2 | ☑ Sim, sem ajuda | 195 | — | — | — | — | 40 |
-| P3 | — | — | — | — | — | — | — |
+| P3 | ☑ Sim, com ajuda | ~240 | ☑ Sim, com ajuda | ~130 | ☑ Sim, sem ajuda | ~35 | 35* |
 | **Média (T1, n=2)** | — | 217,5 | — | — | — | — | 45 |
+
+> ⚠ **Médias ainda em n=2 (P1, P2).** P3 já realizou T1/T2/T3 (ver [seção 4](#4-resultado-entrevista-3-p3)) e seu SUS é **estimado** (`*`), mas os agregados não foram recalculados — recalcular após decidir se T2/T3 serão repetidas com P1 e P2.
 
 ### Taxa de conclusão da tarefa (T1, n=2 — parcial)
 
@@ -231,15 +233,18 @@ flowchart LR
 
 <div class="grid cards" markdown>
 
--   **Tempo (T1)** · —
+-   **Tempo de tarefa** · ~7 min (T1 ~4min · T3 ~35s · T2 ~2min10s)
 
--   **Conclusão** · <span class="badge" style="background:#757575;color:#fff;">Pendente</span>
+-   **Conclusão** · <span class="badge" style="background:#2e7d32;color:#fff;">T3 sem ajuda</span> <span class="badge" style="background:#e65100;color:#fff;">T1 e T2 com ajuda</span>
 
--   **SUS** · <span class="badge" style="background:#757575;color:#fff;">—</span>
+-   **SUS** · <span class="badge" style="background:#c62828;color:#fff;">35 — Inaceitável (estimado)</span>
 
 </div>
 
-**Perfil:** _[preencher]_
+!!! note "Sessão diferente de P1 e P2"
+    Esta foi a **única sessão até agora em que as 3 tarefas foram aplicadas**. A ordem de execução no vídeo foi **T1 → T3 → T2** (abaixo seguimos a ordem lógica T1/T2/T3 do roteiro).
+
+**Perfil:** Estudante de Engenharia de Software, sexo feminino (conforme [critérios de recrutamento](persona.md)). Idade, dispositivo principal e relação prévia com o Sabin **não foram verbalizados** na sessão — preencher pela ficha de triagem.
 
 ### Evidência em vídeo
 
@@ -249,46 +254,104 @@ flowchart LR
 
 [Assistir no YouTube ↗](https://youtu.be/Yy9u99nBeJw)
 
-=== "Tarefa 1 — Agendamento"
+=== "Tarefa 1 — Agendamento (com ajuda)"
 
-    !!! info "Pendente"
-        Aguardando transcrição/análise da gravação acima.
+    ```mermaid
+    flowchart LR
+        A["Botão 'agendamento'"] --> B["Pré-cadastro de exames (unidade digital)"]
+        B --> C["Solicitação de exames"]
+        C --> D["Conteúdo de apoio — não achou"]
+        D --> E["Serviços digitais"]
+        E --> F["Atendimento domiciliar — rejeitou"]
+        F --> G["Agilizar exames de análises clínicas"]
+        G --> H["Menu ☰ — 1ª dica do avaliador"]
+        H --> I["Exames laboratoriais — não tinha"]
+        I --> J["Compre online — 2ª dica"]
+        J --> K["Busca: hemograma completo"]
+        K --> L["Cai em 'atendimento móvel'"]
+        L --> M["'Comprar' exame → avança"]
+
+        style D stroke:#c62828,stroke-width:2px
+        style L stroke:#c62828,stroke-width:2px
+    ```
 
     | Campo | Registro |
     |---|---|
-    | Caminho percorrido | |
-    | Verbalizações marcantes | |
-    | Erros / desvios | |
-    | Onde travou ou hesitou | |
-    | Observações do avaliador | |
+    | Verbalizações marcantes (citações literais) | "Vou apertar no botão de agendamento, que faz sentido." / "Tô procurando onde que eu vou agendar um exame [...] desci até a parte de conteúdo de apoio e não achei." / "Acho que não é aqui, né, mano? Não tô achando." / "Não consigo voltar pra parte inicial." / "Isso aqui é um tipo de atendimento móvel, não é isso? E como é que eu vou agendar?" / "Ah, tá. Então eu tenho que comprar meu exame aqui primeiro." |
+    | Erros / desvios observados | Procurou o agendamento em "pré-cadastro / unidade digital", "solicitação de exames", "conteúdo de apoio", "atendimento domiciliar" e "agilizar exames de análises clínicas" antes do caminho correto. Só chegou ao fluxo certo após **duas dicas do avaliador** (abrir o menu ☰ e, depois, escolher "Compre online"). |
+    | Onde travou ou hesitou | Não encontrava a opção de agendar; ficou presa numa tela de solicitação de serviço sem conseguir voltar à página inicial. Estranhou que "agendar" caísse no **atendimento móvel** e que fosse preciso "comprar" o exame para marcá-lo. Não houve etapa de data/horário. |
+    | Observações do avaliador | Tarefa concluída **com ajuda** (2 intervenções), em ~4 min. Participante visivelmente perdida ("fiquei bem perdida"). Reforça **TU-01** (nomenclatura "comprar" ≠ "agendar") e **TU-02** (redirecionamento ao atendimento móvel sem aviso). |
 
 === "Tarefa 2 — Vacina febre amarela (Águas Claras)"
 
-    !!! info "Pendente"
-        Sessão ainda não realizada.
+    > Executada **por último** no vídeo. Dependente de 9 meses.
+
+    ```mermaid
+    flowchart LR
+        A["Menu ☰ → Vacinas"] --> B["Vacinação na unidade / Agendar na unidade"]
+        B --> C["Águas Claras"]
+        C --> D["Tela da unidade — não achou agendamento"]
+        D --> E["Volta → Compre online"]
+        E --> F["'Muita informação' — filtro de crianças"]
+        F --> G["Não acha onde pesquisar — dica do avaliador"]
+        G --> H["Menu ☰ → Vacinas infantis (9 meses)"]
+        H --> I["Vacina de febre amarela"]
+        I --> J["Águas Claras (Shopping Metrópole)"]
+
+        style D stroke:#c62828,stroke-width:2px
+        style F stroke:#c62828,stroke-width:2px
+    ```
 
     | Campo | Registro |
     |---|---|
-    | Caminho percorrido | |
-    | Verbalizações marcantes | |
-    | Erros / desvios | |
-    | Onde travou ou hesitou | |
-    | Observações do avaliador | |
+    | Verbalizações marcantes (citações literais) | "Estou na tela da unidade de Águas Claras e não achei a parte de agendamento." / "Meu Deus, muita informação." / "Eu queria pesquisar a vacina de febre amarela, mas não sei como faz isso." / "Vou clicar em vacinas infantis porque meu filho tem 9 meses." |
+    | Erros / desvios observados | Tentou agendar pela página da unidade (Águas Claras) e pelo "Compre online" antes de achar o caminho por **Vacinas infantis**. Precisou de **uma dica do avaliador** (usar o menu ☰). |
+    | Onde travou ou hesitou | Sobrecarga de informação na listagem de vacinas; não encontrava campo de busca. Estranheza de que "compra online" levasse ao agendamento de vacina infantil. |
+    | Observações do avaliador | Tarefa concluída **com ajuda** (1 intervenção), em ~2 min. O mesmo problema de taxonomia da T1 se repete no fluxo de vacinas — confirma que **TU-01** vale também para vacinação. |
 
-=== "Tarefa 3 — Preparo check-up executivo"
+=== "Tarefa 3 — Preparo check-up executivo (sem ajuda)"
 
-    !!! info "Pendente"
-        Sessão ainda não realizada.
+    > Executada em **segundo** lugar no vídeo. Único fluxo tranquilo da sessão.
+
+    ```mermaid
+    flowchart LR
+        A["Menu ☰ → Exames"] --> B["Checkup executivo"]
+        B --> C["Rola a página"]
+        C --> D["Orientações de preparo — 'Achei'"]
+
+        style D stroke:#2e7d32,stroke-width:2px
+    ```
 
     | Campo | Registro |
     |---|---|
-    | Caminho percorrido | |
-    | Verbalizações marcantes | |
-    | Erros / desvios | |
-    | Onde travou ou hesitou | |
-    | Observações do avaliador | |
+    | Verbalizações marcantes (citações literais) | "Vou clicar em exames [...] vou clicar em checkup executivo." / "Tô descendo a tela aqui para achar a orientação." / "Orientações de preparo. Achei." |
+    | Erros / desvios observados | Nenhum desvio relevante. Caminho direto pelo menu ☰. |
+    | Onde travou ou hesitou | Não travou. Pequena dúvida se a seção de orientações já estava expandida ou costuma vir recolhida. |
+    | Observações do avaliador | Tarefa concluída **sem ajuda**, em ~35s. No feedback final: *"foi bem mais fácil e mais intuitivo de encontrar as orientações"*. Contrasta fortemente com T1/T2. |
 
-**Respostas às perguntas pós-tarefa:** _[preencher]_
+**Respostas às perguntas pós-tarefa (feedback final da participante):**
+
+- **T1 (hemograma):** *"Foi bem difícil de encontrar o lugar certo e eu fiquei bem perdida."*
+- **T3 (preparo do check-up):** *"Foi bem mais fácil e mais intuitivo de encontrar as orientações."*
+- **T2 (vacina febre amarela):** *"Também foi bem difícil de achar o lugar certo, porque eu não imaginaria que fazer uma compra online me levaria a agendar uma vacina pra criança."*
+
+!!! warning "SUS estimado — não coletado"
+    A participante respondeu ao questionário SUS ao final, mas **as respostas não foram verbalizadas** e não aparecem na gravação/legenda. A pontuação abaixo é uma **estimativa** feita pela equipe a partir do comportamento e do feedback observados — **deve ser substituída pelos valores reais** da ficha do SUS assim que disponível. Não é dado coletado.
+
+    | # | Afirmação (SUS) | Resposta estimada (1–5) | Justificativa |
+    |---|---|---|---|
+    | 1 | Gostaria de usar o site com frequência | 2 | Frustração no agendamento; só a T3 foi tranquila |
+    | 2 | Site desnecessariamente complexo | 4 | "Muita informação"; perdeu-se em várias telas |
+    | 3 | Site fácil de usar | 2 | Difícil em 2 das 3 tarefas |
+    | 4 | Precisaria de suporte técnico | 3 | Precisou de dicas do avaliador, mas é usuária fluente |
+    | 5 | Funções bem integradas | 2 | "Comprar" para agendar exame/vacina quebra o modelo mental |
+    | 6 | Muita inconsistência | 4 | "Agendar" leva ao atendimento móvel; nomenclatura confusa |
+    | 7 | Maioria aprenderia rapidamente | 2 | Mesmo sendo da área de TI, ficou perdida |
+    | 8 | Site muito difícil de usar | 4 | Difícil em T1 e T2 |
+    | 9 | Senti-me confiante | 3 | Concluiu tudo e agiu com confiança na T3 |
+    | 10 | Precisei aprender muita coisa | 2 | Mais questão de achabilidade do que de aprendizado |
+
+    **Cálculo:** ímpares (1,3,5,7,9) = (2+2+2+2+3) − 5 = **6** · pares (2,4,6,8,10) = 25 − (4+3+4+4+2) = **8** · (6 + 8) × 2,5 = **35 pontos** → <span class="badge" style="background:#c62828;color:#fff;">Inaceitável (&lt;50)</span>
 
 ---
 
@@ -304,7 +367,7 @@ flowchart LR
 |---|---|---|
 | P1 | 50 | <span class="badge" style="background:#f9a825;color:#000;">Mediano (50–68)</span> |
 | P2 | 40 | <span class="badge" style="background:#c62828;color:#fff;">Inaceitável (&lt;50)</span> |
-| P3 | — | — |
+| P3 | 35* | <span class="badge" style="background:#c62828;color:#fff;">Inaceitável (&lt;50)</span> · *estimado* |
 | **Média (n=2, parcial)** | 45 | <span class="badge" style="background:#c62828;color:#fff;">Inaceitável (&lt;50)</span> |
 
 ### 5.2 Problemas de Usabilidade Identificados
