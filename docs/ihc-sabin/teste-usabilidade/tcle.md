@@ -16,7 +16,7 @@ Esta pesquisa tem como objetivo avaliar a usabilidade do site **Sabin Diagnósti
 
 ## 2. Procedimentos
 
-Caso aceite participar, o(a) Sr.(a) será convidado(a) a realizar, em um único encontro com duração aproximada de **25 a 30 minutos**, 3 tarefas simples de navegação no site do Sabin, nenhuma delas exigindo login (a saber: localizar instruções de preparo de exame, iniciar um agendamento e encontrar uma unidade próxima).
+Caso aceite participar, o(a) Sr.(a) será convidado(a) a realizar, em um único encontro com duração aproximada de **25 a 30 minutos**, 3 tarefas simples de navegação no site do Sabin, nenhuma delas exigindo login (a saber: agendar um exame, agendar uma vacina e localizar orientações de preparo para um check-up).
 
 Durante a execução das tarefas, será utilizada a técnica de **Think Aloud (verbalização simultânea)**: pediremos que o(a) Sr.(a) pense em voz alta, narrando o que está procurando, pensando ou sentindo enquanto usa o site. Não há respostas certas ou erradas — o que está sendo avaliado é o site, não o participante. Ao final, será aplicado um breve questionário de satisfação (SUS) e algumas perguntas abertas sobre a experiência.
 

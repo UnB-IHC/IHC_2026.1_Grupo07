@@ -1,6 +1,6 @@
 # Resultados do Teste de Usabilidade — Site Sabin
 
-> **Método:** Think Aloud | **Tarefas:** T1 "Agende um exame de hemograma completo na unidade Ceilândia Centro." · T2 "Descubra se precisa de jejum para um hemograma completo." · T3 "Encontre a unidade mais próxima ao CEP 72215-005 (Ceilândia) e seu horário de funcionamento."
+> **Método:** Think Aloud | **Tarefas:** T1 "Agende um exame de hemograma completo na unidade Ceilândia Centro." · T2 "Agende uma vacina de febre amarela para um dependente de 9 meses na unidade Águas Claras." · T3 "Veja as orientações de preparo para um check-up executivo."
 > **Participantes:** 3 estudantes de Engenharia de Software (ver [Persona do Participante](persona.md))
 > **Data das sessões:** T1 com P1/P2 em 24/06/2026 — demais sessões/tarefas **pendentes**
 > **Avaliador(es):** Gustavo Xavier Evangelista, Lucas Andrade Zanetti
@@ -45,7 +45,7 @@
 | Onde travou ou hesitou | Hesitou ao não encontrar a opção de agendamento diretamente na aba de "Exames". Sentiu falta de um campo para selecionar a data do exame. |
 | Observações do avaliador | O participante explorou grande parte do menu principal tentando encontrar a opção correta, demonstrando que a taxonomia do menu não está alinhada com as expectativas (esperava achar agendamento em "Exames" e não em "Compra online"). |
 
-#### Tarefa 2 — Preparo (jejum) — *pendente*
+#### Tarefa 2 — Vacina febre amarela (Águas Claras) — *pendente*
 
 | Campo | Registro |
 |---|---|
@@ -55,7 +55,7 @@
 | Onde travou ou hesitou | |
 | Observações do avaliador | |
 
-#### Tarefa 3 — Localizar unidade (CEP) — *pendente*
+#### Tarefa 3 — Preparo check-up executivo — *pendente*
 
 | Campo | Registro |
 |---|---|
@@ -83,7 +83,7 @@
 | Onde travou ou hesitou | Confundiu a nomenclatura "comprar online" (que é o caminho correto) com "agendar exame" (que levava ao serviço móvel). |
 | Observações do avaliador | O participante também evidenciou um problema grave de taxonomia: "comprar" não é associado mentalmente a "agendar". Além disso, o botão de agendar no exame redireciona para um tipo de serviço restrito, frustrando o fluxo. |
 
-#### Tarefa 2 — Preparo (jejum) — *pendente*
+#### Tarefa 2 — Vacina febre amarela (Águas Claras) — *pendente*
 
 | Campo | Registro |
 |---|---|
@@ -93,7 +93,7 @@
 | Onde travou ou hesitou | |
 | Observações do avaliador | |
 
-#### Tarefa 3 — Localizar unidade (CEP) — *pendente*
+#### Tarefa 3 — Preparo check-up executivo — *pendente*
 
 | Campo | Registro |
 |---|---|
@@ -121,7 +121,7 @@
 | Onde travou ou hesitou | |
 | Observações do avaliador | |
 
-#### Tarefa 2 — Preparo (jejum)
+#### Tarefa 2 — Vacina febre amarela (Águas Claras)
 
 | Campo | Registro |
 |---|---|
@@ -131,7 +131,7 @@
 | Onde travou ou hesitou | |
 | Observações do avaliador | |
 
-#### Tarefa 3 — Localizar unidade (CEP)
+#### Tarefa 3 — Preparo check-up executivo
 
 | Campo | Registro |
 |---|---|
@@ -176,15 +176,15 @@
 
 > Indique quais problemas previstos na [Avaliação Heurística](../avaliacao-heuristica/index.md) (HE-01 a HE-21) foram **confirmados**, **não observados** ou **não testados** nesta rodada empírica.
 >
-> Cobertura por tarefa: **T1** → H3, H5, H6, H7, H9 (agendamento) · **T2** → H1, H6, H7 (preparo de exame) · **T3** → H1, H6, H7 (busca de unidade).
+> Cobertura por tarefa: **T1** → H3, H5, H6, H7, H9 (agendamento) · **T2** → H2, H3, H5, H9 (agendamento de vacina) · **T3** → H1, H6, H7 (preparo de check-up).
 
 | ID Heurística | Problema previsto | Confirmado no teste? | Observação |
 |---|---|---|---|
 | H2 / H4 | Problemas de taxonomia e nomenclatura no menu principal | Confirmado (T1) | "Compra online" não é reconhecido como agendamento de exames. |
 | H3 / H5 | Falta de controle/saída clara ao entrar em fluxos específicos (ex: atendimento móvel) | Confirmado (T1) | O usuário precisou usar o "Voltar" do navegador e perdeu sua pesquisa. |
 | H1 | Ausência de opções básicas de agendamento (ex: data e hora) | Confirmado (T1) | A expectativa do agendamento não é cumprida ao final do fluxo. |
-| HE-12 / HE-13 | Listagem de exames sem contexto mínimo; ausência de breadcrumb | Não testado — pendente T2 | |
-| HE-01 / HE-06 | Carregamento sem feedback / "0 unidades encontradas" sem recuperação | Não testado — pendente T3 | |
+| — | Fluxo de agendamento de vacinas/restrição de idade não foi inspecionado na avaliação heurística — T2 é validação exploratória, sem achado prévio para confirmar | Não testado — pendente T2 | |
+| HE-12 / HE-13 | Listagem de exames sem contexto mínimo; ausência de breadcrumb | Não testado — pendente T3 | |
 
 ---
 
@@ -195,7 +195,7 @@
 - A taxonomia do site (como o uso do termo "Comprar online" em vez de "Agendar") confunde os usuários e atrasa a conclusão das tarefas, indo contra o modelo mental dos pacientes.
 - O redirecionamento surpresa para o serviço de atendimento móvel prejudica a fluidez, fazendo o usuário pensar que errou o caminho ou que não pode agendar em uma unidade física.
 - A ausência de um calendário para marcação de data frustra os usuários no final da tarefa, passando a impressão de que o processo está incompleto.
-- O SUS médio de 45 (Inaceitável, n=2) reflete um alto custo cognitivo e insatisfação com a interface — a confirmar/revisar após P3 e após T2/T3.
+- O SUS médio de 45 (Inaceitável, n=2) reflete um alto custo cognitivo e insatisfação com a interface — a confirmar/revisar após P3 e após T2/T3 (vacina e preparo de check-up).
 
 **Recomendações priorizadas (com base em T1):**
 
@@ -209,7 +209,7 @@
 
 - Amostra pequena (3 participantes) e homogênea (estudantes de Engenharia de Software da mesma faculdade) — ver nota em [Persona do Participante](persona.md#1-persona-primária). Resultados são indicativos, não conclusivos sobre a usabilidade geral do site para o público real do Sabin (idosos, baixa literacia digital, etc.).
 - Nenhuma das 3 tarefas exige login — o portal de laudos (área autenticada) não é coberto por esta rodada.
-- **No momento, apenas T1 foi testada e só com 2 dos 3 participantes.** As conclusões acima cobrem só o fluxo de agendamento; aguardam-se T2 (preparo de exame), T3 (busca de unidade) e a sessão completa de P3 antes de uma síntese final.
+- **No momento, apenas T1 foi testada e só com 2 dos 3 participantes.** As conclusões acima cobrem só o fluxo de agendamento; aguardam-se T2 (vacina febre amarela), T3 (preparo de check-up) e a sessão completa de P3 antes de uma síntese final.
 
 ---
 

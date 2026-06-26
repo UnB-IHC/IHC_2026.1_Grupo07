@@ -94,14 +94,15 @@ Vou ligar a gravação agora. Apenas o computador e o áudio serão gravados —
 
 ---
 
-### Tarefa 2 — Preparo para hemograma (jejum)
+### Tarefa 2 — Agendar vacina de febre amarela (dependente) na unidade Águas Claras
 
 > *[Entregue o cartão ou leia. Reinicie a homepage antes de começar.]*
 
-**"Antes de fazer um hemograma completo, você quer saber se precisa estar em jejum. Encontre essa informação no site."**
+**"Você quer agendar uma vacina de febre amarela no site, para o seu filho de 9 meses, na unidade Águas Claras."**
 
-> *Critério de sucesso:* participante chega à página do exame "Hemograma Completo" e indica verbalmente, de forma correta, a instrução de jejum/restrição.
-> *Critério de falha notável:* não localizar a página do exame, ou informar uma instrução incorreta/inventada.
+> *Critério de sucesso:* participante chega a uma tela real do fluxo de agendamento com a vacina "Febre Amarela" e a unidade "Águas Claras" selecionados (não precisa concluir o agendamento).
+> *Critério de falha notável:* não localizar a vacina, não conseguir informar o dependente/idade, ou não localizar a unidade.
+> *Atenção do avaliador:* a vacina de febre amarela tem restrição de idade mínima (geralmente 9 meses). Observe e anote se o site comunica essa restrição claramente ou deixa o participante confuso/sem aviso — isso é um achado em si, não apenas o sucesso/fracasso da tarefa.
 
 | Campo | Registro |
 |---|---|
@@ -110,7 +111,9 @@ Vou ligar a gravação agora. Apenas o computador e o áudio serão gravados —
 | Duração (s) | |
 | Concluiu? | ☐ Sim, sem ajuda ☐ Sim, com ajuda ☐ Não concluiu |
 | Caminho percorrido (URLs/cliques) | |
-| Informou a instrução de preparo corretamente? | ☐ Sim ☐ Não |
+| Selecionou a vacina correta (Febre Amarela)? | ☐ Sim ☐ Não |
+| Selecionou a unidade correta (Águas Claras)? | ☐ Sim ☐ Não |
+| O site comunicou a restrição de idade (9 meses)? | ☐ Sim, claramente ☐ Sim, confuso ☐ Não comunicou |
 | Verbalizações marcantes | |
 | Erros / desvios | |
 | Observações do avaliador | |
@@ -119,14 +122,14 @@ Vou ligar a gravação agora. Apenas o computador e o áudio serão gravados —
 
 ---
 
-### Tarefa 3 — Localizar unidade e horário de funcionamento
+### Tarefa 3 — Orientações de preparo para check-up executivo
 
 > *[Entregue o cartão ou leia. Reinicie a homepage antes de começar.]*
 
-**"Encontre a unidade Sabin mais próxima ao CEP 72215-005 (Ceilândia, DF) e descubra o horário de funcionamento dela."**
+**"Você quer ver as orientações de preparo para um agendamento de check-up executivo."**
 
-> *Critério de sucesso:* participante chega à página de uma unidade real próxima ao CEP informado e consegue indicar o horário de funcionamento.
-> *Critério de falha notável:* receber "0 unidades encontradas" sem conseguir contornar, ou não localizar horário algum.
+> *Critério de sucesso:* participante chega à página do "Check-up Executivo" e indica verbalmente as orientações de preparo encontradas.
+> *Critério de falha notável:* não localizar a página do check-up executivo, ou informar uma orientação incorreta/inventada.
 
 | Campo | Registro |
 |---|---|
@@ -135,7 +138,7 @@ Vou ligar a gravação agora. Apenas o computador e o áudio serão gravados —
 | Duração (s) | |
 | Concluiu? | ☐ Sim, sem ajuda ☐ Sim, com ajuda ☐ Não concluiu |
 | Caminho percorrido (URLs/cliques) | |
-| Informou o horário de funcionamento corretamente? | ☐ Sim ☐ Não |
+| Informou a orientação de preparo corretamente? | ☐ Sim ☐ Não |
 | Verbalizações marcantes | |
 | Erros / desvios | |
 | Observações do avaliador | |
