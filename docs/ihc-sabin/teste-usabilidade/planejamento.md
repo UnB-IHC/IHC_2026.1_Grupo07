@@ -171,6 +171,8 @@ Caso o participante não conclua a tarefa em **5 minutos**, o avaliador interrom
 | Análise dos resultados | Semana 3–4 |
 | Redação do relato | Semana 4 |
 
+> Detalhes da execução e a gravação do piloto estão em [Teste Piloto](teste-piloto/teste-piloto.md).
+
 ---
 
 ## 8. Materiais Necessários

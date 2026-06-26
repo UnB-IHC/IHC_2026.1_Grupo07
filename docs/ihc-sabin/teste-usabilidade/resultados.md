@@ -10,6 +10,50 @@
 
 ---
 
+## Visão Geral
+
+<div class="grid cards" markdown>
+
+-   **3** participantes recrutados
+
+    ---
+
+    Estudantes de Engenharia de Software — ver [critérios de inclusão](planejamento.md#2-perfil-dos-participantes)
+
+-   **1 / 3** tarefas concluídas
+
+    ---
+
+    Apenas T1 (agendamento) foi rodada até agora, com P1 e P2
+
+-   <span class="badge" style="background:#c62828;color:#fff;">SUS médio 45</span>
+
+    ---
+
+    Classificação **Inaceitável** (n=2, parcial — só T1)
+
+-   **100%** de conclusão em T1
+
+    ---
+
+    P1 e P2 concluíram sem ajuda do avaliador (n=2)
+
+</div>
+
+```mermaid
+flowchart LR
+    P1["Entrevista 1 — P1\nT1 concluída"] --> RF[Resultado Final]
+    P2["Entrevista 2 — P2\nT1 concluída"] --> RF
+    P3["Entrevista 3 — P3\npendente"] --> RF
+    RF --> SUS["SUS médio: 45 (Inaceitável)"]
+    RF --> PROB["3 problemas críticos/altos identificados"]
+    RF --> REC["Recomendações priorizadas"]
+
+    style P3 stroke-dasharray: 5 5
+```
+
+---
+
 ## 1. Resumo Quantitativo por Participante
 
 | Participante | T1 ✓? | T1 (s) | T2 ✓? | T2 (s) | T3 ✓? | T3 (s) | SUS |
@@ -27,152 +71,255 @@
 
 ---
 
-## 2. Detalhamento por Participante
+## 2. Resultado — Entrevista 1 (P1)
 
-> Cada participante tem um bloco por tarefa. Preencha os blocos vazios à medida que as sessões restantes forem conduzidas.
+<div class="grid cards" markdown>
 
-### P1
+-   **Tempo (T1)** · 240s (4min)
+
+-   **Conclusão** · <span class="badge" style="background:#2e7d32;color:#fff;">Sem ajuda</span>
+
+-   **SUS** · <span class="badge" style="background:#f9a825;color:#000;">50 — Mediano</span>
+
+</div>
 
 **Perfil:** 20 anos, estudante de Engenharia de Software. Usa internet diariamente, alto letramento digital. Já usou os serviços do Sabin, mas nunca realizou agendamentos pelo site.
 
-#### Tarefa 1 — Agendamento (concluída)
+### Evidência em vídeo
 
-| Campo | Registro |
-|---|---|
-| Caminho percorrido (URLs/cliques, na ordem) | Menu (três barras) -> Exames laboratoriais -> Preparo de exames -> Serviços digitais -> Unidades -> Compra online -> Busca por hemograma completo -> Comprar agora -> Prosseguir com a compra -> Nossas unidades -> Ceilândia -> Ceilândia Centro. |
-| Verbalizações marcantes (citações literais) | "Eu achei bem complicado. Os nomes não eram o que eu estava esperando [...] tive que entrar em várias outras páginas para conseguir achar esse hemograma completo que não estava onde eu estava esperando, que seria lá na parte de exames." / "Eu senti falta também na questão da data" |
-| Erros / desvios observados | Procurou o agendamento em abas informativas ("Exames laboratoriais", "Preparo de exames", "Serviços digitais", "Solicitação de serviço domiciliar") antes de ir para "Compra online". |
-| Onde travou ou hesitou | Hesitou ao não encontrar a opção de agendamento diretamente na aba de "Exames". Sentiu falta de um campo para selecionar a data do exame. |
-| Observações do avaliador | O participante explorou grande parte do menu principal tentando encontrar a opção correta, demonstrando que a taxonomia do menu não está alinhada com as expectativas (esperava achar agendamento em "Exames" e não em "Compra online"). |
+<div class="video-wrapper" markdown>
+<iframe src="https://www.youtube.com/embed/pH2DjBRNKGs" title="Gravação da Entrevista 1 — Teste de Usabilidade Sabin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-secure" allowfullscreen></iframe>
+</div>
 
-#### Tarefa 2 — Vacina febre amarela (Águas Claras) — *pendente*
+[Assistir no YouTube ↗](https://youtu.be/pH2DjBRNKGs)
 
-| Campo | Registro |
-|---|---|
-| Caminho percorrido | |
-| Verbalizações marcantes | |
-| Erros / desvios | |
-| Onde travou ou hesitou | |
-| Observações do avaliador | |
+=== "Tarefa 1 — Agendamento (concluída)"
 
-#### Tarefa 3 — Preparo check-up executivo — *pendente*
+    ```mermaid
+    flowchart LR
+        A[Menu três barras] --> B[Exames laboratoriais]
+        B --> C[Preparo de exames]
+        C --> D[Serviços digitais]
+        D --> E[Unidades]
+        E --> F[Compra online]
+        F --> G["Busca: hemograma completo"]
+        G --> H[Comprar agora]
+        H --> I[Prosseguir com a compra]
+        I --> J[Nossas unidades]
+        J --> K[Ceilândia]
+        K --> L[Ceilândia Centro]
+    ```
 
-| Campo | Registro |
-|---|---|
-| Caminho percorrido | |
-| Verbalizações marcantes | |
-| Erros / desvios | |
-| Onde travou ou hesitou | |
-| Observações do avaliador | |
+    | Campo | Registro |
+    |---|---|
+    | Verbalizações marcantes (citações literais) | "Eu achei bem complicado. Os nomes não eram o que eu estava esperando [...] tive que entrar em várias outras páginas para conseguir achar esse hemograma completo que não estava onde eu estava esperando, que seria lá na parte de exames." / "Eu senti falta também na questão da data" |
+    | Erros / desvios observados | Procurou o agendamento em abas informativas ("Exames laboratoriais", "Preparo de exames", "Serviços digitais", "Solicitação de serviço domiciliar") antes de ir para "Compra online". |
+    | Onde travou ou hesitou | Hesitou ao não encontrar a opção de agendamento diretamente na aba de "Exames". Sentiu falta de um campo para selecionar a data do exame. |
+    | Observações do avaliador | O participante explorou grande parte do menu principal tentando encontrar a opção correta, demonstrando que a taxonomia do menu não está alinhada com as expectativas (esperava achar agendamento em "Exames" e não em "Compra online"). |
+
+=== "Tarefa 2 — Vacina febre amarela (Águas Claras)"
+
+    !!! info "Pendente"
+        Sessão ainda não realizada.
+
+    | Campo | Registro |
+    |---|---|
+    | Caminho percorrido | |
+    | Verbalizações marcantes | |
+    | Erros / desvios | |
+    | Onde travou ou hesitou | |
+    | Observações do avaliador | |
+
+=== "Tarefa 3 — Preparo check-up executivo"
+
+    !!! info "Pendente"
+        Sessão ainda não realizada.
+
+    | Campo | Registro |
+    |---|---|
+    | Caminho percorrido | |
+    | Verbalizações marcantes | |
+    | Erros / desvios | |
+    | Onde travou ou hesitou | |
+    | Observações do avaliador | |
 
 **Respostas às perguntas pós-tarefa:** SUS: 50 (Mediano) — perguntas abertas pendentes de registro.
 
 ---
 
-### P2
+## 3. Resultado — Entrevista 2 (P2)
+
+<div class="grid cards" markdown>
+
+-   **Tempo (T1)** · 195s (3min15s)
+
+-   **Conclusão** · <span class="badge" style="background:#2e7d32;color:#fff;">Sem ajuda</span>
+
+-   **SUS** · <span class="badge" style="background:#c62828;color:#fff;">40 — Inaceitável</span>
+
+</div>
 
 **Perfil:** 19 anos, estudante de Engenharia de Software. Usa celular como dispositivo principal. Alto letramento digital. Já fez exames na unidade Ceilândia Centro.
 
-#### Tarefa 1 — Agendamento (concluída)
+### Evidência em vídeo
 
-| Campo | Registro |
-|---|---|
-| Caminho percorrido (URLs/cliques, na ordem) | Página inicial -> Menu principal -> Abas informativas diversas -> Volta à página inicial -> Procure seu exame (Hemograma completo) -> Agendar o exame (cai em atendimento móvel) -> Voltar navegador -> Refaz a busca -> Comprar online -> Comprar -> Termos de uso -> Nossas unidades -> Ceilândia -> Ceilândia Centro. |
-| Verbalizações marcantes (citações literais) | "Achei os termos um pouco confusos... a primeira opção é agendar exame, mas ele vai para um local que não faz sentido que é o atendimento domiciliar. A opção certa é comprar exame, que pra mim faria mais sentido você agendar, né?" / "Senti falta de não ter como selecionar um local e uma data" |
-| Erros / desvios observados | Clicou em "agendar o exame" dentro da busca, mas foi direcionado para "atendimento domiciliar/móvel". Não encontrou botão de voltar no site, usando o do navegador e perdendo o preenchimento da busca. |
-| Onde travou ou hesitou | Confundiu a nomenclatura "comprar online" (que é o caminho correto) com "agendar exame" (que levava ao serviço móvel). |
-| Observações do avaliador | O participante também evidenciou um problema grave de taxonomia: "comprar" não é associado mentalmente a "agendar". Além disso, o botão de agendar no exame redireciona para um tipo de serviço restrito, frustrando o fluxo. |
+<div class="video-wrapper" markdown>
+<iframe src="https://www.youtube.com/embed/T6je8iKDG30" title="Gravação da Entrevista 2 — Teste de Usabilidade Sabin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-secure" allowfullscreen></iframe>
+</div>
 
-#### Tarefa 2 — Vacina febre amarela (Águas Claras) — *pendente*
+[Assistir no YouTube ↗](https://youtu.be/T6je8iKDG30)
 
-| Campo | Registro |
-|---|---|
-| Caminho percorrido | |
-| Verbalizações marcantes | |
-| Erros / desvios | |
-| Onde travou ou hesitou | |
-| Observações do avaliador | |
+=== "Tarefa 1 — Agendamento (concluída)"
 
-#### Tarefa 3 — Preparo check-up executivo — *pendente*
+    ```mermaid
+    flowchart LR
+        A[Página inicial] --> B[Menu principal]
+        B --> C[Abas informativas diversas]
+        C --> D[Volta à página inicial]
+        D --> E["Procure seu exame: hemograma completo"]
+        E --> F["Agendar o exame -> cai em atendimento móvel"]
+        F --> G[Voltar navegador]
+        G --> H[Refaz a busca]
+        H --> I[Comprar online]
+        I --> J[Comprar]
+        J --> K[Termos de uso]
+        K --> L[Nossas unidades]
+        L --> M[Ceilândia]
+        M --> N[Ceilândia Centro]
 
-| Campo | Registro |
-|---|---|
-| Caminho percorrido | |
-| Verbalizações marcantes | |
-| Erros / desvios | |
-| Onde travou ou hesitou | |
-| Observações do avaliador | |
+        style F stroke:#c62828,stroke-width:2px
+    ```
+
+    | Campo | Registro |
+    |---|---|
+    | Verbalizações marcantes (citações literais) | "Achei os termos um pouco confusos... a primeira opção é agendar exame, mas ele vai para um local que não faz sentido que é o atendimento domiciliar. A opção certa é comprar exame, que pra mim faria mais sentido você agendar, né?" / "Senti falta de não ter como selecionar um local e uma data" |
+    | Erros / desvios observados | Clicou em "agendar o exame" dentro da busca, mas foi direcionado para "atendimento domiciliar/móvel". Não encontrou botão de voltar no site, usando o do navegador e perdendo o preenchimento da busca. |
+    | Onde travou ou hesitou | Confundiu a nomenclatura "comprar online" (que é o caminho correto) com "agendar exame" (que levava ao serviço móvel). |
+    | Observações do avaliador | O participante também evidenciou um problema grave de taxonomia: "comprar" não é associado mentalmente a "agendar". Além disso, o botão de agendar no exame redireciona para um tipo de serviço restrito, frustrando o fluxo. |
+
+=== "Tarefa 2 — Vacina febre amarela (Águas Claras)"
+
+    !!! info "Pendente"
+        Sessão ainda não realizada.
+
+    | Campo | Registro |
+    |---|---|
+    | Caminho percorrido | |
+    | Verbalizações marcantes | |
+    | Erros / desvios | |
+    | Onde travou ou hesitou | |
+    | Observações do avaliador | |
+
+=== "Tarefa 3 — Preparo check-up executivo"
+
+    !!! info "Pendente"
+        Sessão ainda não realizada.
+
+    | Campo | Registro |
+    |---|---|
+    | Caminho percorrido | |
+    | Verbalizações marcantes | |
+    | Erros / desvios | |
+    | Onde travou ou hesitou | |
+    | Observações do avaliador | |
 
 **Respostas às perguntas pós-tarefa:** SUS: 40 (Inaceitável) — perguntas abertas pendentes de registro.
 
 ---
 
-### P3 — *sessão pendente (T1, T2 e T3)*
+## 4. Resultado — Entrevista 3 (P3)
+
+<div class="grid cards" markdown>
+
+-   **Tempo (T1)** · —
+
+-   **Conclusão** · <span class="badge" style="background:#757575;color:#fff;">Pendente</span>
+
+-   **SUS** · <span class="badge" style="background:#757575;color:#fff;">—</span>
+
+</div>
 
 **Perfil:** _[preencher]_
 
-#### Tarefa 1 — Agendamento
+### Evidência em vídeo
 
-| Campo | Registro |
-|---|---|
-| Caminho percorrido | |
-| Verbalizações marcantes | |
-| Erros / desvios | |
-| Onde travou ou hesitou | |
-| Observações do avaliador | |
+<div class="video-wrapper" markdown>
+<iframe src="https://www.youtube.com/embed/Yy9u99nBeJw" title="Gravação da Entrevista 3 — Teste de Usabilidade Sabin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-secure" allowfullscreen></iframe>
+</div>
 
-#### Tarefa 2 — Vacina febre amarela (Águas Claras)
+[Assistir no YouTube ↗](https://youtu.be/Yy9u99nBeJw)
 
-| Campo | Registro |
-|---|---|
-| Caminho percorrido | |
-| Verbalizações marcantes | |
-| Erros / desvios | |
-| Onde travou ou hesitou | |
-| Observações do avaliador | |
+=== "Tarefa 1 — Agendamento"
 
-#### Tarefa 3 — Preparo check-up executivo
+    !!! info "Pendente"
+        Aguardando transcrição/análise da gravação acima.
 
-| Campo | Registro |
-|---|---|
-| Caminho percorrido | |
-| Verbalizações marcantes | |
-| Erros / desvios | |
-| Onde travou ou hesitou | |
-| Observações do avaliador | |
+    | Campo | Registro |
+    |---|---|
+    | Caminho percorrido | |
+    | Verbalizações marcantes | |
+    | Erros / desvios | |
+    | Onde travou ou hesitou | |
+    | Observações do avaliador | |
+
+=== "Tarefa 2 — Vacina febre amarela (Águas Claras)"
+
+    !!! info "Pendente"
+        Sessão ainda não realizada.
+
+    | Campo | Registro |
+    |---|---|
+    | Caminho percorrido | |
+    | Verbalizações marcantes | |
+    | Erros / desvios | |
+    | Onde travou ou hesitou | |
+    | Observações do avaliador | |
+
+=== "Tarefa 3 — Preparo check-up executivo"
+
+    !!! info "Pendente"
+        Sessão ainda não realizada.
+
+    | Campo | Registro |
+    |---|---|
+    | Caminho percorrido | |
+    | Verbalizações marcantes | |
+    | Erros / desvios | |
+    | Onde travou ou hesitou | |
+    | Observações do avaliador | |
 
 **Respostas às perguntas pós-tarefa:** _[preencher]_
 
 ---
 
-## 3. Resultado do SUS (System Usability Scale)
+## 5. Resultado Final
+
+> Síntese consolidada das 3 entrevistas. Esta seção é **parcial** — reflete apenas T1 com P1 e P2 — e deve ser recalculada quando T2, T3 e a sessão de P3 forem concluídas.
+
+### 5.1 SUS (System Usability Scale)
 
 > Use o cálculo descrito em [Questionário SUS](questionario-sus.md) para cada participante. O SUS é aplicado uma vez por participante, ao final das 3 tarefas — não por tarefa.
 
 | Participante | Pontuação SUS | Classificação |
 |---|---|---|
-| P1 | 50 | ☑ Mediano (50–68) |
-| P2 | 40 | ☑ Inaceitável (<50) |
+| P1 | 50 | <span class="badge" style="background:#f9a825;color:#000;">Mediano (50–68)</span> |
+| P2 | 40 | <span class="badge" style="background:#c62828;color:#fff;">Inaceitável (&lt;50)</span> |
 | P3 | — | — |
-| **Média (n=2, parcial)** | 45 | Inaceitável (<50) |
+| **Média (n=2, parcial)** | 45 | <span class="badge" style="background:#c62828;color:#fff;">Inaceitável (&lt;50)</span> |
 
----
-
-## 4. Problemas de Usabilidade Identificados
+### 5.2 Problemas de Usabilidade Identificados
 
 > Liste cada problema observado em pelo menos 1 sessão. Use a mesma escala de severidade da [Avaliação Heurística](../avaliacao-heuristica/index.md) para permitir comparação cruzada entre as duas frentes de avaliação. Os itens abaixo vêm de T1 (P1, P2) — adicionar achados de T2/T3 conforme forem coletados.
 
 | ID | Problema observado | Participante(s) afetado(s) | Severidade | Heurística/critério relacionado | Evidência |
 |---|---|---|---|---|---|
-| TU-01 | Nomenclatura ambígua ("Compra online" vs "Agendar exame" vs "Serviços digitais") não corresponde ao modelo mental do usuário | P1, P2 | Crítico | Correspondência com o mundo real (H2) | P1 procurou exames em várias abas informativas. P2 apontou que "comprar não faz sentido, deveria ser agendar". |
-| TU-02 | Botão "Agendar o exame" no resultado da pesquisa direciona para atendimento móvel sem aviso prévio e sem opção clara de voltar | P2 | Alto | Controle e liberdade (H3), Prevenção de erros (H5) | P2 caiu na página de atendimento móvel, teve que usar o botão de voltar do navegador e perdeu a busca. |
-| TU-03 | Falta de etapa para seleção de data e horário do exame no fluxo | P1, P2 | Crítico | Visibilidade do status do sistema (H1) | Ambos os participantes reclamaram explicitamente que não lhes foi dada a opção de escolher a data do agendamento. |
+| TU-01 | Nomenclatura ambígua ("Compra online" vs "Agendar exame" vs "Serviços digitais") não corresponde ao modelo mental do usuário | P1, P2 | <span class="badge" style="background:#c62828;color:#fff;">Crítico</span> | Correspondência com o mundo real (H2) | P1 procurou exames em várias abas informativas. P2 apontou que "comprar não faz sentido, deveria ser agendar". |
+| TU-02 | Botão "Agendar o exame" no resultado da pesquisa direciona para atendimento móvel sem aviso prévio e sem opção clara de voltar | P2 | <span class="badge" style="background:#e65100;color:#fff;">Alto</span> | Controle e liberdade (H3), Prevenção de erros (H5) | P2 caiu na página de atendimento móvel, teve que usar o botão de voltar do navegador e perdeu a busca. |
+| TU-03 | Falta de etapa para seleção de data e horário do exame no fluxo | P1, P2 | <span class="badge" style="background:#c62828;color:#fff;">Crítico</span> | Visibilidade do status do sistema (H1) | Ambos os participantes reclamaram explicitamente que não lhes foi dada a opção de escolher a data do agendamento. |
 | TU-04 | *(pendente — preencher após T2)* | | | | |
 | TU-05 | *(pendente — preencher após T3)* | | | | |
 
----
-
-## 5. Cruzamento com Avaliação Heurística
+### 5.3 Cruzamento com Avaliação Heurística
 
 > Indique quais problemas previstos na [Avaliação Heurística](../avaliacao-heuristica/index.md) (HE-01 a HE-21) foram **confirmados**, **não observados** ou **não testados** nesta rodada empírica.
 >
@@ -186,9 +333,7 @@
 | — | Fluxo de agendamento de vacinas/restrição de idade não foi inspecionado na avaliação heurística — T2 é validação exploratória, sem achado prévio para confirmar | Não testado — pendente T2 | |
 | HE-12 / HE-13 | Listagem de exames sem contexto mínimo; ausência de breadcrumb | Não testado — pendente T3 | |
 
----
-
-## 6. Síntese e Recomendações
+### 5.4 Síntese e Recomendações
 
 **Principais achados (parcial — apenas T1, n=2):**
 
@@ -199,15 +344,31 @@
 
 **Recomendações priorizadas (com base em T1):**
 
-| Prioridade | Problema (ID) | Ação recomendada |
-|---|---|---|
-| Imediata | TU-03 | Integrar a seleção de data e horário como uma etapa clara dentro do fluxo de marcação/carrinho antes da confirmação. |
-| Imediata | TU-01 | Refatorar os rótulos do menu. Trocar termos como "Compra online" para "Agendamento de Exames" para ficar mais intuitivo. |
-| Alta | TU-02 | Adicionar um modal ou opção de escolha (Unidade Física vs Domiciliar) antes de jogar o usuário no formulário de atendimento móvel. |
+<div class="grid cards" markdown>
+
+-   <span class="badge" style="background:#c62828;color:#fff;">Imediata</span> — TU-03
+
+    ---
+
+    Integrar a seleção de data e horário como uma etapa clara dentro do fluxo de marcação/carrinho antes da confirmação.
+
+-   <span class="badge" style="background:#c62828;color:#fff;">Imediata</span> — TU-01
+
+    ---
+
+    Refatorar os rótulos do menu. Trocar termos como "Compra online" para "Agendamento de Exames" para ficar mais intuitivo.
+
+-   <span class="badge" style="background:#e65100;color:#fff;">Alta</span> — TU-02
+
+    ---
+
+    Adicionar um modal ou opção de escolha (Unidade Física vs Domiciliar) antes de jogar o usuário no formulário de atendimento móvel.
+
+</div>
 
 **Limitações da rodada:**
 
-- Amostra pequena (3 participantes) e homogênea (estudantes de Engenharia de Software da mesma faculdade) — ver nota em [Persona do Participante](persona.md#1-persona-primária). Resultados são indicativos, não conclusivos sobre a usabilidade geral do site para o público real do Sabin (idosos, baixa literacia digital, etc.).
+- Amostra pequena (3 participantes) e homogênea (estudantes de Engenharia de Software da mesma faculdade) — ver nota em [Persona do Participante](persona.md#1-persona-primaria). Resultados são indicativos, não conclusivos sobre a usabilidade geral do site para o público real do Sabin (idosos, baixa literacia digital, etc.).
 - Nenhuma das 3 tarefas exige login — o portal de laudos (área autenticada) não é coberto por esta rodada.
 - **No momento, apenas T1 foi testada e só com 2 dos 3 participantes.** As conclusões acima cobrem só o fluxo de agendamento; aguardam-se T2 (vacina febre amarela), T3 (preparo de check-up) e a sessão completa de P3 antes de uma síntese final.
 
