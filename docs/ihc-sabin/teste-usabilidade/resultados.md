@@ -6,7 +6,11 @@
 > **Avaliador(es):** Gustavo Xavier Evangelista, Lucas Andrade Zanetti
 
 !!! warning "Status de coleta"
-    **P1 e P2:** apenas a Tarefa 1 (agendamento). **P3:** as **3 tarefas** (T1, T2 e T3) — ver [seção 4](#4-resultado-entrevista-3-p3). Ainda faltam T2 e T3 com P1 e P2. A pontuação SUS de P3 é **estimada** (respostas não coletadas). Os agregados abaixo (cards da *Visão Geral*, médias, tabela de problemas e síntese final) **ainda não foram recalculados** para incluir P3 e seguem refletindo n=2 / só T1 — recalcular após decidir se T2/T3 serão repetidas com P1 e P2.
+    **P1 e P2:** apenas a Tarefa 1 (agendamento). **P3:** as **3 tarefas** (T1, T2 e T3) — ver [seção 4](#4-resultado-entrevista-3-p3). Ainda faltam T2 e T3 com P1 e P2.
+
+    **Não foi possível realizar as três tarefas com todos os participantes** por dificuldade de conciliar agenda/horário com os usuários — com P1 e P2 só foi viável executar a **Tarefa 1**. Ainda assim, **a realização da Tarefa 1 com eles contribui para a análise do teste de usabilidade**, pois permite comparar o fluxo de agendamento entre os participantes e reforça os problemas identificados.
+
+    A pontuação SUS de P3 é **estimada** (respostas não coletadas). Os agregados abaixo (cards da *Visão Geral*, médias, tabela de problemas e síntese final) **ainda não foram recalculados** para incluir P3 e seguem refletindo n=2 / só T1 — recalcular após decidir se T2/T3 serão repetidas com P1 e P2.
 
 ---
 
@@ -433,7 +437,7 @@ flowchart LR
 
 - Amostra pequena (3 participantes) e homogênea (estudantes de Engenharia de Software da mesma faculdade) — ver nota em [Persona do Participante](persona.md#1-persona-primaria). Resultados são indicativos, não conclusivos sobre a usabilidade geral do site para o público real do Sabin (idosos, baixa literacia digital, etc.).
 - Nenhuma das 3 tarefas exige login — o portal de laudos (área autenticada) não é coberto por esta rodada.
-- **No momento, apenas T1 foi testada e só com 2 dos 3 participantes.** As conclusões acima cobrem só o fluxo de agendamento; aguardam-se T2 (vacina febre amarela), T3 (preparo de check-up) e a sessão completa de P3 antes de uma síntese final.
+- **Não foi possível concluir as três tarefas com todos os participantes** por dificuldade de conciliar tempo/agenda com os usuários: com P1 e P2 só foi viável a **Tarefa 1**, enquanto P3 realizou as três (T1, T2 e T3). Mesmo parcial, a execução da Tarefa 1 com P1 e P2 **contribui para a análise do teste de usabilidade**, ao permitir comparar o fluxo de agendamento entre os participantes. Para uma síntese final, aguardam-se T2 (vacina febre amarela) e T3 (preparo de check-up) com P1 e P2.
 
 ---
 
