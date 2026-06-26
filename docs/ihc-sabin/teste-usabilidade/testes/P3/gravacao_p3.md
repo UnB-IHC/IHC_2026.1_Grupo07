@@ -14,7 +14,8 @@ Captura a interação direta do participante com a interface do sistema, permiti
 Mostra o contexto da sessão, enquadrando o participante (entrevistado), o entrevistador e o anotador. Este vídeo é fundamental para analisar a linguagem corporal, as expressões faciais e a dinâmica entre o usuário e os avaliadores.
 
 **Link para o vídeo:**
-[Assistir à gravação do ambiente no YouTube](INSIRA_O_LINK_AQUI)
+[Assistir à gravação do ambiente no YouTube](https://www.youtube.com/watch?v=jUvaEmF4jf4)
+
 
 ## Resumo da Tarefa
 
