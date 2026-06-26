@@ -23,11 +23,22 @@ Para simular o teste real com a maior veracidade possível, o entrevistado escol
 
 ## Evidência em vídeo
 
+Para permitir uma análise completa, o teste piloto foi registrado de duas formas:
+
+### 1. Gravação de Tela
+Captura a interação direta do participante com a interface do sistema, permitindo visualizar o caminho percorrido, cliques e navegação.
+
 <div class="video-wrapper" markdown>
 <iframe src="https://www.youtube.com/embed/QRMqrP44hD0" title="Gravação do Teste Piloto — Teste de Usabilidade Sabin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-secure" allowfullscreen></iframe>
 </div>
 
-[Assistir no YouTube ↗](https://youtu.be/QRMqrP44hD0)
+[Assistir à gravação da tela no YouTube ↗](https://www.youtube.com/watch?v=QRMqrP44hD0)
+
+### 2. Gravação do Ambiente
+Mostra o contexto da sessão, enquadrando o participante (entrevistado), o entrevistador e o anotador. Este vídeo é fundamental para analisar a linguagem corporal, as expressões faciais e a dinâmica entre o usuário e os avaliadores.
+
+**Link para o vídeo:**
+[Assistir à gravação do ambiente no YouTube](https://www.youtube.com/watch?v=zCOnzdcWTNk)
 
 ## Resumo da Sessão
 
