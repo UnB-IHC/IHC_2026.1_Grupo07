@@ -10,24 +10,31 @@
 
 ## Visão Geral: Qual ferramenta usar para quê?
 
-| Ferramenta | Tipo | Melhor Para | Limitação Principal |
-|---|---|---|---|
-| axe DevTools | Automatizado | Encontrar erros ARIA, contraste, semântica durante desenvolvimento | ~30-40% dos critérios |
-| Lighthouse | Automatizado | Auditoria rápida integrada ao DevTools, inclui performance | Menos detalhado que axe |
-| WAVE | Automatizado | Visualizar estrutura semântica e problemas de forma sobreposta | Apenas via navegador |
-| Colour Contrast Analyser | Manual assistido | Medir contraste exato de qualquer cor da tela com conta-gotas | Não testa conteúdo web em si |
-| NVDA | Leitor de tela | Teste funcional real com usuário de leitura de tela (Windows) | Curva de aprendizado |
-| VoiceOver | Leitor de tela | Teste funcional real com usuário de leitura de tela (macOS/iOS) | Apenas em plataformas Apple |
-| JAWS | Leitor de tela | Leitor mais utilizado por usuários reais (Windows, pago) | Licença comercial |
-| Teste por teclado | Manual puro | Validar navegabilidade, foco visível, armadilhas de teclado | Demanda tempo |
-| ACHECKS | Automatizado | Verificação online rápida sem instalação | Menos atualizado que axe |
-| WebAIM Contrast Checker | Automatizado | Calcular razão de contraste por hex/RGB online | Não usa conta-gotas |
+| Ferramenta | Tipo | Perfil de Usuário | Melhor Para | Limitação Principal |
+|---|---|---|---|---|
+| axe DevTools | Automatizado | Desenvolvedor, QA | Encontrar erros ARIA, contraste, semântica durante desenvolvimento | ~30-40% dos critérios |
+| Lighthouse | Automatizado | Desenvolvedor, Gestor | Auditoria rápida integrada ao DevTools, inclui performance | Menos detalhado que axe |
+| WAVE | Automatizado | Designer, Analista | Visualizar estrutura semântica e problemas de forma sobreposta | Apenas via navegador |
+| Colour Contrast Analyser | Manual assistido | Designer, Desenvolvedor | Medir contraste exato de qualquer cor da tela com conta-gotas | Não testa conteúdo web em si |
+| NVDA | Leitor de tela | QA, Desenvolvedor | Teste funcional real com usuário de leitura de tela (Windows) | Curva de aprendizado |
+| VoiceOver | Leitor de tela | QA, Desenvolvedor | Teste funcional real com usuário de leitura de tela (macOS/iOS) | Apenas em plataformas Apple |
+| JAWS | Leitor de tela | QA | Leitor mais utilizado por usuários reais (Windows, pago) | Licença comercial |
+| Teste por teclado | Manual puro | Todos | Validar navegabilidade, foco visível, armadilhas de teclado | Demanda tempo |
+| ACHECKS | Automatizado | QA | Verificação online rápida sem instalação | Menos atualizado que axe |
+| WebAIM Contrast Checker | Automatizado | Designer, Desenvolvedor | Calcular razão de contraste por hex/RGB online | Não usa conta-gotas |
+| Accessibility Insights | Híbrido | QA, Desenvolvedor | Testes automatizados (FastPass) e manuais guiados | Extensão focada no Chromium |
+| Stark | Plugin/Extensão | Designer, QA | Validar acessibilidade direto no design (Figma) e código | Versão pro é paga |
 
 ---
 
 ## Ferramentas Detalhadas
 
 ### 1. axe DevTools (Deque Systems)
+**Nível de Dificuldade:** Fácil  
+**Prós:** Integração excelente com DevTools; indica a severidade e como resolver os erros; foca em zero falsos positivos.  
+**Contras:** Cobre apenas cerca de 30-40% dos critérios WCAG; alguns problemas requerem revisão manual assistida.  
+**Teste na prática (Exemplo Sabin):** Ao testar a página inicial do site do Sabin, o axe identificou rapidamente falhas de contraste em botões secundários e imagens sem atributo `alt` na estrutura do carrossel.  
+
 **Tipo:** Extensão de navegador (Chrome, Firefox, Edge) – automatizado  
 **Critérios cobertos:** ARIA, contraste, semântica HTML, rótulos, idioma, role/state  
 **Ideal para:** Desenvolvedores front-end durante codificação  
@@ -55,6 +62,11 @@
 ---
 
 ### 2. Lighthouse (Google)
+**Nível de Dificuldade:** Fácil  
+**Prós:** Nativo do Chrome (não exige instalação extra); gera relatórios fáceis de compartilhar com gestores; pontuação gamificada de 0 a 100.  
+**Contras:** Menos detalhado e preciso que o axe para acessibilidade pura; pode dar pontuação 100 mesmo com graves falhas de teclado.  
+**Teste na prática (Exemplo Sabin):** Analisou o site do Sabin fornecendo uma nota de 85/100, indicando elementos sem rótulos (ARIALabels) mas falhou em perceber botões que não recebiam foco pelo teclado.  
+
 **Tipo:** Integrado ao Chrome DevTools – automatizado  
 **Critérios cobertos:** Subconjunto de critérios WCAG A e AA, boas práticas gerais  
 **Ideal para:** Auditoria rápida sem instalar nada; relatório de pontuação para stakeholders  
@@ -79,6 +91,11 @@
 ---
 
 ### 3. WAVE – Web Accessibility Evaluation Tool (WebAIM)
+**Nível de Dificuldade:** Fácil  
+**Prós:** Visualização sobreposta no contexto da página facilita o entendimento por designers e não-técnicos; boa visualização da hierarquia de headings.  
+**Contras:** Pode poluir visualmente páginas muito complexas; a interface lateral parece datada em telas menores.  
+**Teste na prática (Exemplo Sabin):** No site do Sabin, o WAVE poluiu bastante a Home devido ao excesso de ícones de alerta próximos ao menu de navegação, mas foi excelente para confirmar a quebra da ordem de Headings (h2 seguido de h4).  
+
 **Tipo:** Extensão de navegador ou site online – automatizado com visualização sobreposta  
 **Critérios cobertos:** Estrutura de headings, imagens sem alt, formulários sem label, contraste  
 **Ideal para:** Designers e analistas de conteúdo que preferem visualização visual inline  
@@ -102,6 +119,11 @@
 ---
 
 ### 4. Colour Contrast Analyser – CCA (TPGi)
+**Nível de Dificuldade:** Médio (exige entendimento das regras de contraste AA/AAA)  
+**Prós:** Ferramenta desktop que funciona em qualquer software (Figma, PDFs, softwares legados); avalia contraste exato de elementos visuais não textuais.  
+**Contras:** Exige instalação; processo manual e lento de clicar elemento por elemento.  
+**Teste na prática (Exemplo Sabin):** Utilizamos o conta-gotas do CCA para avaliar o azul claro usado nos menus do Sabin sobre fundo branco, confirmando que a relação de contraste (2.1:1) reprova no critério 1.4.3 da WCAG.  
+
 **Tipo:** Aplicativo desktop – manual assistido  
 **Critérios cobertos:** WCAG 1.4.3 (contraste de texto), 1.4.11 (contraste de componentes), 2.4.13 (aparência do foco)  
 **Ideal para:** Designers ao criar paletas; desenvolvedores ao validar estados de hover/focus  
@@ -126,6 +148,11 @@
 ---
 
 ### 5. NVDA – NonVisual Desktop Access (NV Access)
+**Nível de Dificuldade:** Difícil  
+**Prós:** Gratuito, código aberto e altamente configurável; reflete a realidade de milhões de usuários Windows.  
+**Contras:** Curva de aprendizado altíssima (dezenas de atalhos de teclado); requer familiaridade para distinguir bugs do leitor de bugs do site.  
+**Teste na prática (Exemplo Sabin):** Ao tentar agendar um hemograma no site do Sabin usando o NVDA, notou-se que o Modal de seleção de data não anunciava a mudança de contexto, deixando o usuário cego confuso sobre onde o foco estava.  
+
 **Tipo:** Leitor de tela – Windows – gratuito e open source  
 **Critérios cobertos:** Todos os critérios relacionados a tecnologias assistivas (WCAG 4.1.2, 2.1.x, 1.3.x)  
 **Ideal para:** Teste funcional real de como usuários de leitores de tela experimentam a interface  
@@ -159,6 +186,11 @@
 ---
 
 ### 6. VoiceOver (Apple)
+**Nível de Dificuldade:** Difícil  
+**Prós:** Nativo em todos os Macs e iPhones; integração perfeita com Safari; simula usuários mobile de forma nativa e gestual.  
+**Contras:** Curva de aprendizado alta; comportamento pode variar bastante em relação ao NVDA e JAWS.  
+**Teste na prática (Exemplo Sabin):** Pelo Safari no macOS, o VoiceOver conseguiu ler o menu superior do Sabin, mas ficou preso (focus trap parcial) dentro de um iframe de chat de atendimento.  
+
 **Tipo:** Leitor de tela nativo – macOS e iOS – gratuito  
 **Critérios cobertos:** Idem ao NVDA, com foco em ecossistema Apple  
 **Ideal para:** Testar em Safari (combinação mais usada por usuários reais em macOS/iOS)  
@@ -180,6 +212,11 @@
 ---
 
 ### 7. Teste Manual por Teclado
+**Nível de Dificuldade:** Médio  
+**Prós:** Indispensável para acessibilidade funcional real; não requer softwares adicionais.  
+**Contras:** Demorado; exige paciência e conhecimento prático dos padrões de interação previstos.  
+**Teste na prática (Exemplo Sabin):** Navegando apenas com 'Tab' no site do Sabin, foi constatado que diversos links de rodapé não possuíam indicador de foco visível (outline), ferindo gravemente a WCAG 2.4.7.  
+
 **Tipo:** Teste manual puro – sem instalação  
 **Critérios cobertos:** 2.1.1, 2.1.2, 2.4.3, 2.4.7, 2.4.11, 2.4.13  
 **Ideal para:** Validar foco visível, ordem de navegação, armadilhas de teclado  
@@ -203,6 +240,11 @@
 ---
 
 ### 8. JAWS (Freedom Scientific)
+**Nível de Dificuldade:** Difícil  
+**Prós:** Padrão ouro corporativo; recursos avançados e scripts personalizados para softwares.  
+**Contras:** Muito caro; pesado no sistema.  
+**Teste na prática:** (Não testado diretamente no site do Sabin por não termos acesso à licença paga no momento do estudo, usamos NVDA como principal em Windows).  
+
 **Tipo:** Leitor de tela – Windows – comercial  
 **Ideal para:** Equipes com orçamento para licença que precisam do leitor mais usado por usuários reais  
 
@@ -213,6 +255,11 @@ O JAWS é o leitor de tela mais utilizado por usuários com deficiência visual 
 ---
 
 ### 9. WebAIM Contrast Checker
+**Nível de Dificuldade:** Fácil  
+**Prós:** Rápido, não requer instalação, explica de forma didática as taxas de aprovação (AA e AAA).  
+**Contras:** Requer que o avaliador saiba o código Hex/RGB da cor; não ajuda com gradientes.  
+**Teste na prática (Exemplo Sabin):** Inserimos as cores retiradas via Inspecionar Elemento do CSS do Sabin e confirmamos que a cor do botão primário passava nos critérios AA.  
+
 **Tipo:** Ferramenta web online  
 **Ideal para:** Verificação rápida por código hex/RGB sem instalar o CCA  
 
@@ -223,6 +270,11 @@ Digite os códigos hex das cores de texto e fundo para obter a razão de contras
 ---
 
 ### 10. ACHECKS
+**Nível de Dificuldade:** Fácil  
+**Prós:** Não requer instalação.  
+**Contras:** Interface legada; menos detalhado e menos atualizado com WCAG 2.2 que o axe.  
+**Teste na prática:** Avaliação preliminar apontou erros similares aos do WAVE, mas sem as comodidades de integração do axe.  
+
 **Tipo:** Ferramenta web online – automatizado  
 **Ideal para:** Verificação rápida sem instalar extensão  
 **Referência:** [achecks.org](https://www.achecks.org/)
@@ -230,6 +282,11 @@ Digite os códigos hex das cores de texto e fundo para obter a razão de contras
 ---
 
 ### 11. Framework de Testes Android (Google)
+**Nível de Dificuldade:** Difícil  
+**Prós:** Nativo para pipelines Android; testa tamanhos de touch targets e labels.  
+**Contras:** Específico apenas para Android nativo (Java/Kotlin), inútil para Web pura.  
+**Teste na prática:** (Não se aplica ao fluxo principal do site responsivo avaliado).  
+
 **Tipo:** Biblioteca Java/Kotlin – automatizado  
 **Ideal para:** Equipes com aplicações Android nativas  
 **Referência:** [github.com/google/Accessibility-Test-Framework-for-Android](https://github.com/google/Accessibility-Test-Framework-for-Android)
@@ -237,31 +294,72 @@ Digite os códigos hex das cores de texto e fundo para obter a razão de contras
 ---
 
 ### 12. DynoMapper – Sitemap Generator
+**Nível de Dificuldade:** Médio  
+**Prós:** Útil para ver a estrutura macro do site e títulos repetidos.  
+**Contras:** Foco indireto em acessibilidade; serviço pago.  
+**Teste na prática:** O escopo do projeto focou mais nas páginas já mapeadas manualmente.  
+
 **Tipo:** Ferramenta online  
 **Ideal para:** Mapear estrutura de navegação e identificar páginas sem título único (WCAG 2.4.2)  
 **Referência:** [dynomapper.com](https://dynomapper.com/)
 
 ---
 
-## Matriz de Cobertura por Critério WCAG 2.2
 
-| Critério WCAG 2.2 | axe | Lighthouse | WAVE | CCA | NVDA/VoiceOver | Teclado |
-|---|---|---|---|---|---|---|
-| 1.1.1 Alt text | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ |
-| 1.4.3 Contraste texto | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
-| 1.4.11 Contraste componentes | ⚠️ | ⚠️ | ⚠️ | ✅ | ❌ | ❌ |
-| 2.1.1 Teclado | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ |
-| 2.4.1 Skip links | ✅ | ⚠️ | ✅ | ❌ | ✅ | ✅ |
-| 2.4.7 Foco visível | ⚠️ | ⚠️ | ❌ | ❌ | ❌ | ✅ |
-| **2.4.11 Foco não obscurecido** ⭐ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
-| **2.4.13 Aparência do foco** ⭐ | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| **2.5.7 Movimentos arrastar** ⭐ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
-| **2.5.8 Tamanho alvo 24px** ⭐ | ⚠️ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| 3.1.1 Idioma da página | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
-| 3.3.1 Identificação de erro | ⚠️ | ❌ | ⚠️ | ❌ | ✅ | ❌ |
-| **3.3.7 Entrada redundante** ⭐ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| **3.3.8 Autenticação acessível** ⭐ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| 4.1.2 Nome, Função, Valor | ✅ | ✅ | ⚠️ | ❌ | ✅ | ❌ |
+---
+
+### 13. Accessibility Insights for Web (Microsoft)
+**Tipo:** Extensão de navegador (Chrome/Edge) – Híbrido (Automatizado + Guiado)  
+**Critérios cobertos:** Todos os WCAG 2.1 AA através do teste guiado; automatizado cobre ~30%.  
+**Ideal para:** Desenvolvedores e QA que buscam conformidade rigorosa.  
+**Nível de Dificuldade:** Médio  
+**Prós:** A funcionalidade "FastPass" é extremamente rápida; a funcionalidade "Assessment" oferece instruções passo a passo brilhantes de como testar manualmente cada critério WCAG, incluindo como testar por teclado.  
+**Contras:** A versão completa do Assessment é longa e pode desmotivar iniciantes.  
+**Teste na prática (Exemplo Sabin):** O uso da aba *Tab Stops* no FastPass evidenciou um caminho de foco (focus order) confuso na home, desenhando flechas visuais desordenadas sobre a tela do Sabin.  
+
+**Passo a passo básico:**
+1. Instale a extensão no Edge ou Chrome (Web Store).
+2. Abra a página desejada e clique no ícone do plugin.
+3. Escolha **FastPass** para testes automatizados instantâneos.
+4. Ligue o toggle **Tab Stops** e navegue usando a tecla Tab para traçar o mapa visual do foco.
+
+---
+
+### 14. Stark
+**Tipo:** Plugin para editores de design (Figma, Sketch) e extensões de navegador  
+**Critérios cobertos:** Contraste, simulação de daltonismo, tipografia e foco  
+**Ideal para:** Designers (shift-left accessibility, resolvendo problemas no protótipo).  
+**Nível de Dificuldade:** Fácil  
+**Prós:** Resolve a acessibilidade visual na origem (antes do código); simulador de daltonismo excelente; anotações automáticas de hierarquia.  
+**Contras:** Muitos recursos avançados exigem a conta Pro (paga).  
+**Teste na prática (Exemplo Sabin):** Usado para reprojetar a tela de agendamento em nossos protótipos Figma, garantindo que as novas cores sugeridas para os botões tivessem contraste superior a 4.5:1, diferente da versão original.  
+
+**Passo a passo básico:**
+1. Instale o plugin Stark no Figma.
+2. Selecione dois layers sobrepostos (ex: texto e retângulo de fundo).
+3. Abra a opção **Contrast Checker** no menu do Stark.
+4. Use o **Vision Simulator** para prever como a tela é vista por usuários com daltonismo (Protanopia ou Deuteranopia).
+
+\n## Matriz de Cobertura por Critério WCAG 2.2
+
+
+| Critério WCAG 2.2 | axe | Lighthouse | WAVE | CCA | NVDA | Teclado | AccInsights | Stark |
+|---|---|---|---|---|---|---|---|---|
+| 1.1.1 Alt text | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ | ⚠️ (Guiado) | ❌ |
+| 1.4.3 Contraste texto | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ | ✅ |
+| 1.4.11 Contraste componentes | ⚠️ | ⚠️ | ⚠️ | ✅ | ❌ | ❌ | ✅ | ✅ |
+| 2.1.1 Teclado | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ✅ (Guiado) | ❌ |
+| 2.4.1 Skip links | ✅ | ⚠️ | ✅ | ❌ | ✅ | ✅ | ✅ (Guiado) | ❌ |
+| 2.4.7 Foco visível | ⚠️ | ⚠️ | ❌ | ❌ | ❌ | ✅ | ✅ (Visual) | ✅ |
+| **2.4.11 Foco não obscurecido** ⭐ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ⚠️ | ❌ |
+| **2.4.13 Aparência do foco** ⭐ | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ | ⚠️ | ✅ |
+| **2.5.7 Movimentos arrastar** ⭐ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ |
+| **2.5.8 Tamanho alvo 24px** ⭐ | ⚠️ | ❌ | ❌ | ❌ | ❌ | ❌ | ⚠️ | ✅ |
+| 3.1.1 Idioma da página | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ✅ | ❌ |
+| 3.3.1 Identificação de erro | ⚠️ | ❌ | ⚠️ | ❌ | ✅ | ❌ | ✅ (Guiado) | ❌ |
+| **3.3.7 Entrada redundante** ⭐ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| **3.3.8 Autenticação acessível** ⭐ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| 4.1.2 Nome, Função, Valor | ✅ | ✅ | ⚠️ | ❌ | ✅ | ❌ | ✅ | ❌ |
 
 > ⭐ Critério novo do WCAG 2.2 | ✅ Cobre bem | ⚠️ Cobertura parcial | ❌ Não cobre
 
