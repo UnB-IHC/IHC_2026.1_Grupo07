@@ -57,3 +57,55 @@
     border-radius: 0.4rem;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
 }
+
+/* Impressão compacta (ex.: TCLE, termos para assinatura) */
+@media print {
+    @page {
+        size: A4;
+        margin: 1.1cm;
+    }
+
+    .md-typeset {
+        font-size: 0.72rem;
+        line-height: 1.35;
+    }
+
+    .md-typeset h1 {
+        font-size: 1.3rem;
+        margin: 0 0 0.4rem;
+    }
+
+    .md-typeset h2 {
+        font-size: 1.05rem;
+        margin: 0.6rem 0 0.3rem;
+    }
+
+    .md-typeset h3 {
+        font-size: 0.9rem;
+        margin: 0.5rem 0 0.25rem;
+    }
+
+    .md-typeset p,
+    .md-typeset ul,
+    .md-typeset ol {
+        margin: 0.3rem 0;
+    }
+
+    .md-typeset table {
+        font-size: 0.7rem;
+        margin: 0.3rem 0;
+    }
+
+    .md-typeset td,
+    .md-typeset th {
+        padding: 0.3rem 0.6rem;
+    }
+
+    .md-typeset hr {
+        margin: 0.4rem 0;
+    }
+
+    .md-typeset br {
+        line-height: 0.6;
+    }
+}

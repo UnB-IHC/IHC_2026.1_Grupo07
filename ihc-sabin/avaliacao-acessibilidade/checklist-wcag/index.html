@@ -1828,6 +1828,9 @@
 
 
 <h1 id="checklist-wcag">Checklist WCAG</h1>
+<blockquote>
+<p>Versão resumida do <a href="../resultados/">Relato dos Resultados</a>, aplicando os 18 itens do <a href="../../../pocket-v2/checklistAcessibilidade/checklist_acessibilidade_digital/">Checklist de Acessibilidade Digital — Guia PocketV2</a>. Para evidências completas (grep, HTML, screenshots) de cada item, ver o relato detalhado.</p>
+</blockquote>
 <h2 id="criterios-avaliados">Critérios Avaliados</h2>
 <table>
 <thead>
@@ -1844,127 +1847,127 @@
 <td>1</td>
 <td>Texto Alternativo para Imagens</td>
 <td>❌ Não Conforme</td>
-<td>Foram identificadas 4 imagens utilizadas como links sem texto alternativo adequado, comprometendo a compreensão do conteúdo por usuários de leitores de tela.</td>
-<td>erros-Wave.png</td>
+<td>Das 112 imagens da homepage, 92 têm <code>alt=""</code>; selos de certificação, fotos de unidade e imagens de produtos informativos estão incorretamente marcados como decorativos.</td>
+<td>resultados.md</td>
 </tr>
 <tr>
 <td>2</td>
 <td>Contraste Mínimo de Cores</td>
 <td>❌ Não Conforme</td>
-<td>Foram encontrados 5 elementos com contraste muito baixo entre texto e fundo, dificultando a leitura para usuários com baixa visão.</td>
-<td>contraste-Wave.png, contraste2-Wave.png</td>
+<td><code>#999</code> (~2,85:1) e <code>#6f6e67</code> (~4,02:1) sobre fundo branco ficam abaixo do mínimo AA de 4,5:1 em textos de apoio e rótulos.</td>
+<td>resultados.md</td>
 </tr>
 <tr>
 <td>3</td>
 <td>Uso Restrito da Cor</td>
-<td>⚠️ Parcial</td>
-<td>Não foram identificadas falhas automáticas, porém a verificação completa exige testes manuais para garantir que a cor não seja o único meio de transmitir informação.</td>
-<td>Inspeção manual</td>
+<td>✅ Conforme</td>
+<td>Campos obrigatórios e estados de botão diferenciados por texto/posição, além da cor; nenhum caso de cor como único meio de informação.</td>
+<td>resultados.md</td>
 </tr>
 <tr>
 <td>4</td>
 <td>Controle de Áudio e Mídia</td>
-<td>✅ Conforme</td>
-<td>Durante a avaliação não foram identificados conteúdos com reprodução automática de áudio que exigissem mecanismos de controle adicionais.</td>
-<td>Inspeção manual</td>
+<td>⚠️ Parcial</td>
+<td>Sem autoplay de áudio/vídeo, mas o carrossel da homepage avança automaticamente a cada 6s sem botão de pausa acessível (viola C.S. 2.2.2).</td>
+<td>resultados.md</td>
 </tr>
 <tr>
 <td>5</td>
 <td>Design Responsivo e Refluxo</td>
-<td>✅ Conforme</td>
-<td>O site apresentou comportamento responsivo adequado em dispositivos móveis, sem perda perceptível de conteúdo ou funcionalidade.</td>
-<td>Avaliação Lighthouse</td>
+<td>⚠️ Parcial</td>
+<td>Viewport configurado corretamente, porém fontes em <code>px</code> (não <code>rem</code>) e carrosséis com scroll fixo podem perder conteúdo a 320px CSS.</td>
+<td>resultados.md</td>
 </tr>
 <tr>
 <td>6</td>
 <td>Foco Visível e Não Obscurecido</td>
-<td>⚠️ Parcial</td>
-<td>Não foram observadas falhas críticas, porém a validação completa exige navegação integral utilizando apenas teclado.</td>
-<td>Inspeção manual</td>
+<td>❌ Não Conforme</td>
+<td>45 ocorrências de <code>:focus</code> no CSS, porém nenhuma de <code>:focus-visible</code> — foco pode ficar invisível em botões de carrossel e cards.</td>
+<td>resultados.md</td>
 </tr>
 <tr>
 <td>7</td>
 <td>Atalhos de Teclado (Skip Links)</td>
-<td>⚠️ Parcial</td>
-<td>Não foi possível confirmar a presença de mecanismos para salto direto ao conteúdo principal durante a avaliação realizada.</td>
-<td>Inspeção manual</td>
+<td>❌ Não Conforme</td>
+<td>Nenhum skip link encontrado em nenhuma página avaliada do site.</td>
+<td>resultados.md</td>
 </tr>
 <tr>
 <td>8</td>
 <td>Tamanho do Alvo de Clique</td>
-<td>❌ Não Conforme</td>
-<td>O Lighthouse identificou elementos interativos com área de toque insuficiente para interação confortável em dispositivos móveis.</td>
-<td>best-LightHouse.png</td>
+<td>⚠️ Parcial</td>
+<td>Botões principais (<code>btn--lg</code>) atendem ao mínimo, mas ícones de navegação do carrossel (<code>btn--prev</code>/<code>btn--next</code>) podem não atingir 24×24px.</td>
+<td>best-LightHouse.png, resultados.md</td>
 </tr>
 <tr>
 <td>9</td>
 <td>Movimentos de Arrastar (Drag-and-Drop)</td>
 <td>✅ Conforme</td>
-<td>Não foram identificadas funcionalidades dependentes exclusivamente de movimentos de arrastar e soltar.</td>
-<td>Inspeção manual</td>
+<td><code>draggable</code> presente apenas no swipe interno do carrossel; nenhuma funcionalidade de arrastar-e-soltar exposta ao usuário.</td>
+<td>resultados.md</td>
 </tr>
 <tr>
 <td>10</td>
 <td>Temporização Ajustável</td>
-<td>✅ Conforme</td>
-<td>Não foram observadas restrições de tempo ou sessões com expiração durante os testes realizados.</td>
-<td>Inspeção manual</td>
+<td>⚪ Não Verificável</td>
+<td>Não foi possível confirmar, sem acesso autenticado, se o portal de laudos avisa e permite estender a sessão antes do logout automático.</td>
+<td>resultados.md</td>
 </tr>
 <tr>
 <td>11</td>
 <td>Títulos de Página e Semântica de Cabeçalhos</td>
 <td>❌ Não Conforme</td>
-<td>Foi identificada ausência de cabeçalho principal (H1) e salto na hierarquia dos títulos, comprometendo a estrutura semântica da página.</td>
-<td>alertas-Wave.png</td>
+<td>A homepage não possui <code>&lt;h1&gt;</code>; a hierarquia de títulos inicia em <code>&lt;h2&gt;</code>.</td>
+<td>alertas-Wave.png, resultados.md</td>
 </tr>
 <tr>
 <td>12</td>
 <td>Consistência na Interface e Ajuda Consistente</td>
-<td>✅ Conforme</td>
-<td>A estrutura de navegação e os elementos da interface mantêm padrão consistente entre as páginas avaliadas.</td>
-<td>Inspeção manual</td>
+<td>⚠️ Parcial</td>
+<td>Navegação principal consistente entre páginas, mas o agendamento é nomeado de 4 formas diferentes ("Agendamentos", "Solicitar atendimento", "Serviços Digitais"...).</td>
+<td>resultados.md</td>
 </tr>
 <tr>
 <td>13</td>
 <td>Identificação Programática do Idioma</td>
-<td>⚠️ Parcial</td>
-<td>Não foi realizada inspeção detalhada do código-fonte para confirmação completa da marcação do idioma da página.</td>
-<td>Inspeção manual</td>
+<td>✅ Conforme</td>
+<td><code>&lt;html lang="pt-BR"&gt;</code> declarado corretamente; nenhum trecho em idioma estrangeiro sem marcação alternada.</td>
+<td>resultados.md</td>
 </tr>
 <tr>
 <td>14</td>
 <td>Identificação, Sugestão e Prevenção de Erros</td>
-<td>⚠️ Parcial</td>
-<td>A avaliação não contemplou testes aprofundados em formulários e fluxos completos de interação.</td>
-<td>Inspeção manual</td>
+<td>❌ Não Conforme</td>
+<td>Campos do portal de laudos sem <code>&lt;label&gt;</code> associado, sem indicação de formato esperado e sem link "Primeiro acesso".</td>
+<td>resultados.md</td>
 </tr>
 <tr>
 <td>15</td>
 <td>Prevenção de Entradas Redundantes</td>
-<td>⚠️ Parcial</td>
-<td>Não foi possível validar completamente sem executar processos completos de cadastro e agendamento.</td>
-<td>Inspeção manual</td>
+<td>⚪ Não Verificável</td>
+<td>O fluxo de agendamento — onde o critério se aplicaria — retorna erro 404, impossibilitando a avaliação.</td>
+<td>resultados.md</td>
 </tr>
 <tr>
 <td>16</td>
 <td>Autenticação Acessível</td>
-<td>⚠️ Parcial</td>
-<td>Os mecanismos de autenticação não foram avaliados em profundidade durante esta etapa.</td>
-<td>Inspeção manual</td>
+<td>❌ Não Conforme</td>
+<td>Padrão de <code>autocomplete="off"</code> no site; campo de senha do portal de laudos deveria usar <code>autocomplete="current-password"</code>.</td>
+<td>resultados.md</td>
 </tr>
 <tr>
 <td>17</td>
 <td>Nome, Função e Valor em Componentes Web</td>
-<td>❌ Não Conforme</td>
-<td>Foram encontradas 5 referências ARIA inválidas e links sem nome acessível discernível para tecnologias assistivas.</td>
+<td>⚠️ Parcial</td>
+<td>Homepage usa <code>aria-label</code>/<code>aria-expanded</code> corretamente (103 ocorrências), mas o portal de laudos depende só de placeholder, sem <code>&lt;label&gt;</code>.</td>
 <td>erros-Wave.png, links-Lighthouse.png</td>
 </tr>
 <tr>
 <td>18</td>
 <td>Linguagem Simples</td>
-<td>✅ Conforme</td>
-<td>O conteúdo utiliza linguagem clara, objetiva e compatível com o público-alvo do serviço.</td>
-<td>Inspeção manual</td>
+<td>⚠️ Parcial</td>
+<td>Linguagem geral clara, mas siglas médicas (HPV, HCG) e categorias como "Sabin Genômica" aparecem sem expansão/explicação.</td>
+<td>resultados.md</td>
 </tr>
 </tbody>
 </table>
@@ -1979,28 +1982,34 @@
 <tbody>
 <tr>
 <td>✅ Conforme</td>
-<td>6</td>
+<td>3</td>
 </tr>
 <tr>
 <td>⚠️ Parcial</td>
-<td>7</td>
+<td>6</td>
 </tr>
 <tr>
 <td>❌ Não Conforme</td>
-<td>5</td>
+<td>7</td>
+</tr>
+<tr>
+<td>⚪ Não Verificável</td>
+<td>2</td>
 </tr>
 </tbody>
 </table>
 <h2 id="principais-nao-conformidades">Principais Não Conformidades</h2>
 <ul>
-<li>Imagens com links sem texto alternativo.</li>
-<li>Problemas de contraste entre texto e fundo.</li>
-<li>Tamanho insuficiente de alguns elementos clicáveis.</li>
-<li>Estrutura inadequada de cabeçalhos.</li>
-<li>Problemas em atributos ARIA e identificação de componentes.</li>
+<li>Imagens com links sem texto alternativo (item 1).</li>
+<li>Problemas de contraste entre texto e fundo (item 2).</li>
+<li>Ausência de indicador de foco visível (<code>:focus-visible</code>) (item 6).</li>
+<li>Ausência de skip links para o conteúdo principal (item 7).</li>
+<li>Estrutura inadequada de cabeçalhos — homepage sem <code>&lt;h1&gt;</code> (item 11).</li>
+<li>Formulários do portal de laudos sem <code>&lt;label&gt;</code> nem mensagens de erro descritivas (item 14).</li>
+<li>Autenticação sem suporte a <code>autocomplete</code> de senha (item 16).</li>
 </ul>
 <h2 id="conclusao">Conclusão</h2>
-<p>A avaliação realizada indica que o site do Sabin apresenta um nível geral satisfatório de acessibilidade, refletido pela pontuação de 93/100 obtida na ferramenta Lighthouse. Entretanto, foram identificadas não conformidades relevantes relacionadas aos critérios WCAG 1.1.1 (Conteúdo Não Textual), 1.4.3 (Contraste Mínimo), 2.5.8 (Tamanho do Alvo) e 4.1.2 (Nome, Função e Valor).</p>
+<p>A avaliação realizada indica que o site do Sabin tem boa pontuação em ferramentas automatizadas (93/100 no Lighthouse), mas isso <strong>não se traduz em conformidade real com a WCAG 2.2/NBR 17225:2025</strong>: dos 18 itens do checklist PocketV2, apenas 3 estão plenamente conformes, 7 são não conformes e 6 são parciais. Ferramentas automatizadas cobrem só uma fração dos critérios — boa parte das não conformidades (foco visível, skip links, labels de formulário) só aparece na inspeção manual do código, reforçando a nota metodológica do <a href="../../../pocket-v2/tools/ferramentas/">Guia PocketV2</a> de que automação cobre apenas 30–40% do WCAG 2.2.</p>
 <p>Esses problemas podem impactar diretamente usuários que dependem de leitores de tela, navegação por teclado ou possuem limitações visuais e motoras. Recomenda-se a correção das não conformidades identificadas para aumentar a inclusão digital e a aderência às diretrizes WCAG 2.2, NBR 17225:2025 e e-MAG.</p>
 <h2 id="referencias">Referências</h2>
 <ul>
