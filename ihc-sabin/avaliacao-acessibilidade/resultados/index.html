@@ -2543,6 +2543,11 @@ grep<span class="w"> </span>-oiE<span class="w"> </span><span class="s1">&#39;&l
 </table>
 <p><strong>Impacto:</strong> Usuários de leitores de tela (NVDA, JAWS, VoiceOver) não recebem informação sobre certificações ISO, PADI e CAP — elementos que constroem a credibilidade institucional — nem sobre os produtos vendidos na loja virtual.</p>
 <p><strong>Recomendação:</strong> Auditar as 92 imagens com <code>alt=""</code>, mantendo o vazio apenas para decorativas e adicionando descrição nas informativas. Exemplo: <code>alt="Certificação ISO 9001 — Sistema de Gestão da Qualidade"</code>.</p>
+<figure>
+  <img alt="Captura de página inteira da homepage do Sabin, com dezenas de imagens — banners, fotos de unidades, selos de certificação e produtos — empilhadas ao longo de um scroll longo." src="../../imagens-evidencias/home-completa.png" width="380" />
+<br />
+<figcaption><strong>Evidência visual (Item 1).</strong> Homepage completa. A reverificação ao vivo (26/06/2026) contou <strong>112 imagens</strong>, das quais <strong>92 com <code>alt=""</code></strong> — incluindo selos de certificação (ISO, CAP, PADI) e fotos de unidades, que são informativas e deveriam ter texto alternativo.</figcaption>
+</figure>
 <hr />
 <h3 id="item-2-contraste-minimo-de-cores">Item 2 — Contraste Mínimo de Cores</h3>
 <p><strong>Referência:</strong> NBR 17225 (5.11.3, 5.11.4) | WCAG 2.2 — C.S. 1.4.3 e 1.4.11 (Nível AA)</p>
@@ -2657,6 +2662,9 @@ grep<span class="w"> </span>-oiE<span class="w"> </span><span class="s1">&#39;:f
 <div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#main-content&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;skip-link&quot;</span><span class="p">&gt;</span>Pular para o conteúdo principal<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
 </code></pre></div>
 Com CSS que o oculta visualmente mas torna visível ao receber foco (técnica <code>sr-only</code> com <code>focus:not-sr-only</code>).</p>
+<blockquote>
+<p>✅ <strong>Reconfirmado ao vivo (26/06/2026):</strong> a busca por <code>pular para</code>/<code>skip</code> no DOM renderizado retornou <strong>0 resultados</strong> — nenhum skip link presente.</p>
+</blockquote>
 <hr />
 <h3 id="item-8-tamanho-do-alvo-de-clique">Item 8 — Tamanho do Alvo de Clique</h3>
 <p><strong>Referência:</strong> NBR 17225 (5.8.7) | WCAG 2.2 — C.S. 2.5.8 (Nível AA)</p>
@@ -2700,6 +2708,11 @@ grep<span class="w"> </span>-oiE<span class="w"> </span><span class="s1">&#39;&l
 - WCAG 2.4.6: títulos não descrevem adequadamente as seções.</p>
 <p>Para leitores de tela que navegam por headings (tecla <code>H</code> no NVDA/JAWS), não há ponto de entrada principal no documento.</p>
 <p><strong>Recomendação:</strong> Adicionar <code>&lt;h1&gt;</code> visível ou <code>visually-hidden</code> na homepage. Auditar todas as páginas internas para garantir hierarquia correta (H1 → H2 → H3, sem saltos).</p>
+<figure>
+  <img alt="Topo da homepage do Sabin renderizada; o primeiro título visível é 'Seja bem-vindo(a) ao Sabin Diagnóstico e Saúde', sem nenhum título de nível 1 (H1) na página." src="../../imagens-evidencias/home-hero.png" width="720" />
+<br />
+<figcaption><strong>Evidência visual (Item 11).</strong> Topo da homepage. Na reverificação ao vivo (26/06/2026), <code>document.querySelectorAll('h1').length</code> retornou <strong>0</strong> — o primeiro cabeçalho do documento é um <code>&lt;h2&gt;</code>, deixando a página sem título principal para tecnologias assistivas.</figcaption>
+</figure>
 <hr />
 <h3 id="item-12-consistencia-na-interface-e-ajuda-consistente">Item 12 — Consistência na Interface e Ajuda Consistente</h3>
 <p><strong>Referência:</strong> NBR 17225 (5.7.15, 5.7.16, 5.8.5) | WCAG 2.2 — C.S. 3.2.3, 3.2.4 (AA) e 3.2.6 (A)</p>
