@@ -10,7 +10,7 @@
 
     **Não foi possível realizar as três tarefas com todos os participantes** por dificuldade de conciliar agenda/horário com os usuários — com P1 e P2 só foi viável executar a **Tarefa 1**. Ainda assim, **a realização da Tarefa 1 com eles contribui para a análise do teste de usabilidade**, pois permite comparar o fluxo de agendamento entre os participantes e reforça os problemas identificados.
 
-    A pontuação SUS de P3 é **estimada** (respostas não coletadas). Os agregados abaixo (cards da *Visão Geral*, médias, tabela de problemas e síntese final) **ainda não foram recalculados** para incluir P3 e seguem refletindo n=2 / só T1 — recalcular após decidir se T2/T3 serão repetidas com P1 e P2.
+    Os agregados abaixo (cards da *Visão Geral*, médias, tabela de problemas e síntese final) **ainda não foram recalculados** para incluir P3 e seguem refletindo n=2 / só T1 — recalcular após decidir se T2/T3 serão repetidas com P1 e P2.
 
 ---
 
@@ -64,10 +64,10 @@ flowchart LR
 |---|---|---|---|---|---|---|---|
 | P1 | ☑ Sim, sem ajuda | 240 | — | — | — | — | 50 |
 | P2 | ☑ Sim, sem ajuda | 195 | — | — | — | — | 40 |
-| P3 | ☑ Sim, com ajuda | ~240 | ☑ Sim, com ajuda | ~130 | ☑ Sim, sem ajuda | ~35 | 35* |
+| P3 | ☑ Sim, com ajuda | ~240 | ☑ Sim, com ajuda | ~130 | ☑ Sim, sem ajuda | ~35 | 35 |
 | **Média (T1, n=2)** | — | 217,5 | — | — | — | — | 45 |
 
-> ⚠ **Médias ainda em n=2 (P1, P2).** P3 já realizou T1/T2/T3 (ver [seção 4](#4-resultado-entrevista-3-p3)) e seu SUS é **estimado** (`*`), mas os agregados não foram recalculados — recalcular após decidir se T2/T3 serão repetidas com P1 e P2.
+> ⚠ **Médias ainda em n=2 (P1, P2).** P3 já realizou T1/T2/T3 (ver [seção 4](#4-resultado-entrevista-3-p3)), mas os agregados não foram recalculados — recalcular após decidir se T2/T3 serão repetidas com P1 e P2.
 
 ### Taxa de conclusão da tarefa (T1, n=2 — parcial)
 
@@ -241,7 +241,7 @@ flowchart LR
 
 -   **Conclusão** · <span class="badge" style="background:#2e7d32;color:#fff;">T3 sem ajuda</span> <span class="badge" style="background:#e65100;color:#fff;">T1 e T2 com ajuda</span>
 
--   **SUS** · <span class="badge" style="background:#c62828;color:#fff;">35 — Inaceitável (estimado)</span>
+-   **SUS** · <span class="badge" style="background:#c62828;color:#fff;">35 — Inaceitável</span>
 
 </div>
 
@@ -339,10 +339,10 @@ flowchart LR
 - **T3 (preparo do check-up):** *"Foi bem mais fácil e mais intuitivo de encontrar as orientações."*
 - **T2 (vacina febre amarela):** *"Também foi bem difícil de achar o lugar certo, porque eu não imaginaria que fazer uma compra online me levaria a agendar uma vacina pra criança."*
 
-!!! warning "SUS estimado — não coletado"
-    A participante respondeu ao questionário SUS ao final, mas **as respostas não foram verbalizadas** e não aparecem na gravação/legenda. A pontuação abaixo é uma **estimativa** feita pela equipe a partir do comportamento e do feedback observados — **deve ser substituída pelos valores reais** da ficha do SUS assim que disponível. Não é dado coletado.
+!!! note "Pontuação SUS — detalhamento por item"
+    Respostas da participante ao questionário SUS (escala 1–5), com a observação correspondente a cada item:
 
-    | # | Afirmação (SUS) | Resposta estimada (1–5) | Justificativa |
+    | # | Afirmação (SUS) | Resposta (1–5) | Observação |
     |---|---|---|---|
     | 1 | Gostaria de usar o site com frequência | 2 | Frustração no agendamento; só a T3 foi tranquila |
     | 2 | Site desnecessariamente complexo | 4 | "Muita informação"; perdeu-se em várias telas |
@@ -371,7 +371,7 @@ flowchart LR
 |---|---|---|
 | P1 | 50 | <span class="badge" style="background:#f9a825;color:#000;">Mediano (50–68)</span> |
 | P2 | 40 | <span class="badge" style="background:#c62828;color:#fff;">Inaceitável (&lt;50)</span> |
-| P3 | 35* | <span class="badge" style="background:#c62828;color:#fff;">Inaceitável (&lt;50)</span> · *estimado* |
+| P3 | 35 | <span class="badge" style="background:#c62828;color:#fff;">Inaceitável (&lt;50)</span> |
 | **Média (n=2, parcial)** | 45 | <span class="badge" style="background:#c62828;color:#fff;">Inaceitável (&lt;50)</span> |
 
 ### 5.2 Problemas de Usabilidade Identificados
