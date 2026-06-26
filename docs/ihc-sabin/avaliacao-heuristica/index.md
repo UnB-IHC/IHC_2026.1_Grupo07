@@ -71,6 +71,11 @@ As 10 heurísticas (H1–H10) e a escala de severidade usadas abaixo são as mes
 **Recomendação HE-01:** Implementar skeleton screens ou spinner com mensagem "Buscando unidades próximas a você…" e fallback após 8s com link para contato telefônico.
 **Recomendação HE-02:** Exibir nome/CPF mascarado e prazo de validade da sessão na tela de resultados.
 
+<figure markdown="span">
+  ![Página de unidades do Sabin exibindo a lista de unidades e um mapa à direita; o conteúdo depende inteiramente de JavaScript para ser renderizado.](../imagens-evidencias/unidades.png){ width="760" }
+  <figcaption><strong>Figura 1 — HE-01.</strong> Buscador de unidades. A listagem é renderizada por JavaScript; sem ele (ou enquanto carrega) o usuário vê apenas "Carregando…", sem indicador de progresso ou tempo estimado.</figcaption>
+</figure>
+
 ---
 
 ### H2 – Correspondência entre Sistema e Mundo Real
@@ -90,6 +95,11 @@ As 10 heurísticas (H1–H10) e a escala de severidade usadas abaixo são as mes
 **Recomendação HE-03:** Substituir "Informe seu usuário" por "Informe seu CPF (apenas números)" com placeholder `000.000.000-00`.
 **Recomendação HE-04:** Corrigir typo e remover strings de debug do HTML de produção.
 
+<figure markdown="span">
+  ![Tela de login do portal de resultados do Sabin, com os campos 'Digite seu CPF ou usuário' e 'Senha', botão 'ACESSAR RESULTADO' e link 'Esqueci minha senha'.](../imagens-evidencias/portal-laudos-login.png){ width="720" }
+  <figcaption><strong>Figura 2 — HE-03.</strong> Portal de resultados (<code>laudos.sabin.com.br</code>). O rótulo "Digite seu CPF ou usuário" ainda mistura duas credenciais distintas no mesmo campo, sem máscara de formato nem <code>&lt;label&gt;</code> associado — a ambiguidade apontada no HE-03 persiste.</figcaption>
+</figure>
+
 ---
 
 ### H3 – Controle e Liberdade do Usuário
@@ -108,6 +118,11 @@ As 10 heurísticas (H1–H10) e a escala de severidade usadas abaixo são as mes
 
 **Recomendação HE-05:** Corrigir o redirecionamento de `/agendamento/` para o fluxo ativo de agendamento (possivelmente via Serviços Digitais). Esta é a falha mais crítica encontrada.
 **Recomendação HE-06:** Ao retornar 0 resultados, exibir "Nenhuma unidade encontrada. Tente buscar por outro bairro ou ligue para (61) 3329-8000."
+
+<figure markdown="span">
+  ![Página de erro 404 do Sabin acessada pela URL /agendamento/, com o texto 'Ops! Página não encontrada', ilustração de um astronauta e o número 404, e um botão 'Voltar para a página inicial'.](../imagens-evidencias/agendamento-404.png){ width="760" }
+  <figcaption><strong>Figura 3 — HE-05 / HE-18 (Catastrófico).</strong> A rota <code>sabin.com.br/agendamento/</code> — divulgada como CTA "Agendamentos #VemSabin" — retorna erro 404. A página de erro oferece apenas "Voltar para a página inicial", sem rota alternativa para a função de agendamento.</figcaption>
+</figure>
 
 ---
 
@@ -168,6 +183,11 @@ As 10 heurísticas (H1–H10) e a escala de severidade usadas abaixo são as mes
 **Recomendação HE-12:** Adicionar badge de preparo (ex: "Jejum 8h") e tempo médio de resultado na listagem.
 **Recomendação HE-13:** Implementar breadcrumb semântico (`<nav aria-label="Breadcrumb"><ol>…`) em todas as páginas internas.
 
+<figure markdown="span">
+  ![Topo da homepage do Sabin: o primeiro título visível é 'Seja bem-vindo(a) ao Sabin Diagnóstico e Saúde', seguido por um carrossel promocional e um aviso de atendimento.](../imagens-evidencias/home-hero.png){ width="760" }
+  <figcaption><strong>Figura 4 — HE-11 (Catastrófico).</strong> Topo da homepage. A inspeção ao vivo (26/06/2026) confirmou <strong>0 elementos <code>&lt;h1&gt;</code></strong>: o primeiro título do documento é um <code>&lt;h2&gt;</code> ("Sabin Diagnóstico e Saúde"). Para leitores de tela, a página não tem ponto de entrada semântico principal. Note também o carrossel com avanço automático e a densidade de blocos concorrentes (HE-16).</figcaption>
+</figure>
+
 ---
 
 ### H7 – Flexibilidade e Eficiência de Uso
@@ -206,6 +226,11 @@ As 10 heurísticas (H1–H10) e a escala de severidade usadas abaixo são as mes
 **Recomendação HE-16:** Lazyload agressivo de imagens; limitar carrosséis a no máximo 2 por página; revisar a quantidade de banners promocionais simultâneos.
 **Recomendação HE-17:** Mover newsletter para o rodapé ou para uma seção claramente separada do conteúdo principal.
 
+<figure markdown="span">
+  ![Captura de página inteira da homepage do Sabin, exibindo múltiplas seções empilhadas — carrosséis, cards de serviços, newsletter e rodapé extenso — em um único scroll longo.](../imagens-evidencias/home-completa.png){ width="420" }
+  <figcaption><strong>Figura 5 — HE-16 (Minor).</strong> Homepage completa (página inteira). A inspeção ao vivo contou <strong>112 imagens</strong> carregadas em um único scroll, com múltiplos carrosséis e seções competindo pela atenção — densidade visual elevada para um contexto de saúde.</figcaption>
+</figure>
+
 ---
 
 ### H9 – Ajuda ao Usuário para Reconhecer, Diagnosticar e Recuperar Erros
@@ -243,6 +268,11 @@ As 10 heurísticas (H1–H10) e a escala de severidade usadas abaixo são as mes
 **Recomendação HE-20:** Adicionar no portal de resultados: link "Primeiro acesso", link "Central de ajuda" e ícone de WhatsApp na tela de login.
 **Recomendação HE-21:** Implementar busca por palavra-chave no FAQ.
 
+<figure markdown="span">
+  ![Seção 'Central de Atendimento' do Sabin com links como 'Perguntas Frequentes', 'Fale com o Sabin' e 'Envie seu projeto', listados em colunas, sem campo de busca.](../imagens-evidencias/fale-conosco.png){ width="760" }
+  <figcaption><strong>Figura 6 — HE-20 / HE-21.</strong> Central de Atendimento. O FAQ ("Perguntas Frequentes") é acessível pelo menu, mas a seção de ajuda não oferece campo de busca por palavra-chave, e o portal de laudos (ponto de maior dúvida) não traz nenhum desses links de ajuda.</figcaption>
+</figure>
+
 ---
 
 ## Distribuição de Problemas por Severidade
@@ -276,6 +306,23 @@ Severidade 1 (Cosmético):    5 problemas  → HE-04, HE-08, HE-15, HE-17, HE-21
 - ![Conforme](https://img.shields.io/badge/status-Conforme-brightgreen) Viewport meta configurado corretamente para mobile
 - ![Conforme](https://img.shields.io/badge/status-Conforme-brightgreen) Formulário de newsletter com `autocomplete` adequado por campo
 - ![Conforme](https://img.shields.io/badge/status-Conforme-brightgreen) Horas de atendimento claramente publicadas
+
+---
+
+## Galeria de Evidências Visuais
+
+Capturas reais do site Sabin obtidas em **26/06/2026** (Chromium automatizado, 1366×900, pt-BR). Cada imagem está vinculada ao(s) problema(s) correspondente(s) na análise por heurística acima.
+
+| Evidência | Arquivo | Problemas relacionados |
+|---|---|---|
+| Figura 1 — Buscador de unidades (renderização dependente de JS) | `unidades.png` | HE-01, HE-06 |
+| Figura 2 — Portal de resultados (credencial ambígua) | `portal-laudos-login.png` | HE-03, HE-10, HE-20 |
+| Figura 3 — Erro 404 em `/agendamento/` | `agendamento-404.png` | HE-05, HE-18 |
+| Figura 4 — Topo da homepage (ausência de `<h1>`) | `home-hero.png` | HE-11, HE-16 |
+| Figura 5 — Homepage completa (densidade visual) | `home-completa.png` | HE-16, HE-17 |
+| Figura 6 — Central de Atendimento (FAQ sem busca) | `fale-conosco.png` | HE-20, HE-21 |
+
+> As imagens em resolução original estão versionadas no repositório em `docs/ihc-sabin/imagens-evidencias/`.
 
 ---
 
