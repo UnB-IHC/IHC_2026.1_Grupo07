@@ -7,11 +7,11 @@ Abaixo está o registro em vídeo do Teste de Usabilidade realizado com o Partic
 
 ## Resumo da Tarefa
 
-**Tarefas aplicadas** (na ordem em que foram executadas no vídeo):
+**Tarefas aplicadas** (ordem do roteiro):
 
-1. Agende um exame de hemograma completo na unidade Ceilândia Centro. *(T1 do roteiro)*
-2. Veja as orientações de preparo para um check-up executivo. *(T3 do roteiro)*
-3. Agende uma vacina de febre amarela para um dependente de 9 meses na unidade Águas Claras. *(T2 do roteiro)*
+1. **Tarefa 1** — Agende um exame de hemograma completo na unidade Ceilândia Centro.
+2. **Tarefa 2** — Agende uma vacina de febre amarela para um dependente de 9 meses na unidade Águas Claras.
+3. **Tarefa 3** — Veja as orientações de preparo para um check-up executivo.
 
 **Participante:** Estudante de Engenharia de Software, sexo feminino (conforme critério de recrutamento). Demais dados demográficos não foram verbalizados na sessão.
 

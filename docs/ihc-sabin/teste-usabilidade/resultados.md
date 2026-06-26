@@ -246,7 +246,7 @@ flowchart LR
 </div>
 
 !!! note "Sessão diferente de P1 e P2"
-    Esta foi a **única sessão até agora em que as 3 tarefas foram aplicadas**. A ordem de execução no vídeo foi **T1 → T3 → T2** (abaixo seguimos a ordem lógica T1/T2/T3 do roteiro).
+    Esta foi a **única sessão até agora em que as 3 tarefas foram aplicadas**. As tarefas seguem a ordem do roteiro (T1, T2, T3).
 
 **Perfil:** Estudante de Engenharia de Software, sexo feminino (conforme [critérios de recrutamento](persona.md)). Idade, dispositivo principal e relação prévia com o Sabin **não foram verbalizados** na sessão — preencher pela ficha de triagem.
 
@@ -288,7 +288,7 @@ flowchart LR
 
 === "Tarefa 2 — Vacina febre amarela (Águas Claras)"
 
-    > Executada **por último** no vídeo. Dependente de 9 meses.
+    > Dependente de 9 meses.
 
     ```mermaid
     flowchart LR
@@ -315,7 +315,7 @@ flowchart LR
 
 === "Tarefa 3 — Preparo check-up executivo (sem ajuda)"
 
-    > Executada em **segundo** lugar no vídeo. Único fluxo tranquilo da sessão.
+    > Único fluxo tranquilo da sessão.
 
     ```mermaid
     flowchart LR
