@@ -372,7 +372,33 @@ flowchart LR
 | P1 | 50 | <span class="badge" style="background:#f9a825;color:#000;">Mediano (50–68)</span> |
 | P2 | 40 | <span class="badge" style="background:#c62828;color:#fff;">Inaceitável (&lt;50)</span> |
 | P3 | 35 | <span class="badge" style="background:#c62828;color:#fff;">Inaceitável (&lt;50)</span> |
-| **Média (n=2, parcial)** | 45 | <span class="badge" style="background:#c62828;color:#fff;">Inaceitável (&lt;50)</span> |
+| **Média (n=3)** | 42 | <span class="badge" style="background:#c62828;color:#fff;">Inaceitável (&lt;50)</span> |
+
+**Detalhamento por item — respostas dos 3 participantes**
+
+Respostas ao questionário SUS (escala 1–5: 1 = Discordo totalmente · 5 = Concordo totalmente), com a síntese da observação por item nas três sessões:
+
+| # | Afirmação (SUS) | P1 | P2 | P3 | Observação (síntese das 3 sessões) |
+|---|---|:--:|:--:|:--:|---|
+| 1 | Gostaria de usar o site com frequência | 3 | 2 | 2 | Todos saíram frustrados do agendamento; P1, fluente e sem ajuda, ficou neutro. |
+| 2 | Site desnecessariamente complexo | 4 | 4 | 4 | Queixa unânime: nomes fora do esperado e "muita informação" nas telas de exames/vacinas. |
+| 3 | Site fácil de usar | 2 | 2 | 2 | Nenhum achou fácil; a dificuldade se concentra em localizar o agendamento. |
+| 4 | Precisaria de suporte técnico | 2 | 2 | 3 | P1 e P2 concluíram sozinhos; P3 precisou de 2 dicas do avaliador na T1. |
+| 5 | Funções bem integradas | 3 | 2 | 2 | "Comprar" para agendar exame/vacina quebra o modelo mental. |
+| 6 | Muita inconsistência | 3 | 4 | 4 | "Agendar" leva ao atendimento móvel (TU-02); P2 e P3 caíram na armadilha, P1 contornou. |
+| 7 | Maioria aprenderia rapidamente | 3 | 2 | 2 | Mesmo sendo da área de TI, P2 e P3 ficaram perdidos. |
+| 8 | Site muito difícil de usar | 2 | 3 | 4 | A severidade acompanha a ajuda necessária: P1 sem ajuda, P2 caiu no redirecionamento, P3 precisou de dicas. |
+| 9 | Senti-me confiante | 3 | 3 | 3 | Todos concluíram as tarefas que tentaram; confiança moderada, puxada pela T3 (preparo), mais simples. |
+| 10 | Precisei aprender muita coisa | 3 | 2 | 2 | Mais questão de achabilidade do que de aprendizado — o obstáculo é a navegação, não o conceito. |
+
+**Cálculo por participante** (ímpares = soma − 5 · pares = 25 − soma · total = (ímpares + pares) × 2,5):
+
+- **P1** · ímpares (3+2+3+3+3) − 5 = **9** · pares 25 − (4+2+3+2+3) = **11** · (9 + 11) × 2,5 = **50** → <span class="badge" style="background:#f9a825;color:#000;">Mediano</span>
+- **P2** · ímpares (2+2+2+2+3) − 5 = **6** · pares 25 − (4+2+4+3+2) = **10** · (6 + 10) × 2,5 = **40** → <span class="badge" style="background:#c62828;color:#fff;">Inaceitável</span>
+- **P3** · ímpares (2+2+2+2+3) − 5 = **6** · pares 25 − (4+3+4+4+2) = **8** · (6 + 8) × 2,5 = **35** → <span class="badge" style="background:#c62828;color:#fff;">Inaceitável</span>
+- **Média (n=3):** (50 + 40 + 35) ÷ 3 = **41,7 ≈ 42** → <span class="badge" style="background:#c62828;color:#fff;">Inaceitável (&lt;50)</span>
+
+**Conclusão:** Os três participantes convergem para uma avaliação **Inaceitável** do fluxo de agendamento (SUS médio **≈ 42**; apenas P1 alcança a faixa mediana, no limite). As notas mais baixas e mais consistentes estão nos itens ligados à **nomenclatura e à organização** do site — complexidade (item 2: 4/4/4), facilidade (item 3: 2/2/2), integração (item 5) e inconsistência (item 6) —, o que confirma empiricamente **TU-01** ("comprar" não é reconhecido como "agendar") e **TU-02** (o botão "agendar" leva o usuário ao atendimento móvel). Já os itens de **confiança** (item 9: 3/3/3) e **aprendizado** (item 10) ficam medianos: o problema não é o usuário entender o sistema, e sim **encontrar o caminho** — a barreira é de achabilidade, não de aprendizado. A severidade cresce de P1 → P3 conforme a ajuda necessária (item 8: 2 → 3 → 4), reforçando que, sem corrigir a taxonomia (TU-01), o redirecionamento (TU-02) e a ausência de seleção de data/horário (TU-03), mesmo usuários com alto letramento digital concluem as tarefas com esforço e baixa satisfação.
 
 ### 5.2 Problemas de Usabilidade Identificados
 
