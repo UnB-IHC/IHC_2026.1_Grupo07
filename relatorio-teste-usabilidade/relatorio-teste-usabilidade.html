@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Relatório de Teste de Usabilidade — Portal Sabin</title>
+<style>
+  :root{ --red:#c8102e; --dark:#312e2a; --gray:#595855; --light:#f5f5f4; --line:#e3e0dc; }
+  *{ box-sizing:border-box; }
+  @page{ size:A4; margin:20mm 18mm 18mm 18mm;
+    @bottom-center{ content:"Relatório de Teste de Usabilidade — Portal Sabin · Grupo 07 — UnB"; font-size:8pt; color:#999; }
+    @bottom-right{ content:"p. " counter(page); font-size:8pt; color:#999; }
+  }
+  @page:first{ margin:0; @bottom-center{content:""} @bottom-right{content:""} }
+  html{ font-family:"Segoe UI", Roboto, Arial, sans-serif; color:var(--dark); font-size:10.5pt; line-height:1.5; }
+  body{ margin:0; }
+  h1,h2,h3,h4{ color:var(--dark); line-height:1.25; }
+  h2{ font-size:16pt; border-bottom:2px solid var(--red); padding-bottom:5px; margin-top:30px; }
+  h3{ font-size:12.5pt; color:var(--red); margin-top:20px; }
+  h4{ font-size:11pt; margin:14px 0 4px; }
+  p{ margin:7px 0; text-align:justify; }
+  a{ color:var(--red); text-decoration:none; }
+  small{ color:var(--gray); }
+  code{ background:var(--light); padding:1px 4px; border-radius:3px; font-family:"Consolas",monospace; font-size:9pt; }
+
+  .cover{ height:297mm; position:relative; page-break-after:always; color:#fff;
+    background:linear-gradient(150deg,#8e0b20 0%, var(--red) 55%, #e0344c 100%); }
+  .cover .inner{ padding:38mm 24mm; height:100%; display:flex; flex-direction:column; }
+  .cover .drop{ font-size:42pt; }
+  .cover .kicker{ letter-spacing:3px; text-transform:uppercase; font-size:10pt; opacity:.9; margin-top:30mm; }
+  .cover h1{ color:#fff; font-size:30pt; line-height:1.15; margin:10px 0 6px; }
+  .cover .sub{ font-size:14pt; opacity:.95; font-weight:300; }
+  .cover .rule{ width:70px; height:4px; background:#fff; margin:22px 0; opacity:.85; }
+  .cover .meta{ margin-top:auto; font-size:10.5pt; }
+  .cover .meta div{ margin:3px 0; }
+  .cover .meta strong{ display:inline-block; width:120px; opacity:.85; font-weight:600; }
+  .cover .badge-conf{ position:absolute; bottom:18mm; right:24mm; font-size:8pt; opacity:.8; }
+
+  .toc{ background:var(--light); border:1px solid var(--line); border-radius:6px; padding:14px 22px; }
+  .toc ol{ margin:0; padding-left:20px; } .toc li{ margin:3px 0; }
+  .exec{ background:#fdf3f4; border-left:4px solid var(--red); padding:12px 18px; border-radius:0 6px 6px 0; }
+  .kpis{ display:flex; gap:10px; margin:14px 0; }
+  .kpi{ flex:1; border:1px solid var(--line); border-radius:6px; padding:10px 12px; text-align:center; background:#fff; }
+  .kpi .n{ font-size:20pt; font-weight:700; color:var(--red); display:block; line-height:1.1; }
+  .kpi .l{ font-size:8pt; color:var(--gray); text-transform:uppercase; letter-spacing:.5px; }
+
+  table{ border-collapse:collapse; width:100%; margin:12px 0; font-size:9pt; }
+  th,td{ border:1px solid var(--line); padding:5px 8px; text-align:left; vertical-align:top; }
+  th{ background:var(--dark); color:#fff; font-weight:600; }
+  tr:nth-child(even) td{ background:#faf9f8; }
+
+  .sev{ display:inline-block; padding:1px 7px; border-radius:10px; color:#fff; font-size:8pt; font-weight:600; white-space:nowrap; }
+  .s4{ background:#b71c1c; } .s3{ background:#e65100; } .s2{ background:#f9a825; color:#000; } .s1{ background:#9e9e9e; }
+  .ok{ background:#2e7d32; } .no{ background:#b71c1c; } .part{ background:#f9a825; color:#000; }
+
+  figure{ margin:16px 0; text-align:center; page-break-inside:avoid; }
+  figure img{ max-width:100%; border:1px solid var(--line); border-radius:4px; box-shadow:0 1px 4px rgba(0,0,0,.08); }
+  figure.story img{ max-width:78%; }
+  figcaption{ font-size:8.5pt; color:var(--gray); margin-top:6px; text-align:center; padding:0 8%; }
+
+  .ref{ font-size:9pt; padding-left:26px; text-indent:-26px; margin:7px 0; color:#444; }
+  .sec{ page-break-before:always; }
+  ul.tight{ margin:6px 0; } ul.tight li{ margin:3px 0; }
+  .note{ background:var(--light); border:1px solid var(--line); border-radius:6px; padding:10px 16px; font-size:9.5pt; }
+  blockquote{ border-left:3px solid var(--red); margin:10px 0; padding:4px 14px; color:#444; font-style:italic; background:#fafafa; }
+  .scenario{ background:#fff; border:1px solid var(--line); border-left:4px solid var(--red); border-radius:0 6px 6px 0; padding:10px 16px; margin:10px 0; }
+  .scenario .tag{ font-size:8pt; font-weight:700; color:var(--red); letter-spacing:.5px; }
+</style>
+</head>
+<body>
+
+<!-- ===================== CAPA ===================== -->
+<section class="cover">
+  <div class="inner">
+    <div class="drop">🧪</div>
+    <div class="kicker">Relatório Técnico — Avaliação com Usuário</div>
+    <h1>Teste de Usabilidade<br>com Usuários Reais</h1>
+    <div class="sub">Portal Sabin Diagnóstico e Saúde — <em>sabin.com.br</em></div>
+    <div class="rule"></div>
+    <div class="meta">
+      <div><strong>Preparado por</strong> Equipe IHC 2026.1 — Grupo 07</div>
+      <div><strong>Instituição</strong> Universidade de Brasília (UnB)</div>
+      <div><strong>Método</strong> Think Aloud + System Usability Scale (SUS)</div>
+      <div><strong>Referência</strong> Tarefa Tg_IHC-03</div>
+      <div><strong>Data</strong> Junho de 2026</div>
+      <div><strong>Versão</strong> 1.0</div>
+    </div>
+    <div class="badge-conf">Participantes anonimizados (P1–P3) conforme TCLE. Documento de caráter acadêmico.</div>
+  </div>
+</section>
+
+<!-- ===================== SUMÁRIO ===================== -->
+<h2 style="margin-top:0">Sumário</h2>
+<div class="toc">
+<ol>
+  <li>Introdução</li>
+  <li>Perfil do Usuário-Alvo</li>
+  <li>Roteiro de Tarefas</li>
+  <li>Procedimento, Ambiente e Ética (TCLE)</li>
+  <li>Métricas de Usabilidade</li>
+  <li>Escore SUS (System Usability Scale)</li>
+  <li>Achados de Usabilidade</li>
+  <li>Achados de Acessibilidade (WCAG 2.2)</li>
+  <li>Recomendações Priorizadas</li>
+  <li>Reflexão Final</li>
+  <li>Referências</li>
+  <li>Anexos</li>
+</ol>
+</div>
+
+<!-- ===================== 1. INTRODUÇÃO ===================== -->
+<h2>1. Introdução</h2>
+<p>Este relatório documenta o <strong>teste de usabilidade empírico</strong> conduzido pelo Grupo 07 da disciplina de
+Interação Humano-Computador (IHC 2026.1, UnB) sobre o <strong>portal Sabin Diagnóstico e Saúde</strong>
+(<a href="https://www.sabin.com.br">sabin.com.br</a>), um site real e público de uma das maiores redes de medicina
+diagnóstica do Brasil. O objetivo é avaliar empiricamente a qualidade de uso do portal nas tarefas centrais do
+paciente — <strong>agendar exames, agendar vacinas e localizar orientações de preparo</strong> — observando usuários
+reais em ação.</p>
+<p>O estudo articula métodos consagrados de IHC: o protocolo <strong>Think Aloud</strong> (verbalização simultânea) de
+Nielsen (1993) para coleta qualitativa, e o instrumento validado <strong>System Usability Scale (SUS)</strong> de Brooke
+(1996) para mensuração da satisfação. As métricas de eficácia, eficiência e erros seguem a abordagem de Rubin &amp;
+Chisnell (2008). A tarefa exigia ao menos <strong>um usuário real</strong>; o grupo conduziu sessões com
+<strong>três participantes</strong> (P1, P2 e P3), ampliando a base de observação.</p>
+
+<div class="kpis">
+  <div class="kpi"><span class="n">3</span><span class="l">Usuários reais</span></div>
+  <div class="kpi"><span class="n">45</span><span class="l">SUS médio (Inaceitável)</span></div>
+  <div class="kpi"><span class="n">83%</span><span class="l">Eficácia na T1</span></div>
+  <div class="kpi"><span class="n">3</span><span class="l">Problemas críticos/altos</span></div>
+</div>
+<div class="exec">
+<p style="margin-top:0"><strong>Síntese:</strong> mesmo com participantes de alto letramento digital, o fluxo de
+agendamento revelou-se confuso. O termo <em>"Compra online"</em> não é reconhecido como "agendar exame", o botão "Agendar"
+desvia o usuário para o atendimento domiciliar sem aviso, e não há etapa de escolha de data. O resultado é um
+<strong>SUS médio de 45</strong> (faixa "Inaceitável"). Em contraste, a tarefa de consultar o preparo de check-up
+(T3) foi resolvida sem dificuldade — confirmando que o problema está <strong>concentrado no fluxo de agendamento</strong>,
+não no site como um todo.</p>
+</div>
+
+<!-- ===================== 2. PERFIL ===================== -->
+<h2 class="sec">2. Perfil do Usuário-Alvo</h2>
+<p>O público real do portal Sabin é amplo (pacientes de todas as idades, cuidadores, usuários de convênio). Para esta
+rodada, definiu-se uma <strong>persona primária</strong> e critérios objetivos de recrutamento, conforme orienta Krug
+(2014) ao recomendar a descrição sucinta do usuário real do produto.</p>
+
+<h3>2.1 Persona primária — "Ana"</h3>
+<table>
+<tr><th style="width:22%">Atributo</th><th>Descrição</th></tr>
+<tr><td>Nome / idade</td><td>Ana, 20 anos — <em>"Eu sei usar tecnologia, só quero que o site não me faça perder tempo"</em></td></tr>
+<tr><td>Ocupação</td><td>Estudante de Engenharia de Software (ensino superior em curso)</td></tr>
+<tr><td>Dispositivo principal</td><td>Smartphone, com uso eventual de notebook</td></tr>
+<tr><td>Uso de internet</td><td>Diário e intenso (estudo, redes sociais, apps de serviço)</td></tr>
+<tr><td>Letramento digital</td><td>Alto — usuária avançada, rápida em identificar padrões de interface</td></tr>
+<tr><td>Contexto de uso</td><td>Quer agendar exames sem telefonar, conferir preparo e acessar resultados online</td></tr>
+<tr><td>Frustrações</td><td>Pouca paciência para fluxos longos; abandona e liga para a central se travar por 1–2 min</td></tr>
+</table>
+
+<h3>2.2 Participantes recrutados</h3>
+<p>Foram recrutados <strong>3 participantes reais</strong> que se encaixam na persona, nenhum deles colega da disciplina
+nem envolvido na elaboração do roteiro. Critérios de exclusão aplicados: vínculo com o Sabin ou concorrente; experiência
+profissional em UX/Design; condução prévia de testes de usabilidade.</p>
+<table>
+<tr><th>Participante</th><th>Perfil</th><th>Relação com o Sabin</th></tr>
+<tr><td>P1</td><td>20 anos, estudante de Eng. de Software, alto letramento digital</td><td>Já fez exames presencialmente; nunca agendou pelo site</td></tr>
+<tr><td>P2</td><td>19 anos, estudante de Eng. de Software, usa celular como dispositivo principal</td><td>Já fez exames na unidade Ceilândia Centro</td></tr>
+<tr><td>P3</td><td>Estudante de Eng. de Software (feminino); demais dados pela ficha de triagem</td><td>Conhece o Sabin; uso pouco frequente do site</td></tr>
+</table>
+<p class="note"><strong>Limitação de amostra:</strong> os três participantes são estudantes de Engenharia de Software da
+mesma faculdade — amostra homogênea e tecnicamente fluente. Problemas que afetam idosos, pessoas com baixa literacia
+digital ou baixa visão podem não ter sido detectados. Os resultados são <strong>indicativos do fluxo</strong>, não
+conclusivos sobre toda a base de usuários do Sabin. <em>Não</em> foi possível incluir, nesta rodada, um participante com
+deficiência (recomendação opcional da metodologia) — registrado como oportunidade para a próxima rodada.</p>
+
+<!-- ===================== 3. ROTEIRO ===================== -->
+<h2 class="sec">3. Roteiro de Tarefas</h2>
+<p>Foram redigidas <strong>três tarefas representativas</strong>, formuladas como <strong>cenários de uso</strong> (e não como
+instruções literais da interface), todas <strong>sem necessidade de login</strong> e em páginas/fluxos distintos do site.</p>
+
+<div class="scenario"><span class="tag">TAREFA 1 — AGENDAMENTO DE EXAME</span>
+<p style="margin:4px 0">"Agende um exame de <strong>hemograma completo</strong> na unidade <strong>Ceilândia Centro</strong>."</p>
+<small><strong>Sucesso:</strong> chegar a uma tela do fluxo de agendamento com o exame e a unidade corretos selecionados.
+<strong>Falha notável:</strong> não localizar o exame/unidade ou cair em erro 404.</small></div>
+
+<div class="scenario"><span class="tag">TAREFA 2 — AGENDAMENTO DE VACINA (DEPENDENTE)</span>
+<p style="margin:4px 0">"Você quer agendar uma vacina de <strong>febre amarela</strong> no site, para o seu <strong>filho de 9 meses</strong>,
+na unidade <strong>Águas Claras</strong>."</p>
+<small><strong>Sucesso:</strong> chegar ao fluxo com a vacina e a unidade selecionados. <strong>Observar:</strong> se o site
+comunica claramente a restrição de idade (9 meses).</small></div>
+
+<div class="scenario"><span class="tag">TAREFA 3 — BUSCA DE INFORMAÇÃO</span>
+<p style="margin:4px 0">"Você quer ver as <strong>orientações de preparo</strong> para um agendamento de <strong>check-up executivo</strong>."</p>
+<small><strong>Sucesso:</strong> chegar à página do check-up executivo e indicar verbalmente as orientações de preparo.</small></div>
+
+<p>Antes do teste, a equipe mapeou hipóteses de fricção para cada fluxo (storyboards), a serem confirmadas ou refutadas
+pelas sessões reais:</p>
+<figure class="story">
+  <img src="img/storyboard-agendamento-hemograma.png" alt="Storyboard com as etapas de fricção previstas no agendamento de hemograma">
+  <figcaption><strong>Figura 1.</strong> Storyboard de hipóteses de fricção da Tarefa 1 (agendamento de hemograma) — previsão a ser validada pelas sessões.</figcaption>
+</figure>
+
+<!-- ===================== 4. PROCEDIMENTO ===================== -->
+<h2 class="sec">4. Procedimento, Ambiente e Ética (TCLE)</h2>
+<p>Cada sessão (≈25–30 min) seguiu um roteiro padronizado: boas-vindas e contextualização, tarefa de aquecimento,
+execução das tarefas com <strong>verbalização em voz alta</strong>, perguntas abertas pós-tarefa e questionário SUS.
+O avaliador <strong>não auxiliava</strong> durante as tarefas (salvo intervenção registrada após travamento prolongado) e
+respondia a pedidos de ajuda com "O que você tentaria fazer?".</p>
+<table>
+<tr><th style="width:24%">Item</th><th>Especificação</th></tr>
+<tr><td>Modalidade</td><td>Presencial, em ambiente controlado e silencioso</td></tr>
+<tr><td>Gravação</td><td>Tela + áudio, mediante consentimento (TCLE assinado antes do início)</td></tr>
+<tr><td>Cronometragem</td><td>Início na leitura completa da tarefa; fim na declaração do participante ou timeout de 5 min</td></tr>
+<tr><td>Desfecho registrado</td><td>Sucesso completo / sucesso parcial (com ajuda) / falha</td></tr>
+<tr><td>Anotações de campo</td><td>Hesitações, erros, cliques e comentários espontâneos</td></tr>
+<tr><td>Navegador</td><td>Google Chrome atualizado, sem histórico/login do site, 1366×768</td></tr>
+</table>
+<p><strong>Ética:</strong> foi aplicado um <strong>Termo de Consentimento Livre e Esclarecido (TCLE)</strong> contendo objetivo
+da pesquisa, procedimentos, aviso de gravação de tela/áudio, garantia de anonimato (identificação apenas como "P1"…"P3"),
+direito de desistência a qualquer momento e contato dos pesquisadores. As gravações são confidenciais, de uso acadêmico,
+e serão excluídas após a entrega final. <em>(TCLE na íntegra — ver Anexo A.)</em></p>
+
+<!-- ===================== 5. MÉTRICAS ===================== -->
+<h2 class="sec">5. Métricas de Usabilidade</h2>
+<p>As três métricas quantitativas exigidas — <strong>taxa de sucesso (eficácia)</strong>, <strong>tempo médio na tarefa
+(eficiência)</strong> e <strong>número de erros</strong> — foram coletadas por sessão. A taxa de sucesso pondera:
+sucesso sem ajuda = 1,0; sucesso com ajuda = 0,5; falha = 0.</p>
+
+<h4>5.1 Resumo por participante e tarefa</h4>
+<table>
+<tr><th>Part.</th><th>T1 (hemograma)</th><th>T2 (vacina)</th><th>T3 (preparo)</th><th>Erros/desvios notáveis</th></tr>
+<tr><td>P1</td><td><span class="sev ok">Sem ajuda</span> · 240 s</td><td>—</td><td>—</td><td>Explorou várias abas informativas antes de achar o caminho</td></tr>
+<tr><td>P2</td><td><span class="sev ok">Sem ajuda</span> · 195 s</td><td>—</td><td>—</td><td>Caiu no atendimento móvel; usou "voltar" do navegador e perdeu a busca</td></tr>
+<tr><td>P3</td><td><span class="sev part">Com ajuda</span> · ~240 s</td><td><span class="sev part">Com ajuda</span> · ~130 s</td><td><span class="sev ok">Sem ajuda</span> · ~35 s</td><td>Múltiplos caminhos errados; 2 dicas na T1, 1 dica na T2</td></tr>
+</table>
+<p><small>Cobertura parcial: T1 foi aplicada aos 3 participantes; T2 e T3, apenas a P3 — por dificuldade de conciliar
+agenda com P1 e P2. As médias abaixo deixam o escopo explícito.</small></p>
+
+<h4>5.2 Métricas calculadas</h4>
+<table>
+<tr><th>Métrica</th><th>Tarefa 1 (n=3)</th><th>Tarefa 2 (n=1)</th><th>Tarefa 3 (n=1)</th></tr>
+<tr><td><strong>Taxa de sucesso (eficácia)</strong></td><td>83,3% <small>(1,0 + 1,0 + 0,5)/3</small></td><td>50% <small>(com ajuda)</small></td><td>100% <small>(sem ajuda)</small></td></tr>
+<tr><td><strong>Tempo médio (eficiência)</strong></td><td>~225 s</td><td>~130 s</td><td>~35 s</td></tr>
+<tr><td><strong>Conclusão sem ajuda</strong></td><td>2 de 3</td><td>0 de 1</td><td>1 de 1</td></tr>
+<tr><td><strong>Erros/desvios</strong></td><td>Alto (todos exploraram caminhos errados)</td><td>Alto (sobrecarga de informação)</td><td>Nenhum relevante</td></tr>
+</table>
+<p>A leitura cruzada é reveladora: a tarefa de <strong>busca de informação (T3)</strong> teve <strong>100% de eficácia e ~35 s</strong>,
+enquanto as tarefas de <strong>agendamento (T1/T2)</strong> exigiram muito mais tempo e ajuda. O gargalo está claramente no
+<strong>fluxo de agendamento</strong>.</p>
+
+<!-- ===================== 6. SUS ===================== -->
+<h2 class="sec">6. Escore SUS (System Usability Scale)</h2>
+<p>Ao final das tarefas, cada participante preencheu o questionário SUS (10 itens, escala 1–5), de forma independente.
+O escore varia de 0 a 100; valores abaixo de 50 são considerados de usabilidade <strong>inaceitável</strong>.</p>
+<table>
+<tr><th>Participante</th><th>Escore SUS</th><th>Classificação</th></tr>
+<tr><td>P1</td><td>50</td><td><span class="sev s2">Mediano (50–68)</span></td></tr>
+<tr><td>P2</td><td>40</td><td><span class="sev no">Inaceitável (&lt;50)</span></td></tr>
+<tr><td>P3</td><td>35</td><td><span class="sev no">Inaceitável (&lt;50)</span></td></tr>
+<tr><td><strong>Média</strong></td><td><strong>45</strong></td><td><span class="sev no">Inaceitável (&lt;50)</span></td></tr>
+</table>
+<p><strong>Detalhe do cálculo (P3, escore 35):</strong> itens ímpares (1,3,5,7,9) = (2+2+2+2+3) − 5 = 6; itens pares
+(2,4,6,8,10) = 25 − (4+3+4+4+2) = 8; total (6 + 8) × 2,5 = <strong>35 pontos</strong>. Os itens de maior penalização foram
+"site desnecessariamente complexo" e "muita inconsistência" — coerentes com a confusão de taxonomia observada.</p>
+
+<!-- ===================== 7. ACHADOS USABILIDADE ===================== -->
+<h2 class="sec">7. Achados de Usabilidade</h2>
+<p>Os problemas abaixo emergiram de forma recorrente entre os participantes, com severidade na mesma escala da avaliação
+heurística para permitir comparação.</p>
+<table>
+<tr><th style="width:8%">ID</th><th>Problema observado</th><th style="width:13%">Severidade</th><th style="width:16%">Heurística</th></tr>
+<tr><td>TU-01</td><td><strong>Nomenclatura ambígua.</strong> "Compra online" não é reconhecida como "agendar exame". Os participantes vasculharam abas informativas ("Exames laboratoriais", "Serviços digitais", "Atendimento domiciliar") antes de achar o caminho correto.</td><td><span class="sev s4">Crítico</span></td><td>H2 — Mundo real</td></tr>
+<tr><td>TU-02</td><td><strong>Desvio sem aviso e sem saída.</strong> O botão "Agendar exame" no resultado da busca leva ao atendimento móvel/domiciliar; sem botão "voltar" no site, o usuário recorre ao navegador e perde a busca.</td><td><span class="sev s3">Alto</span></td><td>H3 / H5</td></tr>
+<tr><td>TU-03</td><td><strong>Ausência de etapa de data/horário.</strong> Nenhum participante encontrou onde escolher data — frustração explícita ao final do fluxo.</td><td><span class="sev s4">Crítico</span></td><td>H1 — Status</td></tr>
+</table>
+
+<h4>Citações dos participantes (Think Aloud)</h4>
+<blockquote>"Achei os termos um pouco confusos… a primeira opção é agendar exame, mas ele vai para um local que não
+faz sentido, que é o atendimento domiciliar. A opção certa é comprar exame…" — <strong>P2</strong></blockquote>
+<blockquote>"Tô procurando onde que eu vou agendar um exame… Acho que não é aqui, né? Não tô achando."
+/ "Ah, tá. Então eu tenho que comprar meu exame aqui primeiro?" — <strong>P3</strong></blockquote>
+<blockquote>"Foi bem mais fácil e mais intuitivo de encontrar as orientações." — <strong>P3, sobre a Tarefa 3</strong></blockquote>
+
+<p><strong>Relação com o achado catastrófico do site:</strong> a Tarefa 1 está diretamente ligada à rota de agendamento, que
+— em inspeção técnica — retorna erro 404 quando acessada por <code>/agendamento/</code>, reforçando a fragilidade do fluxo
+central:</p>
+<figure>
+  <img src="img/agendamento-404.png" alt="Página de erro 404 do Sabin na rota de agendamento">
+  <figcaption><strong>Figura 2.</strong> A rota <code>sabin.com.br/agendamento/</code> retorna erro 404 — o fluxo que os participantes tentavam concluir é, na prática, frágil e inconsistente.</figcaption>
+</figure>
+
+<!-- ===================== 8. ACESSIBILIDADE ===================== -->
+<h2 class="sec">8. Achados de Acessibilidade (WCAG 2.2)</h2>
+<p>Embora a rodada não tenha incluído participante com deficiência, as tarefas tocaram em elementos que impactam
+diretamente a acessibilidade. Os achados WCAG mais relevantes para essas jornadas (detalhados na avaliação de
+acessibilidade do grupo) são:</p>
+<table>
+<tr><th style="width:30%">Critério WCAG 2.2</th><th>Constatação no fluxo testado</th><th style="width:14%">Status</th></tr>
+<tr><td>1.3.1 / 2.4.2 — Títulos e semântica (A)</td><td>Homepage <strong>sem <code>&lt;h1&gt;</code></strong> (confirmado ao vivo): usuário de leitor de tela não identifica o título da página de partida das tarefas.</td><td><span class="sev no">Não Conforme</span></td></tr>
+<tr><td>2.4.1 — Skip links (A)</td><td>Nenhum link "pular para o conteúdo": navegação por teclado tabula por todo o menu antes de chegar ao conteúdo.</td><td><span class="sev no">Não Conforme</span></td></tr>
+<tr><td>2.4.7 — Foco visível (AA)</td><td>Ausência de <code>:focus-visible</code>: a posição do teclado fica imperceptível nos botões dos fluxos de agendamento.</td><td><span class="sev no">Não Conforme</span></td></tr>
+<tr><td>3.3.1 — Identificação de erros (A)</td><td>Portal de resultados sem <code>&lt;label&gt;</code> nem orientação de formato da credencial.</td><td><span class="sev no">Não Conforme</span></td></tr>
+<tr><td>1.4.3 — Contraste (AA)</td><td>Textos de apoio em <code>#999</code> (~2,85:1) abaixo do mínimo de 4,5:1.</td><td><span class="sev no">Não Conforme</span></td></tr>
+</table>
+<figure>
+  <img src="img/home-hero.png" alt="Topo da homepage do Sabin sem H1">
+  <figcaption><strong>Figura 3.</strong> Página de partida das tarefas: o primeiro cabeçalho é um <code>&lt;h2&gt;</code> — não há <code>&lt;h1&gt;</code>, prejudicando a orientação por leitor de tela.</figcaption>
+</figure>
+<p>Para um usuário com deficiência visual, a combinação desses fatores tornaria as tarefas de agendamento — já difíceis
+para usuários videntes fluentes — possivelmente inviáveis sem assistência.</p>
+
+<!-- ===================== 9. RECOMENDAÇÕES ===================== -->
+<h2 class="sec">9. Recomendações Priorizadas</h2>
+<table>
+<tr><th style="width:13%">Prioridade</th><th>Ação recomendada</th><th style="width:18%">Resolve</th></tr>
+<tr><td><span class="sev s4">Imediata</span></td><td>Renomear "Compra online" para <strong>"Agendar exame"</strong> de forma consistente em todos os pontos de contato.</td><td>TU-01</td></tr>
+<tr><td><span class="sev s4">Imediata</span></td><td>Corrigir a rota <code>/agendamento/</code> (404) e garantir um caminho único e óbvio para o agendamento.</td><td>TU-01, fluxo central</td></tr>
+<tr><td><span class="sev s4">Imediata</span></td><td>Incluir etapa explícita de seleção de <strong>data e horário</strong> antes da confirmação.</td><td>TU-03</td></tr>
+<tr><td><span class="sev s3">Alta</span></td><td>Ao acionar "Agendar", oferecer escolha clara (Unidade física × Domiciliar) em vez de redirecionar sem aviso; adicionar botão "voltar" interno.</td><td>TU-02</td></tr>
+<tr><td><span class="sev s3">Alta</span></td><td>Adicionar <code>&lt;h1&gt;</code>, skip link e <code>:focus-visible</code>; corrigir contraste dos textos de apoio.</td><td>Acessibilidade (WCAG A/AA)</td></tr>
+<tr><td><span class="sev s2">Média</span></td><td>Reduzir a sobrecarga de informação na listagem de vacinas e adicionar busca interna.</td><td>T2 — "muita informação"</td></tr>
+</table>
+
+<!-- ===================== 10. REFLEXÃO ===================== -->
+<h2 class="sec">10. Reflexão Final</h2>
+<p>O teste confirmou empiricamente o que a inspeção especialista previa: o portal Sabin <strong>cumpre bem as tarefas de
+informação, mas falha nas tarefas de ação</strong> (agendamento). O dado mais eloquente é o contraste interno da própria
+sessão de P3 — perdida e dependente de ajuda nas tarefas de agendamento (T1/T2), porém rápida e confiante na busca de
+preparo (T3). Isso isola o problema: não é o site inteiro que é ruim, é o <strong>modelo conceitual do agendamento</strong>
+que está desalinhado da expectativa do usuário.</p>
+<p>Do ponto de vista de aprendizado, a rodada evidenciou o valor do Think Aloud: métricas isoladas (a T1 teve 83% de
+eficácia) podem mascarar uma experiência ruim, mas as verbalizações ("então eu tenho que comprar meu exame primeiro?")
+expõem o atrito cognitivo real. O SUS médio de 45 traduz numericamente essa insatisfação.</p>
+<p>As <strong>principais limitações</strong> a corrigir em rodadas futuras são: (1) a <strong>amostra homogênea</strong> de
+estudantes de tecnologia, que não representa o público diverso do Sabin; (2) a <strong>cobertura parcial</strong> de tarefas
+(T2/T3 apenas com P3); e (3) a <strong>ausência de um participante com deficiência</strong> — recomendação opcional da
+metodologia que, se cumprida, tornaria os achados de acessibilidade empíricos, e não apenas inspecionais. Ainda assim,
+mesmo uma amostra pequena e fluente foi suficiente para revelar problemas críticos — o que reforça, na prática, a tese de
+Nielsen de que poucos usuários já expõem a maioria dos problemas graves de usabilidade.</p>
+
+<!-- ===================== 11. REFERÊNCIAS ===================== -->
+<h2 class="sec">11. Referências</h2>
+<p class="ref">BROOKE, John. SUS: A "Quick and Dirty" Usability Scale. In: JORDAN, P. W. et al. (eds.). <em>Usability Evaluation in Industry</em>. London: Taylor &amp; Francis, 1996. p. 189–194.</p>
+<p class="ref">ERICSSON, K. A.; SIMON, H. A. <em>Protocol Analysis: Verbal Reports as Data</em>. Cambridge: MIT Press, 1993.</p>
+<p class="ref">KRUG, Steve. <em>Não Me Faça Pensar: Uma Abordagem de Bom Senso à Usabilidade Web e Mobile</em>. 3. ed. Rio de Janeiro: Alta Books, 2014.</p>
+<p class="ref">NIELSEN, Jakob. <em>Usability Engineering</em>. San Diego: Academic Press, 1993.</p>
+<p class="ref">RUBIN, Jeffrey; CHISNELL, Dana. <em>Handbook of Usability Testing</em>. 2. ed. Indianapolis: Wiley, 2008.</p>
+<p class="ref">W3C. <strong>Web Content Accessibility Guidelines (WCAG) 2.2</strong>. 2023. Disponível em: https://www.w3.org/TR/WCAG22/.</p>
+
+<!-- ===================== 12. ANEXOS ===================== -->
+<h2 class="sec">12. Anexos</h2>
+<h4>Anexo A — Termo de Consentimento Livre e Esclarecido (TCLE)</h4>
+<p>O TCLE assinado por cada participante contém: objetivo da pesquisa; procedimentos (3 tarefas, ~25–30 min, Think Aloud);
+aviso de gravação de tela e áudio; garantia de anonimato (identificação como "P1"…"P3"); direito de desistência sem
+penalidade; e contato dos pesquisadores responsáveis (Equipe IHC 2026.1 — Grupo 07, UnB). Versão completa publicada em
+GitHub Pages (link abaixo).</p>
+
+<h4>Anexo B — Artefatos e gravações</h4>
+<table>
+<tr><th>Artefato</th><th>Endereço</th></tr>
+<tr><td>Planejamento do teste</td><td>unb-ihc.github.io/IHC_2026.1_Grupo07/ihc-sabin/teste-usabilidade/planejamento/</td></tr>
+<tr><td>Persona do participante</td><td>unb-ihc.github.io/IHC_2026.1_Grupo07/ihc-sabin/teste-usabilidade/persona/</td></tr>
+<tr><td>Roteiro de tarefas</td><td>unb-ihc.github.io/IHC_2026.1_Grupo07/ihc-sabin/teste-usabilidade/roteiro/</td></tr>
+<tr><td>Questionário SUS</td><td>unb-ihc.github.io/IHC_2026.1_Grupo07/ihc-sabin/teste-usabilidade/questionario-sus/</td></tr>
+<tr><td>TCLE</td><td>unb-ihc.github.io/IHC_2026.1_Grupo07/ihc-sabin/teste-usabilidade/tcle/</td></tr>
+<tr><td>Resultados completos (3 sessões + vídeos)</td><td>unb-ihc.github.io/IHC_2026.1_Grupo07/ihc-sabin/teste-usabilidade/resultados/</td></tr>
+</table>
+<p><small>Gravações das sessões (P1, P2, P3) disponíveis de forma anonimizada no YouTube, vinculadas na página de
+resultados. Evidências de site capturadas em 26/06/2026.</small></p>
+
+</body>
+</html>

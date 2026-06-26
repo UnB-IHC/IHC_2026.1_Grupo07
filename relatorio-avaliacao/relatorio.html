@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Relatório de Avaliação de Usabilidade e Acessibilidade — Portal Sabin</title>
+<style>
+  :root{ --red:#c8102e; --dark:#312e2a; --gray:#595855; --light:#f5f5f4; --line:#e3e0dc; }
+  *{ box-sizing:border-box; }
+  @page{ size:A4; margin:20mm 18mm 18mm 18mm;
+    @bottom-center{ content:"Relatório de Avaliação IHC — Portal Sabin · Grupo 07 — UnB"; font-size:8pt; color:#999; }
+    @bottom-right{ content:"p. " counter(page); font-size:8pt; color:#999; }
+  }
+  @page:first{ margin:0; @bottom-center{content:""} @bottom-right{content:""} }
+  html{ font-family:"Segoe UI", Roboto, Arial, sans-serif; color:var(--dark); font-size:10.5pt; line-height:1.5; }
+  body{ margin:0; }
+  h1,h2,h3,h4{ color:var(--dark); line-height:1.25; }
+  h2{ font-size:16pt; border-bottom:2px solid var(--red); padding-bottom:5px; margin-top:30px; }
+  h3{ font-size:12.5pt; color:var(--red); margin-top:20px; }
+  h4{ font-size:11pt; margin:14px 0 4px; }
+  p{ margin:7px 0; text-align:justify; }
+  a{ color:var(--red); text-decoration:none; }
+  small{ color:var(--gray); }
+  code{ background:var(--light); padding:1px 4px; border-radius:3px; font-family:"Consolas",monospace; font-size:9pt; }
+
+  /* ---------- CAPA ---------- */
+  .cover{ height:297mm; padding:0; position:relative; page-break-after:always; color:#fff;
+    background:linear-gradient(150deg,#8e0b20 0%, var(--red) 55%, #e0344c 100%); }
+  .cover .inner{ padding:38mm 24mm; height:100%; display:flex; flex-direction:column; }
+  .cover .drop{ font-size:42pt; }
+  .cover .kicker{ letter-spacing:3px; text-transform:uppercase; font-size:10pt; opacity:.9; margin-top:30mm; }
+  .cover h1{ color:#fff; font-size:30pt; line-height:1.15; margin:10px 0 6px; }
+  .cover .sub{ font-size:14pt; opacity:.95; font-weight:300; }
+  .cover .rule{ width:70px; height:4px; background:#fff; margin:22px 0; opacity:.85; }
+  .cover .meta{ margin-top:auto; font-size:10.5pt; }
+  .cover .meta div{ margin:3px 0; }
+  .cover .meta strong{ display:inline-block; width:120px; opacity:.85; font-weight:600; }
+  .cover .badge-conf{ position:absolute; bottom:18mm; right:24mm; font-size:8pt; opacity:.8; }
+
+  /* ---------- BLOCOS ---------- */
+  .toc{ background:var(--light); border:1px solid var(--line); border-radius:6px; padding:14px 22px; }
+  .toc ol{ margin:0; padding-left:20px; } .toc li{ margin:3px 0; }
+  .exec{ background:#fdf3f4; border-left:4px solid var(--red); padding:12px 18px; border-radius:0 6px 6px 0; }
+  .kpis{ display:flex; gap:10px; margin:14px 0; }
+  .kpi{ flex:1; border:1px solid var(--line); border-radius:6px; padding:10px 12px; text-align:center; background:#fff; }
+  .kpi .n{ font-size:20pt; font-weight:700; color:var(--red); display:block; line-height:1.1; }
+  .kpi .l{ font-size:8pt; color:var(--gray); text-transform:uppercase; letter-spacing:.5px; }
+
+  table{ border-collapse:collapse; width:100%; margin:12px 0; font-size:9pt; }
+  th,td{ border:1px solid var(--line); padding:5px 8px; text-align:left; vertical-align:top; }
+  th{ background:var(--dark); color:#fff; font-weight:600; }
+  tr:nth-child(even) td{ background:#faf9f8; }
+
+  .sev{ display:inline-block; padding:1px 7px; border-radius:10px; color:#fff; font-size:8pt; font-weight:600; white-space:nowrap; }
+  .s4{ background:#b71c1c; } .s3{ background:#e65100; } .s2{ background:#f9a825; color:#000; } .s1{ background:#9e9e9e; }
+  .ok{ background:#2e7d32; } .no{ background:#b71c1c; } .part{ background:#f9a825; color:#000; }
+
+  figure{ margin:16px 0; text-align:center; page-break-inside:avoid; }
+  figure img{ max-width:100%; border:1px solid var(--line); border-radius:4px; box-shadow:0 1px 4px rgba(0,0,0,.08); }
+  figure.tall img{ max-width:52%; }
+  figcaption{ font-size:8.5pt; color:var(--gray); margin-top:6px; text-align:center; padding:0 10%; }
+
+  .ref{ font-size:9pt; padding-left:26px; text-indent:-26px; margin:7px 0; color:#444; }
+  .sec{ page-break-before:always; }
+  ul.tight{ margin:6px 0; } ul.tight li{ margin:3px 0; }
+  .note{ background:var(--light); border:1px solid var(--line); border-radius:6px; padding:10px 16px; font-size:9.5pt; }
+</style>
+</head>
+<body>
+
+<!-- ===================== CAPA ===================== -->
+<section class="cover">
+  <div class="inner">
+    <div class="drop">🩸</div>
+    <div class="kicker">Relatório Técnico de Interação Humano-Computador</div>
+    <h1>Avaliação de Usabilidade<br>e Acessibilidade Digital</h1>
+    <div class="sub">Portal Sabin Diagnóstico e Saúde — <em>sabin.com.br</em></div>
+    <div class="rule"></div>
+    <div class="meta">
+      <div><strong>Preparado por</strong> Equipe IHC 2026.1 — Grupo 07</div>
+      <div><strong>Instituição</strong> Universidade de Brasília (UnB)</div>
+      <div><strong>Destinatário</strong> Sabin Diagnóstico e Saúde — Experiência Digital</div>
+      <div><strong>Referência</strong> Tarefa Tg_IHC-02</div>
+      <div><strong>Data</strong> Junho de 2026</div>
+      <div><strong>Versão</strong> 1.0</div>
+    </div>
+    <div class="badge-conf">Documento de caráter acadêmico — diagnóstico independente, sem vínculo comercial com o Sabin.</div>
+  </div>
+</section>
+
+<!-- ===================== SUMÁRIO ===================== -->
+<h2 style="margin-top:0">Sumário</h2>
+<div class="toc">
+<ol>
+  <li>Sumário Executivo</li>
+  <li>Introdução e Objetivo</li>
+  <li>Escopo da Avaliação</li>
+  <li>Metodologia</li>
+  <li>Resultados — Avaliação Heurística</li>
+  <li>Resultados — Avaliação de Acessibilidade (WCAG 2.2 / NBR 17225:2025)</li>
+  <li>Achados Críticos Consolidados</li>
+  <li>Recomendações Priorizadas (Roadmap)</li>
+  <li>Conclusão</li>
+  <li>Referências</li>
+  <li>Anexo — Fontes e Artefatos</li>
+</ol>
+</div>
+
+<!-- ===================== 1. SUMÁRIO EXECUTIVO ===================== -->
+<h2>1. Sumário Executivo</h2>
+<p>Este relatório apresenta o diagnóstico de <strong>Interação Humano-Computador (IHC)</strong> do portal
+<strong>Sabin Diagnóstico e Saúde</strong> (<a href="https://www.sabin.com.br">sabin.com.br</a>), conduzido pelo Grupo 07
+da disciplina de IHC 2026.1 da Universidade de Brasília. Esta avaliação reúne duas frentes de
+<strong>inspeção especialista</strong> — <strong>avaliação heurística</strong> e <strong>checklist de acessibilidade</strong>
+(WCAG 2.2 / NBR 17225:2025) — aplicando o referencial do <em>Guia de Acessibilidade Pocket V2</em>, desenvolvido pelo
+próprio grupo.</p>
+
+<div class="kpis">
+  <div class="kpi"><span class="n">21</span><span class="l">Problemas heurísticos</span></div>
+  <div class="kpi"><span class="n">3</span><span class="l">Falhas catastróficas</span></div>
+  <div class="kpi"><span class="n">37,5%</span><span class="l">Conformidade WCAG</span></div>
+  <div class="kpi"><span class="n">7</span><span class="l">Critérios WCAG não conformes</span></div>
+</div>
+
+<div class="exec">
+<p style="margin-top:0"><strong>Conclusão central:</strong> o portal apresenta esforços visíveis de acessibilidade
+(declaração de idioma, <code>aria-label</code> em botões, VLibras), mas <strong>falha nas tarefas mais importantes do usuário</strong> —
+agendar exames, encontrar informações e acessar resultados. Foram identificadas <strong>três falhas catastróficas</strong>
+(rota de agendamento quebrada, homepage sem título principal e página de erro sem saída) e um nível de conformidade
+de acessibilidade de apenas <strong>37,5%</strong>, muito abaixo do exigido pela NBR 17225:2025 (que demanda 100% dos
+critérios WCAG 2.2 níveis A e AA).</p>
+</div>
+
+<h4>Os três achados mais urgentes</h4>
+<table>
+<tr><th style="width:18%">Achado</th><th style="width:14%">Severidade</th><th>Impacto no negócio</th></tr>
+<tr><td>Rota <code>/agendamento/</code> retorna erro 404</td><td><span class="sev s4">Catastrófico</span></td>
+<td>O principal CTA de conversão ("Agendamentos #VemSabin") leva a uma página de erro — perda direta de agendamentos.</td></tr>
+<tr><td>Homepage sem <code>&lt;h1&gt;</code></td><td><span class="sev s4">Catastrófico</span></td>
+<td>Leitores de tela não identificam o título da página — barreira de acessibilidade e perda de SEO.</td></tr>
+<tr><td>Conformidade WCAG em 37,5%</td><td><span class="sev no">Não Conforme</span></td>
+<td>Patamar muito abaixo da exigência legal (NBR 17225:2025) — risco de inacessibilidade e de não conformidade normativa.</td></tr>
+</table>
+
+<!-- ===================== 2. INTRODUÇÃO ===================== -->
+<h2 class="sec">2. Introdução e Objetivo</h2>
+<p>O Sabin é uma das maiores redes de medicina diagnóstica do Brasil, e seu portal é a principal porta de entrada
+digital para pacientes que precisam <strong>buscar exames, agendar atendimento e acessar resultados</strong>. A qualidade
+de uso desse portal afeta diretamente a experiência do paciente, a eficiência operacional e a inclusão de pessoas
+com deficiência — esta última, exigência legal sob a NBR 17225:2025 e a Lei Brasileira de Inclusão (Lei 13.146/2015).</p>
+<p>O objetivo desta avaliação é <strong>diagnosticar, sob múltiplas lentes metodológicas, a qualidade de uso do portal</strong>
+frente às tarefas centrais do usuário, produzindo recomendações priorizadas por severidade e impacto. O documento é
+estruturado como entregável técnico, no formato em que seria submetido a um órgão ou empresa responsável pelo produto.</p>
+
+<!-- ===================== 3. ESCOPO ===================== -->
+<h2>3. Escopo da Avaliação</h2>
+<p>Foram analisadas as seguintes áreas e rotas do portal, cobrindo as jornadas mais frequentes do usuário:</p>
+<ul class="tight">
+  <li><strong>Homepage</strong> (<code>sabin.com.br</code>) — ponto de entrada e principais CTAs;</li>
+  <li><strong>Listagem e detalhe de exames</strong> (Exames Laboratoriais, Check-up Executivo);</li>
+  <li><strong>Buscador de unidades</strong> e <strong>fluxo de agendamento</strong> (incluindo a rota <code>/agendamento/</code>);</li>
+  <li><strong>Portal de resultados</strong> (<code>laudos.sabin.com.br</code>) — tela de login;</li>
+  <li><strong>Central de atendimento / FAQ</strong>.</li>
+</ul>
+<p class="note"><strong>Limites:</strong> as áreas autenticadas (interior do portal de laudos e o fluxo completo de pagamento)
+não foram percorridas por exigirem credenciais reais de paciente. Os achados desses pontos restringem-se à camada
+pública (tela de login, estrutura e semântica).</p>
+
+<!-- ===================== 4. METODOLOGIA ===================== -->
+<h2 class="sec">4. Metodologia</h2>
+<p>Este relatório consolida duas frentes de <strong>inspeção especialista</strong> que se reforçam mutuamente. Ambas adotam
+o vocabulário e os critérios do <em>Guia de Acessibilidade Pocket V2</em>, construído pelo grupo e organizado por função
+profissional (desenvolvedor, designer, redator, gestor).</p>
+<table>
+<tr><th style="width:24%">Frente</th><th>Descrição</th><th style="width:26%">Referencial</th></tr>
+<tr><td><strong>Avaliação Heurística</strong></td><td>Inspeção do site com base nas 10 heurísticas de usabilidade, classificando cada problema em escala de severidade de 0 a 4.</td><td>Nielsen (1994, rev. 2020); Pocket V2 — Heurísticas</td></tr>
+<tr><td><strong>Avaliação de Acessibilidade</strong></td><td>Checklist de 18 itens de conformidade aplicados ao HTML renderizado, classificados como Conforme / Parcial / Não Conforme / Não Verificável.</td><td>WCAG 2.2; NBR 17225:2025; e-MAG 3.1; Checklist Pocket V2</td></tr>
+</table>
+<p><strong>Reverificação técnica (26/06/2026):</strong> os achados dependentes de código foram reconfirmados ao vivo com
+inspeção automatizada do DOM renderizado (navegador Chromium, locale pt-BR), e as evidências visuais deste relatório
+foram capturadas na mesma data.</p>
+
+<!-- ===================== 5. HEURÍSTICA ===================== -->
+<h2 class="sec">5. Resultados — Avaliação Heurística</h2>
+<p>Foram catalogados <strong>21 problemas (HE-01 a HE-21)</strong> distribuídos pelas 10 heurísticas. A distribuição por
+severidade evidencia a concentração de risco no fluxo central de agendamento:</p>
+<table>
+<tr><th>Severidade</th><th>Qtde.</th><th>Identificadores</th></tr>
+<tr><td><span class="sev s4">4 — Catastrófico</span></td><td>3</td><td>HE-05, HE-11, HE-18</td></tr>
+<tr><td><span class="sev s3">3 — Major</span></td><td>4</td><td>HE-01, HE-03, HE-10, HE-13</td></tr>
+<tr><td><span class="sev s2">2 — Minor</span></td><td>9</td><td>HE-02, HE-06, HE-07, HE-09, HE-12, HE-14, HE-16, HE-19, HE-20</td></tr>
+<tr><td><span class="sev s1">1 — Cosmético</span></td><td>5</td><td>HE-04, HE-08, HE-15, HE-17, HE-21</td></tr>
+</table>
+
+<h3>5.1 Problemas prioritários com evidência visual</h3>
+
+<p><strong>HE-05 / HE-18 — Fluxo de agendamento quebrado (Catastrófico).</strong> A URL <code>/agendamento/</code>, promovida na
+homepage como CTA principal, retorna erro 404. A página de erro não oferece nenhuma rota alternativa para a função de
+agendamento, deixando o usuário sem saída — falha que combina violação de <em>Controle e Liberdade</em> (H3) e
+<em>Recuperação de Erros</em> (H9).</p>
+<figure>
+  <img src="img/agendamento-404.png" alt="Página 404 do Sabin acessada via /agendamento/">
+  <figcaption><strong>Figura 1.</strong> A rota <code>sabin.com.br/agendamento/</code> retorna "Página não encontrada", sem rota alternativa de agendamento.</figcaption>
+</figure>
+
+<p><strong>HE-11 — Homepage sem título principal (Catastrófico).</strong> A inspeção ao vivo confirmou
+<strong>zero elementos <code>&lt;h1&gt;</code></strong>: a hierarquia começa em <code>&lt;h2&gt;</code>. Usuários de leitor de tela que
+navegam por cabeçalhos perdem o ponto de entrada semântico da página.</p>
+<figure>
+  <img src="img/home-hero.png" alt="Topo da homepage do Sabin sem H1">
+  <figcaption><strong>Figura 2.</strong> Topo da homepage. O primeiro cabeçalho do documento é um <code>&lt;h2&gt;</code> — não há <code>&lt;h1&gt;</code>. Observe também o carrossel com avanço automático e a densidade visual (HE-16).</figcaption>
+</figure>
+
+<p><strong>HE-03 / HE-10 / HE-20 — Portal de resultados sem orientação (Major).</strong> A tela de login do portal de laudos
+solicita a credencial de forma ambígua ("Digite seu CPF ou usuário"), sem máscara de formato, sem <code>&lt;label&gt;</code>
+associado e sem ajuda contextual — justamente no ponto de maior dúvida do usuário.</p>
+<figure>
+  <img src="img/portal-laudos-login.png" alt="Tela de login do portal de resultados do Sabin">
+  <figcaption><strong>Figura 3.</strong> Portal de resultados (<code>laudos.sabin.com.br</code>): credencial ambígua e ausência de ajuda contextual no login.</figcaption>
+</figure>
+
+<h3>5.2 Aspectos positivos</h3>
+<ul class="tight">
+  <li>Idioma declarado corretamente (<code>lang="pt-BR"</code>) e <em>landmark</em> <code>&lt;main&gt;</code> único e presente;</li>
+  <li>Botões de menu com <code>aria-expanded</code> e botões de ação com <code>aria-label</code> descritivos;</li>
+  <li><strong>VLibras</strong> disponível para usuários surdos; <em>viewport</em> mobile configurado corretamente;</li>
+  <li>Horários de atendimento publicados com clareza e múltiplos canais de contato (telefone, WhatsApp, app).</li>
+</ul>
+
+<!-- ===================== 6. ACESSIBILIDADE ===================== -->
+<h2 class="sec">6. Resultados — Avaliação de Acessibilidade</h2>
+<p>Aplicando o checklist de 18 itens (WCAG 2.2 / NBR 17225:2025), o portal atingiu <strong>37,5% de conformidade</strong> —
+patamar muito aquém do exigido. A NBR 17225:2025 demanda conformidade plena (100%) nos critérios de níveis A e AA.</p>
+<table>
+<tr><th>Seção</th><th>Itens</th><th>Conformes</th><th>Parciais</th><th>Não Conformes</th><th>% Conformidade</th></tr>
+<tr><td>A — Percepção Visual e Auditiva</td><td>5</td><td>1</td><td>2</td><td>2</td><td>40%</td></tr>
+<tr><td>B — Operabilidade e Navegação</td><td>5</td><td>1</td><td>1</td><td>2</td><td>37,5%</td></tr>
+<tr><td>C — Compreensibilidade e Ajuda</td><td>6</td><td>1</td><td>1</td><td>3</td><td>30%</td></tr>
+<tr><td>D — Robustez e Código Semântico</td><td>2</td><td>0</td><td>2</td><td>0</td><td>50%</td></tr>
+<tr><td><strong>Total</strong></td><td><strong>18</strong></td><td><strong>3</strong></td><td><strong>6</strong></td><td><strong>7</strong></td><td><strong>37,5%</strong></td></tr>
+</table>
+
+<h3>6.1 Não conformidades de maior impacto</h3>
+<table>
+<tr><th style="width:26%">Critério</th><th>WCAG</th><th>Constatação</th><th>Status</th></tr>
+<tr><td>Texto alternativo em imagens</td><td>1.1.1 (A)</td><td><strong>92 de 112 imagens</strong> com <code>alt=""</code>, incluindo selos de certificação e fotos de unidades (informativas).</td><td><span class="sev no">Não Conforme</span></td></tr>
+<tr><td>Contraste mínimo</td><td>1.4.3 (AA)</td><td>Texto <code>#999</code> sobre branco (~2,85:1) abaixo do mínimo de 4,5:1.</td><td><span class="sev no">Não Conforme</span></td></tr>
+<tr><td>Foco visível</td><td>2.4.7 (AA)</td><td>45 referências a <code>:focus</code>, <strong>nenhuma a <code>:focus-visible</code></strong>.</td><td><span class="sev no">Não Conforme</span></td></tr>
+<tr><td>Skip links</td><td>2.4.1 (A)</td><td>Nenhum link "pular para o conteúdo" — reconfirmado ao vivo.</td><td><span class="sev no">Não Conforme</span></td></tr>
+<tr><td>Títulos e semântica</td><td>1.3.1 / 2.4.2 (A)</td><td>Homepage sem <code>&lt;h1&gt;</code>; hierarquia inicia em <code>&lt;h2&gt;</code>.</td><td><span class="sev no">Não Conforme</span></td></tr>
+<tr><td>Identificação de erros</td><td>3.3.1 (A)</td><td>Portal de laudos sem <code>&lt;label&gt;</code> e sem orientação de formato.</td><td><span class="sev no">Não Conforme</span></td></tr>
+</table>
+
+<figure class="tall">
+  <img src="img/home-completa.png" alt="Homepage completa do Sabin com muitas imagens">
+  <figcaption><strong>Figura 4.</strong> Homepage completa: 112 imagens em um único scroll, das quais 92 com <code>alt=""</code> (Item 1 — WCAG 1.1.1).</figcaption>
+</figure>
+
+<!-- ===================== 7. ACHADOS CONSOLIDADOS ===================== -->
+<h2 class="sec">7. Achados Críticos Consolidados</h2>
+<p>O cruzamento entre as duas frentes de inspeção reforça a confiança nos achados: os mesmos pontos de fricção aparecem
+tanto na avaliação heurística quanto no checklist de acessibilidade, sob critérios independentes.</p>
+<table>
+<tr><th style="width:40%">Achado consolidado</th><th>Avaliação Heurística</th><th>Avaliação de Acessibilidade</th></tr>
+<tr><td>Taxonomia de agendamento confusa ("Comprar" vs "Agendar")</td><td>HE-07</td><td>Item 12 (3.2.4)</td></tr>
+<tr><td>Fluxo de agendamento sem controle/saída e sem data</td><td>HE-05, HE-18</td><td>Item 15</td></tr>
+<tr><td>Estrutura semântica deficiente (sem <code>&lt;h1&gt;</code>, sem skip link)</td><td>HE-11</td><td>Itens 7 e 11 (1.3.1, 2.4.1)</td></tr>
+<tr><td>Portal de resultados sem orientação/rótulos</td><td>HE-03, HE-20</td><td>Itens 14, 17 (3.3.1, 4.1.2)</td></tr>
+</table>
+
+<!-- ===================== 8. RECOMENDAÇÕES ===================== -->
+<h2 class="sec">8. Recomendações Priorizadas (Roadmap)</h2>
+<p>As ações abaixo são ordenadas por <strong>impacto no usuário e esforço estimado</strong>, para orientar a correção.</p>
+<table>
+<tr><th style="width:13%">Prioridade</th><th>Ação recomendada</th><th style="width:20%">Resolve</th></tr>
+<tr><td><span class="sev s4">Imediata</span></td><td>Corrigir a rota <code>/agendamento/</code> (404) e redirecioná-la ao fluxo ativo de agendamento.</td><td>HE-05, HE-18</td></tr>
+<tr><td><span class="sev s4">Imediata</span></td><td>Renomear "Compra online" → <strong>"Agendar exame"</strong> de forma consistente em todos os pontos de contato.</td><td>HE-07, Item 12</td></tr>
+<tr><td><span class="sev s4">Imediata</span></td><td>Adicionar <code>&lt;h1&gt;</code> à homepage e auditar a hierarquia de cabeçalhos das páginas internas.</td><td>HE-11, Item 11</td></tr>
+<tr><td><span class="sev s3">Alta</span></td><td>Inserir <strong>skip link</strong> e implementar <code>:focus-visible</code> com outline de alto contraste.</td><td>Itens 6 e 7</td></tr>
+<tr><td><span class="sev s3">Alta</span></td><td>Adicionar <code>&lt;label&gt;</code>, máscara de CPF e link "Primeiro acesso" no portal de laudos.</td><td>HE-03, HE-10, Itens 14/16</td></tr>
+<tr><td><span class="sev s2">Média</span></td><td>Auditar as 92 imagens com <code>alt=""</code>; corrigir contraste (<code>#999</code> → <code>#767676</code>).</td><td>Itens 1 e 2</td></tr>
+<tr><td><span class="sev s2">Média</span></td><td>Reformular a página 404 com busca e links para as tarefas principais; pausar carrossel automático.</td><td>HE-18, Item 4</td></tr>
+</table>
+
+<!-- ===================== 9. CONCLUSÃO ===================== -->
+<h2 class="sec">9. Conclusão</h2>
+<p>O portal Sabin demonstra preocupação com acessibilidade em diversos pontos, mas <strong>falha precisamente nas
+jornadas que mais importam ao paciente</strong>. A combinação de uma rota de agendamento quebrada, uma taxonomia que
+contraria o modelo mental do usuário e uma estrutura semântica deficiente produz, na prática, um portal que afasta o
+usuário no momento da conversão — diagnóstico sustentado de forma convergente pelas duas frentes de inspeção
+(heurística e acessibilidade).</p>
+<p>A correção das <strong>três ações imediatas</strong> deste roadmap — rota de agendamento, renomeação da taxonomia e inclusão
+do <code>&lt;h1&gt;</code> — tem alto impacto e esforço relativamente baixo, e deveria ser priorizada. As demais recomendações
+elevam o portal em direção à conformidade plena com a NBR 17225:2025, hoje em 37,5%.</p>
+
+<!-- ===================== 10. REFERÊNCIAS ===================== -->
+<h2 class="sec">10. Referências</h2>
+<p class="ref">ABNT. <strong>NBR 17225:2025</strong> — Acessibilidade Digital. Associação Brasileira de Normas Técnicas, 2025.</p>
+<p class="ref">BRASIL. <strong>e-MAG — Modelo de Acessibilidade em Governo Eletrônico</strong>, versão 3.1. Brasília, 2014.</p>
+<p class="ref">GRUPO 07 IHC 2026.1. <strong>Guia de Acessibilidade Digital — Pocket V2</strong>. Universidade de Brasília, 2026. Disponível em: https://unb-ihc.github.io/IHC_2026.1_Grupo07/pocket-v2/.</p>
+<p class="ref">NIELSEN, Jakob. <strong>10 Usability Heuristics for User Interface Design</strong>. Nielsen Norman Group, 1994 (rev. 2020). Disponível em: https://www.nngroup.com/articles/ten-usability-heuristics/.</p>
+<p class="ref">NIELSEN, Jakob; MOLICH, Rolf. Heuristic Evaluation of User Interfaces. In: <em>Proceedings of the CHI '90 Conference</em>. New York: ACM, 1990. p. 249–256.</p>
+<p class="ref">W3C. <strong>Web Content Accessibility Guidelines (WCAG) 2.2</strong>. 2023. Disponível em: https://www.w3.org/TR/WCAG22/.</p>
+
+<!-- ===================== 11. ANEXO ===================== -->
+<h2 class="sec">11. Anexo — Fontes e Artefatos</h2>
+<p>A documentação completa e interativa desta avaliação está publicada em GitHub Pages:</p>
+<table>
+<tr><th>Artefato</th><th>Endereço</th></tr>
+<tr><td>Guia de Acessibilidade Pocket V2</td><td>unb-ihc.github.io/IHC_2026.1_Grupo07/pocket-v2/</td></tr>
+<tr><td>Avaliação Heurística (HE-01 a HE-21)</td><td>unb-ihc.github.io/IHC_2026.1_Grupo07/ihc-sabin/avaliacao-heuristica/</td></tr>
+<tr><td>Avaliação de Acessibilidade (18 itens)</td><td>unb-ihc.github.io/IHC_2026.1_Grupo07/ihc-sabin/avaliacao-acessibilidade/resultados/</td></tr>
+<tr><td>Site avaliado</td><td>sabin.com.br</td></tr>
+</table>
+<p><small>Evidências visuais capturadas em 26/06/2026 com navegador Chromium automatizado (1366×900, pt-BR).
+Imagens versionadas em <code>docs/ihc-sabin/imagens-evidencias/</code> e <code>relatorio/img/</code>.</small></p>
+
+</body>
+</html>

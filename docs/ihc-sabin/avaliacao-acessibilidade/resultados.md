@@ -68,6 +68,11 @@ Das 112 imagens da homepage, **92 possuem `alt=""`** (vazio). O atributo vazio �
 
 **Recomendação:** Auditar as 92 imagens com `alt=""`, mantendo o vazio apenas para decorativas e adicionando descrição nas informativas. Exemplo: `alt="Certificação ISO 9001 — Sistema de Gestão da Qualidade"`.
 
+<figure markdown="span">
+  ![Captura de página inteira da homepage do Sabin, com dezenas de imagens — banners, fotos de unidades, selos de certificação e produtos — empilhadas ao longo de um scroll longo.](../imagens-evidencias/home-completa.png){ width="380" }
+  <figcaption><strong>Evidência visual (Item 1).</strong> Homepage completa. A reverificação ao vivo (26/06/2026) contou <strong>112 imagens</strong>, das quais <strong>92 com <code>alt=""</code></strong> — incluindo selos de certificação (ISO, CAP, PADI) e fotos de unidades, que são informativas e deveriam ter texto alternativo.</figcaption>
+</figure>
+
 ---
 
 ### Item 2 — Contraste Mínimo de Cores
@@ -208,6 +213,8 @@ Nenhum skip link encontrado em nenhuma página do site. O menu de navegação pr
 ```
 Com CSS que o oculta visualmente mas torna visível ao receber foco (técnica `sr-only` com `focus:not-sr-only`).
 
+> ✅ **Reconfirmado ao vivo (26/06/2026):** a busca por `pular para`/`skip` no DOM renderizado retornou **0 resultados** — nenhum skip link presente.
+
 ---
 
 ### Item 8 — Tamanho do Alvo de Clique
@@ -282,6 +289,11 @@ A homepage **não possui `<h1>`**. A hierarquia de títulos inicia diretamente e
 Para leitores de tela que navegam por headings (tecla `H` no NVDA/JAWS), não há ponto de entrada principal no documento.
 
 **Recomendação:** Adicionar `<h1>` visível ou `visually-hidden` na homepage. Auditar todas as páginas internas para garantir hierarquia correta (H1 → H2 → H3, sem saltos).
+
+<figure markdown="span">
+  ![Topo da homepage do Sabin renderizada; o primeiro título visível é 'Seja bem-vindo(a) ao Sabin Diagnóstico e Saúde', sem nenhum título de nível 1 (H1) na página.](../imagens-evidencias/home-hero.png){ width="720" }
+  <figcaption><strong>Evidência visual (Item 11).</strong> Topo da homepage. Na reverificação ao vivo (26/06/2026), <code>document.querySelectorAll('h1').length</code> retornou <strong>0</strong> — o primeiro cabeçalho do documento é um <code>&lt;h2&gt;</code>, deixando a página sem título principal para tecnologias assistivas.</figcaption>
+</figure>
 
 ---
 
