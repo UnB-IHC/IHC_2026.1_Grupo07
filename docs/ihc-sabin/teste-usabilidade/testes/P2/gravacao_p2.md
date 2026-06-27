@@ -1,6 +1,6 @@
 # Gravação - Participante 2
 
-Abaixo está o registro em vídeo do Teste de Usabilidade realizado com o Participante 2. Durante a sessão de 3 minutos e 15 segundos, foi solicitada a tarefa de agendar um "Hemograma Completo" na unidade "Ceilândia Centro". O vídeo captura a tela do usuário bem como suas verbalizações utilizando a técnica de *Think Aloud*.
+Abaixo está o registro em vídeo do Teste de Usabilidade realizado com o Participante 2. Durante a sessão de 6 minutos e 35 segundos, foi solicitada a tarefa de agendar um "Hemograma Completo" na unidade "Ceilândia Centro". O vídeo captura a tela do usuário bem como suas verbalizações utilizando a técnica de *Think Aloud*.
 
 ### 1. Gravação de Tela
 Captura a interação direta do participante com a interface do sistema, permitindo visualizar o caminho percorrido, cliques e navegação.
@@ -20,6 +20,6 @@ Mostra o contexto da sessão, enquadrando o participante (entrevistado), o entre
 
 **Participante:** 19 anos, estudante de Engenharia de Software. Já utilizou os serviços na referida unidade anteriormente.
 
-**Resultado:** O participante concluiu a tarefa sem ajuda em 3 minutos e 15 segundos. O fluxo, no entanto, apresentou fricções significativas: a nomenclatura "Agendar exame" redirecionava para serviços de atendimento domiciliar. Para de fato prosseguir com o agendamento em uma unidade, ele precisou selecionar "Comprar online", o que causou grande estranheza, assim como a ausência da seleção de data.
+**Resultado:** O participante concluiu a tarefa sem ajuda em 3 minutos e 35 segundos. O fluxo, no entanto, apresentou fricções significativas: a nomenclatura "Agendar exame" redirecionava para serviços de atendimento domiciliar. Para de fato prosseguir com o agendamento em uma unidade, ele precisou selecionar "Comprar online", o que causou grande estranheza, assim como a ausência da seleção de data.
 
 **PS:** O vídeo apresenta um erro de gravação da tela do site, mas não afetou a coleta dos dados, visto que o áudio foi preservado e que o vídeo do Participante 1 não apresenta problemas
