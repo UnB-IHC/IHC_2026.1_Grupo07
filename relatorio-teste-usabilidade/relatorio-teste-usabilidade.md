@@ -390,3 +390,119 @@ nomenclatura, antes apontada apenas por inspeção, **foi vivida pelos três par
 
 ![Página de erro 404 do Sabin na rota de agendamento.](img/agendamento-404.png)
 *Figura 5. A rota `sabin.com.br/agendamento/` retorna erro 404 — o fluxo que os participantes tentavam concluir é, na prática, frágil e inconsistente.*
+
+---
+
+## 6. Recomendações Priorizadas
+
+As recomendações abaixo atacam os problemas de maior impacto observados. A **prioridade**
+reflete a gravidade/urgência para o usuário; o **esforço estimado** (baixo / médio / alto)
+indica a complexidade aproximada de implementação para a equipe do site.
+
+| # | Prioridade | Ação recomendada | Resolve | Esforço |
+|---|---|---|---|---|
+| 1 | 🔴 Imediata | Padronizar a nomenclatura do fluxo: substituir "Compra online" / "Serviços digitais" por **"Agendar exame"** de forma consistente em todos os pontos de contato. | TU-01 / HE-07 | 🟢 Baixo |
+| 2 | 🔴 Imediata | Corrigir a rota `/agendamento/` (erro 404) e garantir **um caminho único e óbvio** para iniciar o agendamento a partir da homepage. | HE-05 / HE-18 | 🟡 Médio |
+| 3 | 🔴 Imediata | Incluir uma **etapa explícita de seleção de data e horário** antes da confirmação do agendamento. | TU-03 | 🔴 Alto |
+| 4 | 🟠 Alta | Ao acionar "Agendar", oferecer **escolha clara** (Unidade física × Atendimento domiciliar) em vez de redirecionar sem aviso; adicionar **botão "voltar" interno** que preserve a busca. | TU-02 | 🟡 Médio |
+| 5 | 🟠 Alta | Correções de acessibilidade de base: adicionar **`<h1>`**, **skip link** e **`:focus-visible`**; corrigir o **contraste** dos textos de apoio (`#999` → `#767676`). | WCAG 1.3.1 / 2.4.1 / 2.4.7 / 1.4.3 | 🟢 Baixo |
+| 6 | 🟡 Média | Reduzir a sobrecarga de informação na **listagem de vacinas** e adicionar **busca interna** com sugestão por idade do dependente. | TU-04 | 🟡 Médio |
+
+**Síntese das três correções mais urgentes:**
+
+1. **Linguagem alinhada ao usuário (TU-01).** O modelo mental do paciente é "agendar/marcar
+   exame", não "comprar". Renomear é a intervenção de **menor esforço e maior impacto**.
+2. **Fluxo de agendamento funcional e único (HE-05).** Hoje o CTA principal leva a um 404 e o
+   caminho real passa por "Compra online" — é preciso um fluxo único, óbvio e sem becos sem saída.
+3. **Etapa de data/horário (TU-03).** Sem ela, mesmo concluindo o caminho o usuário sente que a
+   tarefa ficou **incompleta** — foi a frustração explícita de P1 e P2.
+
+---
+
+## 7. Reflexão Final
+
+### 7.1 O que o grupo aprendeu
+
+O teste confirmou empiricamente o que a inspeção especialista (TG-02) previa: o portal Sabin
+**cumpre bem as tarefas de informação, mas falha nas tarefas de ação** (agendamento). O dado
+mais eloquente é o **contraste interno da própria sessão de P3** — perdida e dependente de
+ajuda nas tarefas de agendamento (T1/T2), porém rápida e confiante na busca de preparo (T3).
+Isso **isola o problema**: não é o site inteiro que é ruim, é o **modelo conceitual do
+agendamento** que está desalinhado da expectativa do usuário.
+
+A rodada também evidenciou, na prática, o **valor do Think Aloud**: métricas isoladas podem
+mascarar uma experiência ruim (a T1 teve 83,3% de eficácia, número aparentemente bom), mas as
+verbalizações — *"então eu tenho que comprar meu exame primeiro?"* — expõem o **atrito cognitivo
+real**. O SUS médio de **41,7** traduz numericamente essa insatisfação. Reforça-se, assim, a
+tese de Nielsen de que **poucos usuários já expõem a maioria dos problemas graves de usabilidade**.
+
+### 7.2 Limitações do estudo
+
+- **Amostra pequena e homogênea:** 3 participantes, todos estudantes de Engenharia de Software
+  da mesma faculdade — tecnicamente fluentes. Problemas que afetam idosos, baixa literacia
+  digital ou baixa visão podem não ter sido detectados.
+- **Cobertura parcial de tarefas:** a T1 foi aplicada aos 3 participantes; T2 e T3, apenas a P3,
+  por dificuldade de conciliar agenda com P1 e P2. As métricas de T2/T3 têm n=1 e são indicativas.
+- **Escopo sem autenticação:** nenhuma tarefa exige login, portanto o portal de laudos (área
+  autenticada) não foi coberto empiricamente nesta rodada.
+- **Ausência de participante com deficiência:** os achados de acessibilidade (seção 5) são, em
+  parte, **inspecionais** — não foram vividos por um usuário de tecnologia assistiva nesta rodada.
+
+### 7.3 Próximos passos para o site Sabin
+
+1. **Aplicar as correções imediatas** (seção 6, itens 1–3): renomear o fluxo, corrigir o 404 de
+   `/agendamento/` e inserir a etapa de data/horário.
+2. **Reexecutar T2 e T3 com P1 e P2** para elevar a amostra dessas tarefas de n=1 para n=3 e
+   consolidar as métricas.
+3. **Ampliar e diversificar a amostra** em uma próxima rodada, incluindo idosos, usuários de
+   baixa literacia digital e **pelo menos um participante com deficiência** (leitor de tela),
+   tornando os achados de acessibilidade empíricos.
+4. **Reteste de validação** após as correções, comparando o novo SUS e a nova taxa de sucesso
+   com a linha de base deste relatório (SUS 41,7 / T1 83,3%).
+
+---
+
+## Referências
+
+> BROOKE, John. SUS: A "Quick and Dirty" Usability Scale. In: JORDAN, P. W. et al. (eds.).
+> *Usability Evaluation in Industry*. London: Taylor & Francis, 1996. p. 189–194.
+
+> ERICSSON, K. A.; SIMON, H. A. *Protocol Analysis: Verbal Reports as Data*. Cambridge:
+> MIT Press, 1993.
+
+> KRUG, Steve. *Não Me Faça Pensar: Uma Abordagem de Bom Senso à Usabilidade Web e Mobile*.
+> 3. ed. Rio de Janeiro: Alta Books, 2014.
+
+> NIELSEN, Jakob. *Usability Engineering*. San Diego: Academic Press, 1993.
+
+> RUBIN, Jeffrey; CHISNELL, Dana. *Handbook of Usability Testing*. 2. ed. Indianapolis:
+> Wiley, 2008.
+
+> W3C. *Web Content Accessibility Guidelines (WCAG) 2.2*. 2023. Disponível em:
+> <https://www.w3.org/TR/WCAG22/>.
+
+---
+
+## Anexos
+
+Artefatos e evidências que embasam este relatório, versionados no repositório do grupo e
+publicados no GitHub Pages:
+
+| Artefato | Localização |
+|---|---|
+| Planejamento do teste | [`docs/.../teste-usabilidade/planejamento.md`](../docs/ihc-sabin/teste-usabilidade/planejamento.md) |
+| Persona do participante | [`docs/.../teste-usabilidade/persona.md`](../docs/ihc-sabin/teste-usabilidade/persona.md) |
+| Roteiro de tarefas | [`docs/.../teste-usabilidade/roteiro.md`](../docs/ihc-sabin/teste-usabilidade/roteiro.md) |
+| Questionário SUS | [`docs/.../teste-usabilidade/questionario-sus.md`](../docs/ihc-sabin/teste-usabilidade/questionario-sus.md) |
+| TCLE | [`docs/.../teste-usabilidade/tcle.md`](../docs/ihc-sabin/teste-usabilidade/tcle.md) |
+| Resultados completos (3 sessões + vídeos) | [`docs/.../teste-usabilidade/resultados.md`](../docs/ihc-sabin/teste-usabilidade/resultados.md) |
+| Avaliação heurística (TG-02) | [`docs/.../avaliacao-heuristica/index.md`](../docs/ihc-sabin/avaliacao-heuristica/index.md) |
+| Avaliação de acessibilidade (WCAG) | [`docs/.../avaliacao-acessibilidade/resultados.md`](../docs/ihc-sabin/avaliacao-acessibilidade/resultados.md) |
+
+**Gravações das sessões (anonimizadas, YouTube):**
+[P1](https://www.youtube.com/watch?v=pH2DjBRNKGs) ·
+[P2](https://www.youtube.com/watch?v=T6je8iKDG30) ·
+[P3](https://www.youtube.com/watch?v=Yy9u99nBeJw)
+
+> Documento de caráter acadêmico. Participantes anonimizados (P1–P3) conforme TCLE.
+> Evidências de site capturadas em 26/06/2026.
