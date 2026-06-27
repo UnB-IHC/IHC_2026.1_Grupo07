@@ -33,7 +33,7 @@ portal Sabin revelou-se confuso e pouco intuitivo. O termo **"Compra online"** n
 reconhecido como "agendar exame", o botão **"Agendar"** desvia o usuário para o
 atendimento domiciliar sem aviso, e **não há etapa de escolha de data**. O resultado
 é um **SUS médio de 41,7** (faixa "Inaceitável"). Em contraste, a tarefa de consultar
-o preparo de um check-up (T3) foi resolvida sem dificuldade em ~35 s — confirmando que
+o preparo de um check-up (T3) foi resolvida sem dificuldade em ~45 s — confirmando que
 o problema está **concentrado no fluxo de agendamento**, não no site como um todo.
 
 | Indicador | Valor |
@@ -116,7 +116,7 @@ de testes de usabilidade.
 |---|---|---|
 | **P1** | 20 anos, estudante de Eng. de Software, uso diário de internet, alto letramento digital | Já fez exames presencialmente; **nunca agendou pelo site** |
 | **P2** | 19 anos, estudante de Eng. de Software, usa o **celular** como dispositivo principal | Já fez exames na unidade **Ceilândia Centro** |
-| **P3** | Estudante de Eng. de Software (feminino); demais dados pela ficha de triagem | Conhece o Sabin; **uso pouco frequente** do site |
+| **P3** | 20 anos, estudante de Eng. de Software (feminino), uso diário de internet | Conhece o Sabin; **uso pouco frequente** do site |
 
 > **Contexto de uso (por que usam sites médicos):** os participantes representam usuários que
 > recorrem ao portal para **agendar exames para si ou para familiares sem telefonar**, **conferir
@@ -218,10 +218,14 @@ confirmadas ou refutadas pelas sessões reais:
 | Part. | T1 — hemograma | T2 — vacina | T3 — preparo | SUS |
 |---|---|---|---|---|
 | **P1** | ✅ Sem ajuda · 240 s | — | — | 50 |
-| **P2** | ✅ Sem ajuda · 195 s | — | — | 40 |
-| **P3** | ⚠️ Com ajuda · ~240 s | ⚠️ Com ajuda · ~130 s | ✅ Sem ajuda · ~35 s | 35 |
+| **P2** | ✅ Sem ajuda · 215 s | — | — | 40 |
+| **P3** | ⚠️ Com ajuda · 285 s | ⚠️ Com ajuda · 190 s | ✅ Sem ajuda · 45 s | 35 |
 
 > Legenda: ✅ concluiu sem ajuda · ⚠️ concluiu com ajuda do avaliador · — tarefa não aplicada ao participante.
+>
+> **Duração total das sessões:** P1 — 6 min 55 s · P2 — 6 min 35 s · P3 — 10 min 22 s
+> (média ≈ 8 min). As sessões de P1 e P2 foram mais curtas por cobrirem apenas a T1; a de P3
+> incluiu as três tarefas.
 
 ### 4.2 Taxa de sucesso por tarefa (eficácia)
 
@@ -235,7 +239,7 @@ não concluiu = 0. A taxa é a média ponderada dividida pelo nº de participant
 | **T3 — Ver preparo** (n=1) | 1,0 ÷ 1 | **100%** |
 
 Embora a T1 registre 83,3% de eficácia, a leitura cruzada é reveladora: a tarefa de
-**busca de informação (T3)** teve **100% e ~35 s**, enquanto as tarefas de **agendamento
+**busca de informação (T3)** teve **100% e 45 s**, enquanto as tarefas de **agendamento
 (T1/T2)** exigiram muito mais tempo e ajuda. O gargalo está claramente no **fluxo de
 agendamento**, não na consulta de conteúdo.
 
@@ -243,12 +247,12 @@ agendamento**, não na consulta de conteúdo.
 
 | Tarefa | Tempos individuais | Tempo médio |
 |---|---|---|
-| **T1** (n=3) | 240 s · 195 s · ~240 s | **~225 s** (≈ 3 min 45 s) |
-| **T2** (n=1) | ~130 s | **~130 s** (≈ 2 min 10 s) |
-| **T3** (n=1) | ~35 s | **~35 s** |
+| **T1** (n=3) | 240 s · 215 s · 285 s | **~247 s** (≈ 4 min 07 s) |
+| **T2** (n=1) | 190 s | **190 s** (≈ 3 min 10 s) |
+| **T3** (n=1) | 45 s | **45 s** |
 
-O contraste de eficiência é eloquente: encontrar uma informação (T3) levou ~35 s, enquanto
-iniciar um agendamento (T1) consumiu, em média, **mais de 6× esse tempo**.
+O contraste de eficiência é eloquente: encontrar uma informação (T3) levou 45 s, enquanto
+iniciar um agendamento (T1) consumiu, em média, **mais de 5× esse tempo**.
 
 ### 4.4 Número de erros
 
@@ -314,27 +318,31 @@ sessão. O escore varia de 0 a 100; valores abaixo de 50 são considerados de us
 
 ### 4.6 Verbalizações marcantes (Think Aloud)
 
-> *"Eu achei bem complicado. Os nomes não eram o que eu estava esperando [...] tive que entrar
-> em várias outras páginas para conseguir achar esse hemograma completo, que não estava onde eu
-> estava esperando."* — **P1 (T1)**
+Foram selecionadas **8 verbalizações** representativas das três sessões, evidenciando o
+contraste entre o atrito do agendamento (T1/T2) e a fluidez da busca de informação (T3):
 
-> *"Eu senti falta também na questão da data."* — **P1 (T1)**
+> **1.** *"Eu achei bem complicado. Os nomes não eram o que eu estava esperando [...] tive que
+> entrar em várias outras páginas para conseguir achar esse hemograma completo, que não estava
+> onde eu estava esperando."* — **P1 (T1)**
 
-> *"Achei os termos um pouco confusos… a primeira opção é agendar exame, mas ele vai para um
-> local que não faz sentido, que é o atendimento domiciliar. A opção certa é comprar exame, que
-> pra mim faria mais sentido você agendar, né?"* — **P2 (T1)**
+> **2.** *"Eu senti falta também na questão da data."* — **P1 (T1)**
 
-> *"Senti falta de não ter como selecionar um local e uma data."* — **P2 (T1)**
+> **3.** *"Achei os termos um pouco confusos… a primeira opção é agendar exame, mas ele vai para
+> um local que não faz sentido, que é o atendimento domiciliar. A opção certa é comprar exame,
+> que pra mim faria mais sentido você agendar, né?"* — **P2 (T1)**
 
-> *"Vou apertar no botão de agendamento, que faz sentido."* … *"Acho que não é aqui, né, mano?
-> Não tô achando."* … *"Não consigo voltar pra parte inicial."* … *"Isso aqui é um tipo de
-> atendimento móvel, não é isso? E como é que eu vou agendar?"* … *"Ah, tá. Então eu tenho que
-> comprar meu exame aqui primeiro."* — **P3 (T1)**
+> **4.** *"Senti falta de não ter como selecionar um local e uma data."* — **P2 (T1)**
 
-> *"Orientações de preparo. Achei."* — **P3 (T3, único fluxo tranquilo)**
+> **5.** *"Vou apertar no botão de agendamento, que faz sentido."* … *"Acho que não é aqui, né,
+> mano? Não tô achando."* … *"Não consigo voltar pra parte inicial."* — **P3 (T1)**
 
-> *"Também foi bem difícil de achar o lugar certo, porque eu não imaginaria que fazer uma compra
-> online me levaria a agendar uma vacina pra criança."* — **P3 (feedback final)**
+> **6.** *"Isso aqui é um tipo de atendimento móvel, não é isso? E como é que eu vou agendar?"*
+> … *"Ah, tá. Então eu tenho que comprar meu exame aqui primeiro."* — **P3 (T1)**
+
+> **7.** *"Meu Deus, muita informação."* … *"Eu não imaginaria que fazer uma compra online me
+> levaria a agendar uma vacina pra criança."* — **P3 (T2 / feedback final)**
+
+> **8.** *"Orientações de preparo. Achei."* — **P3 (T3, único fluxo tranquilo)**
 
 ### 4.7 Problemas de usabilidade consolidados
 
