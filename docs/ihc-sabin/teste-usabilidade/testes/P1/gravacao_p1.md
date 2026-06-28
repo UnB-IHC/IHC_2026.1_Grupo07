@@ -1,6 +1,6 @@
 # Gravação - Participante 1
 
-Abaixo estão os registros em vídeo do Teste de Usabilidade realizado com o Participante 1. Durante a sessão de aproximadamente 4 minutos, foi solicitada a tarefa de agendar um "Hemograma Completo" na unidade "Ceilândia Centro". O teste utilizou a técnica de *Think Aloud*, com o usuário verbalizando seus pensamentos durante a execução.
+Abaixo estão os registros em vídeo do Teste de Usabilidade realizado com o Participante 1. Durante a sessão de aproximadamente 6 minutos e 55 segundos, foi solicitada a tarefa de agendar um "Hemograma Completo" na unidade "Ceilândia Centro". O teste utilizou a técnica de *Think Aloud*, com o usuário verbalizando seus pensamentos durante a execução.
 
 Para permitir uma análise completa, o teste foi registrado de duas formas:
 

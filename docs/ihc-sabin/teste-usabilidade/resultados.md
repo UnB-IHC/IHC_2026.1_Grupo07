@@ -10,7 +10,7 @@
 
     **Não foi possível realizar as três tarefas com todos os participantes** por dificuldade de conciliar agenda/horário com os usuários — com P1 e P2 só foi viável executar a **Tarefa 1**. Ainda assim, **a realização da Tarefa 1 com eles contribui para a análise do teste de usabilidade**, pois permite comparar o fluxo de agendamento entre os participantes e reforça os problemas identificados.
 
-    Os agregados abaixo (cards da *Visão Geral*, médias, tabela de problemas e síntese final) **ainda não foram recalculados** para incluir P3 e seguem refletindo n=2 / só T1 — recalcular após decidir se T2/T3 serão repetidas com P1 e P2.
+    Os agregados abaixo já incluem os **3 participantes** onde há dado comparável: **T1** e **SUS** estão em **n=3** (P1, P2, P3); **T2 e T3** seguem em **n=1** (apenas P3). Caso T2/T3 sejam repetidas com P1 e P2, recalcular essas duas tarefas.
 
 ---
 
@@ -28,19 +28,19 @@
 
     ---
 
-    Apenas T1 (agendamento) foi rodada até agora, com P1 e P2
+    Só a T1 foi aplicada aos 3 participantes; T2 e T3 apenas com P3
 
--   <span class="badge" style="background:#c62828;color:#fff;">SUS médio 45</span>
-
-    ---
-
-    Classificação **Inaceitável** (n=2, parcial — só T1)
-
--   **100%** de conclusão em T1
+-   <span class="badge" style="background:#c62828;color:#fff;">SUS médio 41,7</span>
 
     ---
 
-    P1 e P2 concluíram sem ajuda do avaliador (n=2)
+    Classificação **Inaceitável** (n=3 — P1, P2, P3)
+
+-   **83,3%** de eficácia na T1
+
+    ---
+
+    P1 e P2 sem ajuda; P3 com ajuda do avaliador (n=3)
 
 </div>
 
@@ -48,12 +48,10 @@
 flowchart LR
     P1["Entrevista 1 — P1\nT1 concluída"] --> RF[Resultado Final]
     P2["Entrevista 2 — P2\nT1 concluída"] --> RF
-    P3["Entrevista 3 — P3\npendente"] --> RF
-    RF --> SUS["SUS médio: 45 (Inaceitável)"]
+    P3["Entrevista 3 — P3\nT1/T2/T3 concluídas"] --> RF
+    RF --> SUS["SUS médio: 41,7 (Inaceitável)"]
     RF --> PROB["3 problemas críticos/altos identificados"]
     RF --> REC["Recomendações priorizadas"]
-
-    style P3 stroke-dasharray: 5 5
 ```
 
 ---
@@ -63,17 +61,17 @@ flowchart LR
 | Participante | T1 ✓? | T1 (s) | T2 ✓? | T2 (s) | T3 ✓? | T3 (s) | SUS |
 |---|---|---|---|---|---|---|---|
 | P1 | ☑ Sim, sem ajuda | 240 | — | — | — | — | 50 |
-| P2 | ☑ Sim, sem ajuda | 195 | — | — | — | — | 40 |
-| P3 | ☑ Sim, com ajuda | ~240 | ☑ Sim, com ajuda | ~130 | ☑ Sim, sem ajuda | ~35 | 35 |
-| **Média (T1, n=2)** | — | 217,5 | — | — | — | — | 45 |
+| P2 | ☑ Sim, sem ajuda | 215 | — | — | — | — | 40 |
+| P3 | ☑ Sim, com ajuda | 285 | ☑ Sim, com ajuda | 190 | ☑ Sim, sem ajuda | 45 | 35 |
+| **Média (T1, n=3)** | — | 247 | — | — | — | — | 41,7 |
 
-> ⚠ **Médias ainda em n=2 (P1, P2).** P3 já realizou T1/T2/T3 (ver [seção 4](#4-resultado-entrevista-3-p3)), mas os agregados não foram recalculados — recalcular após decidir se T2/T3 serão repetidas com P1 e P2.
+> **Médias recalculadas para n=3 na T1 e no SUS** (P1, P2, P3). As tarefas **T2 e T3** seguem em **n=1** (apenas P3, ver [seção 4](#4-resultado-entrevista-3-p3)) — recalcular se forem repetidas com P1 e P2.
 
-### Taxa de conclusão da tarefa (T1, n=2 — parcial)
+### Taxa de conclusão da tarefa (T1, n=3)
 
-`(Nº de "Sim, sem ajuda" × 1 + Nº de "Sim, com ajuda" × 0,5 + Nº de "Não concluiu" × 0) ÷ 2 = 100%`
+`(1,0 [P1] + 1,0 [P2] + 0,5 [P3]) ÷ 3 = 83,3%`
 
-> Recalcular para n=3 e incluir T2/T3 assim que as sessões restantes forem realizadas.
+> T2 e T3 seguem em n=1 (apenas P3). Incluir P1 e P2 nessas tarefas assim que as sessões restantes forem realizadas.
 
 ---
 
@@ -237,7 +235,7 @@ flowchart LR
 
 <div class="grid cards" markdown>
 
--   **Tempo de tarefa** · ~7 min (T1 ~4min · T3 ~35s · T2 ~2min10s)
+-   **Tempo somado nas tarefas** · ~8min40s (T1 285s · T2 190s · T3 45s) — sessão de 10min22s
 
 -   **Conclusão** · <span class="badge" style="background:#2e7d32;color:#fff;">T3 sem ajuda</span> <span class="badge" style="background:#e65100;color:#fff;">T1 e T2 com ajuda</span>
 
@@ -248,7 +246,7 @@ flowchart LR
 !!! note "Sessão diferente de P1 e P2"
     Esta foi a **única sessão até agora em que as 3 tarefas foram aplicadas**. As tarefas seguem a ordem do roteiro (T1, T2, T3).
 
-**Perfil:** Estudante de Engenharia de Software, sexo feminino (conforme [critérios de recrutamento](persona.md)). Idade, dispositivo principal e relação prévia com o Sabin **não foram verbalizados** na sessão — preencher pela ficha de triagem.
+**Perfil:** 20 anos, estudante de Engenharia de Software, sexo feminino (conforme [critérios de recrutamento](persona.md)). Dispositivo principal e relação prévia com o Sabin não foram verbalizados na sessão — complementar pela ficha de triagem.
 
 ### Evidência em vídeo
 
@@ -284,7 +282,7 @@ flowchart LR
     | Verbalizações marcantes (citações literais) | "Vou apertar no botão de agendamento, que faz sentido." / "Tô procurando onde que eu vou agendar um exame [...] desci até a parte de conteúdo de apoio e não achei." / "Acho que não é aqui, né, mano? Não tô achando." / "Não consigo voltar pra parte inicial." / "Isso aqui é um tipo de atendimento móvel, não é isso? E como é que eu vou agendar?" / "Ah, tá. Então eu tenho que comprar meu exame aqui primeiro." |
     | Erros / desvios observados | Procurou o agendamento em "pré-cadastro / unidade digital", "solicitação de exames", "conteúdo de apoio", "atendimento domiciliar" e "agilizar exames de análises clínicas" antes do caminho correto. Só chegou ao fluxo certo após **duas dicas do avaliador** (abrir o menu ☰ e, depois, escolher "Compre online"). |
     | Onde travou ou hesitou | Não encontrava a opção de agendar; ficou presa numa tela de solicitação de serviço sem conseguir voltar à página inicial. Estranhou que "agendar" caísse no **atendimento móvel** e que fosse preciso "comprar" o exame para marcá-lo. Não houve etapa de data/horário. |
-    | Observações do avaliador | Tarefa concluída **com ajuda** (2 intervenções), em ~4 min. Participante visivelmente perdida ("fiquei bem perdida"). Reforça **TU-01** (nomenclatura "comprar" ≠ "agendar") e **TU-02** (redirecionamento ao atendimento móvel sem aviso). |
+    | Observações do avaliador | Tarefa concluída **com ajuda** (2 intervenções), em ~4min45s (285 s). Participante visivelmente perdida ("fiquei bem perdida"). Reforça **TU-01** (nomenclatura "comprar" ≠ "agendar") e **TU-02** (redirecionamento ao atendimento móvel sem aviso). |
 
 === "Tarefa 2 — Vacina febre amarela (Águas Claras)"
 
@@ -311,7 +309,7 @@ flowchart LR
     | Verbalizações marcantes (citações literais) | "Estou na tela da unidade de Águas Claras e não achei a parte de agendamento." / "Meu Deus, muita informação." / "Eu queria pesquisar a vacina de febre amarela, mas não sei como faz isso." / "Vou clicar em vacinas infantis porque meu filho tem 9 meses." |
     | Erros / desvios observados | Tentou agendar pela página da unidade (Águas Claras) e pelo "Compre online" antes de achar o caminho por **Vacinas infantis**. Precisou de **uma dica do avaliador** (usar o menu ☰). |
     | Onde travou ou hesitou | Sobrecarga de informação na listagem de vacinas; não encontrava campo de busca. Estranheza de que "compra online" levasse ao agendamento de vacina infantil. |
-    | Observações do avaliador | Tarefa concluída **com ajuda** (1 intervenção), em ~2 min. O mesmo problema de taxonomia da T1 se repete no fluxo de vacinas — confirma que **TU-01** vale também para vacinação. |
+    | Observações do avaliador | Tarefa concluída **com ajuda** (1 intervenção), em ~3min10s (190 s). O mesmo problema de taxonomia da T1 se repete no fluxo de vacinas — confirma que **TU-01** vale também para vacinação. |
 
 === "Tarefa 3 — Preparo check-up executivo (sem ajuda)"
 
@@ -331,7 +329,7 @@ flowchart LR
     | Verbalizações marcantes (citações literais) | "Vou clicar em exames [...] vou clicar em checkup executivo." / "Tô descendo a tela aqui para achar a orientação." / "Orientações de preparo. Achei." |
     | Erros / desvios observados | Nenhum desvio relevante. Caminho direto pelo menu ☰. |
     | Onde travou ou hesitou | Não travou. Pequena dúvida se a seção de orientações já estava expandida ou costuma vir recolhida. |
-    | Observações do avaliador | Tarefa concluída **sem ajuda**, em ~35s. No feedback final: *"foi bem mais fácil e mais intuitivo de encontrar as orientações"*. Contrasta fortemente com T1/T2. |
+    | Observações do avaliador | Tarefa concluída **sem ajuda**, em 45 s. No feedback final: *"foi bem mais fácil e mais intuitivo de encontrar as orientações"*. Contrasta fortemente com T1/T2. |
 
 **Respostas às perguntas pós-tarefa (feedback final da participante):**
 
@@ -361,7 +359,7 @@ flowchart LR
 
 ## 5. Resultado Final
 
-> Síntese consolidada das 3 entrevistas. Esta seção é **parcial** — reflete apenas T1 com P1 e P2 — e deve ser recalculada quando T2, T3 e a sessão de P3 forem concluídas.
+> Síntese consolidada das 3 entrevistas. **T1 e SUS** refletem **n=3** (P1, P2, P3); **T2 e T3** refletem **n=1** (apenas P3) e devem ser recalculadas se repetidas com P1 e P2.
 
 ### 5.1 SUS (System Usability Scale)
 
@@ -372,7 +370,7 @@ flowchart LR
 | P1 | 50 | <span class="badge" style="background:#f9a825;color:#000;">Mediano (50–68)</span> |
 | P2 | 40 | <span class="badge" style="background:#c62828;color:#fff;">Inaceitável (&lt;50)</span> |
 | P3 | 35 | <span class="badge" style="background:#c62828;color:#fff;">Inaceitável (&lt;50)</span> |
-| **Média (n=2, parcial)** | 45 | <span class="badge" style="background:#c62828;color:#fff;">Inaceitável (&lt;50)</span> |
+| **Média (n=3)** | 41,7 | <span class="badge" style="background:#c62828;color:#fff;">Inaceitável (&lt;50)</span> |
 
 ### 5.2 Problemas de Usabilidade Identificados
 
@@ -397,17 +395,15 @@ flowchart LR
 | H2 / H4 | Problemas de taxonomia e nomenclatura no menu principal | Confirmado (T1) | "Compra online" não é reconhecido como agendamento de exames. |
 | H3 / H5 | Falta de controle/saída clara ao entrar em fluxos específicos (ex: atendimento móvel) | Confirmado (T1) | O usuário precisou usar o "Voltar" do navegador e perdeu sua pesquisa. |
 | H1 | Ausência de opções básicas de agendamento (ex: data e hora) | Confirmado (T1) | A expectativa do agendamento não é cumprida ao final do fluxo. |
-| — | Fluxo de agendamento de vacinas/restrição de idade não foi inspecionado na avaliação heurística — T2 é validação exploratória, sem achado prévio para confirmar | Não testado — pendente T2 | |
-| HE-12 / HE-13 | Listagem de exames sem contexto mínimo; ausência de breadcrumb | Não testado — pendente T3 | |
 
 ### 5.4 Síntese e Recomendações
 
-**Principais achados (parcial — apenas T1, n=2):**
+**Principais achados (T1 e SUS com n=3; T2/T3 com n=1 — apenas P3):**
 
 - A taxonomia do site (como o uso do termo "Comprar online" em vez de "Agendar") confunde os usuários e atrasa a conclusão das tarefas, indo contra o modelo mental dos pacientes.
 - O redirecionamento surpresa para o serviço de atendimento móvel prejudica a fluidez, fazendo o usuário pensar que errou o caminho ou que não pode agendar em uma unidade física.
 - A ausência de um calendário para marcação de data frustra os usuários no final da tarefa, passando a impressão de que o processo está incompleto.
-- O SUS médio de 45 (Inaceitável, n=2) reflete um alto custo cognitivo e insatisfação com a interface — a confirmar/revisar após P3 e após T2/T3 (vacina e preparo de check-up).
+- O SUS médio de 41,7 (Inaceitável, n=3) reflete um alto custo cognitivo e insatisfação com a interface — a aprofundar nas tarefas T2/T3 com mais participantes (hoje em n=1).
 
 **Recomendações priorizadas (com base em T1):**
 
