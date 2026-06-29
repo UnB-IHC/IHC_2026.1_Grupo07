@@ -108,7 +108,6 @@
   <li>Métricas de Usabilidade</li>
   <li>Escore SUS (System Usability Scale)</li>
   <li>Achados de Usabilidade</li>
-  <li>Achados de Acessibilidade (WCAG 2.2)</li>
   <li>Recomendações Priorizadas</li>
   <li>Reflexão Final</li>
   <li>Referências</li>
@@ -319,49 +318,20 @@ faz sentido, que é o atendimento domiciliar. A opção certa é comprar exame�
 / "Ah, tá. Então eu tenho que comprar meu exame aqui primeiro?" — <strong>P3</strong></blockquote>
 <blockquote>"Foi bem mais fácil e mais intuitivo de encontrar as orientações." — <strong>P3, sobre a Tarefa 3</strong></blockquote>
 
-<p><strong>Relação com o achado catastrófico do site:</strong> a Tarefa 1 está diretamente ligada à rota de agendamento, que
-— em inspeção técnica — retorna erro 404 quando acessada por <code>/agendamento/</code>, reforçando a fragilidade do fluxo
-central:</p>
-<figure>
-  <img src="img/agendamento-404.png" alt="Página de erro 404 do Sabin na rota de agendamento">
-  <figcaption><strong>Figura 2.</strong> A rota <code>sabin.com.br/agendamento/</code> retorna erro 404 — o fluxo que os participantes tentavam concluir é, na prática, frágil e inconsistente.</figcaption>
-</figure>
-
-<!-- ===================== 8. ACESSIBILIDADE ===================== -->
-<h2 class="sec">8. Achados de Acessibilidade (WCAG 2.2)</h2>
-<p>Embora a rodada não tenha incluído participante com deficiência, as tarefas tocaram em elementos que impactam
-diretamente a acessibilidade. Os achados WCAG mais relevantes para essas jornadas (detalhados na avaliação de
-acessibilidade do grupo) são:</p>
-<table>
-<tr><th style="width:30%">Critério WCAG 2.2</th><th>Constatação no fluxo testado</th><th style="width:14%">Status</th></tr>
-<tr><td>1.3.1 / 2.4.2 — Títulos e semântica (A)</td><td>Homepage <strong>sem <code>&lt;h1&gt;</code></strong> (confirmado ao vivo): usuário de leitor de tela não identifica o título da página de partida das tarefas.</td><td><span class="sev no">Não Conforme</span></td></tr>
-<tr><td>2.4.1 — Skip links (A)</td><td>Nenhum link "pular para o conteúdo": navegação por teclado tabula por todo o menu antes de chegar ao conteúdo.</td><td><span class="sev no">Não Conforme</span></td></tr>
-<tr><td>2.4.7 — Foco visível (AA)</td><td>Ausência de <code>:focus-visible</code>: a posição do teclado fica imperceptível nos botões dos fluxos de agendamento.</td><td><span class="sev no">Não Conforme</span></td></tr>
-<tr><td>3.3.1 — Identificação de erros (A)</td><td>Portal de resultados sem <code>&lt;label&gt;</code> nem orientação de formato da credencial.</td><td><span class="sev no">Não Conforme</span></td></tr>
-<tr><td>1.4.3 — Contraste (AA)</td><td>Textos de apoio em <code>#999</code> (~2,85:1) abaixo do mínimo de 4,5:1.</td><td><span class="sev no">Não Conforme</span></td></tr>
-</table>
-<figure>
-  <img src="img/home-hero.png" alt="Topo da homepage do Sabin sem H1">
-  <figcaption><strong>Figura 3.</strong> Página de partida das tarefas: o primeiro cabeçalho é um <code>&lt;h2&gt;</code> — não há <code>&lt;h1&gt;</code>, prejudicando a orientação por leitor de tela.</figcaption>
-</figure>
-<p>Para um usuário com deficiência visual, a combinação desses fatores tornaria as tarefas de agendamento — já difíceis
-para usuários videntes fluentes — possivelmente inviáveis sem assistência.</p>
-
 <!-- ===================== 9. RECOMENDAÇÕES ===================== -->
-<h2 class="sec">9. Recomendações Priorizadas</h2>
+<h2 class="sec">8. Recomendações Priorizadas</h2>
 <table>
 <tr><th style="width:13%">Prioridade</th><th>Ação recomendada</th><th style="width:18%">Resolve</th></tr>
 <tr><td><span class="sev s4">Imediata</span></td><td>Renomear "Compra online" para <strong>"Agendar exame"</strong> de forma consistente em todos os pontos de contato.</td><td>TU-01</td></tr>
-<tr><td><span class="sev s4">Imediata</span></td><td>Corrigir a rota <code>/agendamento/</code> (404) e garantir um caminho único e óbvio para o agendamento.</td><td>TU-01, fluxo central</td></tr>
+<tr><td><span class="sev s4">Imediata</span></td><td>Garantir um caminho único e óbvio para o agendamento, sem rotas quebradas.</td><td>TU-01, fluxo central</td></tr>
 <tr><td><span class="sev s4">Imediata</span></td><td>Incluir etapa explícita de seleção de <strong>data e horário</strong> antes da confirmação.</td><td>TU-03</td></tr>
 <tr><td><span class="sev s3">Alta</span></td><td>Ao acionar "Agendar", oferecer escolha clara (Unidade física × Domiciliar) em vez de redirecionar sem aviso; adicionar botão "voltar" interno.</td><td>TU-02</td></tr>
-<tr><td><span class="sev s3">Alta</span></td><td>Adicionar <code>&lt;h1&gt;</code>, skip link e <code>:focus-visible</code>; corrigir contraste dos textos de apoio.</td><td>Acessibilidade (WCAG A/AA)</td></tr>
 <tr><td><span class="sev s2">Média</span></td><td>Reduzir a sobrecarga de informação na listagem de vacinas e adicionar busca interna.</td><td>TU-04</td></tr>
 <tr><td><span class="sev s3">Alta</span></td><td>Adicionar botões de agendamento rápido (exames/vacinas) na página de detalhes de cada unidade física.</td><td>TU-05</td></tr>
 </table>
 
 <!-- ===================== 10. REFLEXÃO ===================== -->
-<h2 class="sec">10. Reflexão Final</h2>
+<h2 class="sec">9. Reflexão Final</h2>
 <p>O teste confirmou empiricamente o que a inspeção especialista previa: o portal Sabin <strong>cumpre bem as tarefas de
 informação, mas falha nas tarefas de ação</strong> (agendamento). O dado mais eloquente é o contraste interno da própria
 sessão de P3 — perdida e dependente de ajuda nas tarefas de agendamento (T1/T2), porém rápida e confiante na busca de
@@ -371,23 +341,20 @@ que está desalinhado da expectativa do usuário.</p>
 eficácia) podem mascarar uma experiência ruim, mas as verbalizações ("então eu tenho que comprar meu exame primeiro?")
 expõem o atrito cognitivo real. O SUS médio de 37,5 traduz numericamente essa insatisfação.</p>
 <p>As <strong>principais limitações</strong> a corrigir em rodadas futuras são: (1) a <strong>amostra homogênea</strong> de
-estudantes de tecnologia, que não representa o público diverso do Sabin; (2) a <strong>cobertura parcial</strong> de tarefas
-(T2/T3 apenas com P3); e (3) a <strong>ausência de um participante com deficiência</strong> — recomendação opcional da
-metodologia que, se cumprida, tornaria os achados de acessibilidade empíricos, e não apenas inspecionais. Ainda assim,
-mesmo uma amostra pequena e fluente foi suficiente para revelar problemas críticos — o que reforça, na prática, a tese de
-Nielsen de que poucos usuários já expõem a maioria dos problemas graves de usabilidade.</p>
+estudantes de tecnologia, que não representa o público diverso do Sabin; e (2) a <strong>cobertura parcial</strong> de tarefas
+(T2/T3 apenas com P3). Ainda assim, mesmo uma amostra pequena e fluente foi suficiente para revelar problemas críticos — o
+que reforça, na prática, a tese de Nielsen de que poucos usuários já expõem a maioria dos problemas graves de usabilidade.</p>
 
 <!-- ===================== 11. REFERÊNCIAS ===================== -->
-<h2 class="sec">11. Referências</h2>
+<h2 class="sec">10. Referências</h2>
 <p class="ref">BROOKE, John. SUS: A "Quick and Dirty" Usability Scale. In: JORDAN, P. W. et al. (eds.). <em>Usability Evaluation in Industry</em>. London: Taylor &amp; Francis, 1996. p. 189–194.</p>
 <p class="ref">ERICSSON, K. A.; SIMON, H. A. <em>Protocol Analysis: Verbal Reports as Data</em>. Cambridge: MIT Press, 1993.</p>
 <p class="ref">KRUG, Steve. <em>Não Me Faça Pensar: Uma Abordagem de Bom Senso à Usabilidade Web e Mobile</em>. 3. ed. Rio de Janeiro: Alta Books, 2014.</p>
 <p class="ref">NIELSEN, Jakob. <em>Usability Engineering</em>. San Diego: Academic Press, 1993.</p>
 <p class="ref">RUBIN, Jeffrey; CHISNELL, Dana. <em>Handbook of Usability Testing</em>. 2. ed. Indianapolis: Wiley, 2008.</p>
-<p class="ref">W3C. <strong>Web Content Accessibility Guidelines (WCAG) 2.2</strong>. 2023. Disponível em: https://www.w3.org/TR/WCAG22/.</p>
 
 <!-- ===================== 12. ANEXOS ===================== -->
-<h2 class="sec">12. Anexos</h2>
+<h2 class="sec">11. Anexos</h2>
 <h3>Anexo A — Termo de Consentimento Livre e Esclarecido (TCLE)</h3>
 <p>Antes de cada sessão, o participante leu e assinou um <strong>Termo de Consentimento Livre e Esclarecido (TCLE)</strong>
 contendo: objetivo da pesquisa; procedimentos (3 tarefas, ~20–30 min, <em>Think Aloud</em>); aviso de gravação de tela e
@@ -397,11 +364,11 @@ exclusivamente como comprovação do consentimento.</p>
 
 <figure class="story">
   <img src="img/frente-termo.jpeg" alt="Frente do TCLE: título, objetivo, procedimentos, gravação, riscos e anonimato">
-  <figcaption><strong>Figura 4.</strong> TCLE — frente (texto do termo): objetivo da pesquisa, procedimentos, gravação de tela/áudio, riscos/benefícios e a cláusula de anonimato e confidencialidade.</figcaption>
+  <figcaption><strong>Figura 2.</strong> TCLE — frente (texto do termo): objetivo da pesquisa, procedimentos, gravação de tela/áudio, riscos/benefícios e a cláusula de anonimato e confidencialidade.</figcaption>
 </figure>
 <figure class="story">
   <img src="img/tras-termo.jpeg" alt="Verso do TCLE assinado, com nome, CPF e assinaturas tarjados">
-  <figcaption><strong>Figura 5.</strong> TCLE — verso (participação voluntária, contato dos pesquisadores e Declaração de Consentimento assinada). Nome completo, CPF e assinaturas foram <strong>tarjados</strong> para preservar o anonimato prometido no próprio termo e atender à LGPD; permanecem visíveis os rótulos dos campos e a data de coleta (25/06/2026), comprovando o consentimento.</figcaption>
+  <figcaption><strong>Figura 3.</strong> TCLE — verso (participação voluntária, contato dos pesquisadores e Declaração de Consentimento assinada). Nome completo, CPF e assinaturas foram <strong>tarjados</strong> para preservar o anonimato prometido no próprio termo e atender à LGPD; permanecem visíveis os rótulos dos campos e a data de coleta (25/06/2026), comprovando o consentimento.</figcaption>
 </figure>
 
 <h3 class="sec">Anexo B — Tabulação completa das métricas por tarefa</h3>
