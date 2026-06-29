@@ -171,7 +171,8 @@ testes e padronizações. Também é importante que a equipe saiba como as pesso
 
 > <a id="RP_NEW6" href="#TEC_NEW6">N6.</a> **[NOVO WCAG 2.2]** WCAG 2.2 Understanding Docs. SC 3.2.6 Consistent Help (Level A). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/consistent-help.html](https://www.w3.org/WAI/WCAG22/Understanding/consistent-help.html). Acesso em: jun. 2026. | NBR 17225:2025 (cláusula a confirmar)
 
-> ⚠️ **Nota de verificação (NBR):** os números de cláusula originalmente atribuídos à NBR 17225:2025 **não foram confirmados** contra a norma oficial e foram substituídos por `(cláusula a confirmar)`. As normas de acessibilidade da ABNT (17225 e 17060) podem ser baixadas gratuitamente no catálogo da ABNT; para finalizar a referência, localizar a cláusula correspondente a cada critério e substituir o marcador. A NBR 17060:2022 é baseada na **WCAG 2.1** e cobre **aplicativos móveis** — não contém os critérios novos da WCAG 2.2 (2.5.7, 3.3.7, 3.3.8), exceto tamanho de área de toque.
+!!! warning "Nota de verificação (NBR)"
+    Os números de cláusula originalmente atribuídos à NBR 17225:2025 **não foram confirmados** contra a norma oficial e foram substituídos por `(cláusula a confirmar)`. As normas de acessibilidade da ABNT (17225 e 17060) podem ser baixadas gratuitamente no catálogo da ABNT; para finalizar a referência, localizar a cláusula correspondente a cada critério e substituir o marcador. A NBR 17060:2022 é baseada na **WCAG 2.1** e cobre **aplicativos móveis** — não contém os critérios novos da WCAG 2.2 (2.5.7, 3.3.7, 3.3.8), exceto tamanho de área de toque.
 
 ## Bibliografia
 

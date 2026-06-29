@@ -76,9 +76,9 @@ Texto alternativo:
 
 ### Exemplo
 
-❌ Apenas um ícone de download sem texto ou descrição.
+**Evitar:** Apenas um ícone de download sem texto ou descrição.
 
-✅ Ícone de download acompanhado do texto "Baixar Guia".
+**Preferir:** Ícone de download acompanhado do texto "Baixar Guia".
 
 ## Mídias de Vídeo
 
@@ -132,9 +132,9 @@ Texto alternativo:
 
 ### Exemplo
 
-✅ #AcessibilidadeDigital
+**Correto:** `#AcessibilidadeDigital`
 
-❌ #acessibilidadedigital
+**Evitar:** `#acessibilidadedigital`
 
 ## Hiperlinks
 
@@ -145,9 +145,9 @@ Texto alternativo:
 
 ### Exemplo
 
-❌ Clique aqui
+**Evitar:** "Clique aqui"
 
-✅ Baixar Guia de Boas Práticas para Acessibilidade Digital
+**Preferir:** "Baixar Guia de Boas Práticas para Acessibilidade Digital"
 
 ## Conteúdo Multimídia
 

@@ -19,7 +19,7 @@ Para simular o teste real com a maior veracidade possível, o entrevistado escol
 
 ## Participantes do Piloto
 * **Entrevistador:** Lucas Andrade Zanetti
-* **Entrevistado:** Thiago Santos Bittencourt (Membro da equipe)
+* **Entrevistado:** Tiago Santos Bittencourt (Membro da equipe)
 
 ## Evidência em vídeo
 
@@ -65,7 +65,7 @@ flowchart LR
 * **Avaliação Geral do Participante:** Quando questionado se foi fácil, o participante respondeu: "Muito difícil. Nada intuitivo."
 
 ## Conclusões do Piloto
-A execução com o Thiago validou o roteiro e a eficácia da técnica de *Think Aloud*. A tarefa de agendamento mostrou-se suficientemente complexa para revelar falhas graves de taxonomia (Agendar vs. Comprar) e de fluxo (Atendimento Móvel vs. Unidade), problemas que se confirmaram posteriormente nos testes reais (P1 e P2). O piloto deu o sinal verde para o início das entrevistas oficiais.
+A execução com o Tiago validou o roteiro e a eficácia da técnica de *Think Aloud*. A tarefa de agendamento mostrou-se suficientemente complexa para revelar falhas graves de taxonomia (Agendar vs. Comprar) e de fluxo (Atendimento Móvel vs. Unidade), problemas que se confirmaram posteriormente nos testes reais (P1 e P2). O piloto deu o sinal verde para o início das entrevistas oficiais.
 
 ---
 

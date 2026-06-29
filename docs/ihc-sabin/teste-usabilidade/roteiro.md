@@ -70,10 +70,10 @@ Vou ligar a gravação agora. Apenas o computador e o áudio serão gravados —
 | Tempo de início | |
 | Tempo de término | |
 | Duração (s) | |
-| Concluiu? | ☐ Sim, sem ajuda ☐ Sim, com ajuda ☐ Não concluiu |
+| Concluiu? | [ ] Sim, sem ajuda &nbsp; [ ] Sim, com ajuda &nbsp; [ ] Não concluiu |
 | Caminho percorrido (URLs/cliques) | |
-| Selecionou exame correto (Hemograma Completo)? | ☐ Sim ☐ Não |
-| Selecionou unidade correta (Ceilândia Centro)? | ☐ Sim ☐ Não |
+| Selecionou exame correto (Hemograma Completo)? | [ ] Sim &nbsp; [ ] Não |
+| Selecionou unidade correta (Ceilândia Centro)? | [ ] Sim &nbsp; [ ] Não |
 | Verbalizações marcantes | |
 | Erros / desvios | |
 | Observações do avaliador | |
@@ -97,11 +97,11 @@ Vou ligar a gravação agora. Apenas o computador e o áudio serão gravados —
 | Tempo de início | |
 | Tempo de término | |
 | Duração (s) | |
-| Concluiu? | ☐ Sim, sem ajuda ☐ Sim, com ajuda ☐ Não concluiu |
+| Concluiu? | [ ] Sim, sem ajuda &nbsp; [ ] Sim, com ajuda &nbsp; [ ] Não concluiu |
 | Caminho percorrido (URLs/cliques) | |
-| Selecionou a vacina correta (Febre Amarela)? | ☐ Sim ☐ Não |
-| Selecionou a unidade correta (Águas Claras)? | ☐ Sim ☐ Não |
-| O site comunicou a restrição de idade (9 meses)? | ☐ Sim, claramente ☐ Sim, confuso ☐ Não comunicou |
+| Selecionou a vacina correta (Febre Amarela)? | [ ] Sim &nbsp; [ ] Não |
+| Selecionou a unidade correta (Águas Claras)? | [ ] Sim &nbsp; [ ] Não |
+| O site comunicou a restrição de idade (9 meses)? | [ ] Sim, claramente &nbsp; [ ] Sim, confuso &nbsp; [ ] Não comunicou |
 | Verbalizações marcantes | |
 | Erros / desvios | |
 | Observações do avaliador | |
@@ -124,9 +124,9 @@ Vou ligar a gravação agora. Apenas o computador e o áudio serão gravados —
 | Tempo de início | |
 | Tempo de término | |
 | Duração (s) | |
-| Concluiu? | ☐ Sim, sem ajuda ☐ Sim, com ajuda ☐ Não concluiu |
+| Concluiu? | [ ] Sim, sem ajuda &nbsp; [ ] Sim, com ajuda &nbsp; [ ] Não concluiu |
 | Caminho percorrido (URLs/cliques) | |
-| Informou a orientação de preparo corretamente? | ☐ Sim ☐ Não |
+| Informou a orientação de preparo corretamente? | [ ] Sim &nbsp; [ ] Não |
 | Verbalizações marcantes | |
 | Erros / desvios | |
 | Observações do avaliador | |
@@ -142,6 +142,16 @@ Vou ligar a gravação agora. Apenas o computador e o áudio serão gravados —
 2. **"Houve algum momento em que você se sentiu perdido ou frustrado? O que aconteceu?"**
 
 3. **"Houve alguma coisa que funcionou bem, que você achou fácil ou intuitivo?"**
+
+---
+
+## Parte 4 – Perguntas de Encerramento (2 minutos)
+
+> *[Após as perguntas pós-tarefa, antes do SUS, faça estas perguntas finais:]*
+
+4. **"Se você fosse avaliar o site com uma nota de 1 a 10, que nota daria? Por quê?"**
+
+5. **"Tem algo que você gostaria de ter feito no site mas não conseguiu, ou algo que notou e queria comentar?"**
 
 ---
 

@@ -102,14 +102,14 @@ nav:
     - Avaliação de Acessibilidade:
       - Visão Geral: ihc-sabin/avaliacao-acessibilidade/index.md
       - Ferramentas e Plugins: ihc-sabin/avaliacao-acessibilidade/ferramentas.md
-      - Checklist WCAG 2.1: ihc-sabin/avaliacao-acessibilidade/checklist-wcag.md
+      - Checklist WCAG 2.2: ihc-sabin/avaliacao-acessibilidade/checklist-wcag.md
       - Relato dos Resultados: ihc-sabin/avaliacao-acessibilidade/resultados.md
     - Avaliação Heurística:
       - Método e Resultados: ihc-sabin/avaliacao-heuristica/index.md
   - Teste de Usabilidade — Sabin:
     - Persona do Participante: ihc-sabin/teste-usabilidade/persona.md
     - Planejamento: ihc-sabin/teste-usabilidade/planejamento.md
-    - Teste Piloto: ihc-sabin/teste-usabilidade/teste-piloto/teste-piloto.md
+    - Teste Piloto: ihc-sabin/teste-usabilidade/testes/teste-piloto/teste-piloto.md
     - Roteiro de Tarefas: ihc-sabin/teste-usabilidade/roteiro.md
     - Questionário SUS: ihc-sabin/teste-usabilidade/questionario-sus.md
     - TCLE: ihc-sabin/teste-usabilidade/tcle.md

@@ -110,13 +110,13 @@ O User Flow abaixo detalha os passos técnicos da mesma tarefa, focando na naveg
      ↓
 [Autenticação]
   ├── CAPTCHA acessível? → [SIM] → Resolver → Continuar
-  └──              ↓ [NÃO] → BARREIRA → Usuário abandonou ❌
+  └──              ↓ [NÃO] → BARREIRA → Usuário abandonou [FALHA]
      ↓
 [Confirmação] → Anuncio via aria-live: "Certidão emitida com sucesso"
      ↓
 [Download] → Link "Baixar certidão (PDF)" → Enter
      ↓
-[FIM] ✅
+[FIM] [SUCESSO]
 ```
 
 > [!NOTE]

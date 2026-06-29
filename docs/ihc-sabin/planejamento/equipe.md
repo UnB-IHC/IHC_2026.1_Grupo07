@@ -4,11 +4,11 @@ Este projeto foi desenvolvido pelos integrantes do Grupo 07 da disciplina de Int
 
 | Nome                          | Função                                                         | GitHub             |
 | ----------------------------- | -------------------------------------------------------------  | ------------------ |
-| Lucas Andrade Zanetti         | Líder do Projeto, Avaliação Heurística e Teste de Usuabilidade | @Bappoz            |
-| Carlos Eduardo Deusdará Motta |                                                                | @cadumotta         |
+| Lucas Andrade Zanetti         | Líder do Projeto, Avaliação Heurística e Teste de Usabilidade  | @Bappoz            |
+| Carlos Eduardo Deusdará Motta | Teste de Usabilidade (participante e apoio na coleta)          | @cadumotta         |
 | Gustavo Xavier Evangelista    | UX Design, Personas e User Journey / User Flows                | @guxvr             |
-| Pedro Druck Montalvão Rocha   |                                                                | @pedruck           |
-| Pedro Gonçalves Rocha         |                                                                | @pedrogrocha13     |
+| Pedro Druck Montalvão Rocha   | Geração de Conteúdo e revisão do Guia de Acessibilidade        | @pedruck           |
+| Pedro Gonçalves Rocha         | Avaliação Heurística e suporte à documentação                  | @pedrogrocha13     |
 | Tiago Santos Bittencourt      | Mapeamento de Experiências e revisão de índice                 | @TiagoSBittencourt |
 | Bernardo Broetto Brun         | Planejamento e Avaliação de Acessibilidade                     | @Bercacos          |
 

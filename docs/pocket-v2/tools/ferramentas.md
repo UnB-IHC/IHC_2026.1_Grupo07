@@ -49,9 +49,9 @@
 4. Vá até a aba **"axe DevTools"** (aparece ao final das abas do DevTools)
 5. Clique em **"Scan ALL of my page"**
 6. Os resultados são classificados em:
-   - **Critical** (🔴): viola critérios de nível A – corrigir imediatamente
-   - **Serious** (🟠): viola nível AA – corrigir antes de publicar
-   - **Moderate / Minor** (🟡): melhoria recomendada
+   - **Critical** (<span class="badge" style="background:#c62828;color:#fff;">Crítico</span>): viola critérios de nível A – corrigir imediatamente
+   - **Serious** (<span class="badge" style="background:#e65100;color:#fff;">Sério</span>): viola nível AA – corrigir antes de publicar
+   - **Moderate / Minor** (<span class="badge" style="background:#f9a825;color:#000;">Moderado/Menor</span>): melhoria recomendada
 7. Clique em cada item para ver o elemento no DOM e a técnica de correção sugerida
 8. Use o botão **"Highlight"** para localizar o elemento na página visualmente
 
@@ -105,10 +105,10 @@
 1. Instale a extensão WAVE no navegador ou acesse [wave.webaim.org](https://wave.webaim.org/)
 2. Para usar como extensão: abra a página alvo e clique no ícone WAVE na barra de ferramentas
 3. A página é sobreposta com ícones coloridos:
-   - 🔴 **Erros** (ex: imagem sem alt, input sem label)
-   - 🟡 **Alertas** (possíveis problemas, revisar manualmente)
-   - 🟢 **Estrutura** (headings, landmarks – validar hierarquia)
-   - 🔵 **Recursos de acessibilidade** presentes (aria-label, skip links)
+   - <span class="badge" style="background:#c62828;color:#fff;">Erros</span> (ex: imagem sem alt, input sem label)
+   - <span class="badge" style="background:#f9a825;color:#000;">Alertas</span> (possíveis problemas, revisar manualmente)
+   - <span class="badge" style="background:#2e7d32;color:#fff;">Estrutura</span> (headings, landmarks – validar hierarquia)
+   - <span class="badge" style="background:#1565c0;color:#fff;">Recursos de acessibilidade</span> presentes (aria-label, skip links)
 4. No painel lateral, clique em qualquer ícone para saltar ao elemento no DOM
 5. Use a aba **"Contrast"** para verificar todas as combinações de cor identificadas automaticamente
 
@@ -340,30 +340,30 @@ Digite os códigos hex das cores de texto e fundo para obter a razão de contras
 3. Abra a opção **Contrast Checker** no menu do Stark.
 4. Use o **Vision Simulator** para prever como a tela é vista por usuários com daltonismo (Protanopia ou Deuteranopia).
 
-\n## Matriz de Cobertura por Critério WCAG 2.2
+## Matriz de Cobertura por Critério WCAG 2.2
 
+
+**Legenda:** `Sim` = cobre bem · `Parcial` = cobertura parcial · `Não` = não cobre · `[novo]` = critério exclusivo do WCAG 2.2
 
 | Critério WCAG 2.2 | axe | Lighthouse | WAVE | CCA | NVDA | Teclado | AccInsights | Stark |
 |---|---|---|---|---|---|---|---|---|
-| 1.1.1 Alt text | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ | ⚠️ (Guiado) | ❌ |
-| 1.4.3 Contraste texto | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ | ✅ |
-| 1.4.11 Contraste componentes | ⚠️ | ⚠️ | ⚠️ | ✅ | ❌ | ❌ | ✅ | ✅ |
-| 2.1.1 Teclado | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ✅ (Guiado) | ❌ |
-| 2.4.1 Skip links | ✅ | ⚠️ | ✅ | ❌ | ✅ | ✅ | ✅ (Guiado) | ❌ |
-| 2.4.7 Foco visível | ⚠️ | ⚠️ | ❌ | ❌ | ❌ | ✅ | ✅ (Visual) | ✅ |
-| **2.4.11 Foco não obscurecido** ⭐ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ⚠️ | ❌ |
-| **2.4.13 Aparência do foco** ⭐ | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ | ⚠️ | ✅ |
-| **2.5.7 Movimentos arrastar** ⭐ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ |
-| **2.5.8 Tamanho alvo 24px** ⭐ | ⚠️ | ❌ | ❌ | ❌ | ❌ | ❌ | ⚠️ | ✅ |
-| 3.1.1 Idioma da página | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ✅ | ❌ |
-| 3.3.1 Identificação de erro | ⚠️ | ❌ | ⚠️ | ❌ | ✅ | ❌ | ✅ (Guiado) | ❌ |
-| **3.3.7 Entrada redundante** ⭐ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| **3.3.8 Autenticação acessível** ⭐ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| 4.1.2 Nome, Função, Valor | ✅ | ✅ | ⚠️ | ❌ | ✅ | ❌ | ✅ | ❌ |
+| 1.1.1 Alt text | Sim | Sim | Sim | Não | Sim | Não | Parcial (Guiado) | Não |
+| 1.4.3 Contraste texto | Sim | Sim | Sim | Sim | Não | Não | Sim | Sim |
+| 1.4.11 Contraste componentes | Parcial | Parcial | Parcial | Sim | Não | Não | Sim | Sim |
+| 2.1.1 Teclado | Não | Não | Não | Não | Sim | Sim | Parcial (Guiado) | Não |
+| 2.4.1 Skip links | Sim | Parcial | Sim | Não | Sim | Sim | Parcial (Guiado) | Não |
+| 2.4.7 Foco visível | Parcial | Parcial | Não | Não | Não | Sim | Parcial (Visual) | Sim |
+| **2.4.11 Foco não obscurecido** `[novo]` | Não | Não | Não | Não | Não | Sim | Parcial | Não |
+| **2.4.13 Aparência do foco** `[novo]` | Não | Não | Não | Sim | Não | Sim | Parcial | Sim |
+| **2.5.7 Movimentos arrastar** `[novo]` | Não | Não | Não | Não | Não | Sim | Não | Não |
+| **2.5.8 Tamanho alvo 24px** `[novo]` | Parcial | Não | Não | Não | Não | Não | Parcial | Sim |
+| 3.1.1 Idioma da página | Sim | Sim | Sim | Não | Não | Não | Sim | Não |
+| 3.3.1 Identificação de erro | Parcial | Não | Parcial | Não | Sim | Não | Parcial (Guiado) | Não |
+| **3.3.7 Entrada redundante** `[novo]` | Não | Não | Não | Não | Não | Não | Não | Não |
+| **3.3.8 Autenticação acessível** `[novo]` | Não | Não | Não | Não | Não | Não | Não | Não |
+| 4.1.2 Nome, Função, Valor | Sim | Sim | Parcial | Não | Sim | Não | Sim | Não |
 
-> ⭐ Critério novo do WCAG 2.2 | ✅ Cobre bem | ⚠️ Cobertura parcial | ❌ Não cobre
-
-**Conclusão:** Os critérios novos do WCAG 2.2 (marcados com ⭐) **não têm cobertura automatizada**. O teste manual por teclado e com leitor de tela é obrigatório para conformidade com WCAG 2.2 e ABNT NBR 17225:2025.
+**Conclusão:** Os critérios novos do WCAG 2.2 (marcados com `[novo]`) **não têm cobertura automatizada**. O teste manual por teclado e com leitor de tela é obrigatório para conformidade com WCAG 2.2 e ABNT NBR 17225:2025.
 
 ---
 

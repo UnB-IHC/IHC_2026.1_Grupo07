@@ -24,13 +24,13 @@ Apresentações e documentos digitais devem ser produzidos de forma que possam s
 
 ### Exemplo
 
-✅ 1. Introdução
+**Correto:**
 
-✅ 1.1 Objetivos
+1\. Introdução → 1.1 Objetivos → 1.2 Escopo
 
-✅ 1.2 Escopo
+**Evitar:**
 
-❌ Introdução → Resultado → 1.2 Escopo
+Introdução → Resultado → 1.2 Escopo (hierarquia inconsistente)
 
 ## Texto e Legibilidade
 
@@ -112,9 +112,9 @@ A ordem de leitura incorreta pode fazer com que leitores de tela interpretem con
 
 ### Exemplo
 
-❌ Clique aqui
+**Evitar:** "Clique aqui"
 
-✅ Baixar Relatório de Acessibilidade
+**Preferir:** "Baixar Relatório de Acessibilidade"
 
 ## Elementos Multimídia
 

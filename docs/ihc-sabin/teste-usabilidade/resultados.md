@@ -44,25 +44,22 @@
 
 </div>
 
-```mermaid
-flowchart LR
-    P1["Entrevista 1 — P1\nT1 concluída"] --> RF[Resultado Final]
-    P2["Entrevista 2 — P2\nT1 concluída"] --> RF
-    P3["Entrevista 3 — P3\nT1/T2/T3 concluídas"] --> RF
-    RF --> SUS["SUS médio: 37,5 (Inaceitável)"]
-    RF --> PROB["3 problemas críticos/altos identificados"]
-    RF --> REC["Recomendações priorizadas"]
-```
+| Entrevista | Tarefas realizadas | Desfecho |
+|---|---|---|
+| P1 | T1 | Concluída sem ajuda |
+| P2 | T1 | Concluída sem ajuda |
+| P3 | T1, T2, T3 | T1 e T2 com ajuda; T3 sem ajuda |
+| **Resultado consolidado** | SUS médio 37,5 | 3 problemas críticos/altos · recomendações priorizadas |
 
 ---
 
 ## 1. Resumo Quantitativo por Participante
 
-| Participante | T1 ✓? | T1 (s) | T2 ✓? | T2 (s) | T3 ✓? | T3 (s) | SUS |
+| Participante | T1 concluiu? | T1 (s) | T2 concluiu? | T2 (s) | T3 concluiu? | T3 (s) | SUS |
 |---|---|---|---|---|---|---|---|
-| P1 | ☑ Sim, sem ajuda | 240 | — | — | — | — | 42,5 |
-| P2 | ☑ Sim, sem ajuda | 215 | — | — | — | — | 37,5 |
-| P3 | ☑ Sim, com ajuda | 285 | ☑ Sim, com ajuda | 190 | ☑ Sim, sem ajuda | 45 | 32,5 |
+| P1 | Sim, sem ajuda | 240 | — | — | — | — | 42,5 |
+| P2 | Sim, sem ajuda | 215 | — | — | — | — | 37,5 |
+| P3 | Sim, com ajuda | 285 | Sim, com ajuda | 190 | Sim, sem ajuda | 45 | 32,5 |
 | **Média (T1, n=3)** | — | 247 | — | — | — | — | 37,5 |
 
 > **Médias calculadas para n=3 na T1 e no SUS** (P1, P2, P3). As tarefas **T2 e T3** estão restritas a **n=1** (apenas P3, ver [seção 4](#4-resultado-entrevista-3-p3)).
@@ -155,7 +152,7 @@ flowchart LR
 
 <div class="grid cards" markdown>
 
--   **Tempo (T1)** · 195s (3min15s)
+-   **Tempo (T1)** · 215s (3min35s)
 
 -   **Conclusão** · <span class="badge" style="background:#2e7d32;color:#fff;">Sem ajuda</span>
 
@@ -266,7 +263,7 @@ flowchart LR
         D --> E["Serviços digitais"]
         E --> F["Atendimento domiciliar — rejeitou"]
         F --> G["Agilizar exames de análises clínicas"]
-        G --> H["Menu ☰ — 1ª dica do avaliador"]
+        G --> H["Menu (≡) — 1ª dica do avaliador"]
         H --> I["Exames laboratoriais — não tinha"]
         I --> J["Compre online — 2ª dica"]
         J --> K["Busca: hemograma completo"]
@@ -280,7 +277,7 @@ flowchart LR
     | Campo | Registro |
     |---|---|
     | Verbalizações marcantes (citações literais) | "Vou apertar no botão de agendamento, que faz sentido." / "Tô procurando onde que eu vou agendar um exame [...] desci até a parte de conteúdo de apoio e não achei." / "Acho que não é aqui, né, mano? Não tô achando." / "Não consigo voltar pra parte inicial." / "Isso aqui é um tipo de atendimento móvel, não é isso? E como é que eu vou agendar?" / "Ah, tá. Então eu tenho que comprar meu exame aqui primeiro." |
-    | Erros / desvios observados | Procurou o agendamento em "pré-cadastro / unidade digital", "solicitação de exames", "conteúdo de apoio", "atendimento domiciliar" e "agilizar exames de análises clínicas" antes do caminho correto. Só chegou ao fluxo certo após **duas dicas do avaliador** (abrir o menu ☰ e, depois, escolher "Compre online"). |
+    | Erros / desvios observados | Procurou o agendamento em "pré-cadastro / unidade digital", "solicitação de exames", "conteúdo de apoio", "atendimento domiciliar" e "agilizar exames de análises clínicas" antes do caminho correto. Só chegou ao fluxo certo após **duas dicas do avaliador** (abrir o menu (≡) e, depois, escolher "Compre online"). |
     | Onde travou ou hesitou | Não encontrava a opção de agendar; ficou presa numa tela de solicitação de serviço sem conseguir voltar à página inicial. Estranhou que "agendar" caísse no **atendimento móvel** e que fosse preciso "comprar" o exame para marcá-lo. Não houve etapa de data/horário. |
     | Observações do avaliador | Tarefa concluída **com ajuda** (2 intervenções), em ~4min45s (285 s). Participante visivelmente perdida ("fiquei bem perdida"). Reforça **TU-01** (nomenclatura "comprar" ≠ "agendar") e **TU-02** (redirecionamento ao atendimento móvel sem aviso). |
 
@@ -290,13 +287,13 @@ flowchart LR
 
     ```mermaid
     flowchart LR
-        A["Menu ☰ → Vacinas"] --> B["Vacinação na unidade / Agendar na unidade"]
+        A["Menu (≡) → Vacinas"] --> B["Vacinação na unidade / Agendar na unidade"]
         B --> C["Águas Claras"]
         C --> D["Tela da unidade — não achou agendamento"]
         D --> E["Volta → Compre online"]
         E --> F["'Muita informação' — filtro de crianças"]
         F --> G["Não acha onde pesquisar — dica do avaliador"]
-        G --> H["Menu ☰ → Vacinas infantis (9 meses)"]
+        G --> H["Menu (≡) → Vacinas infantis (9 meses)"]
         H --> I["Vacina de febre amarela"]
         I --> J["Águas Claras (Shopping Metrópole)"]
 
@@ -307,7 +304,7 @@ flowchart LR
     | Campo | Registro |
     |---|---|
     | Verbalizações marcantes (citações literais) | "Estou na tela da unidade de Águas Claras e não achei a parte de agendamento." / "Meu Deus, muita informação." / "Eu queria pesquisar a vacina de febre amarela, mas não sei como faz isso." / "Vou clicar em vacinas infantis porque meu filho tem 9 meses." |
-    | Erros / desvios observados | Tentou agendar pela página da unidade (Águas Claras) e pelo "Compre online" antes de achar o caminho por **Vacinas infantis**. Precisou de **uma dica do avaliador** (usar o menu ☰). |
+    | Erros / desvios observados | Tentou agendar pela página da unidade (Águas Claras) e pelo "Compre online" antes de achar o caminho por **Vacinas infantis**. Precisou de **uma dica do avaliador** (usar o menu (≡)). |
     | Onde travou ou hesitou | Sobrecarga de informação na listagem de vacinas; não encontrava campo de busca. Estranheza de que "compra online" levasse ao agendamento de vacina infantil. |
     | Observações do avaliador | Tarefa concluída **com ajuda** (1 intervenção), em ~3min10s (190 s). O mesmo problema de taxonomia da T1 se repete no fluxo de vacinas — confirma que **TU-01** vale também para vacinação. |
 
@@ -317,7 +314,7 @@ flowchart LR
 
     ```mermaid
     flowchart LR
-        A["Menu ☰ → Exames"] --> B["Checkup executivo"]
+        A["Menu (≡) → Exames"] --> B["Checkup executivo"]
         B --> C["Rola a página"]
         C --> D["Orientações de preparo — 'Achei'"]
 
@@ -327,7 +324,7 @@ flowchart LR
     | Campo | Registro |
     |---|---|
     | Verbalizações marcantes (citações literais) | "Vou clicar em exames [...] vou clicar em checkup executivo." / "Tô descendo a tela aqui para achar a orientação." / "Orientações de preparo. Achei." |
-    | Erros / desvios observados | Nenhum desvio relevante. Caminho direto pelo menu ☰. |
+    | Erros / desvios observados | Nenhum desvio relevante. Caminho direto pelo menu (≡). |
     | Onde travou ou hesitou | Não travou. Pequena dúvida se a seção de orientações já estava expandida ou costuma vir recolhida. |
     | Observações do avaliador | Tarefa concluída **sem ajuda**, em 45 s. No feedback final: *"foi bem mais fácil e mais intuitivo de encontrar as orientações"*. Contrasta fortemente com T1/T2. |
 

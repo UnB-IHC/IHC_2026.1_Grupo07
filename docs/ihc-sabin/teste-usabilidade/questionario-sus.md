@@ -17,16 +17,16 @@ Responda rapidamente, com a primeira impressão — não há resposta certa ou e
 
 | # | Afirmação | 1 | 2 | 3 | 4 | 5 |
 |---|---|---|---|---|---|---|
-| 1 | Eu acho que gostaria de usar este site com frequência. | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 2 | Eu achei o site desnecessariamente complexo. | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 3 | Eu achei o site fácil de usar. | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 4 | Eu acho que precisaria de suporte de uma pessoa técnica para usar este site. | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 5 | Eu achei que as várias funções do site estavam bem integradas. | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 6 | Eu acho que havia muita inconsistência neste site. | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 7 | Eu imagino que a maioria das pessoas aprenderia a usar este site muito rapidamente. | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 8 | Eu achei o site muito difícil de usar. | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 9 | Eu me senti confiante usando o site. | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 10 | Eu precisei aprender muitas coisas antes de conseguir usar este site. | ☐ | ☐ | ☐ | ☐ | ☐ |
+| 1 | Eu acho que gostaria de usar este site com frequência. | ( ) | ( ) | ( ) | ( ) | ( ) |
+| 2 | Eu achei o site desnecessariamente complexo. | ( ) | ( ) | ( ) | ( ) | ( ) |
+| 3 | Eu achei o site fácil de usar. | ( ) | ( ) | ( ) | ( ) | ( ) |
+| 4 | Eu acho que precisaria de suporte de uma pessoa técnica para usar este site. | ( ) | ( ) | ( ) | ( ) | ( ) |
+| 5 | Eu achei que as várias funções do site estavam bem integradas. | ( ) | ( ) | ( ) | ( ) | ( ) |
+| 6 | Eu acho que havia muita inconsistência neste site. | ( ) | ( ) | ( ) | ( ) | ( ) |
+| 7 | Eu imagino que a maioria das pessoas aprenderia a usar este site muito rapidamente. | ( ) | ( ) | ( ) | ( ) | ( ) |
+| 8 | Eu achei o site muito difícil de usar. | ( ) | ( ) | ( ) | ( ) | ( ) |
+| 9 | Eu me senti confiante usando o site. | ( ) | ( ) | ( ) | ( ) | ( ) |
+| 10 | Eu precisei aprender muitas coisas antes de conseguir usar este site. | ( ) | ( ) | ( ) | ( ) | ( ) |
 
 ---
 

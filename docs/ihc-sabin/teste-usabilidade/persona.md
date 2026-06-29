@@ -73,9 +73,9 @@ Use este checklist durante a conversa/formulário de triagem para decidir se o c
 
 | Resultado | Decisão |
 |---|---|
-| Todos os critérios de inclusão = Sim **e** nenhum critério de exclusão = Sim | ✅ Candidato aprovado — encaixar em uma das personas secundárias (P1–P5) conforme perfil |
-| 1 ou mais critérios de inclusão = Não | ⚠️ Avaliar caso a caso — se for item logístico (ex.: disponibilidade), tentar reagendar; se for perfil (idade, escolaridade), descartar |
-| Qualquer critério de exclusão = Sim | ❌ Candidato descartado — agradecer e não agendar sessão |
+| Todos os critérios de inclusão = Sim **e** nenhum critério de exclusão = Sim | <span class="badge" style="background:#2e7d32;color:#fff;">Aprovado</span> — encaixar em uma das personas secundárias (P1–P5) conforme perfil |
+| 1 ou mais critérios de inclusão = Não | <span class="badge" style="background:#e65100;color:#fff;">Avaliar caso a caso</span> — se for item logístico (ex.: disponibilidade), tentar reagendar; se for perfil (idade, escolaridade), descartar |
+| Qualquer critério de exclusão = Sim | <span class="badge" style="background:#c62828;color:#fff;">Descartado</span> — agradecer e não agendar sessão |
 
 ---
 

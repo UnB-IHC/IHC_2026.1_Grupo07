@@ -19,7 +19,8 @@
 | **Total** | **18** | **3** | **6** | **7** | **2** | **37,5%** |
 
 > ¹ Conformidade parcial conta como 0,5. Itens Não Verificáveis excluídos do denominador.
-> ⚠️ **Para conformidade plena com WCAG 2.2 AA (exigida pela NBR 17225:2025), é necessário 100% nos critérios de Nível A e AA.** O site está significativamente abaixo desse limiar.
+> !!! warning "Conformidade WCAG 2.2 AA"
+>     Para conformidade plena com WCAG 2.2 AA (exigida pela NBR 17225:2025), é necessário 100% nos critérios de Nível A e AA. O site está significativamente abaixo desse limiar.
 
 ---
 
@@ -213,7 +214,8 @@ Nenhum skip link encontrado em nenhuma página do site. O menu de navegação pr
 ```
 Com CSS que o oculta visualmente mas torna visível ao receber foco (técnica `sr-only` com `focus:not-sr-only`).
 
-> ✅ **Reconfirmado ao vivo (26/06/2026):** a busca por `pular para`/`skip` no DOM renderizado retornou **0 resultados** — nenhum skip link presente.
+> !!! success "Reconfirmado ao vivo (26/06/2026)"
+>     Busca por `pular para`/`skip` no DOM renderizado retornou **0 resultados** — nenhum skip link presente.
 
 ---
 

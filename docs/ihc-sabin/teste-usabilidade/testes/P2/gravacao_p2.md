@@ -2,6 +2,8 @@
 
 Abaixo está o registro em vídeo do Teste de Usabilidade realizado com o Participante 2. Durante a sessão de 6 minutos e 35 segundos, foi solicitada a tarefa de agendar um "Hemograma Completo" na unidade "Ceilândia Centro". O vídeo captura a tela do usuário bem como suas verbalizações utilizando a técnica de *Think Aloud*.
 
+## Evidência em Vídeo
+
 ### 1. Gravação de Tela
 Captura a interação direta do participante com a interface do sistema, permitindo visualizar o caminho percorrido, cliques e navegação.
 
