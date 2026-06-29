@@ -42,7 +42,7 @@ o problema está **concentrado no fluxo de agendamento**, não no site como um t
 | Tarefas avaliadas | 3 (agendar exame, agendar vacina, ver preparo) |
 | Taxa de sucesso na T1 (agendamento de exame) | **83,3%** (n=3) |
 | SUS médio | **37,5 — Inaceitável** (n=3) |
-| Problemas críticos/altos identificados | 3 (TU-01, TU-02, TU-03) |
+| Problemas críticos/altos identificados | 4 (TU-01, TU-02, TU-03, TU-05) |
 
 ---
 
@@ -280,7 +280,7 @@ Padrões observados nos erros de agendamento (T1/T2):
 ### 4.5 Escore SUS
 
 O questionário SUS (10 itens, escala 1–5) foi aplicado uma vez por participante, ao final da
-sessão, e **tabulado item a item** (planilha `tabulacao_sus.xlsx`, reproduzida na íntegra abaixo).
+sessão, e **tabulado item a item** (planilha `tabulacao_sus.csv`, reproduzida na íntegra abaixo).
 O escore varia de 0 a 100; valores abaixo de 50 são considerados de usabilidade **inaceitável**.
 
 | Participante | Escore SUS | Classificação |
@@ -359,8 +359,9 @@ contraste entre o atrito do agendamento (T1/T2) e a fluidez da busca de informa�
 |---|---|---|---|---|
 | **TU-01** | Nomenclatura ambígua ("Compra online" vs "Agendar exame" vs "Serviços digitais") não corresponde ao modelo mental do usuário | P1, P2, P3 | 🔴 Crítico | H2 — Mundo real / H4 — Consistência |
 | **TU-02** | Botão "Agendar o exame" redireciona para atendimento móvel sem aviso e sem opção clara de voltar | P2, P3 | 🟠 Alto | H3 — Controle / H5 — Prevenção de erros |
-| **TU-03** | Ausência de etapa para seleção de data e horário no fluxo de agendamento | P1, P2 | 🔴 Crítico | H1 — Visibilidade do status |
+| **TU-03** | Ausência de etapa para seleção de data e horário no fluxo de agendamento | P1, P2, P3 | 🔴 Crítico | H1 — Visibilidade do status |
 | **TU-04** | Sobrecarga de informação na listagem de vacinas, sem campo de busca evidente | P3 (T2) | 🟡 Médio | H8 — Estética e design minimalista |
+| **TU-05** | Falta de atalho na unidade: página física não possui botão claro para agendar serviços | P3 (T2) | 🟠 Alto | H7 — Flexibilidade e eficiência |
 
 ---
 
@@ -424,6 +425,7 @@ indica a complexidade aproximada de implementação para a equipe do site.
 | 4 | 🟠 Alta | Ao acionar "Agendar", oferecer **escolha clara** (Unidade física × Atendimento domiciliar) em vez de redirecionar sem aviso; adicionar **botão "voltar" interno** que preserve a busca. | TU-02 | 🟡 Médio |
 | 5 | 🟠 Alta | Correções de acessibilidade de base: adicionar **`<h1>`**, **skip link** e **`:focus-visible`**; corrigir o **contraste** dos textos de apoio (`#999` → `#767676`). | WCAG 1.3.1 / 2.4.1 / 2.4.7 / 1.4.3 | 🟢 Baixo |
 | 6 | 🟡 Média | Reduzir a sobrecarga de informação na **listagem de vacinas** e adicionar **busca interna** com sugestão por idade do dependente. | TU-04 | 🟡 Médio |
+| 7 | 🟠 Alta | Adicionar botões de agendamento rápido (exames/vacinas) na página de detalhes de cada unidade física. | TU-05 | 🟢 Baixo |
 
 **Síntese das três correções mais urgentes:**
 
@@ -469,12 +471,10 @@ tese de Nielsen de que **poucos usuários já expõem a maioria dos problemas gr
 
 1. **Aplicar as correções imediatas** (seção 6, itens 1–3): renomear o fluxo, corrigir o 404 de
    `/agendamento/` e inserir a etapa de data/horário.
-2. **Reexecutar T2 e T3 com P1 e P2** para elevar a amostra dessas tarefas de n=1 para n=3 e
-   consolidar as métricas.
-3. **Ampliar e diversificar a amostra** em uma próxima rodada, incluindo idosos, usuários de
+2. **Ampliar e diversificar a amostra** em uma próxima rodada, incluindo idosos, usuários de
    baixa literacia digital e **pelo menos um participante com deficiência** (leitor de tela),
    tornando os achados de acessibilidade empíricos.
-4. **Reteste de validação** após as correções, comparando o novo SUS e a nova taxa de sucesso
+3. **Reteste de validação** após as correções, comparando o novo SUS e a nova taxa de sucesso
    com a linha de base deste relatório (SUS 37,5 / T1 83,3%).
 
 ---
@@ -519,7 +519,7 @@ ficam sob guarda do grupo, exclusivamente para comprovação do consentimento.
 ### Anexo B — Tabulação completa das métricas por tarefa
 
 Detalhamento qualitativo e quantitativo de cada execução observada (fonte: planilha
-`tabulacao_metricas.xlsx`). T1 foi aplicada aos 3 participantes; T2 e T3, apenas a P3.
+`tabulacao_metricas.csv`). T1 foi aplicada aos 3 participantes; T2 e T3, apenas a P3.
 
 **P1 · T1 — Hemograma** — ⏱ 240 s · ✅ Concluiu sem ajuda · Item ✓ · Unidade ✓
 - **Caminho percorrido:** Menu › Exames laboratoriais › Preparo de exames › Serviços digitais › Unidades › Compra online › Busca › Comprar › Nossas unidades › Ceilândia Centro
@@ -562,8 +562,8 @@ publicados no GitHub Pages:
 | Persona do participante | [`docs/.../teste-usabilidade/persona.md`](../docs/ihc-sabin/teste-usabilidade/persona.md) |
 | Roteiro de tarefas | [`docs/.../teste-usabilidade/roteiro.md`](../docs/ihc-sabin/teste-usabilidade/roteiro.md) |
 | Questionário SUS | [`docs/.../teste-usabilidade/questionario-sus.md`](../docs/ihc-sabin/teste-usabilidade/questionario-sus.md) |
-| Tabulação de métricas (planilha) | `relatorio-teste-usabilidade/img/tabulacao_metricas.xlsx` |
-| Tabulação do SUS (planilha) | `relatorio-teste-usabilidade/img/tabulacao_sus.xlsx` |
+| Tabulação de métricas (planilha) | `../docs/ihc-sabin/teste-usabilidade/tabulacao_metricas.csv` |
+| Tabulação do SUS (planilha) | `../docs/ihc-sabin/teste-usabilidade/tabulacao_sus.csv` |
 | TCLE | [`docs/.../teste-usabilidade/tcle.md`](../docs/ihc-sabin/teste-usabilidade/tcle.md) |
 | Resultados completos (3 sessões + vídeos) | [`docs/.../teste-usabilidade/resultados.md`](../docs/ihc-sabin/teste-usabilidade/resultados.md) |
 | Avaliação heurística (TG-02) | [`docs/.../avaliacao-heuristica/index.md`](../docs/ihc-sabin/avaliacao-heuristica/index.md) |

@@ -134,7 +134,7 @@ Chisnell (2008). A tarefa exigia ao menos <strong>um usuário real</strong>; o g
   <div class="kpi"><span class="n">3</span><span class="l">Usuários reais</span></div>
   <div class="kpi"><span class="n">37,5</span><span class="l">SUS médio (Inaceitável)</span></div>
   <div class="kpi"><span class="n">83%</span><span class="l">Eficácia na T1</span></div>
-  <div class="kpi"><span class="n">3</span><span class="l">Problemas críticos/altos</span></div>
+  <div class="kpi"><span class="n">4</span><span class="l">Problemas críticos/altos</span></div>
 </div>
 <div class="exec">
 <p style="margin-top:0"><strong>Síntese:</strong> mesmo com participantes de alto letramento digital, o fluxo de
@@ -257,7 +257,7 @@ enquanto as tarefas de <strong>agendamento (T1/T2)</strong> exigiram muito mais 
 <!-- ===================== 6. SUS ===================== -->
 <h2 class="sec">6. Escore SUS (System Usability Scale)</h2>
 <p>Ao final das tarefas, cada participante preencheu o questionário SUS (10 itens, escala 1–5), de forma independente.
-As respostas foram <strong>tabuladas item a item</strong> (planilha <code>tabulacao_sus.xlsx</code>). O escore varia de 0 a
+As respostas foram <strong>tabuladas item a item</strong> (planilha <code>tabulacao_sus.csv</code>). O escore varia de 0 a
 100; valores abaixo de 50 são considerados de usabilidade <strong>inaceitável</strong>.</p>
 <table>
 <tr><th>Participante</th><th>Escore SUS</th><th>Classificação</th></tr>
@@ -308,6 +308,8 @@ heurística para permitir comparação.</p>
 <tr><td>TU-01</td><td><strong>Nomenclatura ambígua.</strong> "Compra online" não é reconhecida como "agendar exame". Os participantes vasculharam abas informativas ("Exames laboratoriais", "Serviços digitais", "Atendimento domiciliar") antes de achar o caminho correto.</td><td><span class="sev s4">Crítico</span></td><td>H2 — Mundo real</td></tr>
 <tr><td>TU-02</td><td><strong>Desvio sem aviso e sem saída.</strong> O botão "Agendar exame" no resultado da busca leva ao atendimento móvel/domiciliar; sem botão "voltar" no site, o usuário recorre ao navegador e perde a busca.</td><td><span class="sev s3">Alto</span></td><td>H3 / H5</td></tr>
 <tr><td>TU-03</td><td><strong>Ausência de etapa de data/horário.</strong> Nenhum participante encontrou onde escolher data — frustração explícita ao final do fluxo.</td><td><span class="sev s4">Crítico</span></td><td>H1 — Status</td></tr>
+<tr><td>TU-04</td><td><strong>Excesso de informação.</strong> Ausência de campo de busca visível na listagem de vacinas dificulta encontrar itens específicos.</td><td><span class="sev s2">Médio</span></td><td>H8 — Minimalista</td></tr>
+<tr><td>TU-05</td><td><strong>Falta de atalho na unidade.</strong> A página da unidade física não possui botão claro para agendar serviços diretamente nela.</td><td><span class="sev s3">Alto</span></td><td>H7 — Flexibilidade</td></tr>
 </table>
 
 <h4>Citações dos participantes (Think Aloud)</h4>
@@ -354,7 +356,8 @@ para usuários videntes fluentes — possivelmente inviáveis sem assistência.<
 <tr><td><span class="sev s4">Imediata</span></td><td>Incluir etapa explícita de seleção de <strong>data e horário</strong> antes da confirmação.</td><td>TU-03</td></tr>
 <tr><td><span class="sev s3">Alta</span></td><td>Ao acionar "Agendar", oferecer escolha clara (Unidade física × Domiciliar) em vez de redirecionar sem aviso; adicionar botão "voltar" interno.</td><td>TU-02</td></tr>
 <tr><td><span class="sev s3">Alta</span></td><td>Adicionar <code>&lt;h1&gt;</code>, skip link e <code>:focus-visible</code>; corrigir contraste dos textos de apoio.</td><td>Acessibilidade (WCAG A/AA)</td></tr>
-<tr><td><span class="sev s2">Média</span></td><td>Reduzir a sobrecarga de informação na listagem de vacinas e adicionar busca interna.</td><td>T2 — "muita informação"</td></tr>
+<tr><td><span class="sev s2">Média</span></td><td>Reduzir a sobrecarga de informação na listagem de vacinas e adicionar busca interna.</td><td>TU-04</td></tr>
+<tr><td><span class="sev s3">Alta</span></td><td>Adicionar botões de agendamento rápido (exames/vacinas) na página de detalhes de cada unidade física.</td><td>TU-05</td></tr>
 </table>
 
 <!-- ===================== 10. REFLEXÃO ===================== -->
@@ -402,7 +405,7 @@ exclusivamente como comprovação do consentimento.</p>
 </figure>
 
 <h3 class="sec">Anexo B — Tabulação completa das métricas por tarefa</h3>
-<p>Detalhamento qualitativo e quantitativo de cada execução observada (fonte: planilha <code>tabulacao_metricas.xlsx</code>).
+<p>Detalhamento qualitativo e quantitativo de cada execução observada (fonte: planilha <code>tabulacao_metricas.csv</code>).
 A T1 foi aplicada aos 3 participantes; T2 e T3, apenas a P3.</p>
 
 <div class="mcard">
@@ -452,8 +455,8 @@ A T1 foi aplicada aos 3 participantes; T2 e T3, apenas a P3.</p>
 <tr><td>Persona do participante</td><td>unb-ihc.github.io/IHC_2026.1_Grupo07/ihc-sabin/teste-usabilidade/persona/</td></tr>
 <tr><td>Roteiro de tarefas</td><td>unb-ihc.github.io/IHC_2026.1_Grupo07/ihc-sabin/teste-usabilidade/roteiro/</td></tr>
 <tr><td>Questionário SUS</td><td>unb-ihc.github.io/IHC_2026.1_Grupo07/ihc-sabin/teste-usabilidade/questionario-sus/</td></tr>
-<tr><td>Tabulação de métricas (planilha)</td><td>relatorio-teste-usabilidade/img/tabulacao_metricas.xlsx</td></tr>
-<tr><td>Tabulação do SUS (planilha)</td><td>relatorio-teste-usabilidade/img/tabulacao_sus.xlsx</td></tr>
+<tr><td>Tabulação de métricas (planilha)</td><td>../docs/ihc-sabin/teste-usabilidade/tabulacao_metricas.csv</td></tr>
+<tr><td>Tabulação do SUS (planilha)</td><td>../docs/ihc-sabin/teste-usabilidade/tabulacao_sus.csv</td></tr>
 <tr><td>TCLE</td><td>unb-ihc.github.io/IHC_2026.1_Grupo07/ihc-sabin/teste-usabilidade/tcle/</td></tr>
 <tr><td>Resultados completos (3 sessões + vídeos)</td><td>unb-ihc.github.io/IHC_2026.1_Grupo07/ihc-sabin/teste-usabilidade/resultados/</td></tr>
 </table>
