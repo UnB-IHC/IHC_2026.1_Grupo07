@@ -30,7 +30,7 @@
 
     Só a T1 foi aplicada aos 3 participantes; T2 e T3 apenas com P3
 
--   <span class="badge" style="background:#c62828;color:#fff;">SUS médio 41,7</span>
+-   <span class="badge" style="background:#c62828;color:#fff;">SUS médio 37,5</span>
 
     ---
 
@@ -49,7 +49,7 @@ flowchart LR
     P1["Entrevista 1 — P1\nT1 concluída"] --> RF[Resultado Final]
     P2["Entrevista 2 — P2\nT1 concluída"] --> RF
     P3["Entrevista 3 — P3\nT1/T2/T3 concluídas"] --> RF
-    RF --> SUS["SUS médio: 41,7 (Inaceitável)"]
+    RF --> SUS["SUS médio: 37,5 (Inaceitável)"]
     RF --> PROB["3 problemas críticos/altos identificados"]
     RF --> REC["Recomendações priorizadas"]
 ```
@@ -60,10 +60,10 @@ flowchart LR
 
 | Participante | T1 ✓? | T1 (s) | T2 ✓? | T2 (s) | T3 ✓? | T3 (s) | SUS |
 |---|---|---|---|---|---|---|---|
-| P1 | ☑ Sim, sem ajuda | 240 | — | — | — | — | 50 |
-| P2 | ☑ Sim, sem ajuda | 215 | — | — | — | — | 40 |
-| P3 | ☑ Sim, com ajuda | 285 | ☑ Sim, com ajuda | 190 | ☑ Sim, sem ajuda | 45 | 35 |
-| **Média (T1, n=3)** | — | 247 | — | — | — | — | 41,7 |
+| P1 | ☑ Sim, sem ajuda | 240 | — | — | — | — | 42,5 |
+| P2 | ☑ Sim, sem ajuda | 215 | — | — | — | — | 37,5 |
+| P3 | ☑ Sim, com ajuda | 285 | ☑ Sim, com ajuda | 190 | ☑ Sim, sem ajuda | 45 | 32,5 |
+| **Média (T1, n=3)** | — | 247 | — | — | — | — | 37,5 |
 
 > **Médias recalculadas para n=3 na T1 e no SUS** (P1, P2, P3). As tarefas **T2 e T3** seguem em **n=1** (apenas P3, ver [seção 4](#4-resultado-entrevista-3-p3)) — recalcular se forem repetidas com P1 e P2.
 
@@ -83,7 +83,7 @@ flowchart LR
 
 -   **Conclusão** · <span class="badge" style="background:#2e7d32;color:#fff;">Sem ajuda</span>
 
--   **SUS** · <span class="badge" style="background:#f9a825;color:#000;">50 — Mediano</span>
+-   **SUS** · <span class="badge" style="background:#c62828;color:#fff;">42,5 — Inaceitável</span>
 
 </div>
 
@@ -147,7 +147,7 @@ flowchart LR
     | Onde travou ou hesitou | |
     | Observações do avaliador | |
 
-**Respostas às perguntas pós-tarefa:** SUS: 50 (Mediano) — perguntas abertas pendentes de registro.
+**Respostas às perguntas pós-tarefa:** SUS: 42,5 (Inaceitável) — perguntas abertas pendentes de registro.
 
 ---
 
@@ -159,7 +159,7 @@ flowchart LR
 
 -   **Conclusão** · <span class="badge" style="background:#2e7d32;color:#fff;">Sem ajuda</span>
 
--   **SUS** · <span class="badge" style="background:#c62828;color:#fff;">40 — Inaceitável</span>
+-   **SUS** · <span class="badge" style="background:#c62828;color:#fff;">37,5 — Inaceitável</span>
 
 </div>
 
@@ -227,7 +227,7 @@ flowchart LR
     | Onde travou ou hesitou | |
     | Observações do avaliador | |
 
-**Respostas às perguntas pós-tarefa:** SUS: 40 (Inaceitável) — perguntas abertas pendentes de registro.
+**Respostas às perguntas pós-tarefa:** SUS: 37,5 (Inaceitável) — perguntas abertas pendentes de registro.
 
 ---
 
@@ -239,7 +239,7 @@ flowchart LR
 
 -   **Conclusão** · <span class="badge" style="background:#2e7d32;color:#fff;">T3 sem ajuda</span> <span class="badge" style="background:#e65100;color:#fff;">T1 e T2 com ajuda</span>
 
--   **SUS** · <span class="badge" style="background:#c62828;color:#fff;">35 — Inaceitável</span>
+-   **SUS** · <span class="badge" style="background:#c62828;color:#fff;">32,5 — Inaceitável</span>
 
 </div>
 
@@ -342,18 +342,18 @@ flowchart LR
 
     | # | Afirmação (SUS) | Resposta (1–5) | Observação |
     |---|---|---|---|
-    | 1 | Gostaria de usar o site com frequência | 2 | Frustração no agendamento; só a T3 foi tranquila |
+    | 1 | Gostaria de usar o site com frequência | 1 | Frustração no agendamento; só a T3 foi tranquila |
     | 2 | Site desnecessariamente complexo | 4 | "Muita informação"; perdeu-se em várias telas |
     | 3 | Site fácil de usar | 2 | Difícil em 2 das 3 tarefas |
-    | 4 | Precisaria de suporte técnico | 3 | Precisou de dicas do avaliador, mas é usuária fluente |
+    | 4 | Precisaria de suporte técnico | 2 | Precisou de dicas do avaliador, mas é usuária fluente |
     | 5 | Funções bem integradas | 2 | "Comprar" para agendar exame/vacina quebra o modelo mental |
     | 6 | Muita inconsistência | 4 | "Agendar" leva ao atendimento móvel; nomenclatura confusa |
     | 7 | Maioria aprenderia rapidamente | 2 | Mesmo sendo da área de TI, ficou perdida |
     | 8 | Site muito difícil de usar | 4 | Difícil em T1 e T2 |
-    | 9 | Senti-me confiante | 3 | Concluiu tudo e agiu com confiança na T3 |
+    | 9 | Senti-me confiante | 2 | Concluiu tudo e agiu com confiança na T3 |
     | 10 | Precisei aprender muita coisa | 2 | Mais questão de achabilidade do que de aprendizado |
 
-    **Cálculo:** ímpares (1,3,5,7,9) = (2+2+2+2+3) − 5 = **6** · pares (2,4,6,8,10) = 25 − (4+3+4+4+2) = **8** · (6 + 8) × 2,5 = **35 pontos** → <span class="badge" style="background:#c62828;color:#fff;">Inaceitável (&lt;50)</span>
+    **Cálculo:** ímpares (1,3,5,7,9) = (1+2+2+2+2) − 5 = **4** · pares (2,4,6,8,10) = 25 − (4+2+4+4+2) = **9** · (4 + 9) × 2,5 = **32,5 pontos** → <span class="badge" style="background:#c62828;color:#fff;">Inaceitável (&lt;50)</span>
 
 ---
 
@@ -367,10 +367,10 @@ flowchart LR
 
 | Participante | Pontuação SUS | Classificação |
 |---|---|---|
-| P1 | 50 | <span class="badge" style="background:#f9a825;color:#000;">Mediano (50–68)</span> |
-| P2 | 40 | <span class="badge" style="background:#c62828;color:#fff;">Inaceitável (&lt;50)</span> |
-| P3 | 35 | <span class="badge" style="background:#c62828;color:#fff;">Inaceitável (&lt;50)</span> |
-| **Média (n=3)** | 41,7 | <span class="badge" style="background:#c62828;color:#fff;">Inaceitável (&lt;50)</span> |
+| P1 | 42,5 | <span class="badge" style="background:#c62828;color:#fff;">Inaceitável (&lt;50)</span> |
+| P2 | 37,5 | <span class="badge" style="background:#c62828;color:#fff;">Inaceitável (&lt;50)</span> |
+| P3 | 32,5 | <span class="badge" style="background:#c62828;color:#fff;">Inaceitável (&lt;50)</span> |
+| **Média (n=3)** | 37,5 | <span class="badge" style="background:#c62828;color:#fff;">Inaceitável (&lt;50)</span> |
 
 ### 5.2 Problemas de Usabilidade Identificados
 
@@ -403,7 +403,7 @@ flowchart LR
 - A taxonomia do site (como o uso do termo "Comprar online" em vez de "Agendar") confunde os usuários e atrasa a conclusão das tarefas, indo contra o modelo mental dos pacientes.
 - O redirecionamento surpresa para o serviço de atendimento móvel prejudica a fluidez, fazendo o usuário pensar que errou o caminho ou que não pode agendar em uma unidade física.
 - A ausência de um calendário para marcação de data frustra os usuários no final da tarefa, passando a impressão de que o processo está incompleto.
-- O SUS médio de 41,7 (Inaceitável, n=3) reflete um alto custo cognitivo e insatisfação com a interface — a aprofundar nas tarefas T2/T3 com mais participantes (hoje em n=1).
+- O SUS médio de 37,5 (Inaceitável, n=3) reflete um alto custo cognitivo e insatisfação com a interface — a aprofundar nas tarefas T2/T3 com mais participantes (hoje em n=1).
 
 **Recomendações priorizadas (com base em T1):**
 
