@@ -32,7 +32,7 @@ Mesmo com participantes de **alto letramento digital**, o fluxo de agendamento d
 portal Sabin revelou-se confuso e pouco intuitivo. O termo **"Compra online"** não é
 reconhecido como "agendar exame", o botão **"Agendar"** desvia o usuário para o
 atendimento domiciliar sem aviso, e **não há etapa de escolha de data**. O resultado
-é um **SUS médio de 41,7** (faixa "Inaceitável"). Em contraste, a tarefa de consultar
+é um **SUS médio de 37,5** (faixa "Inaceitável"). Em contraste, a tarefa de consultar
 o preparo de um check-up (T3) foi resolvida sem dificuldade em ~45 s — confirmando que
 o problema está **concentrado no fluxo de agendamento**, não no site como um todo.
 
@@ -41,7 +41,7 @@ o problema está **concentrado no fluxo de agendamento**, não no site como um t
 | Participantes (usuários reais) | 3 (P1, P2, P3) |
 | Tarefas avaliadas | 3 (agendar exame, agendar vacina, ver preparo) |
 | Taxa de sucesso na T1 (agendamento de exame) | **83,3%** (n=3) |
-| SUS médio | **41,7 — Inaceitável** (n=3) |
+| SUS médio | **37,5 — Inaceitável** (n=3) |
 | Problemas críticos/altos identificados | 3 (TU-01, TU-02, TU-03) |
 
 ---
@@ -217,9 +217,9 @@ confirmadas ou refutadas pelas sessões reais:
 
 | Part. | T1 — hemograma | T2 — vacina | T3 — preparo | SUS |
 |---|---|---|---|---|
-| **P1** | ✅ Sem ajuda · 240 s | — | — | 50 |
-| **P2** | ✅ Sem ajuda · 215 s | — | — | 40 |
-| **P3** | ⚠️ Com ajuda · 285 s | ⚠️ Com ajuda · 190 s | ✅ Sem ajuda · 45 s | 35 |
+| **P1** | ✅ Sem ajuda · 240 s | — | — | 42,5 |
+| **P2** | ✅ Sem ajuda · 195 s | — | — | 37,5 |
+| **P3** | ⚠️ Com ajuda · 285 s | ⚠️ Com ajuda · 190 s | ✅ Sem ajuda · 45 s | 32,5 |
 
 > Legenda: ✅ concluiu sem ajuda · ⚠️ concluiu com ajuda do avaliador · — tarefa não aplicada ao participante.
 >
@@ -247,7 +247,7 @@ agendamento**, não na consulta de conteúdo.
 
 | Tarefa | Tempos individuais | Tempo médio |
 |---|---|---|
-| **T1** (n=3) | 240 s · 215 s · 285 s | **~247 s** (≈ 4 min 07 s) |
+| **T1** (n=3) | 240 s · 195 s · 285 s | **240 s** (= 4 min 00 s) |
 | **T2** (n=1) | 190 s | **190 s** (≈ 3 min 10 s) |
 | **T3** (n=1) | 45 s | **45 s** |
 
@@ -280,41 +280,50 @@ Padrões observados nos erros de agendamento (T1/T2):
 ### 4.5 Escore SUS
 
 O questionário SUS (10 itens, escala 1–5) foi aplicado uma vez por participante, ao final da
-sessão. O escore varia de 0 a 100; valores abaixo de 50 são considerados de usabilidade
-**inaceitável**.
+sessão, e **tabulado item a item** (planilha `tabulacao_sus.xlsx`, reproduzida na íntegra abaixo).
+O escore varia de 0 a 100; valores abaixo de 50 são considerados de usabilidade **inaceitável**.
 
 | Participante | Escore SUS | Classificação |
 |---|---|---|
-| P1 | 50 | 🟡 Mediano (50–68) |
-| P2 | 40 | 🔴 Inaceitável (< 50) |
-| P3 | 35 | 🔴 Inaceitável (< 50) |
-| **Média (n=3)** | **41,7** | 🔴 **Inaceitável (< 50)** |
+| P1 | 42,5 | 🔴 Inaceitável (< 50) |
+| P2 | 37,5 | 🔴 Inaceitável (< 50) |
+| P3 | 32,5 | 🔴 Inaceitável (< 50) |
+| **Média (n=3)** | **37,5** | 🔴 **Inaceitável (< 50)** |
 
-> **Nota sobre a média:** com os 3 escores coletados, a média é (50 + 40 + 35) ÷ 3 = **41,7**.
-> Materiais parciais anteriores do grupo citavam "45" — valor que correspondia à média de **n=2**
-> (apenas P1 e P2), antes de a sessão de P3 ser computada. Este relatório consolida os **3
-> participantes**.
+> **Nota sobre a média:** com os 3 escores tabulados item a item, a média é
+> (42,5 + 37,5 + 32,5) ÷ 3 = **37,5**. Os **três** participantes ficaram **abaixo de 50** (faixa
+> "Inaceitável"); nenhum alcançou sequer a faixa "Mediana" (50–68), o que reforça a gravidade
+> dos problemas do fluxo de agendamento.
 
-**Detalhamento por item (P3 — único com respostas item a item registradas):**
+**Tabulação item a item (3 participantes).** Respostas na escala 1–5 (1 = discordo totalmente;
+5 = concordo totalmente). Itens ímpares são afirmações positivas; pares, negativas.
 
-| # | Afirmação (SUS) | Resposta (1–5) | Observação |
-|---|---|---|---|
-| 1 | Gostaria de usar o site com frequência | 2 | Frustração no agendamento; só a T3 foi tranquila |
-| 2 | Site desnecessariamente complexo | 4 | "Muita informação"; perdeu-se em várias telas |
-| 3 | Site fácil de usar | 2 | Difícil em 2 das 3 tarefas |
-| 4 | Precisaria de suporte técnico | 3 | Precisou de dicas, mas é usuária fluente |
-| 5 | Funções bem integradas | 2 | "Comprar" para agendar quebra o modelo mental |
-| 6 | Muita inconsistência | 4 | "Agendar" leva ao atendimento móvel; nomenclatura confusa |
-| 7 | Maioria aprenderia rapidamente | 2 | Mesmo sendo da área de TI, ficou perdida |
-| 8 | Site muito difícil de usar | 4 | Difícil em T1 e T2 |
-| 9 | Senti-me confiante | 3 | Concluiu tudo e agiu com confiança na T3 |
-| 10 | Precisei aprender muita coisa | 2 | Mais questão de achabilidade do que de aprendizado |
+| # | Afirmação (SUS) | P1 | P2 | P3 |
+|---|---|:--:|:--:|:--:|
+| 1 | Gostaria de usar o site com frequência | 3 | 1 | 1 |
+| 2 | Site desnecessariamente complexo | 4 | 4 | 4 |
+| 3 | Site fácil de usar | 2 | 2 | 2 |
+| 4 | Precisaria de suporte de pessoa técnica | 2 | 1 | 2 |
+| 5 | Funções bem integradas | 2 | 2 | 2 |
+| 6 | Muita inconsistência no site | 4 | 3 | 4 |
+| 7 | Maioria aprenderia a usar rapidamente | 3 | 1 | 2 |
+| 8 | Site muito difícil de usar | 3 | 4 | 4 |
+| 9 | Senti-me confiante usando o site | 2 | 2 | 2 |
+| 10 | Precisei aprender muita coisa antes de usar | 2 | 1 | 2 |
+| | **Escore SUS** | **42,5** | **37,5** | **32,5** |
 
-**Cálculo (P3):** ímpares (1,3,5,7,9) = (2+2+2+2+3) − 5 = **6**; pares (2,4,6,8,10) =
-25 − (4+3+4+4+2) = **8**; total (6 + 8) × 2,5 = **35 pontos**.
+**Cálculo do escore** (ímpares: soma das respostas − 5; pares: 25 − soma das respostas; total × 2,5):
 
-> Para P1 (50) e P2 (40), apenas os escores finais foram registrados na coleta — não há
-> transcrição item a item dessas duas sessões, por isso não se exibe aqui o detalhamento delas.
+| Participante | Ímpares (1,3,5,7,9) | Pares (2,4,6,8,10) | Total × 2,5 | Escore |
+|---|---|---|---|---|
+| P1 | (3+2+2+3+2) − 5 = 7 | 25 − (4+2+4+3+2) = 10 | (7 + 10) × 2,5 | **42,5** |
+| P2 | (1+2+2+1+2) − 5 = 3 | 25 − (4+1+3+4+1) = 12 | (3 + 12) × 2,5 | **37,5** |
+| P3 | (1+2+2+2+2) − 5 = 4 | 25 − (4+2+4+4+2) = 9 | (4 + 9) × 2,5 | **32,5** |
+
+Os itens de maior penalização, **comuns aos três participantes**, foram o **item 2 — "site
+desnecessariamente complexo"** (4 em todos), o **item 8 — "muito difícil de usar"** (3 · 4 · 4)
+e o **item 6 — "muita inconsistência"** (4 · 3 · 4) — diretamente coerentes com a confusão de
+taxonomia e o redirecionamento sem aviso observados nas tarefas de agendamento.
 
 ### 4.6 Verbalizações marcantes (Think Aloud)
 
@@ -441,7 +450,7 @@ agendamento** que está desalinhado da expectativa do usuário.
 A rodada também evidenciou, na prática, o **valor do Think Aloud**: métricas isoladas podem
 mascarar uma experiência ruim (a T1 teve 83,3% de eficácia, número aparentemente bom), mas as
 verbalizações — *"então eu tenho que comprar meu exame primeiro?"* — expõem o **atrito cognitivo
-real**. O SUS médio de **41,7** traduz numericamente essa insatisfação. Reforça-se, assim, a
+real**. O SUS médio de **37,5** traduz numericamente essa insatisfação. Reforça-se, assim, a
 tese de Nielsen de que **poucos usuários já expõem a maioria dos problemas graves de usabilidade**.
 
 ### 7.2 Limitações do estudo
@@ -466,7 +475,7 @@ tese de Nielsen de que **poucos usuários já expõem a maioria dos problemas gr
    baixa literacia digital e **pelo menos um participante com deficiência** (leitor de tela),
    tornando os achados de acessibilidade empíricos.
 4. **Reteste de validação** após as correções, comparando o novo SUS e a nova taxa de sucesso
-   com a linha de base deste relatório (SUS 41,7 / T1 83,3%).
+   com a linha de base deste relatório (SUS 37,5 / T1 83,3%).
 
 ---
 
@@ -493,6 +502,57 @@ tese de Nielsen de que **poucos usuários já expõem a maioria dos problemas gr
 
 ## Anexos
 
+### Anexo A — Termo de Consentimento Livre e Esclarecido (TCLE)
+
+Cada participante leu e assinou, antes do início da sessão, um **Termo de Consentimento Livre e
+Esclarecido (TCLE)** contendo: objetivo da pesquisa, procedimentos (3 tarefas, ~20–30 min, *Think
+Aloud*), aviso de gravação de tela e áudio, garantia de **anonimato** (identificação apenas como
+"P1"…"P3"), direito de desistência sem penalidade e contato dos pesquisadores. As vias assinadas
+ficam sob guarda do grupo, exclusivamente para comprovação do consentimento.
+
+![Frente do TCLE: título, objetivo da pesquisa, procedimentos, gravação, riscos e anonimato.](img/frente-termo.jpeg)
+*Figura 6. TCLE — frente (texto do termo): objetivo, procedimentos, gravação de tela/áudio, riscos e cláusula de anonimato.*
+
+![Verso do TCLE assinado, com nome, CPF e assinaturas tarjados para preservar o anonimato (LGPD).](img/tras-termo.jpeg)
+*Figura 7. TCLE — verso (participação voluntária, contato e Declaração de Consentimento assinada). Nome completo, CPF e assinaturas foram **tarjados** para preservar o anonimato prometido no próprio termo e atender à LGPD; mantêm-se visíveis os rótulos dos campos e a data de coleta (25/06/2026), comprovando o consentimento.*
+
+### Anexo B — Tabulação completa das métricas por tarefa
+
+Detalhamento qualitativo e quantitativo de cada execução observada (fonte: planilha
+`tabulacao_metricas.xlsx`). T1 foi aplicada aos 3 participantes; T2 e T3, apenas a P3.
+
+**P1 · T1 — Hemograma** — ⏱ 240 s · ✅ Concluiu sem ajuda · Item ✓ · Unidade ✓
+- **Caminho percorrido:** Menu › Exames laboratoriais › Preparo de exames › Serviços digitais › Unidades › Compra online › Busca › Comprar › Nossas unidades › Ceilândia Centro
+- **Erros e desvios:** procurou o agendamento em abas informativas antes de ir para "Compra online".
+- **Verbalização marcante:** *"Eu achei bem complicado. Os nomes não eram o que eu estava esperando… Eu senti falta também na questão da data."*
+- **Observação do avaliador:** explorou grande parte do menu principal tentando achar a opção correta — a taxonomia do menu não está alinhada ao modelo mental.
+
+**P2 · T1 — Hemograma** — ⏱ 195 s · ✅ Concluiu sem ajuda · Item ✓ · Unidade ✓
+- **Caminho percorrido:** Página inicial › Menu principal › Abas informativas › Busca › "Agendar o exame" (cai em atendimento móvel) › Voltar do navegador › Comprar online › Ceilândia Centro
+- **Erros e desvios:** clicou em "Agendar o exame" e foi para atendimento domiciliar; não encontrou botão "voltar" no site.
+- **Verbalização marcante:** *"Achei os termos um pouco confusos… a primeira opção é agendar exame, mas ele vai para um local que não faz sentido… Senti falta de data."*
+- **Observação do avaliador:** evidenciou um problema grave de taxonomia — "comprar" não é associado a "agendar".
+
+**P3 · T1 — Hemograma** — ⏱ 285 s · ⚠️ Concluiu com ajuda (2 dicas) · Item ✓ · Unidade ✓
+- **Caminho percorrido:** Botão agendamento › Pré-cadastro › Solicitação de exames › Conteúdo de apoio › Serviços digitais › Agilizar exames › Menu *(1ª dica)* › Compre online *(2ª dica)* › Busca › Comprar exame
+- **Erros e desvios:** procurou o agendamento em várias telas antes do caminho correto; só chegou ao fluxo certo após duas dicas do avaliador.
+- **Verbalização marcante:** *"Vou apertar no botão de agendamento, que faz sentido… Acho que não é aqui, né, mano? Não tô achando… Então eu tenho que comprar meu exame aqui primeiro."*
+- **Observação do avaliador:** participante visivelmente perdida — reforça nomenclaturas confusas e o redirecionamento-surpresa.
+
+**P3 · T2 — Vacina de febre amarela** — ⏱ 190 s · ⚠️ Concluiu com ajuda (1 dica) · Item ✓ · Unidade ✓ · Comunicou restrição de idade: **Não relatado pelo site**
+- **Caminho percorrido:** Menu › Vacinas › Agendar na unidade › Águas Claras › Tela da unidade › Compre online › Menu *(dica)* › Vacinas infantis (9 meses) › Vacina de febre amarela › Águas Claras
+- **Erros e desvios:** tentou agendar pela página da unidade e pelo "Compre online" antes de achar o caminho por "Vacinas infantis", com a ajuda do avaliador.
+- **Verbalização marcante:** *"Meu Deus, muita informação. Eu queria pesquisar a vacina de febre amarela, mas não sei como faz isso. Vou clicar em vacinas infantis porque meu filho tem 9 meses."*
+- **Observação do avaliador:** o mesmo problema de taxonomia da T1 se repete no fluxo de vacinas.
+
+**P3 · T3 — Orientação de preparo (check-up executivo)** — ⏱ 45 s · ✅ Concluiu sem ajuda · Item ✓ · Unidade ✓
+- **Caminho percorrido:** Menu › Exames › Check-up executivo › rola a página › Orientações de preparo
+- **Erros e desvios:** nenhum desvio relevante — caminho direto pelo menu.
+- **Verbalização marcante:** *"Tô descendo a tela aqui para achar a orientação. Orientações de preparo. Achei."*
+- **Observação do avaliador:** bem mais fácil e intuitivo de encontrar as orientações — contraste claro com o fluxo de agendamento.
+
+### Anexo C — Artefatos e gravações
+
 Artefatos e evidências que embasam este relatório, versionados no repositório do grupo e
 publicados no GitHub Pages:
 
@@ -502,6 +562,8 @@ publicados no GitHub Pages:
 | Persona do participante | [`docs/.../teste-usabilidade/persona.md`](../docs/ihc-sabin/teste-usabilidade/persona.md) |
 | Roteiro de tarefas | [`docs/.../teste-usabilidade/roteiro.md`](../docs/ihc-sabin/teste-usabilidade/roteiro.md) |
 | Questionário SUS | [`docs/.../teste-usabilidade/questionario-sus.md`](../docs/ihc-sabin/teste-usabilidade/questionario-sus.md) |
+| Tabulação de métricas (planilha) | `relatorio-teste-usabilidade/img/tabulacao_metricas.xlsx` |
+| Tabulação do SUS (planilha) | `relatorio-teste-usabilidade/img/tabulacao_sus.xlsx` |
 | TCLE | [`docs/.../teste-usabilidade/tcle.md`](../docs/ihc-sabin/teste-usabilidade/tcle.md) |
 | Resultados completos (3 sessões + vídeos) | [`docs/.../teste-usabilidade/resultados.md`](../docs/ihc-sabin/teste-usabilidade/resultados.md) |
 | Avaliação heurística (TG-02) | [`docs/.../avaliacao-heuristica/index.md`](../docs/ihc-sabin/avaliacao-heuristica/index.md) |

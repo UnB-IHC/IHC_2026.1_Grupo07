@@ -64,6 +64,15 @@
   blockquote{ border-left:3px solid var(--red); margin:10px 0; padding:4px 14px; color:#444; font-style:italic; background:#fafafa; }
   .scenario{ background:#fff; border:1px solid var(--line); border-left:4px solid var(--red); border-radius:0 6px 6px 0; padding:10px 16px; margin:10px 0; }
   .scenario .tag{ font-size:8pt; font-weight:700; color:var(--red); letter-spacing:.5px; }
+
+  .mcard{ background:#fff; border:1px solid var(--line); border-left:4px solid var(--red); border-radius:0 6px 6px 0;
+    padding:9px 15px; margin:10px 0; page-break-inside:avoid; }
+  .mcard .mh{ font-weight:700; color:var(--dark); font-size:10pt; border-bottom:1px solid var(--line); padding-bottom:5px; margin-bottom:4px; }
+  .mcard .mh .meta{ font-weight:400; color:var(--gray); font-size:8.5pt; }
+  .mcard p.ml{ margin:4px 0; font-size:9pt; text-align:left; line-height:1.45; }
+  .mcard p.ml b{ color:var(--red); font-size:8pt; text-transform:uppercase; letter-spacing:.3px; }
+  .figrow{ display:flex; gap:12px; align-items:flex-start; }
+  .figrow figure{ flex:1; margin:10px 0; }
 </style>
 </head>
 <body>
@@ -123,7 +132,7 @@ Chisnell (2008). A tarefa exigia ao menos <strong>um usuário real</strong>; o g
 
 <div class="kpis">
   <div class="kpi"><span class="n">3</span><span class="l">Usuários reais</span></div>
-  <div class="kpi"><span class="n">41,7</span><span class="l">SUS médio (Inaceitável)</span></div>
+  <div class="kpi"><span class="n">37,5</span><span class="l">SUS médio (Inaceitável)</span></div>
   <div class="kpi"><span class="n">83%</span><span class="l">Eficácia na T1</span></div>
   <div class="kpi"><span class="n">3</span><span class="l">Problemas críticos/altos</span></div>
 </div>
@@ -131,7 +140,7 @@ Chisnell (2008). A tarefa exigia ao menos <strong>um usuário real</strong>; o g
 <p style="margin-top:0"><strong>Síntese:</strong> mesmo com participantes de alto letramento digital, o fluxo de
 agendamento revelou-se confuso. O termo <em>"Compra online"</em> não é reconhecido como "agendar exame", o botão "Agendar"
 desvia o usuário para o atendimento domiciliar sem aviso, e não há etapa de escolha de data. O resultado é um
-<strong>SUS médio de 41,7</strong> (faixa "Inaceitável"). Em contraste, a tarefa de consultar o preparo de check-up
+<strong>SUS médio de 37,5</strong> (faixa "Inaceitável"). Em contraste, a tarefa de consultar o preparo de check-up
 (T3) foi resolvida sem dificuldade — confirmando que o problema está <strong>concentrado no fluxo de agendamento</strong>,
 não no site como um todo.</p>
 </div>
@@ -227,7 +236,7 @@ sucesso sem ajuda = 1,0; sucesso com ajuda = 0,5; falha = 0.</p>
 <table>
 <tr><th>Part.</th><th>T1 (hemograma)</th><th>T2 (vacina)</th><th>T3 (preparo)</th><th>Erros/desvios notáveis</th></tr>
 <tr><td>P1</td><td><span class="sev ok">Sem ajuda</span> · 240 s</td><td>—</td><td>—</td><td>Explorou várias abas informativas antes de achar o caminho</td></tr>
-<tr><td>P2</td><td><span class="sev ok">Sem ajuda</span> · 215 s</td><td>—</td><td>—</td><td>Caiu no atendimento móvel; usou "voltar" do navegador e perdeu a busca</td></tr>
+<tr><td>P2</td><td><span class="sev ok">Sem ajuda</span> · 195 s</td><td>—</td><td>—</td><td>Caiu no atendimento móvel; usou "voltar" do navegador e perdeu a busca</td></tr>
 <tr><td>P3</td><td><span class="sev part">Com ajuda</span> · 285 s</td><td><span class="sev part">Com ajuda</span> · 190 s</td><td><span class="sev ok">Sem ajuda</span> · 45 s</td><td>Múltiplos caminhos errados; 2 dicas na T1, 1 dica na T2</td></tr>
 </table>
 <p><small>Cobertura parcial: T1 foi aplicada aos 3 participantes; T2 e T3, apenas a P3 — por dificuldade de conciliar
@@ -237,7 +246,7 @@ agenda com P1 e P2. As médias abaixo deixam o escopo explícito.</small></p>
 <table>
 <tr><th>Métrica</th><th>Tarefa 1 (n=3)</th><th>Tarefa 2 (n=1)</th><th>Tarefa 3 (n=1)</th></tr>
 <tr><td><strong>Taxa de sucesso (eficácia)</strong></td><td>83,3% <small>(1,0 + 1,0 + 0,5)/3</small></td><td>50% <small>(com ajuda)</small></td><td>100% <small>(sem ajuda)</small></td></tr>
-<tr><td><strong>Tempo médio (eficiência)</strong></td><td>~247 s</td><td>190 s</td><td>45 s</td></tr>
+<tr><td><strong>Tempo médio (eficiência)</strong></td><td>240 s <small>(240·195·285)</small></td><td>190 s</td><td>45 s</td></tr>
 <tr><td><strong>Conclusão sem ajuda</strong></td><td>2 de 3</td><td>0 de 1</td><td>1 de 1</td></tr>
 <tr><td><strong>Erros/desvios</strong></td><td>Alto (todos exploraram caminhos errados)</td><td>Alto (sobrecarga de informação)</td><td>Nenhum relevante</td></tr>
 </table>
@@ -248,17 +257,47 @@ enquanto as tarefas de <strong>agendamento (T1/T2)</strong> exigiram muito mais 
 <!-- ===================== 6. SUS ===================== -->
 <h2 class="sec">6. Escore SUS (System Usability Scale)</h2>
 <p>Ao final das tarefas, cada participante preencheu o questionário SUS (10 itens, escala 1–5), de forma independente.
-O escore varia de 0 a 100; valores abaixo de 50 são considerados de usabilidade <strong>inaceitável</strong>.</p>
+As respostas foram <strong>tabuladas item a item</strong> (planilha <code>tabulacao_sus.xlsx</code>). O escore varia de 0 a
+100; valores abaixo de 50 são considerados de usabilidade <strong>inaceitável</strong>.</p>
 <table>
 <tr><th>Participante</th><th>Escore SUS</th><th>Classificação</th></tr>
-<tr><td>P1</td><td>50</td><td><span class="sev s2">Mediano (50–68)</span></td></tr>
-<tr><td>P2</td><td>40</td><td><span class="sev no">Inaceitável (&lt;50)</span></td></tr>
-<tr><td>P3</td><td>35</td><td><span class="sev no">Inaceitável (&lt;50)</span></td></tr>
-<tr><td><strong>Média</strong></td><td><strong>41,7</strong></td><td><span class="sev no">Inaceitável (&lt;50)</span></td></tr>
+<tr><td>P1</td><td>42,5</td><td><span class="sev no">Inaceitável (&lt;50)</span></td></tr>
+<tr><td>P2</td><td>37,5</td><td><span class="sev no">Inaceitável (&lt;50)</span></td></tr>
+<tr><td>P3</td><td>32,5</td><td><span class="sev no">Inaceitável (&lt;50)</span></td></tr>
+<tr><td><strong>Média (n=3)</strong></td><td><strong>37,5</strong></td><td><span class="sev no">Inaceitável (&lt;50)</span></td></tr>
 </table>
-<p><strong>Detalhe do cálculo (P3, escore 35):</strong> itens ímpares (1,3,5,7,9) = (2+2+2+2+3) − 5 = 6; itens pares
-(2,4,6,8,10) = 25 − (4+3+4+4+2) = 8; total (6 + 8) × 2,5 = <strong>35 pontos</strong>. Os itens de maior penalização foram
-"site desnecessariamente complexo" e "muita inconsistência" — coerentes com a confusão de taxonomia observada.</p>
+<p>Os <strong>três participantes</strong> ficaram abaixo de 50 (faixa "Inaceitável") — nenhum alcançou sequer a faixa
+"Mediana" (50–68), o que reforça a gravidade dos problemas do fluxo de agendamento.</p>
+
+<h4>6.1 Tabulação item a item (n=3)</h4>
+<p style="margin:4px 0"><small>Respostas na escala 1–5 (1 = discordo totalmente; 5 = concordo totalmente). Itens ímpares
+são afirmações positivas; pares, negativas.</small></p>
+<table>
+<tr><th style="width:6%">#</th><th>Afirmação (SUS)</th><th style="width:10%">P1</th><th style="width:10%">P2</th><th style="width:10%">P3</th></tr>
+<tr><td>1</td><td>Gostaria de usar o site com frequência</td><td>3</td><td>1</td><td>1</td></tr>
+<tr><td>2</td><td>Site desnecessariamente complexo</td><td>4</td><td>4</td><td>4</td></tr>
+<tr><td>3</td><td>Site fácil de usar</td><td>2</td><td>2</td><td>2</td></tr>
+<tr><td>4</td><td>Precisaria de suporte de pessoa técnica</td><td>2</td><td>1</td><td>2</td></tr>
+<tr><td>5</td><td>Funções bem integradas</td><td>2</td><td>2</td><td>2</td></tr>
+<tr><td>6</td><td>Muita inconsistência no site</td><td>4</td><td>3</td><td>4</td></tr>
+<tr><td>7</td><td>Maioria aprenderia a usar rapidamente</td><td>3</td><td>1</td><td>2</td></tr>
+<tr><td>8</td><td>Site muito difícil de usar</td><td>3</td><td>4</td><td>4</td></tr>
+<tr><td>9</td><td>Senti-me confiante usando o site</td><td>2</td><td>2</td><td>2</td></tr>
+<tr><td>10</td><td>Precisei aprender muita coisa antes de usar</td><td>2</td><td>1</td><td>2</td></tr>
+<tr><td></td><td><strong>Escore SUS</strong></td><td><strong>42,5</strong></td><td><strong>37,5</strong></td><td><strong>32,5</strong></td></tr>
+</table>
+
+<h4>6.2 Detalhe do cálculo</h4>
+<p style="margin:4px 0"><small>Ímpares: soma das respostas − 5 · Pares: 25 − soma das respostas · Total × 2,5.</small></p>
+<table>
+<tr><th style="width:8%">Part.</th><th>Ímpares (1,3,5,7,9)</th><th>Pares (2,4,6,8,10)</th><th>Total × 2,5</th><th style="width:12%">Escore</th></tr>
+<tr><td>P1</td><td>(3+2+2+3+2) − 5 = 7</td><td>25 − (4+2+4+3+2) = 10</td><td>(7 + 10) × 2,5</td><td><strong>42,5</strong></td></tr>
+<tr><td>P2</td><td>(1+2+2+1+2) − 5 = 3</td><td>25 − (4+1+3+4+1) = 12</td><td>(3 + 12) × 2,5</td><td><strong>37,5</strong></td></tr>
+<tr><td>P3</td><td>(1+2+2+2+2) − 5 = 4</td><td>25 − (4+2+4+4+2) = 9</td><td>(4 + 9) × 2,5</td><td><strong>32,5</strong></td></tr>
+</table>
+<p>Os itens de maior penalização, <strong>comuns aos três participantes</strong>, foram o item 2 ("site desnecessariamente
+complexo", 4 em todos), o item 8 ("muito difícil de usar", 3·4·4) e o item 6 ("muita inconsistência", 4·3·4) — coerentes
+com a confusão de taxonomia e o redirecionamento sem aviso observados nas tarefas de agendamento.</p>
 
 <!-- ===================== 7. ACHADOS USABILIDADE ===================== -->
 <h2 class="sec">7. Achados de Usabilidade</h2>
@@ -327,7 +366,7 @@ preparo (T3). Isso isola o problema: não é o site inteiro que é ruim, é o <s
 que está desalinhado da expectativa do usuário.</p>
 <p>Do ponto de vista de aprendizado, a rodada evidenciou o valor do Think Aloud: métricas isoladas (a T1 teve 83% de
 eficácia) podem mascarar uma experiência ruim, mas as verbalizações ("então eu tenho que comprar meu exame primeiro?")
-expõem o atrito cognitivo real. O SUS médio de 41,7 traduz numericamente essa insatisfação.</p>
+expõem o atrito cognitivo real. O SUS médio de 37,5 traduz numericamente essa insatisfação.</p>
 <p>As <strong>principais limitações</strong> a corrigir em rodadas futuras são: (1) a <strong>amostra homogênea</strong> de
 estudantes de tecnologia, que não representa o público diverso do Sabin; (2) a <strong>cobertura parcial</strong> de tarefas
 (T2/T3 apenas com P3); e (3) a <strong>ausência de um participante com deficiência</strong> — recomendação opcional da
@@ -346,19 +385,75 @@ Nielsen de que poucos usuários já expõem a maioria dos problemas graves de us
 
 <!-- ===================== 12. ANEXOS ===================== -->
 <h2 class="sec">12. Anexos</h2>
-<h4>Anexo A — Termo de Consentimento Livre e Esclarecido (TCLE)</h4>
-<p>O TCLE assinado por cada participante contém: objetivo da pesquisa; procedimentos (3 tarefas, ~25–30 min, Think Aloud);
-aviso de gravação de tela e áudio; garantia de anonimato (identificação como "P1"…"P3"); direito de desistência sem
-penalidade; e contato dos pesquisadores responsáveis (Equipe IHC 2026.1 — Grupo 07, UnB). Versão completa publicada em
-GitHub Pages (link abaixo).</p>
+<h3>Anexo A — Termo de Consentimento Livre e Esclarecido (TCLE)</h3>
+<p>Antes de cada sessão, o participante leu e assinou um <strong>Termo de Consentimento Livre e Esclarecido (TCLE)</strong>
+contendo: objetivo da pesquisa; procedimentos (3 tarefas, ~20–30 min, <em>Think Aloud</em>); aviso de gravação de tela e
+áudio; garantia de <strong>anonimato</strong> (identificação apenas como "P1"…"P3"); direito de desistência sem penalidade;
+e contato dos pesquisadores responsáveis (Equipe IHC 2026.1 — Grupo 07, UnB). As vias assinadas ficam sob guarda do grupo,
+exclusivamente como comprovação do consentimento.</p>
 
-<h4>Anexo B — Artefatos e gravações</h4>
+<figure class="story">
+  <img src="img/frente-termo.jpeg" alt="Frente do TCLE: título, objetivo, procedimentos, gravação, riscos e anonimato">
+  <figcaption><strong>Figura 4.</strong> TCLE — frente (texto do termo): objetivo da pesquisa, procedimentos, gravação de tela/áudio, riscos/benefícios e a cláusula de anonimato e confidencialidade.</figcaption>
+</figure>
+<figure class="story">
+  <img src="img/tras-termo.jpeg" alt="Verso do TCLE assinado, com nome, CPF e assinaturas tarjados">
+  <figcaption><strong>Figura 5.</strong> TCLE — verso (participação voluntária, contato dos pesquisadores e Declaração de Consentimento assinada). Nome completo, CPF e assinaturas foram <strong>tarjados</strong> para preservar o anonimato prometido no próprio termo e atender à LGPD; permanecem visíveis os rótulos dos campos e a data de coleta (25/06/2026), comprovando o consentimento.</figcaption>
+</figure>
+
+<h3 class="sec">Anexo B — Tabulação completa das métricas por tarefa</h3>
+<p>Detalhamento qualitativo e quantitativo de cada execução observada (fonte: planilha <code>tabulacao_metricas.xlsx</code>).
+A T1 foi aplicada aos 3 participantes; T2 e T3, apenas a P3.</p>
+
+<div class="mcard">
+  <div class="mh">P1 · T1 — Hemograma &nbsp;<span class="sev ok">Sem ajuda</span> <span class="meta">· ⏱ 240 s · seleção do item ✓ · unidade ✓</span></div>
+  <p class="ml"><b>Caminho percorrido</b><br>Menu › Exames laboratoriais › Preparo de exames › Serviços digitais › Unidades › Compra online › Busca › Comprar › Nossas unidades › Ceilândia Centro</p>
+  <p class="ml"><b>Erros e desvios</b><br>Procurou o agendamento em abas informativas antes de ir para "Compra online".</p>
+  <p class="ml"><b>Verbalização marcante</b><br><em>"Eu achei bem complicado. Os nomes não eram o que eu estava esperando… Eu senti falta também na questão da data."</em></p>
+  <p class="ml"><b>Observação do avaliador</b><br>Explorou grande parte do menu principal tentando achar a opção correta — a taxonomia do menu não está alinhada ao modelo mental.</p>
+</div>
+
+<div class="mcard">
+  <div class="mh">P2 · T1 — Hemograma &nbsp;<span class="sev ok">Sem ajuda</span> <span class="meta">· ⏱ 195 s · seleção do item ✓ · unidade ✓</span></div>
+  <p class="ml"><b>Caminho percorrido</b><br>Página inicial › Menu principal › Abas informativas › Busca › "Agendar o exame" (cai em atendimento móvel) › Voltar do navegador › Comprar online › Ceilândia Centro</p>
+  <p class="ml"><b>Erros e desvios</b><br>Clicou em "Agendar o exame" e foi para atendimento domiciliar; não encontrou botão "voltar" no site.</p>
+  <p class="ml"><b>Verbalização marcante</b><br><em>"Achei os termos um pouco confusos… a primeira opção é agendar exame, mas ele vai para um local que não faz sentido… Senti falta de data."</em></p>
+  <p class="ml"><b>Observação do avaliador</b><br>Evidenciou um problema grave de taxonomia — "comprar" não é associado a "agendar".</p>
+</div>
+
+<div class="mcard">
+  <div class="mh">P3 · T1 — Hemograma &nbsp;<span class="sev part">Com ajuda</span> <span class="meta">· ⏱ 285 s · 2 dicas · seleção do item ✓ · unidade ✓</span></div>
+  <p class="ml"><b>Caminho percorrido</b><br>Botão agendamento › Pré-cadastro › Solicitação de exames › Conteúdo de apoio › Serviços digitais › Agilizar exames › Menu <em>(1ª dica)</em> › Compre online <em>(2ª dica)</em> › Busca › Comprar exame</p>
+  <p class="ml"><b>Erros e desvios</b><br>Procurou o agendamento em várias telas antes do caminho correto; só chegou ao fluxo certo após duas dicas do avaliador.</p>
+  <p class="ml"><b>Verbalização marcante</b><br><em>"Vou apertar no botão de agendamento, que faz sentido… Acho que não é aqui, né, mano? Não tô achando… Então eu tenho que comprar meu exame aqui primeiro."</em></p>
+  <p class="ml"><b>Observação do avaliador</b><br>Participante visivelmente perdida — reforça nomenclaturas confusas e o redirecionamento-surpresa.</p>
+</div>
+
+<div class="mcard">
+  <div class="mh">P3 · T2 — Vacina de febre amarela &nbsp;<span class="sev part">Com ajuda</span> <span class="meta">· ⏱ 190 s · 1 dica · item ✓ · unidade ✓ · restrição de idade: não relatada pelo site</span></div>
+  <p class="ml"><b>Caminho percorrido</b><br>Menu › Vacinas › Agendar na unidade › Águas Claras › Tela da unidade › Compre online › Menu <em>(dica)</em> › Vacinas infantis (9 meses) › Vacina de febre amarela › Águas Claras</p>
+  <p class="ml"><b>Erros e desvios</b><br>Tentou agendar pela página da unidade e pelo "Compre online" antes de achar o caminho por "Vacinas infantis", com a ajuda do avaliador.</p>
+  <p class="ml"><b>Verbalização marcante</b><br><em>"Meu Deus, muita informação. Eu queria pesquisar a vacina de febre amarela, mas não sei como faz isso. Vou clicar em vacinas infantis porque meu filho tem 9 meses."</em></p>
+  <p class="ml"><b>Observação do avaliador</b><br>O mesmo problema de taxonomia da T1 se repete no fluxo de vacinas.</p>
+</div>
+
+<div class="mcard">
+  <div class="mh">P3 · T3 — Orientação de preparo (check-up executivo) &nbsp;<span class="sev ok">Sem ajuda</span> <span class="meta">· ⏱ 45 s · item ✓ · unidade ✓</span></div>
+  <p class="ml"><b>Caminho percorrido</b><br>Menu › Exames › Check-up executivo › rola a página › Orientações de preparo</p>
+  <p class="ml"><b>Erros e desvios</b><br>Nenhum desvio relevante — caminho direto pelo menu.</p>
+  <p class="ml"><b>Verbalização marcante</b><br><em>"Tô descendo a tela aqui para achar a orientação. Orientações de preparo. Achei."</em></p>
+  <p class="ml"><b>Observação do avaliador</b><br>Bem mais fácil e intuitivo de encontrar as orientações — contraste claro com o fluxo de agendamento.</p>
+</div>
+
+<h3 class="sec">Anexo C — Artefatos e gravações</h3>
 <table>
 <tr><th>Artefato</th><th>Endereço</th></tr>
 <tr><td>Planejamento do teste</td><td>unb-ihc.github.io/IHC_2026.1_Grupo07/ihc-sabin/teste-usabilidade/planejamento/</td></tr>
 <tr><td>Persona do participante</td><td>unb-ihc.github.io/IHC_2026.1_Grupo07/ihc-sabin/teste-usabilidade/persona/</td></tr>
 <tr><td>Roteiro de tarefas</td><td>unb-ihc.github.io/IHC_2026.1_Grupo07/ihc-sabin/teste-usabilidade/roteiro/</td></tr>
 <tr><td>Questionário SUS</td><td>unb-ihc.github.io/IHC_2026.1_Grupo07/ihc-sabin/teste-usabilidade/questionario-sus/</td></tr>
+<tr><td>Tabulação de métricas (planilha)</td><td>relatorio-teste-usabilidade/img/tabulacao_metricas.xlsx</td></tr>
+<tr><td>Tabulação do SUS (planilha)</td><td>relatorio-teste-usabilidade/img/tabulacao_sus.xlsx</td></tr>
 <tr><td>TCLE</td><td>unb-ihc.github.io/IHC_2026.1_Grupo07/ihc-sabin/teste-usabilidade/tcle/</td></tr>
 <tr><td>Resultados completos (3 sessões + vídeos)</td><td>unb-ihc.github.io/IHC_2026.1_Grupo07/ihc-sabin/teste-usabilidade/resultados/</td></tr>
 </table>
