@@ -2,15 +2,15 @@
 
 > **Método:** Think Aloud | **Tarefas:** T1 "Agende um exame de hemograma completo na unidade Ceilândia Centro." · T2 "Agende uma vacina de febre amarela para um dependente de 9 meses na unidade Águas Claras." · T3 "Veja as orientações de preparo para um check-up executivo."
 > **Participantes:** 3 estudantes de Engenharia de Software (ver [Persona do Participante](persona.md))
-> **Data das sessões:** T1 com P1/P2 em 24/06/2026 — demais sessões/tarefas **pendentes**
+> **Data das sessões:** Junho/2026 (coleta encerrada)
 > **Avaliador(es):** Gustavo Xavier Evangelista, Lucas Andrade Zanetti
 
 !!! warning "Status de coleta"
-    **P1 e P2:** apenas a Tarefa 1 (agendamento). **P3:** as **3 tarefas** (T1, T2 e T3) — ver [seção 4](#4-resultado-entrevista-3-p3). Ainda faltam T2 e T3 com P1 e P2.
+    **P1 e P2:** realizaram apenas a Tarefa 1 (agendamento). **P3:** realizou as **3 tarefas** (T1, T2 e T3).
+    
+    **Não foi possível realizar as três tarefas com todos os participantes** por dificuldade de conciliar agenda/horário com os usuários — com P1 e P2 só foi viável executar a **Tarefa 1**, encerrando-se a coleta dessa forma. Ainda assim, **a realização da Tarefa 1 com eles contribui para a análise do teste de usabilidade**, pois permite comparar o fluxo de agendamento entre os participantes e reforça os problemas identificados.
 
-    **Não foi possível realizar as três tarefas com todos os participantes** por dificuldade de conciliar agenda/horário com os usuários — com P1 e P2 só foi viável executar a **Tarefa 1**. Ainda assim, **a realização da Tarefa 1 com eles contribui para a análise do teste de usabilidade**, pois permite comparar o fluxo de agendamento entre os participantes e reforça os problemas identificados.
-
-    Os agregados abaixo já incluem os **3 participantes** onde há dado comparável: **T1** e **SUS** estão em **n=3** (P1, P2, P3); **T2 e T3** seguem em **n=1** (apenas P3). Caso T2/T3 sejam repetidas com P1 e P2, recalcular essas duas tarefas.
+    Os agregados abaixo refletem os dados finais da rodada: **T1** e **SUS** calculados com **n=3** (P1, P2, P3), enquanto **T2 e T3** baseiam-se em **n=1** (apenas P3).
 
 ---
 
@@ -65,13 +65,13 @@ flowchart LR
 | P3 | ☑ Sim, com ajuda | 285 | ☑ Sim, com ajuda | 190 | ☑ Sim, sem ajuda | 45 | 32,5 |
 | **Média (T1, n=3)** | — | 247 | — | — | — | — | 37,5 |
 
-> **Médias recalculadas para n=3 na T1 e no SUS** (P1, P2, P3). As tarefas **T2 e T3** seguem em **n=1** (apenas P3, ver [seção 4](#4-resultado-entrevista-3-p3)) — recalcular se forem repetidas com P1 e P2.
+> **Médias calculadas para n=3 na T1 e no SUS** (P1, P2, P3). As tarefas **T2 e T3** estão restritas a **n=1** (apenas P3, ver [seção 4](#4-resultado-entrevista-3-p3)).
 
 ### Taxa de conclusão da tarefa (T1, n=3)
 
 `(1,0 [P1] + 1,0 [P2] + 0,5 [P3]) ÷ 3 = 83,3%`
 
-> T2 e T3 seguem em n=1 (apenas P3). Incluir P1 e P2 nessas tarefas assim que as sessões restantes forem realizadas.
+> T2 e T3 não entraram no cálculo geral de eficácia por contarem apenas com n=1 (P3).
 
 ---
 
@@ -123,8 +123,8 @@ flowchart LR
 
 === "Tarefa 2 — Vacina febre amarela (Águas Claras)"
 
-    !!! info "Pendente"
-        Sessão ainda não realizada.
+    !!! info "Não aplicada"
+        Devido a limitações de tempo da sessão, esta tarefa não foi aplicada a este participante.
 
     | Campo | Registro |
     |---|---|
@@ -136,8 +136,8 @@ flowchart LR
 
 === "Tarefa 3 — Preparo check-up executivo"
 
-    !!! info "Pendente"
-        Sessão ainda não realizada.
+    !!! info "Não aplicada"
+        Devido a limitações de tempo da sessão, esta tarefa não foi aplicada a este participante.
 
     | Campo | Registro |
     |---|---|
@@ -203,8 +203,8 @@ flowchart LR
 
 === "Tarefa 2 — Vacina febre amarela (Águas Claras)"
 
-    !!! info "Pendente"
-        Sessão ainda não realizada.
+    !!! info "Não aplicada"
+        Devido a limitações de tempo da sessão, esta tarefa não foi aplicada a este participante.
 
     | Campo | Registro |
     |---|---|
@@ -216,8 +216,8 @@ flowchart LR
 
 === "Tarefa 3 — Preparo check-up executivo"
 
-    !!! info "Pendente"
-        Sessão ainda não realizada.
+    !!! info "Não aplicada"
+        Devido a limitações de tempo da sessão, esta tarefa não foi aplicada a este participante.
 
     | Campo | Registro |
     |---|---|
@@ -359,7 +359,7 @@ flowchart LR
 
 ## 5. Resultado Final
 
-> Síntese consolidada das 3 entrevistas. **T1 e SUS** refletem **n=3** (P1, P2, P3); **T2 e T3** refletem **n=1** (apenas P3) e devem ser recalculadas se repetidas com P1 e P2.
+> Síntese consolidada das 3 entrevistas. **T1 e SUS** refletem **n=3** (P1, P2, P3); **T2 e T3** refletem **n=1** (apenas P3).
 
 ### 5.1 SUS (System Usability Scale)
 
@@ -374,15 +374,15 @@ flowchart LR
 
 ### 5.2 Problemas de Usabilidade Identificados
 
-> Liste cada problema observado em pelo menos 1 sessão. Use a mesma escala de severidade da [Avaliação Heurística](../avaliacao-heuristica/index.md) para permitir comparação cruzada entre as duas frentes de avaliação. Os itens abaixo vêm de T1 (P1, P2) — adicionar achados de T2/T3 conforme forem coletados.
+> Liste cada problema observado em pelo menos 1 sessão. Use a mesma escala de severidade da [Avaliação Heurística](../avaliacao-heuristica/index.md) para permitir comparação cruzada entre as duas frentes de avaliação. Os itens abaixo consolidam os achados de todas as tarefas realizadas (T1 com P1, P2, P3; T2 e T3 com P3).
 
 | ID | Problema observado | Participante(s) afetado(s) | Severidade | Heurística/critério relacionado | Evidência |
 |---|---|---|---|---|---|
-| TU-01 | Nomenclatura ambígua ("Compra online" vs "Agendar exame" vs "Serviços digitais") não corresponde ao modelo mental do usuário | P1, P2 | <span class="badge" style="background:#c62828;color:#fff;">Crítico</span> | Correspondência com o mundo real (H2) | P1 procurou exames em várias abas informativas. P2 apontou que "comprar não faz sentido, deveria ser agendar". |
-| TU-02 | Botão "Agendar o exame" no resultado da pesquisa direciona para atendimento móvel sem aviso prévio e sem opção clara de voltar | P2 | <span class="badge" style="background:#e65100;color:#fff;">Alto</span> | Controle e liberdade (H3), Prevenção de erros (H5) | P2 caiu na página de atendimento móvel, teve que usar o botão de voltar do navegador e perdeu a busca. |
-| TU-03 | Falta de etapa para seleção de data e horário do exame no fluxo | P1, P2 | <span class="badge" style="background:#c62828;color:#fff;">Crítico</span> | Visibilidade do status do sistema (H1) | Ambos os participantes reclamaram explicitamente que não lhes foi dada a opção de escolher a data do agendamento. |
-| TU-04 | *(pendente — preencher após T2)* | | | | |
-| TU-05 | *(pendente — preencher após T3)* | | | | |
+| TU-01 | Nomenclatura ambígua ("Compra online" vs "Agendar exame" vs "Serviços digitais") não corresponde ao modelo mental do usuário | P1, P2, P3 | <span class="badge" style="background:#c62828;color:#fff;">Crítico</span> | Correspondência com o mundo real (H2) | P1 e P3 procuraram agendamento em abas informativas. P2 apontou que "comprar não faz sentido, deveria ser agendar". O problema se repetiu na T2 para P3. |
+| TU-02 | Botão "Agendar o exame" no resultado da pesquisa direciona para atendimento móvel sem aviso prévio e sem opção clara de voltar | P2, P3 | <span class="badge" style="background:#e65100;color:#fff;">Alto</span> | Controle e liberdade (H3), Prevenção de erros (H5) | P2 e P3 caíram na página de atendimento móvel ("Isso aqui é um tipo de atendimento móvel?"). P2 teve que usar o botão de voltar do navegador. |
+| TU-03 | Falta de etapa para seleção de data e horário do exame no fluxo | P1, P2, P3 | <span class="badge" style="background:#c62828;color:#fff;">Crítico</span> | Visibilidade do status do sistema (H1) | Os participantes reclamaram explicitamente ou estranharam ("Não houve etapa de data/horário") que não lhes foi dada a opção de escolher a data do agendamento. |
+| TU-04 | Excesso de informação e ausência de campo de busca visível na listagem de vacinas dificulta encontrar itens específicos | P3 (na T2) | <span class="badge" style="background:#f9a825;color:#000;">Médio</span> | Estética e design minimalista (H8) | P3 verbalizou: "Meu Deus, muita informação. Queria pesquisar a vacina..., mas não sei como", precisando de dica do avaliador. |
+| TU-05 | A página da unidade física não possui atalho ou botão claro para agendar serviços diretamente nela | P3 (na T2) | <span class="badge" style="background:#e65100;color:#fff;">Alto</span> | Flexibilidade e eficiência (H7) | P3 acessou a tela da unidade Águas Claras para tentar agendar por lá, mas declarou não ter achado e precisou voltar ao menu principal. |
 
 ### 5.3 Cruzamento com Avaliação Heurística
 
@@ -403,7 +403,7 @@ flowchart LR
 - A taxonomia do site (como o uso do termo "Comprar online" em vez de "Agendar") confunde os usuários e atrasa a conclusão das tarefas, indo contra o modelo mental dos pacientes.
 - O redirecionamento surpresa para o serviço de atendimento móvel prejudica a fluidez, fazendo o usuário pensar que errou o caminho ou que não pode agendar em uma unidade física.
 - A ausência de um calendário para marcação de data frustra os usuários no final da tarefa, passando a impressão de que o processo está incompleto.
-- O SUS médio de 37,5 (Inaceitável, n=3) reflete um alto custo cognitivo e insatisfação com a interface — a aprofundar nas tarefas T2/T3 com mais participantes (hoje em n=1).
+- O SUS médio de 37,5 (Inaceitável, n=3) reflete um alto custo cognitivo e insatisfação com a interface (especialmente evidente nos percalços da T1 para todos e da T2 para o P3).
 
 **Recomendações priorizadas (com base em T1):**
 
@@ -433,7 +433,7 @@ flowchart LR
 
 - Amostra pequena (3 participantes) e homogênea (estudantes de Engenharia de Software da mesma faculdade) — ver nota em [Persona do Participante](persona.md#1-persona-primaria). Resultados são indicativos, não conclusivos sobre a usabilidade geral do site para o público real do Sabin (idosos, baixa literacia digital, etc.).
 - Nenhuma das 3 tarefas exige login — o portal de laudos (área autenticada) não é coberto por esta rodada.
-- **Não foi possível concluir as três tarefas com todos os participantes** por dificuldade de conciliar tempo/agenda com os usuários: com P1 e P2 só foi viável a **Tarefa 1**, enquanto P3 realizou as três (T1, T2 e T3). Mesmo parcial, a execução da Tarefa 1 com P1 e P2 **contribui para a análise do teste de usabilidade**, ao permitir comparar o fluxo de agendamento entre os participantes. Para uma síntese final, aguardam-se T2 (vacina febre amarela) e T3 (preparo de check-up) com P1 e P2.
+- **Não foi possível concluir as três tarefas com todos os participantes** por dificuldade de conciliar tempo/agenda com os usuários: com P1 e P2 só foi viável a **Tarefa 1**, enquanto P3 realizou as três (T1, T2 e T3). Mesmo parcial, a execução da Tarefa 1 com P1 e P2 **contribui para a análise do teste de usabilidade**, ao permitir comparar o fluxo de agendamento entre os participantes e compor os achados finais.
 
 ---
 
