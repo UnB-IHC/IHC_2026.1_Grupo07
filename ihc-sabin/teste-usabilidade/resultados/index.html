@@ -522,7 +522,7 @@
 <span class="md-ellipsis">
     
   
-    Checklist WCAG 2.1
+    Checklist WCAG 2.2
   
 
     
@@ -622,7 +622,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../teste-piloto/teste-piloto.md">
+<a class="md-nav__link" href="../testes/teste-piloto/teste-piloto/">
 <span class="md-ellipsis">
     
   
@@ -1074,24 +1074,48 @@
 </li>
 </ul>
 </div>
-<pre class="mermaid"><code>flowchart LR
-    P1["Entrevista 1 — P1\nT1 concluída"] --&gt; RF[Resultado Final]
-    P2["Entrevista 2 — P2\nT1 concluída"] --&gt; RF
-    P3["Entrevista 3 — P3\nT1/T2/T3 concluídas"] --&gt; RF
-    RF --&gt; SUS["SUS médio: 37,5 (Inaceitável)"]
-    RF --&gt; PROB["3 problemas críticos/altos identificados"]
-    RF --&gt; REC["Recomendações priorizadas"]</code></pre>
+<table>
+<thead>
+<tr>
+<th>Entrevista</th>
+<th>Tarefas realizadas</th>
+<th>Desfecho</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P1</td>
+<td>T1</td>
+<td>Concluída sem ajuda</td>
+</tr>
+<tr>
+<td>P2</td>
+<td>T1</td>
+<td>Concluída sem ajuda</td>
+</tr>
+<tr>
+<td>P3</td>
+<td>T1, T2, T3</td>
+<td>T1 e T2 com ajuda; T3 sem ajuda</td>
+</tr>
+<tr>
+<td><strong>Resultado consolidado</strong></td>
+<td>SUS médio 37,5</td>
+<td>3 problemas críticos/altos · recomendações priorizadas</td>
+</tr>
+</tbody>
+</table>
 <hr/>
 <h2 id="1-resumo-quantitativo-por-participante">1. Resumo Quantitativo por Participante</h2>
 <table>
 <thead>
 <tr>
 <th>Participante</th>
-<th>T1 ✓?</th>
+<th>T1 concluiu?</th>
 <th>T1 (s)</th>
-<th>T2 ✓?</th>
+<th>T2 concluiu?</th>
 <th>T2 (s)</th>
-<th>T3 ✓?</th>
+<th>T3 concluiu?</th>
 <th>T3 (s)</th>
 <th>SUS</th>
 </tr>
@@ -1099,7 +1123,7 @@
 <tbody>
 <tr>
 <td>P1</td>
-<td>☑ Sim, sem ajuda</td>
+<td>Sim, sem ajuda</td>
 <td>240</td>
 <td>—</td>
 <td>—</td>
@@ -1109,7 +1133,7 @@
 </tr>
 <tr>
 <td>P2</td>
-<td>☑ Sim, sem ajuda</td>
+<td>Sim, sem ajuda</td>
 <td>215</td>
 <td>—</td>
 <td>—</td>
@@ -1119,11 +1143,11 @@
 </tr>
 <tr>
 <td>P3</td>
-<td>☑ Sim, com ajuda</td>
+<td>Sim, com ajuda</td>
 <td>285</td>
-<td>☑ Sim, com ajuda</td>
+<td>Sim, com ajuda</td>
 <td>190</td>
-<td>☑ Sim, sem ajuda</td>
+<td>Sim, sem ajuda</td>
 <td>45</td>
 <td>32,5</td>
 </tr>
@@ -1290,7 +1314,7 @@
 <div class="grid cards">
 <ul>
 <li>
-<p><strong>Tempo (T1)</strong> · 195s (3min15s)</p>
+<p><strong>Tempo (T1)</strong> · 215s (3min35s)</p>
 </li>
 <li>
 <p><strong>Conclusão</strong> · <span class="badge" style="background:#2e7d32;color:#fff;">Sem ajuda</span></p>
@@ -1462,7 +1486,7 @@
     D --&gt; E["Serviços digitais"]
     E --&gt; F["Atendimento domiciliar — rejeitou"]
     F --&gt; G["Agilizar exames de análises clínicas"]
-    G --&gt; H["Menu ☰ — 1ª dica do avaliador"]
+    G --&gt; H["Menu (≡) — 1ª dica do avaliador"]
     H --&gt; I["Exames laboratoriais — não tinha"]
     I --&gt; J["Compre online — 2ª dica"]
     J --&gt; K["Busca: hemograma completo"]
@@ -1485,7 +1509,7 @@
 </tr>
 <tr>
 <td>Erros / desvios observados</td>
-<td>Procurou o agendamento em "pré-cadastro / unidade digital", "solicitação de exames", "conteúdo de apoio", "atendimento domiciliar" e "agilizar exames de análises clínicas" antes do caminho correto. Só chegou ao fluxo certo após <strong>duas dicas do avaliador</strong> (abrir o menu ☰ e, depois, escolher "Compre online").</td>
+<td>Procurou o agendamento em "pré-cadastro / unidade digital", "solicitação de exames", "conteúdo de apoio", "atendimento domiciliar" e "agilizar exames de análises clínicas" antes do caminho correto. Só chegou ao fluxo certo após <strong>duas dicas do avaliador</strong> (abrir o menu (≡) e, depois, escolher "Compre online").</td>
 </tr>
 <tr>
 <td>Onde travou ou hesitou</td>
@@ -1503,13 +1527,13 @@
 <p>Dependente de 9 meses.</p>
 </blockquote>
 <pre class="mermaid"><code>flowchart LR
-    A["Menu ☰ → Vacinas"] --&gt; B["Vacinação na unidade / Agendar na unidade"]
+    A["Menu (≡) → Vacinas"] --&gt; B["Vacinação na unidade / Agendar na unidade"]
     B --&gt; C["Águas Claras"]
     C --&gt; D["Tela da unidade — não achou agendamento"]
     D --&gt; E["Volta → Compre online"]
     E --&gt; F["'Muita informação' — filtro de crianças"]
     F --&gt; G["Não acha onde pesquisar — dica do avaliador"]
-    G --&gt; H["Menu ☰ → Vacinas infantis (9 meses)"]
+    G --&gt; H["Menu (≡) → Vacinas infantis (9 meses)"]
     H --&gt; I["Vacina de febre amarela"]
     I --&gt; J["Águas Claras (Shopping Metrópole)"]
 
@@ -1529,7 +1553,7 @@
 </tr>
 <tr>
 <td>Erros / desvios observados</td>
-<td>Tentou agendar pela página da unidade (Águas Claras) e pelo "Compre online" antes de achar o caminho por <strong>Vacinas infantis</strong>. Precisou de <strong>uma dica do avaliador</strong> (usar o menu ☰).</td>
+<td>Tentou agendar pela página da unidade (Águas Claras) e pelo "Compre online" antes de achar o caminho por <strong>Vacinas infantis</strong>. Precisou de <strong>uma dica do avaliador</strong> (usar o menu (≡)).</td>
 </tr>
 <tr>
 <td>Onde travou ou hesitou</td>
@@ -1547,7 +1571,7 @@
 <p>Único fluxo tranquilo da sessão.</p>
 </blockquote>
 <pre class="mermaid"><code>flowchart LR
-    A["Menu ☰ → Exames"] --&gt; B["Checkup executivo"]
+    A["Menu (≡) → Exames"] --&gt; B["Checkup executivo"]
     B --&gt; C["Rola a página"]
     C --&gt; D["Orientações de preparo — 'Achei'"]
 
@@ -1566,7 +1590,7 @@
 </tr>
 <tr>
 <td>Erros / desvios observados</td>
-<td>Nenhum desvio relevante. Caminho direto pelo menu ☰.</td>
+<td>Nenhum desvio relevante. Caminho direto pelo menu (≡).</td>
 </tr>
 <tr>
 <td>Onde travou ou hesitou</td>

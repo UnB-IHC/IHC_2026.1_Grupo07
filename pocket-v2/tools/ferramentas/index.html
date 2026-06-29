@@ -879,6 +879,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#matriz-de-cobertura-por-criterio-wcag-22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Matriz de Cobertura por Critério WCAG 2.2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#referencias-bibliograficas" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1497,7 +1508,7 @@
   <span class="md-ellipsis">
     
   
-    Checklist WCAG 2.1
+    Checklist WCAG 2.2
   
 
     
@@ -1759,7 +1770,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ihc-sabin/teste-usabilidade/teste-piloto/teste-piloto.md" class="md-nav__link">
+      <a href="../../../ihc-sabin/teste-usabilidade/testes/teste-piloto/teste-piloto/" class="md-nav__link">
         
   
   
@@ -2108,6 +2119,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#matriz-de-cobertura-por-criterio-wcag-22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Matriz de Cobertura por Critério WCAG 2.2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#referencias-bibliograficas" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2275,9 +2297,9 @@
 <li>Vá até a aba <strong>"axe DevTools"</strong> (aparece ao final das abas do DevTools)</li>
 <li>Clique em <strong>"Scan ALL of my page"</strong></li>
 <li>Os resultados são classificados em:</li>
-<li><strong>Critical</strong> (🔴): viola critérios de nível A – corrigir imediatamente</li>
-<li><strong>Serious</strong> (🟠): viola nível AA – corrigir antes de publicar</li>
-<li><strong>Moderate / Minor</strong> (🟡): melhoria recomendada</li>
+<li><strong>Critical</strong> (<span class="badge" style="background:#c62828;color:#fff;">Crítico</span>): viola critérios de nível A – corrigir imediatamente</li>
+<li><strong>Serious</strong> (<span class="badge" style="background:#e65100;color:#fff;">Sério</span>): viola nível AA – corrigir antes de publicar</li>
+<li><strong>Moderate / Minor</strong> (<span class="badge" style="background:#f9a825;color:#000;">Moderado/Menor</span>): melhoria recomendada</li>
 <li>Clique em cada item para ver o elemento no DOM e a técnica de correção sugerida</li>
 <li>Use o botão <strong>"Highlight"</strong> para localizar o elemento na página visualmente</li>
 </ol>
@@ -2323,10 +2345,10 @@
 <li>Instale a extensão WAVE no navegador ou acesse <a href="https://wave.webaim.org/">wave.webaim.org</a></li>
 <li>Para usar como extensão: abra a página alvo e clique no ícone WAVE na barra de ferramentas</li>
 <li>A página é sobreposta com ícones coloridos:</li>
-<li>🔴 <strong>Erros</strong> (ex: imagem sem alt, input sem label)</li>
-<li>🟡 <strong>Alertas</strong> (possíveis problemas, revisar manualmente)</li>
-<li>🟢 <strong>Estrutura</strong> (headings, landmarks – validar hierarquia)</li>
-<li>🔵 <strong>Recursos de acessibilidade</strong> presentes (aria-label, skip links)</li>
+<li><span class="badge" style="background:#c62828;color:#fff;">Erros</span> (ex: imagem sem alt, input sem label)</li>
+<li><span class="badge" style="background:#f9a825;color:#000;">Alertas</span> (possíveis problemas, revisar manualmente)</li>
+<li><span class="badge" style="background:#2e7d32;color:#fff;">Estrutura</span> (headings, landmarks – validar hierarquia)</li>
+<li><span class="badge" style="background:#1565c0;color:#fff;">Recursos de acessibilidade</span> presentes (aria-label, skip links)</li>
 <li>No painel lateral, clique em qualquer ícone para saltar ao elemento no DOM</li>
 <li>Use a aba <strong>"Contrast"</strong> para verificar todas as combinações de cor identificadas automaticamente</li>
 </ol>
@@ -2517,7 +2539,8 @@
 2. Selecione dois layers sobrepostos (ex: texto e retângulo de fundo).
 3. Abra a opção <strong>Contrast Checker</strong> no menu do Stark.
 4. Use o <strong>Vision Simulator</strong> para prever como a tela é vista por usuários com daltonismo (Protanopia ou Deuteranopia).</p>
-<p>\n## Matriz de Cobertura por Critério WCAG 2.2</p>
+<h2 id="matriz-de-cobertura-por-criterio-wcag-22">Matriz de Cobertura por Critério WCAG 2.2</h2>
+<p><strong>Legenda:</strong> <code>Sim</code> = cobre bem · <code>Parcial</code> = cobertura parcial · <code>Não</code> = não cobre · <code>[novo]</code> = critério exclusivo do WCAG 2.2</p>
 <table>
 <thead>
 <tr>
@@ -2535,175 +2558,172 @@
 <tbody>
 <tr>
 <td>1.1.1 Alt text</td>
-<td>✅</td>
-<td>✅</td>
-<td>✅</td>
-<td>❌</td>
-<td>✅</td>
-<td>❌</td>
-<td>⚠️ (Guiado)</td>
-<td>❌</td>
+<td>Sim</td>
+<td>Sim</td>
+<td>Sim</td>
+<td>Não</td>
+<td>Sim</td>
+<td>Não</td>
+<td>Parcial (Guiado)</td>
+<td>Não</td>
 </tr>
 <tr>
 <td>1.4.3 Contraste texto</td>
-<td>✅</td>
-<td>✅</td>
-<td>✅</td>
-<td>✅</td>
-<td>❌</td>
-<td>❌</td>
-<td>✅</td>
-<td>✅</td>
+<td>Sim</td>
+<td>Sim</td>
+<td>Sim</td>
+<td>Sim</td>
+<td>Não</td>
+<td>Não</td>
+<td>Sim</td>
+<td>Sim</td>
 </tr>
 <tr>
 <td>1.4.11 Contraste componentes</td>
-<td>⚠️</td>
-<td>⚠️</td>
-<td>⚠️</td>
-<td>✅</td>
-<td>❌</td>
-<td>❌</td>
-<td>✅</td>
-<td>✅</td>
+<td>Parcial</td>
+<td>Parcial</td>
+<td>Parcial</td>
+<td>Sim</td>
+<td>Não</td>
+<td>Não</td>
+<td>Sim</td>
+<td>Sim</td>
 </tr>
 <tr>
 <td>2.1.1 Teclado</td>
-<td>❌</td>
-<td>❌</td>
-<td>❌</td>
-<td>❌</td>
-<td>✅</td>
-<td>✅</td>
-<td>✅ (Guiado)</td>
-<td>❌</td>
+<td>Não</td>
+<td>Não</td>
+<td>Não</td>
+<td>Não</td>
+<td>Sim</td>
+<td>Sim</td>
+<td>Parcial (Guiado)</td>
+<td>Não</td>
 </tr>
 <tr>
 <td>2.4.1 Skip links</td>
-<td>✅</td>
-<td>⚠️</td>
-<td>✅</td>
-<td>❌</td>
-<td>✅</td>
-<td>✅</td>
-<td>✅ (Guiado)</td>
-<td>❌</td>
+<td>Sim</td>
+<td>Parcial</td>
+<td>Sim</td>
+<td>Não</td>
+<td>Sim</td>
+<td>Sim</td>
+<td>Parcial (Guiado)</td>
+<td>Não</td>
 </tr>
 <tr>
 <td>2.4.7 Foco visível</td>
-<td>⚠️</td>
-<td>⚠️</td>
-<td>❌</td>
-<td>❌</td>
-<td>❌</td>
-<td>✅</td>
-<td>✅ (Visual)</td>
-<td>✅</td>
+<td>Parcial</td>
+<td>Parcial</td>
+<td>Não</td>
+<td>Não</td>
+<td>Não</td>
+<td>Sim</td>
+<td>Parcial (Visual)</td>
+<td>Sim</td>
 </tr>
 <tr>
-<td><strong>2.4.11 Foco não obscurecido</strong> ⭐</td>
-<td>❌</td>
-<td>❌</td>
-<td>❌</td>
-<td>❌</td>
-<td>❌</td>
-<td>✅</td>
-<td>⚠️</td>
-<td>❌</td>
+<td><strong>2.4.11 Foco não obscurecido</strong> <code>[novo]</code></td>
+<td>Não</td>
+<td>Não</td>
+<td>Não</td>
+<td>Não</td>
+<td>Não</td>
+<td>Sim</td>
+<td>Parcial</td>
+<td>Não</td>
 </tr>
 <tr>
-<td><strong>2.4.13 Aparência do foco</strong> ⭐</td>
-<td>❌</td>
-<td>❌</td>
-<td>❌</td>
-<td>✅</td>
-<td>❌</td>
-<td>✅</td>
-<td>⚠️</td>
-<td>✅</td>
+<td><strong>2.4.13 Aparência do foco</strong> <code>[novo]</code></td>
+<td>Não</td>
+<td>Não</td>
+<td>Não</td>
+<td>Sim</td>
+<td>Não</td>
+<td>Sim</td>
+<td>Parcial</td>
+<td>Sim</td>
 </tr>
 <tr>
-<td><strong>2.5.7 Movimentos arrastar</strong> ⭐</td>
-<td>❌</td>
-<td>❌</td>
-<td>❌</td>
-<td>❌</td>
-<td>❌</td>
-<td>✅</td>
-<td>❌</td>
-<td>❌</td>
+<td><strong>2.5.7 Movimentos arrastar</strong> <code>[novo]</code></td>
+<td>Não</td>
+<td>Não</td>
+<td>Não</td>
+<td>Não</td>
+<td>Não</td>
+<td>Sim</td>
+<td>Não</td>
+<td>Não</td>
 </tr>
 <tr>
-<td><strong>2.5.8 Tamanho alvo 24px</strong> ⭐</td>
-<td>⚠️</td>
-<td>❌</td>
-<td>❌</td>
-<td>❌</td>
-<td>❌</td>
-<td>❌</td>
-<td>⚠️</td>
-<td>✅</td>
+<td><strong>2.5.8 Tamanho alvo 24px</strong> <code>[novo]</code></td>
+<td>Parcial</td>
+<td>Não</td>
+<td>Não</td>
+<td>Não</td>
+<td>Não</td>
+<td>Não</td>
+<td>Parcial</td>
+<td>Sim</td>
 </tr>
 <tr>
 <td>3.1.1 Idioma da página</td>
-<td>✅</td>
-<td>✅</td>
-<td>✅</td>
-<td>❌</td>
-<td>❌</td>
-<td>❌</td>
-<td>✅</td>
-<td>❌</td>
+<td>Sim</td>
+<td>Sim</td>
+<td>Sim</td>
+<td>Não</td>
+<td>Não</td>
+<td>Não</td>
+<td>Sim</td>
+<td>Não</td>
 </tr>
 <tr>
 <td>3.3.1 Identificação de erro</td>
-<td>⚠️</td>
-<td>❌</td>
-<td>⚠️</td>
-<td>❌</td>
-<td>✅</td>
-<td>❌</td>
-<td>✅ (Guiado)</td>
-<td>❌</td>
+<td>Parcial</td>
+<td>Não</td>
+<td>Parcial</td>
+<td>Não</td>
+<td>Sim</td>
+<td>Não</td>
+<td>Parcial (Guiado)</td>
+<td>Não</td>
 </tr>
 <tr>
-<td><strong>3.3.7 Entrada redundante</strong> ⭐</td>
-<td>❌</td>
-<td>❌</td>
-<td>❌</td>
-<td>❌</td>
-<td>❌</td>
-<td>❌</td>
-<td>❌</td>
-<td>❌</td>
+<td><strong>3.3.7 Entrada redundante</strong> <code>[novo]</code></td>
+<td>Não</td>
+<td>Não</td>
+<td>Não</td>
+<td>Não</td>
+<td>Não</td>
+<td>Não</td>
+<td>Não</td>
+<td>Não</td>
 </tr>
 <tr>
-<td><strong>3.3.8 Autenticação acessível</strong> ⭐</td>
-<td>❌</td>
-<td>❌</td>
-<td>❌</td>
-<td>❌</td>
-<td>❌</td>
-<td>❌</td>
-<td>❌</td>
-<td>❌</td>
+<td><strong>3.3.8 Autenticação acessível</strong> <code>[novo]</code></td>
+<td>Não</td>
+<td>Não</td>
+<td>Não</td>
+<td>Não</td>
+<td>Não</td>
+<td>Não</td>
+<td>Não</td>
+<td>Não</td>
 </tr>
 <tr>
 <td>4.1.2 Nome, Função, Valor</td>
-<td>✅</td>
-<td>✅</td>
-<td>⚠️</td>
-<td>❌</td>
-<td>✅</td>
-<td>❌</td>
-<td>✅</td>
-<td>❌</td>
+<td>Sim</td>
+<td>Sim</td>
+<td>Parcial</td>
+<td>Não</td>
+<td>Sim</td>
+<td>Não</td>
+<td>Sim</td>
+<td>Não</td>
 </tr>
 </tbody>
 </table>
-<blockquote>
-<p>⭐ Critério novo do WCAG 2.2 | ✅ Cobre bem | ⚠️ Cobertura parcial | ❌ Não cobre</p>
-</blockquote>
-<p><strong>Conclusão:</strong> Os critérios novos do WCAG 2.2 (marcados com ⭐) <strong>não têm cobertura automatizada</strong>. O teste manual por teclado e com leitor de tela é obrigatório para conformidade com WCAG 2.2 e ABNT NBR 17225:2025.</p>
+<p><strong>Conclusão:</strong> Os critérios novos do WCAG 2.2 (marcados com <code>[novo]</code>) <strong>não têm cobertura automatizada</strong>. O teste manual por teclado e com leitor de tela é obrigatório para conformidade com WCAG 2.2 e ABNT NBR 17225:2025.</p>
 <hr />
 <h2 id="referencias-bibliograficas">Referências Bibliográficas</h2>
 <blockquote>
