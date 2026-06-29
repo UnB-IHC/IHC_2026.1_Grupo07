@@ -18,13 +18,13 @@
 
 ---
 
-## Parte 1 – Boas-Vindas e Contexto (5 minutos)
+## Parte 1 – Boas-Vindas e Contexto (2 minutos)
 
 > *[Leia o texto abaixo com voz calma e natural. Não improvise para garantir consistência entre sessões.]*
 
 ---
 
-Olá, [nome do participante]. Obrigado por participar! Meu nome é [nome do avaliador] e vou conduzir esta sessão hoje.
+Olá, meu nome é [nome do avaliador] e vou conduzir esta sessão hoje.
 
 Antes de começarmos, quero explicar o que vamos fazer. **Nós não estamos avaliando você** — estamos avaliando o site. Não existe resposta certa ou errada. Qualquer dificuldade que você encontrar é uma informação valiosa para nós.
 
@@ -44,19 +44,7 @@ Vou ligar a gravação agora. Apenas o computador e o áudio serão gravados —
 
 ---
 
-## Parte 2 – Aquecimento (3 minutos)
-
-> *[Antes das tarefas reais, faça uma tarefa de aquecimento simples para o participante se habituar ao Think Aloud.]*
-
-**Tarefa de aquecimento** *(sem cronômetro, sem registro formal)*:
-
-> *"Para começarmos a esquentar: você está na homepage do site do Sabin. Tire 1 minuto para explorar livremente a página e me contar o que está vendo, o que chama sua atenção. Não precisa clicar em nada ainda — só observe e narre."*
-
-> *[Observe: o participante está verbalizando? Se ficar em silêncio por mais de 20 segundos, incentive: "O que você está pensando agora?" ou "O que está procurando?"]*
-
----
-
-## Parte 3 – Tarefas Principais (10–15 minutos, 3 tarefas)
+## Parte 2 – Tarefas Principais (10–15 minutos, 3 tarefas)
 
 > **Instruções para o avaliador:**
 > - Entregue uma tarefa por vez (em papel ou leia em voz alta).
@@ -145,7 +133,7 @@ Vou ligar a gravação agora. Apenas o computador e o áudio serão gravados —
 
 ---
 
-## Parte 4 – Perguntas Pós-Tarefa (5 minutos)
+## Parte 3 – Perguntas Pós-Tarefa (5 minutos)
 
 > *[Após concluir todas as tarefas, antes do SUS, faça estas perguntas abertas:]*
 
@@ -155,21 +143,15 @@ Vou ligar a gravação agora. Apenas o computador e o áudio serão gravados —
 
 3. **"Houve alguma coisa que funcionou bem, que você achou fácil ou intuitivo?"**
 
-4. **"Se você pudesse mudar uma única coisa no site, o que seria?"**
-
-5. **"Você usaria esse site para agendar exames ou ver resultados no futuro? Por quê?"**
-
-> *[Anote as respostas com as palavras exatas do participante. Não interprete — registre.]*
-
 ---
 
-## Parte 5 – Questionário SUS (5 minutos)
+## Parte 5 – Questionário SUS (3 minutos)
 
 > *[Entregue ao participante o questionário impresso — ver `questionario-sus.md` para a versão pronta para impressão. O participante responde de forma independente, sem ajuda do avaliador.]*
 
 ---
 
-## Parte 6 – Encerramento (2 minutos)
+## Parte 6 – Encerramento (1 minuto)
 
 > *[Leia o script de encerramento:]*
 
@@ -177,19 +159,11 @@ Vou ligar a gravação agora. Apenas o computador e o áudio serão gravados —
 
 Chegamos ao final da nossa sessão. Muito obrigado pela sua participação — o tempo que você dedicou é extremamente valioso para melhorar a experiência de outras pessoas que usam o site do Sabin.
 
-Quero reforçar: as dificuldades que você encontrou **não são culpa sua** — são oportunidades de melhoria que ajudamos a identificar. Você foi ótimo em verbalizar seus pensamentos.
-
-Todas as gravações e dados serão usados apenas para fins acadêmicos e de pesquisa, conforme o Termo de Consentimento que você assinou. Seu nome nunca será associado publicamente às suas respostas.
-
 Você tem alguma dúvida final sobre a pesquisa?
 
 *(responder dúvidas sobre a pesquisa — nunca revelar resultados comparativos durante o processo)*
 
 Muito obrigado! Tenha um ótimo dia!
-
----
-
-> *[Após o participante sair: completar a planilha de observação, verificar qualidade da gravação e anotar observações gerais da sessão dentro de 30 minutos enquanto a memória está fresca.]*
 
 ---
 
