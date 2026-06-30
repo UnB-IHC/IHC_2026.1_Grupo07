@@ -13,10 +13,10 @@
 | Seção | Itens Avaliáveis | Conformes | Parciais | Não Conformes | Não Verificáveis | % Conformidade¹ |
 |---|---|---|---|---|---|---|
 | A — Percepção Visual e Auditiva | 5 | 1 | 2 | 2 | 0 | **40%** |
-| B — Operabilidade e Navegação | 5 | 1 | 1 | 2 | 1 | **37,5%** (excl. N/V) |
+| B — Operabilidade e Navegação | 5 | 1 | 0 | 3 | 1 | **25%** (excl. N/V) |
 | C — Compreensibilidade e Ajuda | 6 | 1 | 1 | 3 | 1 | **30%** (excl. N/V) |
-| D — Robustez e Código Semântico | 2 | 0 | 2 | 0 | 0 | **50%** |
-| **Total** | **18** | **3** | **6** | **7** | **2** | **37,5%** |
+| D — Robustez e Código Semântico | 2 | 0 | 0 | 2 | 0 | **0%** |
+| **Total** | **18** | **3** | **4** | **9** | **2** | **31,25%** |
 
 > ¹ Conformidade parcial conta como 0,5. Itens Não Verificáveis excluídos do denominador.
 > ⚠️ **Para conformidade plena com WCAG 2.2 AA (exigida pela NBR 17225:2025), é necessário 100% nos critérios de Nível A e AA.** O site está significativamente abaixo desse limiar.
@@ -221,19 +221,21 @@ Com CSS que o oculta visualmente mas torna visível ao receber foco (técnica `s
 
 **Referência:** NBR 17225 (5.8.7) | WCAG 2.2 — C.S. 2.5.8 (Nível AA)
 
-**Status:** ![Parcial](https://img.shields.io/badge/status-Parcial-yellow)
+**Status:** ![Não Conforme](https://img.shields.io/badge/status-N%C3%A3o%20Conforme-red)
 
 **Evidência:**
 
+O Google Lighthouse identificou, na auditoria automatizada do site Sabin, múltiplos elementos interativos com área de toque insuficiente para interação confortável em dispositivos móveis (abaixo dos 24×24 px exigidos pelo WCAG 2.2 C.S. 2.5.8):
+
 ```bash
 grep -oiE 'btn--[a-z0-9_-]+' sabin_home.html | sort | uniq -c
-# 6 btn--lg  (large — provavelmente ≥ 44px)
+# 6 btn--lg  (large — ≥ 44px, provavelmente conforme)
 # 4 btn--secondary
 # 2 btn--primary
-# 1 btn--prev / btn--next  (navegação de carrossel)
+# 1 btn--prev / btn--next  (navegação de carrossel — área insuficiente)
 ```
 
-Botões principais (`btn--lg`) provavelmente atendem ao mínimo de 24px × 24px exigido pelo WCAG 2.2. Porém, os botões de navegação anterior/próximo do carrossel (`btn--prev`, `btn--next`) são tipicamente ícones pequenos que podem não atingir o mínimo sem renderização confirmada. Verificação completa requer inspeção no DevTools com renderização ativa.
+Os botões de navegação anterior/próximo do carrossel (`btn--prev`, `btn--next`) e ícones de redes sociais no rodapé foram identificados pelo Lighthouse como elementos com área de clique abaixo do mínimo necessário. Diferentemente de um status Parcial aguardando confirmação, a análise automatizada **confirmou** a violação em múltiplos pontos do site.
 
 **Recomendação:** Garantir que todos os elementos interativos — especialmente ícones de carrossel, botões de redes sociais e ícones de compartilhamento de unidade — possuam área de toque mínima de 24×24px com espaçamento adjacente adequado. Recomendado: 44×44px (Nível AAA).
 
@@ -405,7 +407,7 @@ O padrão de `autocomplete="off"` observado no site indica tendência de desabil
 
 **Referência:** NBR 17225 (5.13.12, 5.13.13) | WCAG 2.2 — C.S. 4.1.2 (Nível A)
 
-**Status:** ![Parcial](https://img.shields.io/badge/status-Parcial-yellow)
+**Status:** ![Não Conforme](https://img.shields.io/badge/status-N%C3%A3o%20Conforme-red)
 
 **Evidência:**
 
@@ -424,10 +426,17 @@ O padrão de `autocomplete="off"` observado no site indica tendência de desabil
 
 103 ocorrências de `aria-label` na homepage indicam esforço de acessibilidade semântica.
 
-**Problema — portal de laudos:**
-Os campos de formulário do portal de resultados (`laudos.sabin.com.br`) utilizam apenas texto de placeholder como instrução, sem `<label>`, `aria-label` ou `aria-labelledby`. Placeholders desaparecem ao digitar, removendo a instrução do usuário no momento de maior atenção cognitiva.
+**Problemas confirmados pelas ferramentas:**
 
-**Recomendação:** Associar `<label>` explícito a cada campo do portal de laudos; garantir que placeholders sejam complementares ao label, nunca substitutos.
+As ferramentas WAVE e Lighthouse identificaram violações concretas ao C.S. 4.1.2:
+
+- **WAVE (erros-Wave.png):** 5 referências ARIA inválidas no HTML — atributos `aria-*` apontando para IDs inexistentes ou com valores incorretos, tornando os relacionamentos semânticos inoperantes para tecnologias assistivas.
+- **Lighthouse (links-Lighthouse.png):** Múltiplos links sem nome acessível discernível — `<a>` com apenas ícone ou imagem sem texto alternativo, invisíveis para leitores de tela.
+- **Portal de laudos:** Os campos de formulário utilizam apenas texto de placeholder como instrução, sem `<label>`, `aria-label` ou `aria-labelledby`. Placeholders desaparecem ao digitar, removendo a instrução do usuário no momento de maior atenção cognitiva.
+
+A combinação de referências ARIA inválidas, links sem nome e campos sem label configura não conformidade plena com o C.S. 4.1.2.
+
+**Recomendação:** Corrigir as 5 referências ARIA inválidas identificadas pelo WAVE; adicionar texto acessível (via `aria-label` ou `<span class="sr-only">`) a todos os links iconográficos apontados pelo Lighthouse; associar `<label>` explícito a cada campo do portal de laudos.
 
 ---
 
@@ -468,7 +477,7 @@ Siglas médicas aparecem sem expansão no conteúdo principal:
 | 5 | Design Responsivo e Refluxo | A | 1.4.10 (AA) | ![Parcial](https://img.shields.io/badge/status-Parcial-yellow) |
 | 6 | Foco Visível e Não Obscurecido | B | 2.4.7 / 2.4.11 (AA) | ![Não Conforme](https://img.shields.io/badge/status-N%C3%A3o%20Conforme-red) |
 | 7 | Atalhos de Teclado (Skip Links) | B | 2.4.1 (A) | ![Não Conforme](https://img.shields.io/badge/status-N%C3%A3o%20Conforme-red) |
-| 8 | Tamanho do Alvo de Clique | B | 2.5.8 (AA) | ![Parcial](https://img.shields.io/badge/status-Parcial-yellow) |
+| 8 | Tamanho do Alvo de Clique | B | 2.5.8 (AA) | ![Não Conforme](https://img.shields.io/badge/status-N%C3%A3o%20Conforme-red) |
 | 9 | Movimentos de Arrastar | B | 2.5.7 (AA) | ![Conforme](https://img.shields.io/badge/status-Conforme-brightgreen) |
 | 10 | Temporização Ajustável | B | 2.2.1 (A) | ![Não Verificável](https://img.shields.io/badge/status-N%C3%A3o%20Verific%C3%A1vel-lightgrey) |
 | 11 | Títulos e Semântica de Cabeçalhos | C | 2.4.2 (A) / 1.3.1 (A) | ![Não Conforme](https://img.shields.io/badge/status-N%C3%A3o%20Conforme-red) |
@@ -477,7 +486,7 @@ Siglas médicas aparecem sem expansão no conteúdo principal:
 | 14 | Identificação e Prevenção de Erros | C | 3.3.1 (A) / 3.3.3 / 3.3.4 (AA) | ![Não Conforme](https://img.shields.io/badge/status-N%C3%A3o%20Conforme-red) |
 | 15 | Prevenção de Entradas Redundantes | C | 3.3.7 (A) | ![Não Verificável](https://img.shields.io/badge/status-N%C3%A3o%20Verific%C3%A1vel-lightgrey) |
 | 16 | Autenticação Acessível | C | 3.3.8 (AA) | ![Não Conforme](https://img.shields.io/badge/status-N%C3%A3o%20Conforme-red) |
-| 17 | Nome, Função e Valor (Componentes) | D | 4.1.2 (A) | ![Parcial](https://img.shields.io/badge/status-Parcial-yellow) |
+| 17 | Nome, Função e Valor (Componentes) | D | 4.1.2 (A) | ![Não Conforme](https://img.shields.io/badge/status-N%C3%A3o%20Conforme-red) |
 | 18 | Linguagem Simples | D | 3.1.4 / 3.1.5 (AAA) | ![Parcial](https://img.shields.io/badge/status-Parcial-yellow) |
 
 ---
@@ -489,10 +498,12 @@ Siglas médicas aparecem sem expansão no conteúdo principal:
 | ![Prioridade Imediata](https://img.shields.io/badge/prioridade-Imediata-red) | 7 | WCAG 2.4.1 | Implementar skip link `<a href="#main-content">Pular para o conteúdo</a>` como primeiro elemento do `<body>` |
 | ![Prioridade Imediata](https://img.shields.io/badge/prioridade-Imediata-red) | 11 | WCAG 1.3.1 | Adicionar `<h1>` na homepage; auditar hierarquia de headings em todas as páginas internas |
 | ![Prioridade Imediata](https://img.shields.io/badge/prioridade-Imediata-red) | 1 | WCAG 1.1.1 | Auditar as 92 imagens com `alt=""`: manter vazio em decorativas, adicionar descrição nas informativas |
+| ![Prioridade Alta](https://img.shields.io/badge/prioridade-Alta-orange) | 17 | WCAG 4.1.2 | Corrigir as 5 referências ARIA inválidas (WAVE); adicionar texto acessível a links sem nome (Lighthouse); associar `<label>` a campos do portal de laudos |
 | ![Prioridade Alta](https://img.shields.io/badge/prioridade-Alta-orange) | 2 | WCAG 1.4.3 | Substituir `color: #999` → `#767676` e `#6f6e67` → `#595855` em textos de apoio |
 | ![Prioridade Alta](https://img.shields.io/badge/prioridade-Alta-orange) | 6 | WCAG 2.4.7 | Implementar `:focus-visible` com outline de 3px e cor de alto contraste |
 | ![Prioridade Alta](https://img.shields.io/badge/prioridade-Alta-orange) | 14 | WCAG 3.3.1 | Adicionar `<label>` explícito e mensagens de erro descritivas no portal de laudos |
 | ![Prioridade Alta](https://img.shields.io/badge/prioridade-Alta-orange) | 16 | WCAG 3.3.8 | Configurar `autocomplete="username"` e `autocomplete="current-password"` no portal de laudos |
+| ![Prioridade Alta](https://img.shields.io/badge/prioridade-Alta-orange) | 8 | WCAG 2.5.8 | Ampliar área de toque de botões de carrossel (`btn--prev`/`btn--next`) e ícones do rodapé para mínimo 24×24px (recomendado 44×44px) |
 | ![Prioridade Média](https://img.shields.io/badge/prioridade-M%C3%A9dia-yellowgreen) | 4 | WCAG 2.2.2 | Adicionar botão de pausa ao carrossel da homepage |
 | ![Prioridade Média](https://img.shields.io/badge/prioridade-M%C3%A9dia-yellowgreen) | 12 | WCAG 3.2.4 | Padronizar terminologia de agendamento para `Agendar exame` em todos os pontos do site |
 | ![Prioridade Média](https://img.shields.io/badge/prioridade-M%C3%A9dia-yellowgreen) | 18 | WCAG 3.1.4 | Expandir siglas médicas (HPV, HCG) na primeira ocorrência de cada página |
